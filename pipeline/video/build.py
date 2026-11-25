@@ -243,7 +243,41 @@ def build(spec_path: Path, out_root: Path, log=print) -> dict:
         tmp.unlink(missing_ok=True)
     log(f"  проверки: {json.dumps({k: v for k, v in checks.items() if k not in ('asr', 'loudness')}, ensure_ascii=False)}")
     log(f"  громкость {loud}, распознавание WER {asr.get('wer')}")
+    attach(spec, out, log)
     return passport
+
+
+def attach(spec: dict, vdir: Path, log=print) -> None:
+    """Вставляет ролик в курс главы: media/<id>.mp4 + .vtt + паспорт, поле nodes[].videos, пересборка курса."""
+    import shutil
+    course = HERE / "out" / spec["chapter"]
+    layer_path = course / "layer.json"
+    if not layer_path.is_file():
+        log(f"  курс {spec['chapter']} не собран — ролик не вставлен")
+        return
+    media = course / "media"
+    media.mkdir(exist_ok=True)
+    vid = spec["id"]
+    shutil.copy2(vdir / f"{vid}.mp4", media / f"{vid}.mp4")
+    srt_text = (vdir / f"{vid}.srt").read_text(encoding="utf-8")
+    vtt = "WEBVTT\n\n" + re.sub(r"(\d\d:\d\d:\d\d),(\d\d\d)", r"\1.\2", srt_text)
+    (media / f"{vid}.vtt").write_text(vtt, encoding="utf-8")
+    shutil.copy2(vdir / "passport.md", media / f"{vid}.passport.md")
+    layer = json.loads(layer_path.read_text(encoding="utf-8"))
+    node = next((n for n in layer["nodes"] if n["id"] == spec["node_id"]), None)
+    if node is None:
+        log(f"  узел {spec['node_id']} не найден в курсе — ролик не вставлен")
+        return
+    entry = {"src": f"media/{vid}.mp4", "captions": f"media/{vid}.vtt", "title": spec["title"],
+             "format": spec["format"], "passport": f"media/{vid}.passport.md"}
+    node["videos"] = [v for v in node.get("videos", []) if v.get("src") != entry["src"]] + [entry]
+    layer_path.write_text(json.dumps(layer, ensure_ascii=False, indent=1), encoding="utf-8")
+    try:
+        import render as front
+        front.render(layer, course)
+    except ImportError:
+        pass
+    log(f"  ролик вставлен в курс: {course / 'index.html'} → шаг «{node['title']}»")
 
 
 def passport_md(p: dict) -> str:
