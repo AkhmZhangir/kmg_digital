@@ -1,0 +1,1 @@
+{"task": "fix-quotes", "model": "qwen/qwen3.8-27b", "base": "https://api.groq.com/openai/v1", "raw": "{\"claims\":[{\"id\":\"c1\",\"quote\":\"Положим $U = \\\\bar{P}(x, y, z, \\\\sigma) / \\\\bar{P}_1(\\\\sigma)$.\",\"unit\":\"u045-05\"}]}", "parsed": {"claims": [{"id": "c1", "quote": "Положим $U = \\bar{P}(x, y, z, \\sigma) / \\bar{P}_1(\\sigma)$.", "unit": "u045-05"}]}}

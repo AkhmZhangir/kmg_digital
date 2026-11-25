@@ -1,0 +1,1 @@
+{"task": "fix-quotes", "model": "qwen/qwen3.8-27b", "base": "https://api.groq.com/openai/v1", "raw": "{\"claims\":[{\"id\":\"c11\",\"quote\":\"Тогда $F(\\\\sigma) = p^0/\\\\sigma$.\",\"unit\":\"u040-10\"}]}", "parsed": {"claims": [{"id": "c11", "quote": "Тогда $F(\\sigma) = p^0/\\sigma$.", "unit": "u040-10"}]}}

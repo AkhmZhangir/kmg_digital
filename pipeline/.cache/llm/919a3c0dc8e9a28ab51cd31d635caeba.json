@@ -1,0 +1,1 @@
+{"task": "review", "model": "gemini-3.5-flash-lite", "base": "https://generativelanguage.googleapis.com/v1beta/openai", "raw": "{\n  \"results\": [\n    {\n      \"id\": \"C001\",\n      \"verdict\": \"ok\"\n    },\n    {\n      \"id\": \"C002\",\n      \"verdict\": \"ok\"\n    }\n  ]\n}", "parsed": {"results": [{"id": "C001", "verdict": "ok"}, {"id": "C002", "verdict": "ok"}]}}
