@@ -4,11 +4,13 @@
 заполнение узлов (LLM + проверка цитат + один повтор с ошибками) → задания и карточки → покрытие.
 """
 import json
+import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .llm import LLM
+from .llm import LLM, LLMError
 from .textnorm import numbers, skeleton
 from .verify import check_claim, check_task, iter_paras, node_plain_text, para_number_issues
 
@@ -31,6 +33,20 @@ def _unit_view(u: dict, full: bool = True) -> dict:
     if u.get("ocr_bad"):
         text = "[OCR повреждён — сверить по скану] " + text
     return {"id": u["id"], "kind": u["kind"], "page": u["page"], "section": u["section"], "text": text}
+
+
+def _ask(llm: LLM, system: str, payload: dict, task: str, log) -> dict:
+    """Запрос к модели с повтором; если модель так и не дала разборчивый ответ — выдержка из книги (mock) с пометкой."""
+    for temp in (0.2, 0.5):
+        try:
+            return llm.chat_json(system, payload, temperature=temp, task=task)
+        except (LLMError, ValueError) as e:
+            log(f"  {task}: ответ модели не разобран ({type(e).__name__}: {str(e)[:80]}), повтор")
+    from . import mock
+    log(f"  {task}: используем выдержку из книги вместо ответа модели")
+    out = mock.respond(task, payload)
+    out["_fallback"] = True
+    return out
 
 
 def _slug(s: str) -> str:
@@ -66,7 +82,7 @@ def outline(units: list[dict], llm: LLM, pack: dict, cfg: dict, log) -> tuple[li
                    "chapter_types": cfg.get("types"),
                    "difficulty_types": {k: v["name"] for k, v in pack["difficulty_types"].items()},
                    "units": [_unit_view(u, full=False) for u in chunk]}
-        out = llm.chat_json(system, payload, task="outline")
+        out = _ask(llm, system, payload, "outline", log)
         ids = {u["id"] for u in chunk}
         taken = set()
         for raw in out.get("nodes") or []:
@@ -208,13 +224,13 @@ def fill_node(node: dict, idx: int, chapter_key: str, by_id: dict, llm: LLM, pac
                "units": [_unit_view(u) for u in units], "known_terms": known_terms[-80:],
                "misconceptions": pack["misconceptions"], "it_bridges": pack["it_bridges"]}
     system = _prompt("node", pack)
-    out = llm.chat_json(system, payload, task="node")
+    out = _ask(llm, system, payload, "node", log)
     bad = _bad_claims(out, by_id)
     if bad and not llm.is_mock:
         payload["previous_answer"] = out
         payload["errors"] = [f"{c}: {why}" for c, why in bad.items()] + [
             "Исправь цитаты: они должны быть ДОСЛОВНЫМИ кусками указанной единицы. Остальное не меняй."]
-        out2 = llm.chat_json(system, payload, task="node-fix")
+        out2 = _ask(llm, system, payload, "node-fix", log)
         if len(_bad_claims(out2, by_id)) < len(bad):
             out = out2
         log(f"  узел {node['key']}: повтор из-за {len(bad)} цитат")
@@ -278,6 +294,7 @@ def fill_node(node: dict, idx: int, chapter_key: str, by_id: dict, llm: LLM, pac
         "layers": {k: P(layers.get(k)) for k in ("mechanism", "practice", "nuances", "deeper")},
         "book_tasks": book_tasks, "illustrations": [], "links": [], "claims": claims, "term_ids": [],
         "units": node["units"], "video_criteria": node.get("video_criteria", []),
+        "fallback": bool(out.get("_fallback")),
     }
     words = sum(len(p["text"].split()) for p in iter_paras(result))
     result["minutes"] = max(2, round(words / 120 + 1.5 * len(ex_out) + 0.5 * len(formulas)))
@@ -318,7 +335,7 @@ def make_tasks(node: dict, slot: int, llm: LLM, pack: dict, log) -> tuple[list[d
                "text": [{"text": p["text"], "claims": p["claims"]} for p in iter_paras(node)],
                "claims": [{"id": c["id"], "kind": c["kind"], "text": c["text"], "quote": c["quote"]} for c in claims],
                "types": want}
-    out = llm.chat_json(_prompt("tasks", pack), payload, task="tasks")
+    out = _ask(llm, _prompt("tasks", pack), payload, "tasks", log)
     tasks = []
     ids = {c["id"] for c in node["claims"]}
     for i, t in enumerate(out.get("tasks") or [], 1):
@@ -347,9 +364,17 @@ def build_layer(chapter_id: str, cfg: dict, units: list[dict], llm: LLM, pack: d
     key = chapter_id.split("_", 1)[-1]
     raw_nodes, skip = outline(units, llm, pack, cfg, log)
     raw_nodes = order_nodes(split_large(raw_nodes, by_id), by_id)
-    nodes, glossary, known = [], [], []
-    for i, rn in enumerate(raw_nodes, 1):
-        node, gloss, _ = fill_node(rn, i, key, by_id, llm, pack, known, log)
+    # Термины, уже объяснённые до узла, — по outline (детерминированно), чтобы узлы заполнять параллельно.
+    known_before, acc = [], []
+    for rn in raw_nodes:
+        known_before.append(list(acc))
+        acc += rn.get("new_terms", [])
+    workers = max(1, int(os.getenv("LLM_PARALLEL", "4")))
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        filled = list(ex.map(lambda a: fill_node(a[1], a[0], key, by_id, llm, pack, known_before[a[0] - 1], log),
+                             enumerate(raw_nodes, 1)))
+    nodes, glossary = [], []
+    for i, (rn, (node, gloss, _)) in enumerate(zip(raw_nodes, filled), 1):
         node["links"] = [{"to": f"{key}.{p}", "type": "prerequisite"} for p in rn["prereqs"]]
         for g in gloss:
             tid = "t-" + (_slug(g.get("en") or "") if g.get("en") else str(len(glossary) + 1))
@@ -360,8 +385,6 @@ def build_layer(chapter_id: str, cfg: dict, units: list[dict], llm: LLM, pack: d
             glossary.append({"id": tid, "term": str(g["term"]), "en": str(g.get("en") or ""),
                              "definition": str(g["definition"]), "node_id": node["id"], "page": node["pages"][0]})
             node["term_ids"].append(tid)
-            known.append(str(g["term"]))
-        known += rn.get("new_terms", [])
         nodes.append(node)
         log(f"узел {i}/{len(raw_nodes)}: {node['title']} — утверждений {len(node['claims'])}, "
             f"проверено {sum(c['verified'] for c in node['claims'])}")
@@ -376,9 +399,10 @@ def build_layer(chapter_id: str, cfg: dict, units: list[dict], llm: LLM, pack: d
     for p in parts:
         p.pop("_sec")
     # Задания и карточки.
-    tasks, cards, slot = [], [], 0
-    for n in nodes:
-        t, c, slot = make_tasks(n, slot, llm, pack, log)
+    tasks, cards = [], []
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        made = list(ex.map(lambda a: make_tasks(a[1], 2 * a[0], llm, pack, log), enumerate(nodes)))
+    for t, c, _ in made:
         tasks += t
         if c:
             cards.append(c)

@@ -58,6 +58,12 @@ class Verify(unittest.TestCase):
 
 
 class Json(unittest.TestCase):
+    def test_latex_escapes(self):
+        bs = chr(92)
+        raw = '{"f": "' + bs + 'frac{a} ' + bs + 'times ' + bs + 'rho ' + bs + '(x' + bs + ')", "n": "a' + bs + 'nб"}'
+        want = bs + "frac{a} " + bs + "times " + bs + "rho " + bs + "(x" + bs + ")"
+        self.assertEqual(extract_json(raw), {"f": want, "n": "a\nб"})
+
     def test_extract(self):
         self.assertEqual(extract_json('<think>хм {"x":1}</think>Ответ:\n```json\n{"a": "}"}\n```'), {"a": "}"})
 

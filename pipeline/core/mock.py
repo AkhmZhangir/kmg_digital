@@ -16,7 +16,11 @@ def _sentences(text: str):
 
 
 def respond(task: str, payload: dict) -> dict:
-    return {"outline": _outline, "node": _node, "tasks": _tasks}[task.split("-")[0]](payload)
+    return {"outline": _outline, "node": _node, "tasks": _tasks, "check": _check}[task.split("-")[0]](payload)
+
+
+def _check(p):
+    return {"results": [{"id": it["id"], "verdict": "unclear"} for it in p["items"]]}
 
 
 def _outline(p):

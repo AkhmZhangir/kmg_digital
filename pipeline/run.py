@@ -4,6 +4,10 @@
   py -3 run.py all --set train                    все обучающие главы (train | control | all)
   py -3 run.py verify --chapter train_latyshova   перепроверить out/<глава>/layer.json после ручной правки и пересобрать курс
   py -3 run.py units --chapter train_latyshova    только нарезка на единицы (out/<глава>/units.json)
+  py -3 run.py check --chapter X --package pkg.json [--key key.json]   модуль проверки закладок
+  py -3 run.py check --chapter X                  самопроверка на синтетических закладках из своего слоя
+  py -3 run.py edit --chapter X --node ID --minutes 4 --what "исправил цитату"   запись в журнал ручных правок
+  py -3 run.py journal                            человеко-минуты по главам
 
 Модель задаётся в pipeline/.env (см. .env.example). Без .env работает офлайн-заглушка mock.
 Ответы модели кешируются в pipeline/.cache/llm: повторный запуск не тратит запросы.
@@ -22,6 +26,7 @@ sys.path.insert(0, str(HERE))
 
 from core.layer import build_layer, save_json  # noqa: E402
 from core.llm import LLM, LLMError, load_env  # noqa: E402
+from core.illustrate import illustrate  # noqa: E402
 from core.preview import render_preview  # noqa: E402
 from core.units import load_chapter  # noqa: E402
 from core.verify import verify_layer  # noqa: E402
@@ -89,7 +94,9 @@ def run_chapter(cid: str, cfg: dict, args, log) -> dict:
     layer, coverage = build_layer(cid, cfg, units, llm, pack, log)
     if pdf:
         layer["chapter"]["pdf_first_page"] = cut_pdf(pdf, [u["page"] for u in units], out / "source.pdf")
+    n_ill = illustrate(layer, out)
     report = verify_layer(layer, units, coverage)
+    report["illustrations"] = n_ill
     report.update(status="ok", chapter=cid, model=llm.name, llm_calls=llm.calls, cache_hits=llm.cache_hits,
                   seconds=round(time.monotonic() - t0, 1))
     save_json(out / "layer.json", layer)
@@ -116,19 +123,61 @@ def reverify(cid: str, args, log) -> dict:
     return report
 
 
+def check(cid: str, cfg: dict, args, log) -> dict:
+    """Модуль проверки закладок. --package внешний пакет; без него — самопроверка на синтетических закладках."""
+    from core.checker import check_package, make_synthetic, score
+    out = Path(args.out) / cid
+    units = json.loads((out / "units.json").read_text(encoding="utf-8"))
+    pack = json.loads((HERE / "domain" / cfg["domain"] / "pack.json").read_text(encoding="utf-8"))
+    system = (HERE / "prompts" / "checker.txt").read_text(encoding="utf-8").format()
+    if args.package:
+        pkg, key = json.loads(Path(args.package).read_text(encoding="utf-8")), None
+        if args.key:
+            key = json.loads(Path(args.key).read_text(encoding="utf-8"))
+    else:
+        layer = json.loads((out / "layer.json").read_text(encoding="utf-8"))
+        pkg, key = make_synthetic(layer)
+        save_json(out / "synthetic_package.json", pkg)
+        save_json(out / "synthetic_key.json", key)
+    res = check_package(pkg, units, LLM(), pack, system, log)
+    if key:
+        res["score"] = score(res["remarks"], key)
+        log(f"{cid}: самопроверка {res['score']}")
+    save_json(out / "remarks.json", res)
+    log(f"{cid}: замечаний {len(res['remarks'])} → {out / 'remarks.json'}")
+    return res
+
+
 def main():
     load_env()
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("cmd", choices=["all", "verify", "units"])
-    g = p.add_mutually_exclusive_group(required=True)
+    p.add_argument("cmd", choices=["all", "verify", "units", "check", "edit", "journal"])
+    g = p.add_mutually_exclusive_group(required=False)
     g.add_argument("--chapter")
     g.add_argument("--set", choices=["train", "control", "test", "all"])
     p.add_argument("--books-md")
     p.add_argument("--books-pdf")
     p.add_argument("--out", default=str(HERE / "out"))
     p.add_argument("--config", default=str(HERE / "chapters.json"))
+    p.add_argument("--package", help="check: внешний пакет с закладками (JSON)")
+    p.add_argument("--key", help="check: ключ для самопроверки")
+    p.add_argument("--minutes", type=float, help="edit: сколько минут заняла ручная правка")
+    p.add_argument("--what", help="edit: что исправлено")
+    p.add_argument("--node", default="", help="edit: id узла")
+    p.add_argument("--who", default="")
     args = p.parse_args()
     chapters = json.loads(Path(args.config).read_text(encoding="utf-8"))["chapters"]
+    from core import journal
+    if args.cmd == "journal":
+        print(json.dumps(journal.summary(), ensure_ascii=False, indent=1))
+        return
+    if not (args.chapter or args.set):
+        p.error("нужен --chapter или --set")
+    if args.cmd == "edit":
+        if not (args.chapter and args.minutes is not None and args.what):
+            p.error("edit: нужны --chapter, --minutes, --what")
+        print(journal.add(args.chapter, args.minutes, args.what, args.node, args.who))
+        return
     ids = [args.chapter] if args.chapter else [k for k, c in chapters.items() if args.set in ("all", c["set"])]
     log = lambda m: print(m, flush=True)
     failed = 0
@@ -138,6 +187,8 @@ def main():
         try:
             if args.cmd == "verify":
                 reverify(cid, args, log)
+            elif args.cmd == "check":
+                check(cid, chapters[cid], args, log)
             else:
                 run_chapter(cid, chapters[cid], args, log)
         except (LLMError, ValueError, KeyError) as e:

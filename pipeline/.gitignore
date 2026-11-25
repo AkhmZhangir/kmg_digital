@@ -9,3 +9,5 @@ courses/
 out/
 .cache/usage.jsonl
 *.tmp
+*.log
+.cache/
