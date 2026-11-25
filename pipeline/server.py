@@ -22,6 +22,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 from core.llm import LLM, load_env  # noqa: E402
+from laboratory import LabTutor, activity, candidates, evaluate, excerpt, lab_context, registry, tutor_hint
 from core.tutor import Library, TutorError, chat  # noqa: E402
 
 MAX_BODY = 5 * 1024 * 1024
@@ -29,6 +30,8 @@ UPLOAD_TYPES = {"txt", "md"}
 
 
 def make_handler(lib: Library, llm: LLM, out_dir: Path):
+    lab_model = LabTutor(llm)
+
     class Handler(SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
             super().__init__(*a, directory=str(out_dir), **kw)
@@ -71,8 +74,18 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
 
         def do_GET(self):
             path = self.path.split("?")[0]
+            if path.startswith("/api/lab/media/"):
+                asset = next((a for a in registry() if path == "/api/lab/media/" + a["asset_id"]), None)
+                if not asset or not (HERE / asset["media_url"]).is_file():
+                    return self._error(404, "missing_image", "Фотография недоступна.")
+                body = (HERE / asset["media_url"]).read_bytes()
+                self.send_response(200)
+                self.send_header("Content-Type", "image/jpeg")
+                self.send_header("Content-Length", str(len(body)))
+                self.end_headers()
+                return self.wfile.write(body)
             if path == "/api/health":
-                return self._json(200, {"ok": True, "model": llm.name, "mock": llm.is_mock,
+                return self._json(200, {"ok": True, "laboratory": True, "model": llm.name, "mock": llm.is_mock,
                                         "providers": [p.name for p in llm.providers]})
             if path == "/api/sources":
                 return self._json(200, {"sources": lib.list()})
@@ -83,8 +96,33 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
         def do_POST(self):
             path = self.path.split("?")[0]
             try:
+                if path in ("/api/lab/open", "/api/lab/grade", "/api/lab/hint", "/api/lab/recommend"):
+                    req = self._body()
+                    node = lab_context(lib, req)
+                    if path.endswith("/recommend"):
+                        return self._json(200, {"available": bool(candidates(excerpt(node)))})
+                    operation = {"/api/lab/open": activity, "/api/lab/grade": evaluate, "/api/lab/hint": tutor_hint}[path]
+                    try:
+                        result = operation(lab_model, node, req)
+                    except ValueError as error:
+                        return self._error(400, "bad_activity", str(error))
+                    if result.get("action") == "study_text":
+                        c = next((c for c in node.get("claims", []) if c.get("verified") and c.get("quote")), None)
+                        result["evidence"] = {"quote": c["quote"][:1200], "page": c.get("page")} if c else None
+                    return self._json(200, result)
                 if path == "/api/chat":
-                    return self._json(200, chat(lib, llm, self._body()))
+                    req = self._body()
+                    reply = chat(lib, llm, req)
+                    if reply["mode"] == "practice":
+                        for sid in reversed(req["sources"]):
+                            src = lib.get(sid)
+                            if src.layer and req.get("lesson") not in src.nodes:
+                                continue
+                            node = lab_context(lib, {"source": sid, "node": req.get("lesson")})
+                            if candidates(excerpt(node)):
+                                reply["action"] = {"type": "open_virtual_lab", "source": sid, "node": req.get("lesson")}
+                                break
+                    return self._json(200, reply)
                 if path == "/api/sources":
                     req = self._body()
                     name = str(req.get("name") or "файл.txt")

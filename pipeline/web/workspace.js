@@ -7,6 +7,20 @@ const chatModes = {
   practice: ['Практика', 'Примени знания', 'Попроси задачу по текущему уроку или открой готовые тесты.', 'Дай задачу по текущему уроку'],
   review: ['Повторить', 'Что стоит повторить?', 'Начни с ключевых понятий текущего урока.', 'Какие термины мне нужно повторить?']
 };
+const apiBase = location.protocol === 'file:' ? 'http://127.0.0.1:8770' : '';
+let service = null;
+let chatBusy = false;
+const sourceNames = new Map([[chapter.id, chapter.book]]);
+const chatHistory = new Map();
+async function api(path, data, timeout = 180000) {
+  const options = {signal: AbortSignal.timeout(timeout)};
+  if (data) Object.assign(options, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
+  const res = await fetch(apiBase + '/api/' + path, options);
+  if (!res.headers.get('content-type')?.includes('application/json')) throw Error('Сервер тьютора недоступен.');
+  const result = await res.json();
+  if (!res.ok) throw Error(res.status === 503 ? 'Модель недоступна. Урок доступен без чата.' : result.error?.message || 'Запрос не выполнен.');
+  return result;
+}
 const selectedSources = new Set([chapter.id]);
 let localSourceId = 0;
 let previewURL;
@@ -14,7 +28,11 @@ let previewRequest = 0;
 
 function updateChatContext() {
   $('chatLesson').textContent = current.title;
-  $('chatSources').textContent = 'Выбрано источников: ' + selectedSources.size;
+  $('chatSources').textContent = 'Выбрано источников для тьютора: ' + serverSources().length;
+  $('chatForm').querySelector('button[type=submit]').disabled = !service || chatBusy || !serverSources().length;
+}
+function serverSources() {
+  return [...selectedSources].filter(id => typeof id === 'string');
 }
 
 function showWorkspace(chat) {
@@ -41,6 +59,7 @@ function setChatMode(mode) {
     saveDraft();
     $('chatDraft').focus();
   });
+  if (service?.laboratory && mode === 'practice') button(suggestions, 'В лабораторию', () => openView('lab'));
   if (mode !== 'ask') {
     const viewsByMode = {learn: 'lesson', practice: 'practice', review: 'cards'};
     const labels = {learn: 'К уроку', practice: 'Открыть тесты', review: 'Открыть карточки'};
@@ -50,9 +69,7 @@ function setChatMode(mode) {
 
 function saveDraft() {
   state.chatDraft = $('chatDraft').value;
-  $('chatStatus').textContent = save()
-    ? 'Модель пока не подключена. Черновик сохранён на устройстве.'
-    : 'Модель пока не подключена. Черновик доступен до закрытия страницы.';
+  if (!save()) $('chatStatus').textContent = 'Черновик доступен до закрытия страницы.';
 }
 
 function panel(name) {
@@ -125,11 +142,13 @@ function sourceRow(parent, id, name, metadata) {
   const label = add(parent, 'label', '', 'sourceChoice');
   const check = add(label, 'input');
   check.type = 'checkbox';
+  check.sourceId = id;
   check.checked = selectedSources.has(id);
   check.onchange = () => {
     if (check.checked) selectedSources.add(id);
     else selectedSources.delete(id);
-    updateChatContext();
+    if (view === 'lab' || view === 'lesson') render();
+    else updateChatContext();
   };
   add(label, 'strong', name);
   add(parent, 'small', metadata, 'sourceMeta');
@@ -163,7 +182,7 @@ function previewContainer(name) {
 }
 
 const book = $('book');
-sourceRow(book, chapter.id, chapter.book, chapter.author + ' · стр. ' + chapter.pages.join('–'));
+sourceRow(book, chapter.id, chapter.book, [chapter.author, 'стр. ' + chapter.pages.join('–')].filter(Boolean).join(' · '));
 if (chapter.pdf && localPath(chapter.pdf)) {
   const trigger = button(book, 'Предпросмотр', () => {
     previewRequest++;
@@ -178,16 +197,30 @@ if (chapter.pdf && localPath(chapter.pdf)) {
 }
 
 $('addSource').onclick = () => $('sourceFiles').click();
-$('sourceFiles').onchange = event => {
+$('sourceFiles').onchange = async event => {
   const files = Array.from(event.target.files);
+  const notices = [];
   let added = 0;
   for (const file of files) {
     const extension = file.name.split('.').pop().toLowerCase();
     if (!['pdf', 'docx', 'txt', 'md'].includes(extension)) continue;
-    const id = Symbol(++localSourceId);
+    let id = Symbol(++localSourceId);
+    let metadata = 'Локальный предпросмотр';
+    if (service && ['txt', 'md'].includes(extension)) {
+      try {
+        if (file.size > 5 * 1024 * 1024) throw Error('Максимальный размер запроса — 5 МБ.');
+        const src = await api('sources', {name: file.name, text: await file.text()});
+        if (sourceNames.has(src.id)) { notices.push(file.name + ' уже добавлен.'); continue; }
+        id = src.id;
+        sourceNames.set(id, file.name);
+        metadata = 'Доступен тьютору · фрагментов: ' + src.units;
+      } catch (error) { notices.push(file.name + ' · ' + error.message); }
+    } else if (['pdf', 'docx'].includes(extension)) {
+      notices.push('Для ' + file.name + ' доступен локальный предпросмотр или обработка главы конвейером.');
+    }
     selectedSources.add(id);
     const row = add($('localSources'), 'div', '', 'book localSource');
-    sourceRow(row, id, file.name, 'Локальный файл · ожидает обработки');
+    sourceRow(row, id, file.name, metadata);
     const trigger = button(row, 'Предпросмотр', async () => {
       const request = ++previewRequest;
       const preview = previewContainer(file.name);
@@ -215,11 +248,10 @@ $('sourceFiles').onchange = event => {
     });
     added++;
   }
-  $('sourceStatus').textContent = added
-    ? 'Добавлено локально: ' + added + '. Обработка на сервере пока недоступна.'
-    : 'Поддерживаются PDF, DOCX, TXT и Markdown.';
-  event.target.value = '';
-  updateChatContext();
+  $('sourceStatus').textContent = ['Добавлено: ' + added, ...notices].join(' · ');
+  $('sourceFiles').value = '';
+  if (view === 'lab' || view === 'lesson') render();
+  else updateChatContext();
 };
 
 for (const [mode, [label]] of Object.entries(chatModes)) {
@@ -228,7 +260,58 @@ for (const [mode, [label]] of Object.entries(chatModes)) {
 }
 $('chatDraft').value = state.chatDraft || '';
 $('chatDraft').oninput = saveDraft;
-$('chatForm').onsubmit = event => event.preventDefault();
+$('chatForm').onsubmit = async event => {
+  event.preventDefault();
+  const message = $('chatDraft').value.trim();
+  if (!message || chatBusy || !serverSources().length || !service) return;
+  chatBusy = true;
+  updateChatContext();
+  const context = current;
+  const sources = serverSources();
+  const mode = state.chatMode;
+  const turn = add($('chatLog'), 'article', '', 'box');
+  add(turn, 'strong', message);
+  $('chatStatus').textContent = 'Тьютор подбирает фрагменты и проверяет цитаты…';
+  try {
+    const historyKey = JSON.stringify([...sources].sort());
+    const history = chatHistory.get(historyKey) || [];
+    const result = await api('chat', {message, mode, sources, lesson: context.id, history: history.slice(-6)});
+    const answer = add(turn, 'p', result.answer);
+    answer.style.whiteSpace = 'pre-line';
+    if (result.insufficient) add(turn, 'small', 'Недостаточно сведений в выбранных источниках.');
+    if (result.unverified) add(turn, 'small', 'Ответ не подтверждён цитатой.');
+    for (const c of result.citations || []) {
+      const d = details(turn, c.source + ' · стр. ' + c.page);
+      add(d, 'blockquote', c.quote);
+      if (c.source_id === chapter.id) source(d, c.page);
+    }
+    if (result.task?.question) {
+      add(turn, 'p', result.task.question);
+      add(details(turn, 'Показать ответ'), 'p', result.task.answer);
+    }
+    for (const q of result.followups || []) button(turn, q, () => {
+      $('chatDraft').value = q; saveDraft(); $('chatDraft').focus();
+    });
+    if (result.action?.type === 'open_virtual_lab' && sources.includes(result.action.source)) {
+      button(turn, 'Исследовать образец по этому ответу', () => {
+        preferredSource = result.action.source;
+        selectedSources.add(preferredSource);
+        for (const checkbox of document.querySelectorAll('.sourceChoice input')) {
+          if (checkbox.sourceId === preferredSource) checkbox.checked = true;
+        }
+        openNode(context.id);
+        openView('lab');
+      });
+    }
+    history.push({role: 'user', text: message}, {role: 'assistant', text: result.answer});
+    chatHistory.set(historyKey, history.slice(-6));
+    if ($('chatDraft').value.trim() === message) { $('chatDraft').value = ''; saveDraft(); }
+    $('chatStatus').textContent = service.mock ? 'Ответ тестового режима.' : 'Ответ получен.';
+  } catch (error) {
+    turn.remove();
+    $('chatStatus').textContent = error.message;
+  } finally { chatBusy = false; updateChatContext(); }
+};
 $('showChat').onclick = () => showWorkspace(true);
 $('showLesson').onclick = () => showWorkspace(false);
 setChatMode(Object.hasOwn(chatModes, state.chatMode) ? state.chatMode : 'ask');
@@ -245,5 +328,13 @@ $('theme').onclick = () => {
 };
 
 showWorkspace(false);
-new ResizeObserver(cover).observe(document.querySelector('.cover'));
+startCoverAnimation();
 render();
+
+api('health', null, 3500).then(health => {
+  if (!health.ok) return;
+  service = health;
+  $('chatStatus').textContent = health.mock ? 'Тестовый режим. Ответы чата демонстрационные.' : 'Модель: ' + health.model;
+  setChatMode(state.chatMode);
+  render();
+}).catch(() => { $('chatStatus').textContent = 'Сервер тьютора недоступен. Черновик и курс доступны на устройстве.'; });
