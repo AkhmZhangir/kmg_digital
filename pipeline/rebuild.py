@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 from build import render, units_for, validate
-from extract import extract
+from prepare import load_source
 
 
 def rebuild(book, layer_path):
@@ -13,7 +13,8 @@ def rebuild(book, layer_path):
     if len({n["id"] for n in nodes})!=len(nodes):
         raise ValueError("Повтор идентификатора узла")
     if not nodes: raise ValueError("Пустой учебный слой")
-    pages={p["pdf_page"]:p for p in extract(book,min(n["page"] for n in nodes),max(n["page"] for n in nodes))}
+    ranges = ",".join(map(str, sorted({n["page"] for n in nodes})))
+    pages, _ = load_source(book, ranges, layer.get("ocr", False))
     for n in nodes:
         source=[u for u in units_for(pages[n["page"]],book.stem) if u["kind"]!="описание иллюстрации OCR"]
         validate(n,source)

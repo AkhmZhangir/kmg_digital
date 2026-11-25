@@ -1,31 +1,221 @@
-<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Курс по главе</title>
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ГеоКурс</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#f7f6ef;color:#20332f;font:17px/1.58 system-ui}main{max-width:850px;margin:auto;padding:32px 22px 80px}header{border-bottom:1px solid #b6c4b7;padding-bottom:18px}h1{font:600 clamp(1.8rem,5vw,3rem)/1.12 Georgia}h2{font:600 1.55rem/1.3 Georgia}button,select,input{max-width:100%;font:inherit;padding:.4em .7em}button,summary,select{cursor:pointer}button{background:white;color:#20332f;border:1px solid #83978f;border-radius:4px}button:focus-visible,a:focus-visible{outline:3px solid #bb7431}p{overflow-wrap:anywhere;white-space:pre-wrap}a{color:#006657}article,section{margin:24px 0}small{color:#495e55}label{display:block}nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px}select{width:100%}output{display:block;font-weight:bold}details{margin:12px 0}blockquote{border-left:3px solid #7c9d8d;margin-left:0;padding-left:1em;white-space:pre-wrap;overflow-wrap:anywhere}progress{width:100%;accent-color:#126854}
-</style><main><header><small id="mode"></small><h1 id="title"></h1><label>Перейти к шагу <select id="steps"></select></label><progress id="progress"></progress><small id="status"></small></header><article><h2 id="topic"></h2><a id="source" target="_blank" rel="noopener"></a><div id="claims"></div></article><section id="practice"></section><section id="card"></section><nav><button id="prev">Назад</button><button id="done">Шаг пройден</button><button id="next">Дальше</button></nav></main>
-<script id="data" type="application/json">{"title": "От измерений к эффективной толщине", "mode": "Сохранённый ответ модели", "pdf": "", "nodes": [{"title": "Как из общей толщины получить эффективную?", "claims": [{"unit": "train_latyshova-p107-u5", "quote": "Пример 54. Выделить интервалы нефтеносного межзернового коллектора в карбонатных отложениях; определить положение ВНК и величину  \\( h_{\\varphi} \\)  продуктивных коллекторов (см. рис. 76).", "text": "Геофизик ищет в карбонатных породах интервалы, где нефть находится в порах между зёрнами. В примере 54 нужно установить положение границы воды и нефти и оценить толщину продуктивной части."}, {"unit": "train_latyshova-p107-u6", "quote": "Используем способ нормализации, сравнивая кривые  \\( \\rho_{n} \\)  зонда БК-3 и НГМ,  \\( \\rho_{nHM} \\)  индукционного метода и НГМ, приведенные к единому масштабу пористости. Устанавливаем, что продуктивна верхняя часть разреза, а нижняя является водоносной. Границу ВНК проводим на глубине 1083м, которой соответствует  \\( P_{n,кр} \\approx 2,5 \\) , если принять  \\( \\rho_{nHM} \\approx \\rho_{n} \\) . Кровля продуктивных отложений расположена на глубине.", "text": "Автор сопоставляет кривые скважинных измерений. В верхней части исследуемого интервала он выделяет продуктивные породы, в нижней — водоносные. Границу между ними в этом примере проводит на глубине 1083 м."}, {"unit": "train_latyshova-p107-u10", "quote": "Общая толщина продуктивных отложений составляет 13,5 м. Учитывая в интервале 1069,5 - 1083м прослои плотных пород неколлекторов, выделяемых по диаграмме микрозондов, а в отдельных случаях сближением нормализованных кривых НГМ и БК-3 и исключение из  \\( h_{n} \\)  суммарной толщины прослоев неколлектора  \\( h_{n,гл} \\) , находим, что  \\( h_{\\varphi} = 13,5 - 4,5 = 9м \\) .", "text": "Даже внутри продуктивного интервала встречаются плотные прослои. Они входят в общую толщину, но при подсчёте эффективной толщины их вычитают. В этом разрезе общая толщина равна 13,5 м, плотные прослои занимают 4,5 м. Получаем 13,5 − 4,5 = 9 м."}], "quiz": {"question": "Какую пару значений занести в поля «общая толщина» и «эффективная толщина»?", "options": ["9 м и 13,5 м", "13,5 м и 9 м", "13,5 м и 4,5 м"], "answer": 1, "unit": "train_latyshova-p107-u10", "why": "Из всей толщины 13,5 м вычитают 4,5 м плотных прослоев."}, "card": {"front": "Почему эффективная толщина в этом примере меньше общей?", "back": "Из общей толщины вычли плотные прослои, выделенные по скважинным измерениям."}, "id": "train_latyshova-p107-1", "page": 107, "format": "практикум"}]}</script><script>
-const course=JSON.parse(document.querySelector('#data').textContent);
-const el=id=>document.getElementById(id);
-function add(parent,tag,text){const item=document.createElement(tag);item.textContent=text;parent.append(item);return item}
-const key='chapter-course:'+course.nodes[0].id+':'+course.nodes.at(-1).id;
-let state={at:0,done:[]};
-try{const saved=JSON.parse(localStorage.getItem(key));if(saved&&Array.isArray(saved.done)&&Number.isInteger(saved.at)&&course.nodes[saved.at])state=saved}catch{}
-function save(){try{localStorage.setItem(key,JSON.stringify(state))}catch{}}
-el('title').textContent=document.title=course.title;
-el('mode').textContent=course.mode;
-course.nodes.forEach((n,i)=>add(el('steps'),'option',(i+1)+'. '+n.title.slice(0,85)).value=i);
-function show(i){
- state.at=i;save();const n=course.nodes[i];el('steps').value=i;
- el('progress').max=course.nodes.length;el('progress').value=state.done.length;
- el('status').textContent='Пройдено '+state.done.length+' из '+course.nodes.length+' · '+n.format;
- el('topic').textContent=n.title;el('source').textContent='Оригинал · PDF-стр. '+n.page;
- if(course.pdf)el('source').href=course.pdf+'#page='+n.page;
- for(const id of ['claims','practice','card'])el(id).replaceChildren();
- for(const c of n.claims){add(el('claims'),'p',c.text);if(c.quote!==c.text){const d=add(el('claims'),'details','');add(d,'summary','Цитата · стр. '+n.page);add(d,'blockquote',c.quote)}}
- const q=n.quiz;if(q){const section=el('practice');add(section,'h2','Проверь себя');add(section,'p',q.question);const form=add(section,'form','');let field;
- if(q.options){field=add(form,'select','');add(field,'option','Выберите ответ').value='';q.options.forEach((v,j)=>add(field,'option',v).value=j)}else field=add(form,'input','');
- field.required=true;field.setAttribute('aria-label','Ответ');add(form,'button','Проверить');const out=add(form,'output','');out.setAttribute('aria-live','polite');form.onsubmit=e=>{e.preventDefault();const ok=field.value.trim().toLocaleLowerCase('ru')===String(q.answer).toLocaleLowerCase('ru');out.textContent=(ok?'Верно. ':'Ответ: '+(q.options?q.options[q.answer]:q.answer)+'. ')+q.why}}
- if(n.card){add(el('card'),'h2','Карточка для повторения');const d=add(el('card'),'details','');add(d,'summary',n.card.front);add(d,'p',n.card.back)}
- el('prev').disabled=i===0;el('next').disabled=i===course.nodes.length-1;el('done').disabled=state.done.includes(n.id);
+:root{color-scheme:light;--ink:#172b25;--muted:#52675e;--green:#174f3e;--line:#dbe4dc;--mint:#e8f2eb;--sand:#f2e0c7;--paper:#fff;--bg:#f3f6f1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.64 "Avenir Next",system-ui,sans-serif}
+button,input{font:inherit}button{cursor:pointer}button[disabled]{cursor:default;opacity:.55}
+a{color:var(--green);text-underline-offset:.24em}
+:focus-visible{outline:3px solid #947021;outline-offset:3px}
+.top{background:#fff;border-bottom:1px solid var(--line)}
+.top-inner,.layout{max-width:1280px;margin:auto;padding-inline:clamp(16px,4vw,64px)}
+.top-inner{min-height:69px;display:flex;align-items:center;gap:12px}
+.brand{font-weight:800;letter-spacing:-.035em;font-size:1.25rem}
+.mark{width:32px;height:32px;border-radius:10px;background:#174f3e;display:grid;place-items:center;color:#fff}
+.mark i{width:13px;height:13px;border:2px solid;transform:rotate(45deg);border-radius:2px;box-shadow:3px 3px 0 #94c4a6}
+.layout{display:grid;grid-template-columns:minmax(210px,255px) minmax(0,1fr);gap:clamp(20px,3vw,46px);padding-block:32px 64px;align-items:start}
+.rail{min-width:0;position:sticky;top:24px}
+.rail h2,.eyebrow{font-size:.83rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.rail h2{margin:0 0 10px}
+.progress-text{font-size:.88rem;color:var(--muted);margin-bottom:5px;display:block}
+progress{width:100%;height:8px;border:none;border-radius:12px;background:var(--line);overflow:hidden;appearance:none}
+progress::-webkit-progress-bar{background:var(--line)}progress::-webkit-progress-value{background:var(--green)}progress::-moz-progress-bar{background:var(--green)}
+.steps{list-style:none;margin:14px 0;padding:0;max-height:65vh;overflow:auto}
+.step{width:100%;display:grid;grid-template-columns:29px 1fr;gap:10px;align-items:start;text-align:left;border:1px solid transparent;border-radius:9px;background:transparent;padding:9px;color:var(--ink);font-size:.9rem;line-height:1.35;overflow-wrap:anywhere}
+.step:hover{background:#edf1eb}.step[aria-current=step]{background:#fff;border-color:var(--line);font-weight:700}
+.step b{display:grid;place-items:center;min-height:25px;border-radius:7px;background:#e6ede5;color:var(--green);font-size:.78rem}
+.study{min-width:0}.hero{background:#103c31;color:#fff;padding:clamp(20px,4.5vw,49px);border-radius:19px;position:relative;isolation:isolate;overflow:hidden}
+.hero::after{content:"";position:absolute;z-index:-1;width:480px;height:480px;top:-200px;right:-245px;border-radius:44%;transform:rotate(32deg);background:repeating-radial-gradient(ellipse at 62% 50%,transparent 0 19px,#b4c88e35 20px 21px,transparent 22px 29px);pointer-events:none}
+.hero .eyebrow{color:#cbded0}
+h1,h2,h3,p{margin:0}h1{font:500 clamp(1.95rem,4vw,3.45rem)/1.08 Georgia,serif;letter-spacing:-.04em;max-width:22ch;margin-top:12px}
+.hero p{margin-top:16px;color:#d9eee2;font-size:.93rem}
+.sheet{background:#fff;border:1px solid var(--line);border-radius:16px;margin-top:18px;padding:clamp(18px,3.8vw,40px)}
+.sheet h2{font:500 clamp(1.6rem,3vw,2.45rem)/1.16 Georgia,serif;letter-spacing:-.025em;margin:10px 0 18px;overflow-wrap:anywhere}
+.sheet h3{font-size:1.2rem;line-height:1.3;margin-bottom:10px}
+.eyebrow-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.source{font-size:.85rem;font-weight:700;color:var(--green);background:var(--mint);border-radius:999px;padding:4px 10px}
+.claim{margin:15px 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.claim:last-child{margin-bottom:0}
+[hidden]{display:none!important}
+details{margin-top:10px}summary{cursor:pointer;font-size:.9rem;color:var(--green);font-weight:700}
+blockquote{margin:10px 0 20px;padding-left:14px;border-left:2px solid #9db6a3;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--muted);font-size:.93rem}
+.practice{background:#edf3e9}.question{font-weight:650}
+fieldset{margin:12px 0;padding:0;border:0;min-width:0}legend{padding:0;margin-bottom:10px;font-weight:650}
+.choice{display:flex;align-items:baseline;gap:10px;background:#fff;border:1px solid var(--line);border-radius:9px;padding:10px 14px;margin:7px 0;cursor:pointer}
+.choice:has(input:checked){border-color:#407259;background:#f5faf5}
+input[type=radio]{accent-color:var(--green)}
+.short{width:min(100%,420px);display:block;padding:9px 12px;border:1px solid #788c80;border-radius:9px;margin:12px 0}
+.button{display:inline-flex;align-items:center;justify-content:center;padding:9px 15px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:#fff;text-decoration:none;font-weight:700;min-height:44px}
+.primary{color:#fff;background:var(--green);border-color:var(--green)}.primary:hover:not([disabled]){background:#103e30}
+output:not(:empty){display:block;margin-top:13px;background:#fff;color:var(--green);border-left:3px solid #55876b;border-radius:4px;padding:9px 12px}
+output[data-valid=false]{color:#67420f;border-color:#966625}
+.card p{padding-top:8px;color:var(--muted)}.card details{margin-top:0}
+.bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:18px}
+.bottom .right{display:flex;gap:8px;flex-wrap:wrap}
+@media(max-width:760px){.layout{display:flex;flex-direction:column;gap:12px;padding-block:16px 36px}.rail{position:static;width:100%}.steps{max-height:128px;margin-bottom:0}.study{width:100%}.hero{border-radius:13px}}
+</style>
+<header class="top"><div class="top-inner"><span class="mark" aria-hidden="true"><i></i></span><span class="brand">ГеоКурс</span></div></header>
+<div class="layout">
+  <aside class="rail" aria-labelledby="outline">
+    <h2 id="outline">Маршрут курса</h2>
+    <label id="progress-label" class="progress-text" for="progress"></label>
+    <progress id="progress" value="0"></progress>
+    <ol class="steps" id="steps"></ol>
+  </aside>
+  <main class="study">
+    <header class="hero">
+      <p class="eyebrow" id="mode"></p>
+      <h1 id="title"></h1>
+      <p id="count"></p>
+    </header>
+    <article class="sheet">
+      <div class="eyebrow-row">
+        <span class="eyebrow" id="step-label"></span>
+        <a class="source" id="source-link" target="_blank" rel="noopener" hidden></a>
+        <span class="source" id="source-label"></span>
+      </div>
+      <h2 id="topic" tabindex="-1"></h2>
+      <div id="claims"></div>
+    </article>
+    <section id="practice" class="sheet practice" hidden></section>
+    <section id="card" class="sheet card" hidden></section>
+    <nav class="bottom" aria-label="Перемещение между шагами">
+      <button class="button" id="prev">Назад</button>
+      <div class="right"><button class="button" id="done">Отметить пройденным</button><button class="button primary" id="next">Следующий шаг</button></div>
+    </nav>
+  </main>
+</div>
+<script id="data" type="application/json">{"title": "От измерений к эффективной толщине", "mode": "Сохранённый ответ модели", "pdf": "", "source_label": "PDF-стр.", "ocr": false, "id": "7aaf8487493901f9755a", "nodes": [{"title": "Как из общей толщины получить эффективную?", "claims": [{"unit": "train_latyshova-p107-u5", "quote": "Пример 54. Выделить интервалы нефтеносного межзернового коллектора в карбонатных отложениях; определить положение ВНК и величину  \\( h_{\\varphi} \\)  продуктивных коллекторов (см. рис. 76).", "text": "Геофизик ищет в карбонатных породах интервалы, где нефть находится в порах между зёрнами. В примере 54 нужно установить положение границы воды и нефти и оценить толщину продуктивной части."}, {"unit": "train_latyshova-p107-u6", "quote": "Используем способ нормализации, сравнивая кривые  \\( \\rho_{n} \\)  зонда БК-3 и НГМ,  \\( \\rho_{nHM} \\)  индукционного метода и НГМ, приведенные к единому масштабу пористости. Устанавливаем, что продуктивна верхняя часть разреза, а нижняя является водоносной. Границу ВНК проводим на глубине 1083м, которой соответствует  \\( P_{n,кр} \\approx 2,5 \\) , если принять  \\( \\rho_{nHM} \\approx \\rho_{n} \\) . Кровля продуктивных отложений расположена на глубине.", "text": "Автор сопоставляет кривые скважинных измерений. В верхней части исследуемого интервала он выделяет продуктивные породы, в нижней — водоносные. Границу между ними в этом примере проводит на глубине 1083 м."}, {"unit": "train_latyshova-p107-u10", "quote": "Общая толщина продуктивных отложений составляет 13,5 м. Учитывая в интервале 1069,5 - 1083м прослои плотных пород неколлекторов, выделяемых по диаграмме микрозондов, а в отдельных случаях сближением нормализованных кривых НГМ и БК-3 и исключение из  \\( h_{n} \\)  суммарной толщины прослоев неколлектора  \\( h_{n,гл} \\) , находим, что  \\( h_{\\varphi} = 13,5 - 4,5 = 9м \\) .", "text": "Даже внутри продуктивного интервала встречаются плотные прослои. Они входят в общую толщину, но при подсчёте эффективной толщины их вычитают. В этом разрезе общая толщина равна 13,5 м, плотные прослои занимают 4,5 м. Получаем 13,5 − 4,5 = 9 м."}], "quiz": {"question": "Какую пару значений занести в поля «общая толщина» и «эффективная толщина»?", "options": ["9 м и 13,5 м", "13,5 м и 9 м", "13,5 м и 4,5 м"], "answer": 1, "unit": "train_latyshova-p107-u10", "why": "Из всей толщины 13,5 м вычитают 4,5 м плотных прослоев."}, "card": {"front": "Почему эффективная толщина в этом примере меньше общей?", "back": "Из общей толщины вычли плотные прослои, выделенные по скважинным измерениям."}, "id": "train_latyshova-p107-1", "page": 107, "format": "практикум"}]}</script>
+<script>
+const course = JSON.parse(document.querySelector('#data').textContent);
+const element = id => document.getElementById(id);
+function add(parent, tag, text = '') {
+  const item = document.createElement(tag);
+  item.textContent = text;
+  parent.append(item);
+  return item;
 }
-el('steps').onchange=e=>show(Number(e.target.value));el('prev').onclick=()=>show(state.at-1);el('next').onclick=()=>show(state.at+1);el('done').onclick=()=>{state.done.push(course.nodes[state.at].id);show(state.at)};show(state.at);
-</script></html>
+const nodes = course.nodes;
+const ids = new Set(nodes.map(node => node.id));
+const storageKey = 'chapter-course:' + (course.id || nodes[0].id + ':' + nodes.at(-1).id);
+let state = {at: 0, done: []};
+try {
+  const saved = JSON.parse(localStorage.getItem(storageKey));
+  if (saved && Number.isInteger(saved.at) && nodes[saved.at] && Array.isArray(saved.done)) {
+    state = {at: saved.at, done: [...new Set(saved.done.filter(id => ids.has(id)))]};
+  }
+} catch {}
+function remember() {
+  try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch {}
+}
+
+element('title').textContent = document.title = course.title;
+element('mode').textContent = course.mode.includes('Черновик') ? course.mode : 'Курс для начинающих';
+const steps = nodes.map((node, index) => {
+  const button = add(add(element('steps'),'li'), 'button');
+  button.className = 'step';
+  add(button, 'b', String(index + 1).padStart(2, '0'));
+  add(button, 'span', node.title.slice(0, 88));
+  button.onclick = () => show(index, true);
+  return button;
+});
+const countRules = new Intl.PluralRules('ru');
+const countWord = {one: 'учебный шаг', few: 'учебных шага', many: 'учебных шагов'};
+element('count').textContent = nodes.length + ' ' + countWord[countRules.select(nodes.length)];
+
+function renderQuiz(quiz) {
+  const section = element('practice');
+  section.replaceChildren();
+  section.hidden = !quiz;
+  if (!quiz) return;
+  add(section, 'h3', 'Проверь себя');
+  const form = add(section, 'form');
+  if (quiz.options) {
+    const group = add(form, 'fieldset');
+    add(group, 'legend', quiz.question);
+    quiz.options.forEach((option, index) => {
+      const label = add(group, 'label');
+      label.className = 'choice';
+      const radio = add(label, 'input');
+      Object.assign(radio, {type: 'radio', name: 'answer', value: index, required: true});
+      add(label, 'span', option);
+    });
+  } else {
+    const label = add(form, 'label', quiz.question);
+    const field = add(label, 'input');
+    field.className = 'short';
+    Object.assign(field, {name: 'answer', required: true, autocomplete: 'off'});
+  }
+  const submit = add(form, 'button', 'Проверить ответ');
+  submit.className = 'button primary';
+  const output = add(form, 'output');
+  output.setAttribute('aria-live', 'polite');
+  form.onsubmit = event => {
+    event.preventDefault();
+    const value = new FormData(form).get('answer')?.trim().toLocaleLowerCase('ru');
+    const correct = value === String(quiz.answer).toLocaleLowerCase('ru');
+    output.dataset.valid = correct;
+    output.textContent = (correct ? 'Верно. ' : 'Правильный ответ — ' + (quiz.options ? quiz.options[quiz.answer] : quiz.answer) + '. ') + quiz.why;
+  };
+}
+
+function show(index, focus = false) {
+  const node = nodes[index];
+  state.at = index;
+  element('progress').max = nodes.length;
+  element('progress').value = state.done.length;
+  element('progress-label').textContent = 'Пройдено ' + state.done.length + ' из ' + nodes.length;
+  steps.forEach((button, i) => {
+    if (i === index) button.setAttribute('aria-current', 'step');
+    else button.removeAttribute('aria-current');
+    button.firstChild.textContent = state.done.includes(nodes[i].id) ? '✓' : String(i + 1).padStart(2, '0');
+  });
+  element('topic').textContent = node.title;
+  element('step-label').textContent = 'Шаг ' + (index + 1) + ' из ' + nodes.length;
+  const source = (course.source_label || 'PDF-стр.') + ' ' + node.page;
+  const sourceLabel = element('source-label');
+  const sourceLink = element('source-link');
+  sourceLabel.textContent = source;
+  sourceLabel.hidden = Boolean(course.pdf);
+  sourceLink.hidden = !course.pdf;
+  if (course.pdf) {
+    sourceLink.textContent = 'Открыть ' + source;
+    sourceLink.href = course.pdf + '#page=' + node.page;
+  }
+  const claims = element('claims');
+  claims.replaceChildren();
+  for (const claim of node.claims) {
+    add(claims, 'p', claim.text).className = 'claim';
+    if (claim.quote !== claim.text) {
+      const evidence = add(claims, 'details');
+      add(evidence, 'summary', 'Цитата · ' + source);
+      add(evidence, 'blockquote', claim.quote);
+    }
+  }
+  renderQuiz(node.quiz);
+  const card = element('card');
+  card.replaceChildren();
+  card.hidden = !node.card;
+  if (node.card) {
+    add(card, 'h3', 'Карточка повторения');
+    const details = add(card, 'details');
+    add(details, 'summary', node.card.front);
+    add(details, 'p', node.card.back);
+  }
+  element('prev').disabled = index === 0;
+  element('next').disabled = index === nodes.length - 1;
+  element('done').disabled = state.done.includes(node.id);
+  element('done').textContent = element('done').disabled ? 'Шаг пройден' : 'Отметить пройденным';
+  remember();
+  if (focus) element('topic').focus();
+}
+
+element('prev').onclick = () => show(state.at - 1, true);
+element('next').onclick = () => show(state.at + 1, true);
+element('done').onclick = () => { state.done.push(nodes[state.at].id); show(state.at); };
+show(state.at);
+</script>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ГеоКурс — студия подготовки</title>
+<style>
+:root{--ink:#162f27;--muted:#526860;--green:#17543f;--line:#d9e3d9;--mint:#e6f0ea;--base:#f1f5ee}
+*{box-sizing:border-box}body{margin:0;background:var(--base);color:var(--ink);font:1rem/1.55 "Avenir Next",system-ui,sans-serif}
+a{color:var(--green);text-underline-offset:.22em}button,input{font:inherit}
+:focus-visible{outline:3px solid #9d7021;outline-offset:3px}
+.top{border-bottom:1px solid var(--line);background:white}.top-inner,main{max-width:1140px;margin:auto;padding-inline:clamp(16px,4vw,48px)}
+.top-inner{min-height:68px;display:flex;align-items:center;gap:12px}.mark{background:#174f3e;color:white;display:grid;place-items:center;width:32px;height:32px;border-radius:10px}.mark i{width:13px;height:13px;border:2px solid;transform:rotate(45deg);border-radius:2px;box-shadow:3px 3px 0 #94c4a6}
+.brand{font-size:1.25rem;font-weight:800;letter-spacing:-.04em}.top a{margin-left:auto;font-size:.91rem;font-weight:700}
+main{padding-block:28px 64px}h1,h2,p{margin:0}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:#103c31;color:white;border-radius:21px;padding:clamp(22px,5vw,54px)}
+.hero::after{content:"";position:absolute;z-index:-1;width:min(680px,100%);height:520px;right:-12%;top:-165px;transform:rotate(-20deg);border-radius:42%;background:repeating-radial-gradient(ellipse at 63% 48%,transparent 0 17px,#bbd49b35 18px 19px,transparent 20px 29px)}
+.eyebrow{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:#bde0cd}
+h1{font:500 clamp(2.35rem,5.8vw,4.5rem)/1.02 Georgia,serif;letter-spacing:-.052em;max-width:15ch;margin:12px 0 16px}
+.hero p:last-child{color:#d5e9dc;max-width:50ch}
+.workspace{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;margin-top:18px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:17px;padding:clamp(18px,3vw,29px)}
+h2{font:500 1.55rem/1.2 Georgia,serif;margin-bottom:13px}
+label{font-weight:700;display:block}input:not([type=radio]):not([type=checkbox]){width:100%;border:1px solid #a9baad;border-radius:9px;padding:9px 11px;color:var(--ink);background:#fff;min-height:44px}
+.field{display:block;margin-top:16px}.field input{margin-top:5px}.hint{font-size:.87rem;color:var(--muted);margin-top:5px;display:block;font-weight:400}
+.drop{display:block;text-align:center;background:#f4f8f3;border:1px dashed #6b9b80;border-radius:12px;padding:20px;overflow-wrap:anywhere}.drop[data-over=true]{background:var(--mint)}
+.drop input[type=file]{margin-top:10px;padding:5px;font-size:.9rem}
+.file-icon{display:grid;place-items:center;margin:0 auto 8px;width:38px;height:38px;border-radius:10px;background:#dfede2;color:var(--green);font-weight:800;font-size:1.35rem}
+fieldset{border:0;padding:0;margin:18px 0 12px}.choice{font-weight:550;margin-top:5px}input[type=radio],input[type=checkbox]{accent-color:var(--green);margin-right:6px}
+.button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--green);border-radius:9px;background:var(--green);color:white;padding:9px 15px;font-weight:750;min-height:44px;cursor:pointer}
+.button:hover{background:#103c31}.button[disabled]{opacity:.6;cursor:wait}.secondary{color:var(--green);background:white}.secondary:hover{background:var(--mint)}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.side{background:#e7efe5}.side h2{margin-bottom:4px}.side ul{margin:15px 0 0;padding:0;list-style:none}.side li{border-top:1px solid #c9d9cb;padding:10px 0}.side li:last-child{padding-bottom:0}
+.result{margin-top:16px;line-height:1.45}.result p{margin:6px 0}progress{width:100%;height:8px;accent-color:var(--green)}
+[hidden]{display:none!important}
+.status[data-error=true]{color:#a03024}
+@media(max-width:700px){.workspace{grid-template-columns:1fr}.hero{border-radius:14px}.top a{font-size:.86rem}}
+</style>
+<header class="top"><div class="top-inner"><span class="mark" aria-hidden="true"><i></i></span><span class="brand">ГеоКурс</span><a href="/demo">Открыть демо-урок</a></div></header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">Студия подготовки</p>
+    <h1>Из главы в учебный курс</h1>
+    <p>Загрузите материал по геологии, чтобы собрать уроки для начинающих с заданиями и ссылками на источник.</p>
+  </section>
+  <div class="workspace">
+    <form class="panel" id="studio">
+      <h2>Исходный материал</h2>
+      <label class="drop" id="drop">
+        <span class="file-icon" aria-hidden="true">+</span>
+        <span id="file-label">Выберите или перетащите файл</span>
+        <span class="hint">PDF, DOCX, Markdown или TXT · до 80 МБ</span>
+        <input id="file" type="file" accept=".pdf,.docx,.md,.txt" aria-label="Исходный файл" required>
+      </label>
+      <label class="field">Название курса <input id="title" maxlength="160" placeholder="Например, Основы каротажа"></label>
+      <label class="field">Страницы PDF или блоки текста <input id="pages" placeholder="Например, 4-12, 18" aria-describedby="page-help">
+        <span class="hint" id="page-help">Оставьте пустым, чтобы взять весь файл. До 100 страниц или блоков за раз.</span>
+      </label>
+      <label class="field" id="ocr-box" hidden><input id="ocr" type="checkbox"> Распознать все выбранные PDF-страницы</label>
+      <fieldset aria-describedby="model-hint">
+        <legend><strong>Режим подготовки</strong></legend>
+        <label class="choice"><input type="radio" name="mode" value="model" disabled> Учебный курс с моделью</label>
+        <label class="choice"><input type="radio" name="mode" value="draft" checked> Быстрый черновик из текста</label>
+        <span class="hint" id="model-hint">Проверяем подключение модели…</span>
+      </fieldset>
+      <button class="button" id="submit">Подготовить курс</button>
+      <div class="result" id="result" hidden>
+        <p class="status" id="status" role="status"></p>
+        <progress id="progress" aria-label="Подготовка курса" hidden></progress>
+        <p id="metrics" class="hint"></p>
+        <div class="actions" id="actions" hidden>
+          <a class="button" id="course">Открыть курс</a>
+          <a class="button secondary" id="bundle">Скачать ZIP</a>
+        </div>
+      </div>
+    </form>
+    <aside class="panel side">
+      <h2>Что получит ученик</h2>
+      <ul>
+        <li><strong>Маршрут обучения</strong><br><span class="hint">Шаги курса и отметки о прохождении.</span></li>
+        <li><strong>Практику</strong><br><span class="hint">Проверка ответа и карточки для повторения.</span></li>
+        <li><strong>Проверяемый источник</strong><br><span class="hint">Ссылки на страницы PDF или блоки текста.</span></li>
+      </ul>
+    </aside>
+  </div>
+</main>
+<script>
+const el = id => document.getElementById(id);
+const form = el('studio');
+const picker = el('file');
+const model = form.elements.mode[0];
+fetch('/api/config').then(r => r.json()).then(config => {
+  model.disabled = !config.model;
+  if (config.model) model.checked = true;
+  el('model-hint').textContent = config.model
+    ? 'Подключена модель ' + config.model + '. Выбранный текст будет передан ей для подготовки уроков.'
+    : 'Модель пока не подключена. В черновике доступны исходный текст и упражнения с пропусками.';
+}).catch(() => { el('model-hint').textContent = 'Локальная студия недоступна.'; });
+
+function fileChanged() {
+  const file = picker.files[0];
+  el('file-label').textContent = file ? file.name : 'Выберите или перетащите файл';
+  el('ocr-box').hidden = !file?.name.toLowerCase().endsWith('.pdf');
+}
+picker.onchange = fileChanged;
+el('drop').ondragover = event => { event.preventDefault(); el('drop').dataset.over = true; };
+el('drop').ondragleave = () => { el('drop').dataset.over = false; };
+el('drop').ondrop = event => {
+  event.preventDefault();
+  el('drop').dataset.over = false;
+  if (event.dataTransfer.files.length) {
+    picker.files = event.dataTransfer.files;
+    fileChanged();
+  }
+};
+
+async function waitForCourse(url) {
+  const progress = el('progress');
+  progress.hidden = false;
+  progress.removeAttribute('value');
+  while (true) {
+    const response = await fetch(url + 'status.json', {cache: 'no-store'});
+    if (!response.ok) throw new Error('Студия не вернула состояние сборки.');
+    const status = await response.json();
+    el('status').textContent = status.message;
+    if (status.state === 'error') throw new Error(status.message);
+    if (status.state === 'ready') return status.metrics;
+    if (status.total) {
+      progress.max = status.total;
+      progress.value = status.done - 1;
+    } else progress.removeAttribute('value');
+    await new Promise(resolve => setTimeout(resolve, 700));
+  }
+}
+
+form.onsubmit = async event => {
+  event.preventDefault();
+  const file = picker.files[0];
+  const status = el('status');
+  el('result').hidden = false;
+  el('actions').hidden = true;
+  el('metrics').textContent = '';
+  el('submit').disabled = true;
+  status.dataset.error = false;
+  status.textContent = 'Загружаем исходный материал…';
+  try {
+    if (file.size > 80 * 1024 * 1024) throw new Error('Файл должен быть меньше 80 МБ.');
+    const query = new URLSearchParams({
+      file: file.name, title: el('title').value, pages: el('pages').value,
+      mode: form.elements.mode.value, ocr: !el('ocr-box').hidden && el('ocr').checked ? '1' : '0'
+    });
+    const response = await fetch('/api/courses?' + query, {
+      method: 'POST', headers: {'Content-Type': 'application/octet-stream'}, body: file
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.message);
+    const metrics = await waitForCourse(result.course);
+    el('metrics').textContent = 'Шагов: ' + metrics.nodes + ' · заданий: ' + metrics.quizzes + ' · фрагментов в курсе: ' + metrics.linked + ' из ' + metrics.units;
+    el('course').href = result.course + 'index.html';
+    el('bundle').href = result.course + 'bundle.zip';
+    el('actions').hidden = false;
+  } catch (error) {
+    status.textContent = error.message || 'Сборка прервалась.';
+    status.dataset.error = true;
+  } finally {
+    el('progress').hidden = true;
+    el('submit').disabled = false;
+  }
+};
+</script>
+</html>
