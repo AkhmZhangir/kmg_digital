@@ -276,8 +276,8 @@ class LLM:
         if prov.api_key:
             headers["Authorization"] = "Bearer " + prov.api_key
         url = prov.base_url + "/chat/completions"
-        json_mode, delay = prov.json_mode, 5
-        for attempt in range(8):
+        json_mode, delay, fails503 = prov.json_mode, 5, 0
+        for attempt in range(30):
             model = prov.model
             body = {"model": model, "messages": messages, "temperature": temperature}
             if json_mode:
@@ -300,11 +300,16 @@ class LLM:
                     if self._next_model(prov, model, "дневная квота исчерпана"):
                         continue
                     raise _ProviderDown("дневные квоты всех моделей исчерпаны")
-                if e.code in (404, 503) and attempt >= 1:
+                if e.code == 404 or (e.code == 503 and fails503 >= 3):
+                    # 503 — временная перегрузка: сначала 3 повтора той же модели с паузой, потом следующая модель
+                    fails503 = 0
                     if self._next_model(prov, model, f"HTTP {e.code}"):
                         continue
-                    if attempt >= 3:
-                        raise _ProviderDown(f"HTTP {e.code}")
+                    raise _ProviderDown(f"HTTP {e.code}")
+                if e.code == 503:
+                    fails503 += 1
+                    time.sleep(10 * fails503)
+                    continue
                 if e.code in (401, 403):
                     raise _ProviderDown(f"HTTP {e.code}: нет доступа")
                 if e.code in (408, 429, 500, 502, 503, 504) and attempt < 7:

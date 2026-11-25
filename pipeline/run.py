@@ -8,6 +8,8 @@
   py -3 run.py check --chapter X                  самопроверка на синтетических закладках из своего слоя
   py -3 run.py edit --chapter X --node ID --minutes 4 --what "исправил цитату"   запись в журнал ручных правок
   py -3 run.py journal                            человеко-минуты по главам
+  py -3 run.py video --spec video/specs/shorts_caliper.json   ролик + субтитры + паспорт из спецификации сцены
+  py -3 run.py export --chapter X                 официальные форматы организаторов → out/<глава>/official (+ проверка схемами)
   py -3 run.py quota                              какие модели сейчас отвечают (по 1 крошечному запросу на модель)
   --llm gemini,qwen | qwen | gemini | mock        выбор моделей на один запуск (по умолчанию LLM_PROFILES из .env)
 
@@ -103,8 +105,11 @@ def run_chapter(cid: str, cfg: dict, args, log) -> dict:
                   seconds=round(time.monotonic() - t0, 1))
     save_json(out / "layer.json", layer)
     save_json(out / "coverage.json", coverage)
+    from core.export import export_chapter
+    report["official"] = {k: v["ok"] for k, v in export_chapter(cid, cfg, layer, units, coverage, out).items()}
     save_json(out / "report.json", report)
     render(layer, out, log)
+    log(f"{cid}: официальные форматы {report['official']}")
     r = report["requirements"]
     log(f"{cid}: узлов {report['nodes']}, заданий {report['tasks']} {report['task_types']}, "
         f"цитаты проверены {report['claims_verified_share']:.0%}, покрытие {report['coverage']}, требования {r}")
@@ -158,7 +163,7 @@ def main():
         del sys.argv[i:i + 2]
     load_env()
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("cmd", choices=["all", "verify", "units", "check", "edit", "journal", "quota"])
+    p.add_argument("cmd", choices=["all", "verify", "units", "check", "edit", "journal", "quota", "video", "export"])
     g = p.add_mutually_exclusive_group(required=False)
     g.add_argument("--chapter")
     g.add_argument("--set", choices=["train", "control", "test", "all"])
@@ -167,6 +172,7 @@ def main():
     p.add_argument("--out", default=str(HERE / "out"))
     p.add_argument("--config", default=str(HERE / "chapters.json"))
     p.add_argument("--llm", help="цепочка профилей моделей, например gemini,qwen или qwen или mock (файлы .env.<имя>)")
+    p.add_argument("--spec", help="video: спецификация сцены (video/specs/*.json)")
     p.add_argument("--package", help="check: внешний пакет с закладками (JSON)")
     p.add_argument("--key", help="check: ключ для самопроверки")
     p.add_argument("--minutes", type=float, help="edit: сколько минут заняла ручная правка")
@@ -176,6 +182,12 @@ def main():
     args = p.parse_args()
     chapters = json.loads(Path(args.config).read_text(encoding="utf-8"))["chapters"]
     from core import journal
+    if args.cmd == "video":
+        from video.build import build as build_video
+        if not args.spec:
+            p.error("video: нужен --spec")
+        build_video(Path(args.spec), Path(args.out) / "video", print)
+        return
     if args.cmd == "quota":
         print("Запросов за 24 часа:", json.dumps(usage_today(), ensure_ascii=False))
         for name in (args.llm or os.getenv("LLM_PROFILES", "gemini")).split(","):
@@ -205,6 +217,12 @@ def main():
         try:
             if args.cmd == "verify":
                 reverify(cid, args, log)
+            elif args.cmd == "export":
+                from core.export import export_chapter
+                o = Path(args.out) / cid
+                rd = lambda f: json.loads((o / f).read_text(encoding="utf-8"))
+                res = export_chapter(cid, chapters[cid], rd("layer.json"), rd("units.json"), rd("coverage.json"), o)
+                log(f"{cid}: {o / 'official'} " + json.dumps({k: (v['ok'] or v['errors'][:2]) for k, v in res.items()}, ensure_ascii=False))
             elif args.cmd == "check":
                 check(cid, chapters[cid], args, log)
             else:
