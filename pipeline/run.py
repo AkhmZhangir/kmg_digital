@@ -149,6 +149,11 @@ def check(cid: str, cfg: dict, args, log) -> dict:
 
 
 def main():
+    # --env <файл> — профиль модели (например .env.qwen); читается раньше .env и имеет приоритет.
+    if "--env" in sys.argv:
+        i = sys.argv.index("--env")
+        load_env(HERE / sys.argv[i + 1])
+        del sys.argv[i:i + 2]
     load_env()
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("cmd", choices=["all", "verify", "units", "check", "edit", "journal"])

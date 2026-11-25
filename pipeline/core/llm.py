@@ -7,6 +7,9 @@
   LLM_API_KEY    ключ, если нужен
   LLM_TIMEOUT    секунды (по умолчанию 300)
   LLM_JSON_MODE  1 — передавать response_format=json_object (по умолчанию 1)
+  LLM_MAX_TOKENS предел длины ответа (для llama.cpp полезно 8192)
+  LLM_PARALLEL   сколько запросов одновременно (llama.cpp с одним слотом — 1)
+Профиль можно держать в отдельном файле и выбирать флагом: py -3 run.py all --env .env.qwen ...
 """
 import hashlib
 import json
@@ -128,13 +131,18 @@ class LLM:
         if self.is_mock:  # заглушку не кешируем
             self.calls += 1
             return self._mock.respond(task, payload)
-        key = self._hash([messages, temperature])
-        legacy = [self._hash([m, messages, temperature]) for m in self.models]
+        # Кеш общий для моделей одного сервера, но не для разных серверов (иначе Qwen получил бы ответы Gemini).
+        key = self._hash([self.base_url, messages, temperature])
+        legacy = [self._hash([messages, temperature])] + [self._hash([m, messages, temperature]) for m in self.models]
         for k in [key] + legacy:
             path = CACHE / f"{k}.json"
             if path.is_file():
-                self.cache_hits += 1
-                return json.loads(path.read_text(encoding="utf-8"))["parsed"]
+                entry = json.loads(path.read_text(encoding="utf-8"))
+                base = entry.get("base") or ("https://generativelanguage.googleapis.com/v1beta/openai"
+                                             if str(entry.get("model", "")).startswith("gemini") else "")
+                if base.rstrip("/") == self.base_url:
+                    self.cache_hits += 1
+                    return entry["parsed"]
         path = CACHE / f"{key}.json"
         t0 = time.monotonic()
         raw, usage, model = self._post(messages, temperature)
@@ -144,7 +152,7 @@ class LLM:
             self.used[model] = self.used.get(model, 0) + 1
         CACHE.mkdir(parents=True, exist_ok=True)
         tmp = path.with_suffix(f".{threading.get_ident()}.tmp")
-        tmp.write_text(json.dumps({"task": task, "model": model, "raw": raw, "parsed": parsed},
+        tmp.write_text(json.dumps({"task": task, "model": model, "base": self.base_url, "raw": raw, "parsed": parsed},
                                   ensure_ascii=False), encoding="utf-8")
         tmp.replace(path)
         with self._lock, USAGE_LOG.open("a", encoding="utf-8") as f:
@@ -168,6 +176,8 @@ class LLM:
         for attempt in range(8):
             model = self.model
             body = {"model": model, "messages": messages, "temperature": temperature}
+            if os.getenv("LLM_MAX_TOKENS"):
+                body["max_tokens"] = int(os.environ["LLM_MAX_TOKENS"])
             if json_mode:
                 body["response_format"] = {"type": "json_object"}
             req = urllib.request.Request(url, data=json.dumps(body).encode("utf-8"), headers=headers)

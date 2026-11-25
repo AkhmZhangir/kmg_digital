@@ -11,3 +11,5 @@ out/
 *.tmp
 *.log
 .cache/
+.env.*
+!.env.example
