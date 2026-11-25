@@ -41,8 +41,12 @@ def start(spaces, space_id: str, entry_id: str, lib, out_dir: Path) -> dict:
         from .tutor import TutorError
         raise TutorError(413, "too_big_for_course",
                          f"Для курса загрузите одну главу: до {MAX_PAGES} страниц (сейчас {len(pages)}). Тьютор при этом может отвечать по всей книге.")
-    job = uuid.uuid4().hex[:12]
     folder = "up_" + entry_id.replace("src-", "")[:10]
+    with _LOCK:  # повторный запрос (вторая вкладка) — та же сборка, а не новая в очередь
+        same = next((x for x in JOBS.values() if x["folder"] == folder and x["state"] in ("queued", "running")), None)
+    if same:
+        return status(same["job"])
+    job = uuid.uuid4().hex[:12]
     JOBS[job] = {"job": job, "state": "queued", "stage": "в очереди", "log": [], "course": None, "folder": folder,
                  "name": row["name"], "pages": [pages[0], pages[-1]], "started": time.time(),
                  "progress": {"percent": 0, "done": 0, "total": None, "eta_sec": None, "elapsed_sec": 0}}
@@ -128,11 +132,11 @@ def _run(job: str, src, row, lib, out: Path) -> None:
                 from .preview import render_preview
                 render_preview(layer, out)
             lib.reload()
+            log(f"готово: шагов {report['nodes']}, заданий {report['tasks']}, цитаты проверены {report['claims_verified_share']:.0%}")
             j["progress"] = dict(j.get("progress") or {}, percent=100, eta_sec=0)
             j.update(state="ready", stage="готово", course=f"{out.name}/index.html",
                      summary={"nodes": report["nodes"], "tasks": report["tasks"],
                               "claims_verified_share": report["claims_verified_share"], "model": llm.name})
-            log(f"готово: шагов {report['nodes']}, заданий {report['tasks']}, цитаты проверены {report['claims_verified_share']:.0%}")
         except Exception as e:  # noqa: BLE001
             traceback.print_exc()
             j.update(state="error", stage="ошибка", error=f"{type(e).__name__}: {str(e)[:300]}")
