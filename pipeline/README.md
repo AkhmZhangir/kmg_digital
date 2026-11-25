@@ -57,3 +57,18 @@ PDF с текстовым слоем читается напрямую. Для �
     python3 rebuild.py book.md ./course/layer.json
 
 Для слоя, построенного с принудительным OCR, пересборка снова распознаёт те же страницы.
+
+## Ядро v2: граф понятий (Claude)
+
+    cd pipeline
+    copy .env.example .env          # указать LLM_BASE_URL / LLM_MODEL / LLM_API_KEY; без .env — офлайн-заглушка mock
+    py -3 run.py all --chapter train_latyshova
+    py -3 run.py all --set all      # train | control | all
+    py -3 run.py verify --chapter train_latyshova   # после ручной правки out/<глава>/layer.json: проверка и пересборка
+    py -3 -m unittest discover -s tests
+
+Этапы: `core/units.py` (глава → единицы с точными границами, склейка абзацев через страницу, детектор повреждённого OCR) →
+`core/layer.py` (outline: граф понятий по кускам главы → порядок по предпосылкам → заполнение узлов с повтором при неверных цитатах →
+задания 5 типов и карточки → покрытие) → `core/verify.py` (цитаты, числа, связи, задания, покрытие — без LLM).
+Модель — любой OpenAI-совместимый сервер (`core/llm.py`), ответы кешируются в `.cache/llm`. Предметное — в `domain/geology/pack.json`,
+промпты — в `prompts/`. Формат выхода — `../contract/LAYER_FORMAT.md`.

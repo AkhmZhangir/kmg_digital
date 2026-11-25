@@ -3,3 +3,9 @@ __pycache__/
 courses/
 
 .studio/
+
+# ядро (Claude)
+.env
+out/
+.cache/usage.jsonl
+*.tmp

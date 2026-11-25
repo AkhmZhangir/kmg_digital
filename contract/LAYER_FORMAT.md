@@ -18,6 +18,7 @@
     "author": "М. Г. Латышова", "year": 1991,
     "pages": [90, 108],             // PDF-страницы
     "pdf": "source.pdf",            // путь относительно папки курса или "" если PDF нет
+    "pdf_first_page": 90,           // source.pdf — ТОЛЬКО страницы главы (лимит 30 МБ). Книжная стр. N → source.pdf#page=(N − pdf_first_page + 1)
     "built_with": {"model": "qwen3.6", "pipeline": "git-sha", "built_at": "ISO-время"}
   },
   "parts":  [ Part ],
@@ -136,3 +137,12 @@
 ```jsonc
 { "id": "t-kollektor", "term": "коллектор", "en": "reservoir rock", "definition": "…", "node_id": "…", "page": 92 }
 ```
+
+## Служебные поля (фронту можно не показывать)
+- `nodes[].units` — id единиц главы, из которых собран узел (для таблицы покрытия).
+- `nodes[].video_criteria` — критерии видеоёмкости узла; `nodes[].format.scene_template` — шаблон сцены по типу трудности.
+- `book_tasks[].ocr_bad: true` — текст задачи повреждён распознаванием: показать плашку «сверить по скану» и ссылку на страницу PDF.
+- `claims[].verified: false` — цитата не прошла машинную проверку: показать плашку «не проверено».
+
+## Рядом с layer.json в папке главы
+`coverage.json` (единица → узел или причина), `units.json` (все единицы главы), `report.json` (метрики и замечания), `source.pdf`, `preview.html` (запасной предпросмотр ядра).
