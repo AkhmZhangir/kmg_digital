@@ -127,7 +127,7 @@ def review_package(pkg: dict, chapter_md: Path, llm: LLM, physics: list[dict] | 
         page = _find_page(ev, pages, r.get("page") if isinstance(r.get("page"), int) else hint) if ev else None
         in_spec = bool(ev) and quote_match(ev, spec_text, min_len=12)[0] != "none"
         is_scene = tid in frame_ids or base.get("type") == "scene_fact"
-        if not (page or (is_scene and (in_spec or r.get("category") == "frame_error"))):
+        if not (page or (is_scene and in_spec)):
             rejected.append({"target": tid, "why": "доказательство не найдено в главе", "model": r})
             continue
         if page is None:
