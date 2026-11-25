@@ -14,13 +14,34 @@ def _artifact(path):
         return None
 
 
+OFFICIAL_FILES = ("layer.json", "coverage.json", "routing.json", "tasks.json", "illustrations.json")
+
+
+def read_course_audit(artifacts: Path) -> dict:
+    report = _artifact(artifacts / "report.json")
+    validation = _artifact(artifacts / "official" / "validation.json")
+    report = report if isinstance(report, dict) else None
+    validation = validation if isinstance(validation, dict) else None
+    legacy = (report or {}).get("official")
+    if validation is not None:
+        checks = {name: result.get("ok") for name, result in validation.items() if isinstance(result, dict)}
+    else:
+        checks = legacy if isinstance(legacy, dict) else {}
+    share = (report or {}).get("claims_verified_share")
+    needs_review = (
+        ((report is not None or validation is not None)
+         and any(checks.get(name) is not True for name in OFFICIAL_FILES))
+        or (type(share) in (int, float) and share < 0.8)
+    )
+    return {"report": report, "validation": validation, "needs_review": needs_review}
+
+
 def course_page(layer: dict, artifacts: Path | None = None, *, assets="web/") -> str:
     template = (WEB / "index.html").read_text(encoding="utf-8").replace('"web/', '"' + assets)
     if artifacts is not None:
         layer = {**layer, "course_audit": {
-            "report": _artifact(artifacts / "report.json"),
+            **read_course_audit(artifacts),
             "coverage": _artifact(artifacts / "coverage.json"),
-            "validation": _artifact(artifacts / "official" / "validation.json"),
         }}
     data = json.dumps(layer, ensure_ascii=False).replace("<", "\\u003c")
     return template.replace("__LAYER__", data)

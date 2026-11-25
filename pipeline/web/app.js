@@ -545,3 +545,4 @@ if (chapter.built_with?.model) {
   $('builtWith').textContent = 'Собрано моделью ' + chapter.built_with.model;
   $('builtWith').hidden = false;
 }
+$('courseReviewBadge').hidden = !layer.course_audit?.needs_review;

@@ -29,7 +29,7 @@ from laboratory import LabTutor, activity, candidates, evaluate, excerpt, lab_co
 from core.tutor import Library, TutorError, chat  # noqa: E402
 
 from spaces import MAX_FILE, Spaces
-from render import course_page
+from render import course_page, read_course_audit
 from assessments import generate, search_sources
 
 MAX_BODY = 5 * 1024 * 1024
@@ -138,22 +138,30 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
             if path.startswith("/api/build/"):
                 from core.webbuild import status as build_status
                 st = build_status(path.rsplit("/", 1)[-1])
-                return self._json(200, st) if st else self._error(404, "not_found", "Нет такой сборки")
+                if not st:
+                    return self._error(404, "not_found", "Нет такой сборки")
+                if st["state"] == "ready":
+                    st["needs_review"] = read_course_audit(out_dir / st["folder"])["needs_review"]
+                return self._json(200, st)
             if path == "/api/catalog":
                 courses = {item["folder"]: item for item in lib.list() if item["kind"] == "chapter"}
                 return self._json(200, {"courses": [
-                    {**item, "chapter": lib.get(item["id"]).layer["chapter"]} for item in courses.values()
+                    {**item, "chapter": lib.get(item["id"]).layer["chapter"],
+                     "needs_review": read_course_audit(out_dir / item["folder"])["needs_review"]}
+                    for item in courses.values()
                 ]})
             space_page = re.fullmatch(r"/spaces/([a-f0-9]{32})/?", path)
             if space_page:
                 space = spaces.view(space_page[1])
                 chapter = {"id": "space-" + space["id"], "title": space["name"], "pages": []}
                 return self._lesson_page({"space_id": space["id"], "chapter": chapter, "nodes": [], "parts": []})
-            match = re.fullmatch(r"/api/spaces/([a-f0-9]{32})(?:/files/(src-[a-f0-9]{32})(/text)?)?", path)
+            match = re.fullmatch(r"/api/spaces/([a-f0-9]{32})(?:/files/(src-[a-f0-9]{32})(/text|/build-preview)?)?", path)
             if match:
                 sid, eid, preview = match.groups()
                 if not eid:
                     return self._json(200, spaces.view(sid))
+                if preview == "/build-preview":
+                    return self._build_preview(spaces.get_source(sid, eid))
                 if preview:
                     src = spaces.get_source(sid, eid)
                     return self._json(200, {"text": "\n\n".join(u["text"] for u in src.units[:25])})
@@ -189,6 +197,23 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                     if src.folder == folder and src.layer.get("schema_version") == "1.0" and src.nodes:
                         return self._lesson_page(src.layer, src.folder)
             return super().do_GET()
+
+        def _build_preview(self, src):
+            from core.webbuild import MAX_CHARS, MAX_PAGES, select_build_pages
+
+            params = parse_qs(urlsplit(self.path).query, keep_blank_values=True)
+            if not params:
+                pages = sorted({u["page"] for u in src.units})
+                small = len(pages) <= MAX_PAGES and sum(len(u["text"]) for u in src.units) <= MAX_CHARS
+                return self._json(200, {"first": pages[0], "last": pages[-1], "limit": MAX_PAGES,
+                                        "end": pages[-1] if small else pages[min(2, len(pages) - 1)]})
+            try:
+                first, last = (int(params[key][0]) for key in ("page_from", "page_to"))
+            except (ValueError, KeyError):
+                raise TutorError(400, "bad_pages", "Укажите начальную и конечную страницу целыми числами.") from None
+            units, pages = select_build_pages(src.units, first, last)
+            text = "\n\n".join(f"Стр. {u['page']} — {u['text'][:600]}" for u in units[:5])
+            return self._json(200, {"pages": len(pages), "text": text})
 
         def _catalog(self):
             return self._send((HERE / "web" / "home.html").read_bytes(), "text/html; charset=utf-8")

@@ -54,7 +54,7 @@ function renderCourseAudit(parent) {
 
   const files = Object.entries(officialFiles);
   if (validation || report?.official) {
-    const passed = name => validation?.[name]?.ok ?? report?.official?.[name];
+    const passed = name => validation ? validation[name]?.ok : report?.official?.[name];
     const count = files.filter(([name]) => passed(name) === true).length;
     const official = details(parent, 'Официальные форматы · ' + count + '/' + files.length + (count === files.length ? ' ✓' : ''));
     const list = add(official, 'ul');

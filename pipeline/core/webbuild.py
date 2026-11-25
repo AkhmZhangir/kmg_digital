@@ -32,25 +32,33 @@ def status(job: str) -> dict | None:
     return None if j is None else {k: v for k, v in j.items() if k != "thread"}
 
 
-def start(spaces, space_id: str, entry_id: str, lib, out_dir: Path, page_from=None, page_to=None) -> dict:
-    """page_from/page_to — диапазон страниц файла (номера как в предпросмотре: метки <!-- page N --> или страницы PDF)."""
-    from types import SimpleNamespace
+def select_build_pages(units, page_from=None, page_to=None):
+    """Resolve and validate the same indexed pages for preview and generation."""
     from .tutor import TutorError
-    src = spaces.get_source(space_id, entry_id)
-    row = spaces.original(space_id, entry_id)
-    have = sorted({int(u["page"]) for u in src.units})
-    if page_from is not None or page_to is not None:
-        a = int(page_from if page_from is not None else have[0])
-        b = int(page_to if page_to is not None else have[-1])
-        if a > b or a not in have and not any(a <= p <= b for p in have):
-            raise TutorError(400, "bad_pages", f"В файле нет страниц {a}–{b}. Доступны {have[0]}–{have[-1]}.")
-        src = SimpleNamespace(units=[u for u in src.units if a <= int(u["page"]) <= b])
-    pages = sorted({u["page"] for u in src.units})
-    chars = sum(len(u["text"]) for u in src.units)
-    if len(pages) > MAX_PAGES or chars > MAX_CHARS:
-        from .tutor import TutorError
+
+    have = sorted({u["page"] for u in units})
+    a = have[0] if page_from is None else page_from
+    b = have[-1] if page_to is None else page_to
+    if type(a) is not int or type(b) is not int or not have[0] <= a <= b <= have[-1]:
+        raise TutorError(400, "bad_pages", f"Укажите целый диапазон в пределах {have[0]}–{have[-1]}.")
+    pages = [page for page in have if a <= page <= b]
+    if not pages:
+        raise TutorError(400, "bad_pages", f"На страницах {a}–{b} нет извлечённого текста.")
+    selected = [u for u in units if a <= u["page"] <= b]
+    if len(pages) > MAX_PAGES or sum(len(u["text"]) for u in selected) > MAX_CHARS:
         raise TutorError(413, "too_big_for_course",
-                         f"Для курса загрузите одну главу: до {MAX_PAGES} страниц (сейчас {len(pages)}). Тьютор при этом может отвечать по всей книге.")
+                         f"Выберите более короткую главу: до {MAX_PAGES} страниц с текстом и до {MAX_CHARS:,} знаков."
+                         .replace(",", " "))
+    return selected, pages
+
+
+def start(spaces, space_id: str, entry_id: str, lib, out_dir: Path, page_from=None, page_to=None) -> dict:
+    from types import SimpleNamespace
+
+    source = spaces.get_source(space_id, entry_id)
+    units, pages = select_build_pages(source.units, page_from, page_to)
+    src = SimpleNamespace(units=units)
+    row = spaces.original(space_id, entry_id)
     folder = "up_" + entry_id.replace("src-", "")[:10] + (f"_p{pages[0]}-{pages[-1]}" if (page_from is not None or page_to is not None) else "")
     with _LOCK:  # повторный запрос (вторая вкладка) — та же сборка, а не новая в очередь
         same = next((x for x in JOBS.values() if x["folder"] == folder and x["state"] in ("queued", "running")), None)
