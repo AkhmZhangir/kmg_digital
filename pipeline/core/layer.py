@@ -49,6 +49,26 @@ def _ask(llm: LLM, system: str, payload: dict, task: str, log) -> dict:
     return out
 
 
+def _outline_call(llm: LLM, system: str, payload: dict, chunk: list[dict], log, depth: int = 0) -> dict:
+    """Разметка куска главы. Если сервер отверг запрос (HTTP 400 — обычно не влез в контекст слота llama.cpp),
+    кусок делится пополам и размечается по частям; результаты склеиваются."""
+    try:
+        return llm.chat_json(system, payload, task="outline")
+    except LLMError as e:
+        if "HTTP 400" in str(e) and len(chunk) > 4 and depth < 3:
+            half = len(chunk) // 2
+            log(f"  outline: кусок не влез в контекст модели ({len(chunk)} единиц) — делю пополам")
+            parts = []
+            for sub in (chunk[:half], chunk[half:]):
+                sp = dict(payload, units=[_unit_view(u, full=False) for u in sub])
+                parts.append(_outline_call(llm, system, sp, sub, log, depth + 1))
+            return {"nodes": sum((p.get("nodes") or [] for p in parts), []),
+                    "skip": sum((p.get("skip") or [] for p in parts), [])}
+    except ValueError:
+        pass
+    return _ask(llm, system, payload, "outline", log)
+
+
 def _slug(s: str) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
     return s[:48] or "node"
@@ -82,7 +102,7 @@ def outline(units: list[dict], llm: LLM, pack: dict, cfg: dict, log) -> tuple[li
                    "chapter_types": cfg.get("types"),
                    "difficulty_types": {k: v["name"] for k, v in pack["difficulty_types"].items()},
                    "units": [_unit_view(u, full=False) for u in chunk]}
-        out = _ask(llm, system, payload, "outline", log)
+        out = _outline_call(llm, system, payload, chunk, log)
         ids = {u["id"] for u in chunk}
         taken = set()
         for raw in out.get("nodes") or []:
