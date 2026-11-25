@@ -1,0 +1,51 @@
+[
+  {
+    "options": ["Песчаник", "Ракушечник", "Обсидиан"],
+    "asset_id": "rock_01", "name": "Ракушечник", "category": "sedimentary_rock",
+    "topics": ["ракушечник", "известняк", "известня", "карбонатн", "осадочн", "coquina", "limestone", "sedimentary"],
+    "media_type": "image", "media_url": "specimens/CoquinaClose.jpg", "model_url": null,
+    "difficulty": "beginner", "verification_status": "verified",
+    "source_url": "https://commons.wikimedia.org/wiki/File:CoquinaClose.jpg",
+    "license": "Public domain", "attribution": "Mark A. Wilson, The College of Wooster",
+    "reference": "https://www.nps.gov/foma/learn/nature/coquina.htm",
+    "locality": "Флорида, США · шкала 10 мм",
+    "properties": {"components": "В составе известняка встречаются целые раковины и их обломки."},
+    "question": "Какие включения на фотографии указывают на участие организмов в образовании породы?",
+    "answers": ["раковины", "обломки раковин", "ракушки", "фрагменты раковин", "shell fragments"],
+    "hint": "Увеличь светлую часть снимка. Найди изогнутые контуры и сравни их с формой створок.",
+    "followup": "Какой контур отдельного включения поддерживает твоё объяснение?"
+  },
+  {
+    "options": ["Кремень", "Обсидиан", "Базальт"],
+    "asset_id": "rock_02", "name": "Обсидиан", "category": "igneous_rock",
+    "topics": ["обсидиан", "магматическ", "вулканическ", "изверженн", "obsidian", "igneous", "volcanic"],
+    "media_type": "image", "media_url": "specimens/ObsidianOregon.jpg", "model_url": null,
+    "difficulty": "beginner", "verification_status": "verified",
+    "source_url": "https://commons.wikimedia.org/wiki/File:ObsidianOregon.jpg",
+    "license": "Public domain", "attribution": "PAR (по сведениям Wikimedia Commons)",
+    "reference": "https://apps.usgs.gov/thesaurus/thesaurus-full.php?thcode=4",
+    "locality": "Округ Лейк, Орегон, США",
+    "properties": {"texture": "Обсидиан — вулканическое стекло. Характерны стекловидная поверхность и раковистый излом."},
+    "question": "Опиши блеск или форму поверхности скола, по которым можно предположить вулканическое стекло.",
+    "answers": ["стеклянный блеск", "стекловидный блеск", "раковистый излом", "glassy lustre", "conchoidal fracture"],
+    "hint": "Посмотри, как отражается свет от гладких участков и как изгибается поверхность скола.",
+    "followup": "Какой признак скола помог бы обосновать вывод, если бы цвет был неизвестен?"
+  },
+  {
+    "options": ["Галенит", "Халькопирит", "Пирит"],
+    "asset_id": "mineral_01", "name": "Пирит", "category": "mineral",
+    "topics": ["пирит", "минералы", "минералов", "минералог", "минералам", "сульфид", "pyrite", "mineralogy", "minerals", "sulfide"],
+    "media_type": "image", "media_url": "specimens/Pyrite-278315.jpg", "model_url": null,
+    "difficulty": "beginner", "verification_status": "verified",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pyrite-278315.jpg",
+    "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution": "Rob Lavinsky, iRocks.com · исходное фото без изменений",
+    "reference": "https://commons.wikimedia.org/wiki/File:Pyrite-278315.jpg",
+    "locality": "Рудник Уансала, Перу · образец 10,3 × 7,8 × 4,6 см",
+    "properties": {"appearance": "Описание этого образца указывает на латунно-жёлтые блестящие сросшиеся октаэдрические кристаллы."},
+    "question": "Какой блеск или какую форму кристаллов ты видишь на образце?",
+    "answers": ["металлический блеск", "зеркальный блеск", "октаэдры", "октаэдрическая форма", "metallic luster", "octahedra"],
+    "hint": "Увеличь границы соседних кристаллов и сравни отражения света на плоских гранях.",
+    "followup": "Что у этого экземпляра можно установить по граням, а что потребовало бы дополнительного испытания?"
+  }
+]

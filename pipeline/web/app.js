@@ -102,7 +102,7 @@ const views = {
 };
 function renderLesson(){
   const n=current;
-  add(content,'small','Шаг '+(nodes.indexOf(n)+1)+' / '+nodes.length+' · '+n.minutes+' мин','kicker');
+  add(content,'small','Шаг '+(nodes.indexOf(n)+1)+' / '+nodes.length+(n.minutes ? ' · '+n.minutes+' мин' : ''),'kicker');
   add(content,'h2',n.title); add(content,'small',n.book_title,'muted');
   if(n.summary?.length){
     const lead=add(content,'section','','lead');add(lead,'h3','Суть');paragraphs(lead,n.summary);
@@ -145,6 +145,11 @@ function renderLesson(){
   section(content,'Задачи книги',n.book_tasks,(p,t)=>{if(t.ocr_bad)add(p,'strong','Сверить по скану','warning');add(p,'p','№ '+t.number+' · '+t.text);if(t.figure)p.append(t.figure+' · ');source(p,t.page);});
   for (const illustration of n.illustrations || []) drawIllustration(content, illustration);
   section(content,'Проверь себя',tasks.filter(t=>t.node_id===n.id),quiz);
+  if (service?.laboratory && serverSources().length) {
+    const entry = button(content, 'Исследовать образец по теме', () => openView('lab'));
+    entry.hidden = true;
+    labPost('recommend', {source: labSource(), node: n.id}).then(r => { entry.hidden = !r.available; }).catch(() => {});
+  }
   const row=add(content,'div','','navrow');
   const done=state.done.includes(n.id);
   button(row,done?'Пройдено ✓':'Отметить пройденным',()=>{state.done.push(n.id);save();render();},'primary').disabled=done;
@@ -226,10 +231,14 @@ function renderStudy(){
     if (!tasks.length) add(content, 'p', 'В этой главе пока нет заданий.');
     tasks.forEach(task => quiz(content, task));
   }
-  if (view === 'lab') renderLab();
+  if (view === 'lab') {
+    specimenLab(add(content, 'section'));
+    renderLab();
+  }
   if (view === 'progress') {
     add(content, 'p', 'Пройдено ' + nodes.filter(node => state.done.includes(node.id)).length + ' из ' + nodes.length + ' шагов.');
     add(content, 'p', 'Отмечено как знакомые: ' + cards.filter(card => state.cards[card.id] === 'Знаю').length + ' из ' + cards.length + ' карточек.');
+    add(content, 'p', 'Зачтено лабораторных работ: ' + Object.keys(state.labPassed || {}).length);
     const list = add(content, 'ul');
     for (const node of nodes) {
       const item = add(list, 'li');
@@ -270,7 +279,6 @@ function renderLab() {
     .filter(illustration => illustration.provenance === 'симуляция' && localPath(illustration.src))
     .map(illustration => ({ node, illustration })));
   if (!simulations.length) {
-    add(content, 'p', 'В учебном материале пока нет симуляций.');
     return;
   }
   add(content, 'p', 'Рассмотри готовую симуляцию из главы и открой соответствующий урок.');
@@ -382,8 +390,8 @@ $('search').onsubmit=e=>{
   if(!results.childElementCount)add(results,'p','Совпадений в материалах главы нет.');
 };
 document.title=$('title').textContent=chapter.title_short || chapter.title;
-$('author').textContent=chapter.author+' · '+chapter.year;
-$('meta').textContent=nodes.length+' '+({one:'шаг',few:'шага',many:'шагов'}[new Intl.PluralRules('ru').select(nodes.length)])+' / '+nodes.reduce((total,n)=>total+n.minutes,0)+' мин';
+$('author').textContent=[chapter.author, chapter.year].filter(Boolean).join(' · ');
+$('meta').textContent=nodes.length+' '+({one:'шаг',few:'шага',many:'шагов'}[new Intl.PluralRules('ru').select(nodes.length)])+(nodes.every(n=>n.minutes) ? ' / '+nodes.reduce((total,n)=>total+n.minutes,0)+' мин' : '');
 function cover(){
   const canvas=document.querySelector('canvas');const w=canvas.clientWidth,h=canvas.clientHeight;
   const scale=Math.min(devicePixelRatio,2);canvas.width=w*scale;canvas.height=h*scale;
