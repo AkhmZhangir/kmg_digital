@@ -317,7 +317,7 @@ class LLM:
                 return data["choices"][0]["message"]["content"] or "", data.get("usage") or {}, model
             except urllib.error.HTTPError as e:
                 detail = e.read().decode("utf-8", "replace")[:4000]
-                if e.code == 413 or (e.code == 400 and ("too large" in detail.lower() or "context" in detail.lower())):
+                if e.code == 413 or (e.code in (400, 429) and ("too large" in detail.lower() or "context" in detail.lower())):
                     raise _TooLarge(f"HTTP {e.code} ({model}): запрос слишком велик")
                 if e.code == 400 and json_mode and ("response_format" in detail or "Failed to generate JSON" in detail):
                     json_mode = False  # сервер не умеет json_object
