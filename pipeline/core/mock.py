@@ -18,7 +18,20 @@ def _sentences(text: str):
 def respond(task: str, payload: dict) -> dict:
     if task == "fix-quotes":
         return {"claims": []}
+    if task == "tutor":
+        return _tutor(payload)
     return {"outline": _outline, "node": _node, "tasks": _tasks, "check": _check}[task.split("-")[0]](payload)
+
+
+def _tutor(p):
+    ctx = p["context"][:2]
+    text = " ".join(c["text"] for c in ctx)
+    return {"answer": "[mock] По источнику: " + text[:300],
+            "citations": [{"ref": c["id"], "quote": c["text"][:120]} for c in ctx],
+            "insufficient": False,
+            "task": {"question": "[mock] Перескажи: " + ctx[0]["text"][:80], "answer": ctx[0]["text"][:120],
+                     "ref": ctx[0]["id"]} if p["mode"] == "practice" else None,
+            "followups": ["Что дальше?"]}
 
 
 def _check(p):
