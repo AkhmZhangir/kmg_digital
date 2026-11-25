@@ -115,7 +115,9 @@ class Provider:
         self.base_url = get("LLM_BASE_URL", "mock").rstrip("/")
         self.models = [m.strip() for m in get("LLM_MODEL", "mock").split(",") if m.strip()]
         self.active = 0
-        self.api_key = get("LLM_API_KEY")
+        # Несколько ключей через запятую: когда у ключа кончились дневные квоты всех моделей — следующий ключ.
+        self.keys = [k.strip() for k in get("LLM_API_KEY").split(",") if k.strip()] or [""]
+        self.key_idx = 0
         self.timeout = int(get("LLM_TIMEOUT", "300"))
         self.json_mode = get("LLM_JSON_MODE", "1") == "1"
         self.max_tokens = int(get("LLM_MAX_TOKENS", "0") or 0)
@@ -127,6 +129,10 @@ class Provider:
     @property
     def model(self) -> str:
         return self.models[min(self.active, len(self.models) - 1)]
+
+    @property
+    def api_key(self) -> str:
+        return self.keys[min(self.key_idx, len(self.keys) - 1)]
 
     @property
     def is_mock(self) -> bool:
@@ -248,6 +254,12 @@ class LLM:
             if prov.model == failed and prov.active < len(prov.models) - 1:
                 prov.active += 1
                 print(f"  LLM[{prov.name}]: {failed} — {why}; переключаюсь на {prov.model}", flush=True)
+                return True
+            if prov.model == failed and "квот" in why and prov.key_idx < len(prov.keys) - 1:
+                prov.key_idx += 1
+                prov.active = 0
+                print(f"  LLM[{prov.name}]: квоты ключа №{prov.key_idx} исчерпаны — переключаюсь на ключ №{prov.key_idx + 1}, модель {prov.model}", flush=True)
+                return True
             return prov.model != failed
 
     def _next_provider(self, prov: Provider, why: str) -> bool:
