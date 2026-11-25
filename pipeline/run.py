@@ -93,7 +93,7 @@ def run_chapter(cid: str, cfg: dict, args, log) -> dict:
     pdf = next(iter(sorted(pdf_dir.glob(cfg["pdf_glob"]))), None) if pdf_dir else None
     cfg = dict(cfg, _pdf=bool(pdf), _git=git_sha())
     pack = json.loads((HERE / "domain" / cfg["domain"] / "pack.json").read_text(encoding="utf-8"))
-    llm = LLM(args.llm)
+    llm = LLM(args.llm or os.getenv("LLM_PROFILES_BUILD") or None)  # анализ книг: по умолчанию серверный Qwen
     log(f"{cid}: {len(units)} единиц, модель {llm.name}")
     layer, coverage = build_layer(cid, cfg, units, llm, pack, log)
     if pdf:

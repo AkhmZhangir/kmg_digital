@@ -91,7 +91,41 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                 return self._json(200, {"sources": lib.list()})
             if path.startswith("/api/"):
                 return self._error(404, "not_found", "Нет такого метода")
+            if path in ("/", "/index.html"):
+                return self._catalog()
             return super().do_GET()
+
+        def _catalog(self):
+            """Каталог курсов вместо служебного «Directory listing»."""
+            import html as H
+            rows = []
+            for s in sorted(lib.list(), key=lambda x: x.get("folder") or ""):
+                if s.get("kind") != "chapter" or not s.get("folder"):
+                    continue
+                layer = lib.sources[s["id"]].layer or {}
+                ch = layer.get("chapter", {})
+                model = (ch.get("built_with") or {}).get("model", "")
+                draft = model == "mock"
+                kind = "обучающая" if s["folder"].startswith("train") else "контрольная" if s["folder"].startswith("ctrl") else "глава"
+                rows.append(f'<a class="c{" draft" if draft else ""}" href="{H.escape(s["folder"])}/index.html">'
+                            f'<small>{kind} · {H.escape(ch.get("author", ""))} · стр. {"–".join(map(str, s.get("pages") or []))}</small>'
+                            f'<b>{H.escape(ch.get("title", s["name"]))}</b><span>{H.escape(ch.get("book", ""))}</span>'
+                            f'<em>{"черновик: глава ещё не обработана моделью" if draft else f"шагов {s['nodes']} · собрано моделью {H.escape(model)}"}</em></a>')
+            page = ("<!doctype html><html lang=ru><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
+                    "<title>Глава → курс</title><style>:root{color-scheme:light dark;--bg:#f6f7fa;--card:#fff;--ink:#202334;--mut:#575c70;--acc:#4338ca}"
+                    "@media(prefers-color-scheme:dark){:root{--bg:#151621;--card:#1d1f2d;--ink:#f2f0fb;--mut:#b4b7cd;--acc:#b9b1ff}}"
+                    "body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui}main{max-width:960px;margin:auto;padding:32px 16px}"
+                    "h1{margin:0 0 4px}p{color:var(--mut)}.g{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}"
+                    ".c{display:grid;gap:4px;padding:16px;border-radius:12px;background:var(--card);color:inherit;text-decoration:none;border:1px solid #8884}"
+                    ".c:hover,.c:focus-visible{border-color:var(--acc)}.c small,.c span{color:var(--mut)}.c em{font-style:normal;color:var(--acc);font-size:.9em}"
+                    ".draft{opacity:.7}.draft em{color:var(--mut)}</style><main><h1>Глава → курс</h1>"
+                    f"<p>Курсы по главам книг. Тьютор: {H.escape(llm.name)}.</p><div class=g>{''.join(rows)}</div></main>")
+            body = page.encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
 
         def do_POST(self):
             path = self.path.split("?")[0]
@@ -155,7 +189,7 @@ def main():
     load_env()
     out_dir = Path(args.out).resolve()
     lib = Library(out_dir)
-    llm = LLM(args.llm)
+    llm = LLM(args.llm or os.getenv("LLM_PROFILES_CHAT") or None)  # чат: по умолчанию быстрый Gemini
     srv = ThreadingHTTPServer((args.host, args.port), make_handler(lib, llm, out_dir))
     print(f"Тьютор: http://{args.host}:{args.port}/  модель: {llm.name}  источников: {len(lib.list())}", flush=True)
     for s in lib.list():
