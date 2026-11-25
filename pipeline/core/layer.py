@@ -16,7 +16,7 @@ from .verify import check_claim, check_task, iter_paras, node_plain_text, para_n
 
 HERE = Path(__file__).resolve().parent.parent
 OUTLINE_BUDGET = 18000      # знаков текста единиц на один запрос outline
-NODE_BUDGET = 12000         # знаков на узел; больше — узел делится
+NODE_BUDGET = int(os.getenv("NODE_BUDGET", "12000"))  # знаков на узел; больше — узел делится (для Qwen с окном 16k ставить ~7000)
 FIG_DESC_CUT = 500
 TASK_CYCLE = ["single", "cloze", "order", "multi", "calc"]
 VIDEO_KEYS = ("time_change", "invisible_visible", "scale_jump", "counterintuitive", "cause_effect")
