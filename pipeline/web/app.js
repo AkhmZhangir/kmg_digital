@@ -32,11 +32,12 @@ function details(parent,title,cls='') {
 function localPath(path) {
   return typeof path==='string' && !/[:\\]/.test(path) && !path.startsWith('/') && !path.split('/').includes('..');
 }
+function pdfPage(page){ return Number(page) - (Number(chapter.pdf_first_page) || 1) + 1; }
 function source(parent,page) {
   if (!page) return;
   const hasPDF=chapter.pdf && localPath(chapter.pdf);
   const el=add(parent,hasPDF?'a':'span','стр. '+page,'ref');
-  if(hasPDF){el.href=chapter.pdf+'#page='+Number(page);el.target='_blank';el.rel='noopener';}
+  if(hasPDF){el.href=chapter.pdf+'#page='+pdfPage(page);el.target='_blank';el.rel='noopener';}
 }
 function math(parent,latex) {
   const span=add(parent,'span',latex);
@@ -67,8 +68,9 @@ function paragraphs(parent,items,node=current){
     rich(para,p.text);
     const claims=(p.claims || []).map(id=>node.claims.find(c=>c.id===id)).filter(Boolean);
     const meta=add(parent,'div','','muted');
-    source(meta,p.page);
-    add(meta,'small',p.by==='author'?' · Цитата автора':' · Пересказ модели');
+    if (p.by === 'author' || claims.length) source(meta, p.page);
+    const origin = p.by === 'author' ? 'Цитата автора' : claims.length ? 'Пересказ модели' : 'Текст модели без ссылки на книгу';
+    add(meta, 'small', origin, 'paragraphOrigin');
     if(claims.some(c=>!c.verified)) add(meta,'small',' · Требует проверки','warning');
     if(claims.length){
       const d=details(meta,'Основание в книге','evidence');
@@ -85,9 +87,19 @@ function openNode(id){
   state.node=current.id;save(); openView('lesson');
 }
 function openView(name){
-  view=name; panel('read'); render(); $('reader').focus();
+  showWorkspace(false);
+  panel('read');
+  if (view !== name || name === 'lesson') {
+    view = name;
+    render();
+  }
+  $('reader').focus();
 }
-const views={lesson:'Урок',practice:'Практика',cards:'Карточки',summary:'Конспект',map:'Карта связей',terms:'Словарь'};
+const views = {
+  lesson: 'Урок', practice: 'Тесты', cards: 'Карточки', summary: 'Конспект',
+  map: 'Карта связей', terms: 'Словарь', lab: 'Виртуальная лаборатория',
+  progress: 'Прогресс', exam: 'Экзамен'
+};
 function renderLesson(){
   const n=current;
   add(content,'small','Шаг '+(nodes.indexOf(n)+1)+' / '+nodes.length+' · '+n.minutes+' мин','kicker');
@@ -130,17 +142,24 @@ function renderLesson(){
   if(n.analogy){add(content,'h3','Аналогия');add(content,'p',n.analogy.text);add(content,'p','Граница аналогии · '+n.analogy.breaks_where);}
   for(const [k,title] of [['mechanism','Механизм'],['practice','Практика специалиста'],['nuances','Нюансы'],['deeper','Глубже']])
     if(n.layers?.[k]?.length)paragraphs(details(content,title),n.layers[k]);
-  section(content,'Задачи книги',n.book_tasks,(p,t)=>{add(p,'p','№ '+t.number+' · '+t.text);if(t.figure)p.append(t.figure+' · ');source(p,t.page);});
-  for(const ill of n.illustrations || []){
-    if(!localPath(ill.src))continue;
-    const fig=add(content,'figure');const img=add(fig,'img');img.src=ill.src;img.alt=ill.alt;
-    add(fig,'figcaption',[ill.caption,ill.provenance,ill.redrawn_from && 'Перерисовано по '+ill.redrawn_from].filter(Boolean).join(' · '));
-  }
+  section(content,'Задачи книги',n.book_tasks,(p,t)=>{if(t.ocr_bad)add(p,'strong','Сверить по скану','warning');add(p,'p','№ '+t.number+' · '+t.text);if(t.figure)p.append(t.figure+' · ');source(p,t.page);});
+  for (const illustration of n.illustrations || []) drawIllustration(content, illustration);
   section(content,'Проверь себя',tasks.filter(t=>t.node_id===n.id),quiz);
   const row=add(content,'div','','navrow');
   const done=state.done.includes(n.id);
   button(row,done?'Пройдено ✓':'Отметить пройденным',()=>{state.done.push(n.id);save();render();},'primary').disabled=done;
   const next=nodes[nodes.indexOf(n)+1];if(next)button(row,'Следующий шаг',()=>openNode(next.id));
+}
+function drawIllustration(parent, illustration) {
+  if (!localPath(illustration.src)) return;
+  const figure = add(parent, 'figure');
+  const image = add(figure, 'img');
+  image.src = illustration.src;
+  image.alt = illustration.alt || illustration.caption || '';
+  add(figure, 'figcaption', [
+    illustration.caption, illustration.provenance,
+    illustration.redrawn_from && 'Перерисовано по ' + illustration.redrawn_from
+  ].filter(Boolean).join(' · '));
 }
 function dataMeaning(parent,n){
   const d=n.data_meaning;if(!d)return;
@@ -150,7 +169,7 @@ function dataMeaning(parent,n){
   paragraphs(parent,d.breaks,n);paragraphs(parent,d.hypotheses,n);
 }
 const normalize=v=>String(v).trim().toLocaleLowerCase('ru').replace(/\s+/g,' ');
-function quiz(parent,t){
+function quiz(parent,t,exam=false){
   const box=add(parent,'div','','box');rich(add(box,'strong'),t.question);
   const inputs=[];let answer,check;
   if(['single','multi'].includes(t.type)){
@@ -193,6 +212,7 @@ function quiz(parent,t){
     }
     draw();answer=t.items.join(' → ');check=()=>items.every((v,i)=>v===i);
   }else return;
+  if (exam) return check;
   const out=add(box,'output');out.setAttribute('aria-live','polite');
   button(box,'Проверить',()=>{out.textContent=(check()?'Верно. ':'Верный ответ — '+answer+'. ')+t.explanation;},'primary');
   const n=nodes.find(n=>n.id===t.node_id);
@@ -202,7 +222,22 @@ function quiz(parent,t){
 }
 function renderStudy(){
   add(content,'h2',views[view]);
-  if(view==='practice')tasks.forEach(t=>quiz(content,t));
+  if (view === 'practice') {
+    if (!tasks.length) add(content, 'p', 'В этой главе пока нет заданий.');
+    tasks.forEach(task => quiz(content, task));
+  }
+  if (view === 'lab') renderLab();
+  if (view === 'progress') {
+    add(content, 'p', 'Пройдено ' + nodes.filter(node => state.done.includes(node.id)).length + ' из ' + nodes.length + ' шагов.');
+    add(content, 'p', 'Отмечено как знакомые: ' + cards.filter(card => state.cards[card.id] === 'Знаю').length + ' из ' + cards.length + ' карточек.');
+    const list = add(content, 'ul');
+    for (const node of nodes) {
+      const item = add(list, 'li');
+      button(item, node.title, () => openNode(node.id));
+      if (state.done.includes(node.id)) add(item, 'small', ' · Пройдено');
+    }
+  }
+  if (view === 'exam') renderExam();
   if(view==='cards')for(const c of cards){
     const box=add(content,'section','','box');add(box,'strong',c.front);
     add(details(box,'Показать ответ'),'p',c.back);
@@ -230,6 +265,49 @@ function renderStudy(){
     }
   }
 }
+function renderLab() {
+  const simulations = nodes.flatMap(node => (node.illustrations || [])
+    .filter(illustration => illustration.provenance === 'симуляция' && localPath(illustration.src))
+    .map(illustration => ({ node, illustration })));
+  if (!simulations.length) {
+    add(content, 'p', 'В учебном материале пока нет симуляций.');
+    return;
+  }
+  add(content, 'p', 'Рассмотри готовую симуляцию из главы и открой соответствующий урок.');
+  const label = add(content, 'label', 'Симуляция ');
+  const select = add(label, 'select');
+  for (const { node, illustration } of simulations) add(select, 'option', illustration.caption || node.title);
+  const preview = add(content, 'div', '', 'simulation');
+  function update() {
+    const { node, illustration } = simulations[select.selectedIndex];
+    preview.replaceChildren();
+    drawIllustration(preview, illustration);
+    button(preview, 'Открыть урок', () => openNode(node.id));
+  }
+  select.onchange = update;
+  update();
+}
+
+function renderExam() {
+  const form = add(content, 'form');
+  const checks = tasks.map(task => quiz(form, task, true)).filter(Boolean);
+  if (!checks.length) {
+    add(form, 'p', 'В этой главе пока нет заданий для экзамена.');
+    return;
+  }
+  const submit = add(form, 'button', 'Завершить экзамен', 'primary');
+  submit.type = 'submit';
+  const result = add(form, 'output', '', 'examResult');
+  result.setAttribute('aria-live', 'polite');
+  form.onsubmit = event => {
+    event.preventDefault();
+    const score = checks.filter(check => check()).length;
+    result.textContent = 'Верных ответов: ' + score + ' из ' + checks.length + '.';
+    for (const control of form.querySelectorAll('input, button')) control.disabled = true;
+    button(form, 'Начать заново', render);
+  };
+}
+
 function drawGraph(){
   const ns='http://www.w3.org/2000/svg';
   const svg=document.createElementNS(ns,'svg');
@@ -266,12 +344,28 @@ function render(){
   }
   $('progress').max=nodes.length;$('progress').value=state.done.length;
   $('progressLabel').textContent='Пройдено '+state.done.length+' из '+nodes.length;
-  $('toolbar').replaceChildren();add($('toolbar'),'strong',views[view]);
-  if(view!=='lesson')button($('toolbar'),'Вернуться к уроку',()=>openView('lesson'));
-  $('tools').replaceChildren();
-  for(const [id,icon] of [['practice','?'],['cards','▤'],['summary','≡'],['map','⌘'],['terms','А']]){
-    const b=button($('tools'),'',()=>openView(id),'toolBtn');add(b,'b',icon).ariaHidden='true';add(b,'span',views[id]);b.setAttribute('aria-pressed',view===id);
+  $('toolbar').replaceChildren();
+  const toolbarGroup = add($('toolbar'), 'div', '', 'toolbarGroup');
+  add(toolbarGroup, 'strong', views[view]);
+  if (view !== 'lesson') button(toolbarGroup, 'К уроку', () => openView('lesson'));
+  if (['practice', 'lab', 'exam'].includes(view)) {
+    const expand = button($('toolbar'), '', () => toggleExpanded(expand));
+    syncExpanded(expand);
+  } else {
+    delete $('workspace').dataset.expanded;
   }
+  $('tools').replaceChildren();
+  const activities = [
+    ['summary','≡'], ['cards','▤'], ['practice','?'], ['map','⌘'],
+    ['lab','◇'], ['progress','◫'], ['exam','✓'], ['terms','А']
+  ];
+  for (const [id, icon] of activities) {
+    const control = button($('tools'), '', () => openView(id), 'toolBtn');
+    add(control, 'b', icon).setAttribute('aria-hidden', 'true');
+    add(control, 'span', views[id]);
+    control.setAttribute('aria-pressed', view === id);
+  }
+  updateChatContext();
   $('note').value=state.notes[current.id] || '';$('saved').textContent='К шагу «'+current.title+'»';
   content.replaceChildren();if(view==='lesson')renderLesson();else renderStudy();
 }
@@ -287,18 +381,14 @@ $('search').onsubmit=e=>{
   }
   if(!results.childElementCount)add(results,'p','Совпадений в материалах главы нет.');
 };
-document.documentElement.dataset.dark=state.dark ?? matchMedia('(prefers-color-scheme:dark)').matches;
-$('theme').onclick=()=>{state.dark=document.documentElement.dataset.dark!=='true';document.documentElement.dataset.dark=state.dark;save();};
 document.title=$('title').textContent=chapter.title_short || chapter.title;
 $('author').textContent=chapter.author+' · '+chapter.year;
 $('meta').textContent=nodes.length+' '+({one:'шаг',few:'шага',many:'шагов'}[new Intl.PluralRules('ru').select(nodes.length)])+' / '+nodes.reduce((total,n)=>total+n.minutes,0)+' мин';
-add($('book'),'strong',chapter.book);add($('book'),'small',chapter.author+' · стр. '+chapter.pages.join('–'));
-if(chapter.pdf && localPath(chapter.pdf)){const link=add($('book'),'a','Открыть книгу');link.href=chapter.pdf+'#page='+chapter.pages[0];link.target='_blank';link.rel='noopener';}
 function cover(){
   const canvas=document.querySelector('canvas');const w=canvas.clientWidth,h=canvas.clientHeight;
   const scale=Math.min(devicePixelRatio,2);canvas.width=w*scale;canvas.height=h*scale;
   const ctx=canvas.getContext('2d');ctx.scale(scale,scale);
-  const colors=['#7d8f84','#b8ad86','#dac499','#aa7954','#ba8b62','#856f5a','#5e8078','#3f6667','#365759'];
+  const colors = ['#a8a6d4', '#cbc8e7', '#dedcf0', '#bcb8dc', '#a7a3cd', '#cbc8e6', '#bab7d9', '#9692be', '#817dab'];
   colors.forEach((color,i)=>{
     ctx.beginPath();ctx.moveTo(w*.36,h+4);
     for(let x=w*.36;x<=w+3;x+=3){
@@ -308,13 +398,3 @@ function cover(){
     ctx.lineTo(w,h+2);ctx.closePath();ctx.fillStyle=color;ctx.fill();
   });
 }
-function panel(name){
-  document.body.dataset.panel=name;
-  for(const b of $('mobileNav').children)b.setAttribute('aria-pressed',b.dataset.panel===name);
-}
-for(const [id,text] of [['sources','Материалы'],['read','Чтение'],['tools','Инструменты']]){
-  const b=button($('mobileNav'),text,()=>panel(id));b.dataset.panel=id;
-}
-panel('read');
-new ResizeObserver(cover).observe(document.querySelector('.cover'));
-render();
