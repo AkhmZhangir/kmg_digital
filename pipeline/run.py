@@ -8,6 +8,8 @@
   py -3 run.py check --chapter X                  самопроверка на синтетических закладках из своего слоя
   py -3 run.py edit --chapter X --node ID --minutes 4 --what "исправил цитату"   запись в журнал ручных правок
   py -3 run.py journal                            человеко-минуты по главам
+  py -3 run.py quota                              какие модели сейчас отвечают (по 1 крошечному запросу на модель)
+  --llm gemini,qwen | qwen | gemini | mock        выбор моделей на один запуск (по умолчанию LLM_PROFILES из .env)
 
 Модель задаётся в pipeline/.env (см. .env.example). Без .env работает офлайн-заглушка mock.
 Ответы модели кешируются в pipeline/.cache/llm: повторный запуск не тратит запросы.
@@ -25,7 +27,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 from core.layer import build_layer, save_json  # noqa: E402
-from core.llm import LLM, LLMError, load_env  # noqa: E402
+from core.llm import LLM, LLMError, load_env, probe, read_profile, usage_today  # noqa: E402
 from core.illustrate import illustrate  # noqa: E402
 from core.preview import render_preview  # noqa: E402
 from core.units import load_chapter  # noqa: E402
@@ -89,7 +91,7 @@ def run_chapter(cid: str, cfg: dict, args, log) -> dict:
     pdf = next(iter(sorted(pdf_dir.glob(cfg["pdf_glob"]))), None) if pdf_dir else None
     cfg = dict(cfg, _pdf=bool(pdf), _git=git_sha())
     pack = json.loads((HERE / "domain" / cfg["domain"] / "pack.json").read_text(encoding="utf-8"))
-    llm = LLM()
+    llm = LLM(args.llm)
     log(f"{cid}: {len(units)} единиц, модель {llm.name}")
     layer, coverage = build_layer(cid, cfg, units, llm, pack, log)
     if pdf:
@@ -139,7 +141,7 @@ def check(cid: str, cfg: dict, args, log) -> dict:
         pkg, key = make_synthetic(layer)
         save_json(out / "synthetic_package.json", pkg)
         save_json(out / "synthetic_key.json", key)
-    res = check_package(pkg, units, LLM(), pack, system, log)
+    res = check_package(pkg, units, LLM(args.llm), pack, system, log)
     if key:
         res["score"] = score(res["remarks"], key)
         log(f"{cid}: самопроверка {res['score']}")
@@ -156,7 +158,7 @@ def main():
         del sys.argv[i:i + 2]
     load_env()
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("cmd", choices=["all", "verify", "units", "check", "edit", "journal"])
+    p.add_argument("cmd", choices=["all", "verify", "units", "check", "edit", "journal", "quota"])
     g = p.add_mutually_exclusive_group(required=False)
     g.add_argument("--chapter")
     g.add_argument("--set", choices=["train", "control", "test", "all"])
@@ -164,6 +166,7 @@ def main():
     p.add_argument("--books-pdf")
     p.add_argument("--out", default=str(HERE / "out"))
     p.add_argument("--config", default=str(HERE / "chapters.json"))
+    p.add_argument("--llm", help="цепочка профилей моделей, например gemini,qwen или qwen или mock (файлы .env.<имя>)")
     p.add_argument("--package", help="check: внешний пакет с закладками (JSON)")
     p.add_argument("--key", help="check: ключ для самопроверки")
     p.add_argument("--minutes", type=float, help="edit: сколько минут заняла ручная правка")
@@ -173,6 +176,16 @@ def main():
     args = p.parse_args()
     chapters = json.loads(Path(args.config).read_text(encoding="utf-8"))["chapters"]
     from core import journal
+    if args.cmd == "quota":
+        print("Запросов за 24 часа:", json.dumps(usage_today(), ensure_ascii=False))
+        for name in (args.llm or os.getenv("LLM_PROFILES", "gemini")).split(","):
+            name = name.strip()
+            extra = ["gemini-3.5-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite",
+                     "gemini-flash-lite-latest"] if "googleapis" in read_profile(name).get("LLM_BASE_URL", "") else None
+            for r in probe(name, extra):
+                print(f"  {r['profile']:7} {r['model'][-42:]:42} {r['status']:22} {r.get('limit', ''):12} {r['seconds']} с")
+        print("Остаток Google не сообщает: лимит виден только когда исчерпан. Сброс суточных квот — полночь по Тихоокеанскому времени (≈13:00 по Алматы).")
+        return
     if args.cmd == "journal":
         print(json.dumps(journal.summary(), ensure_ascii=False, indent=1))
         return

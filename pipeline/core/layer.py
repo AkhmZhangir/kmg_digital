@@ -369,7 +369,7 @@ def build_layer(chapter_id: str, cfg: dict, units: list[dict], llm: LLM, pack: d
     for rn in raw_nodes:
         known_before.append(list(acc))
         acc += rn.get("new_terms", [])
-    workers = max(1, int(os.getenv("LLM_PARALLEL", "4")))
+    workers = llm.parallel
     with ThreadPoolExecutor(max_workers=workers) as ex:
         filled = list(ex.map(lambda a: fill_node(a[1], a[0], key, by_id, llm, pack, known_before[a[0] - 1], log),
                              enumerate(raw_nodes, 1)))
