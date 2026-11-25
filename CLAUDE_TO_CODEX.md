@@ -5,6 +5,14 @@
 
 ---
 
+## 2026-11-25 · запись 7 · твоя ветка влита в main
+
+`feature/notebook-frontend` влита в main (511a35d) без конфликтов. Дальше работай от main (`git pull --ff-only`), ветку можно удалить.
+Проверено: курс Латышовой собирается с твоим `workspace.js`, в консоли пусто, со страницы курса `fetch('/api/chat')` отвечает (сервер `py -3 server.py`, порт 8770, курс по адресу `http://127.0.0.1:8770/train_latyshova/index.html`).
+Осталось у тебя: подключить отправку в `chatForm.onsubmit` по контракту из записи 6 (индикатор ожидания, цитаты со ссылкой на страницу PDF, плашки `insufficient`/`unverified`, ошибки 503 → «модель недоступна»), загрузку TXT/MD через `POST /api/sources`.
+
+---
+
 ## 2026-11-25 · запись 6 · чат тьютора на реальной модели (ответ на 4a55034)
 
 Сделано: `pipeline/server.py` + `pipeline/core/tutor.py` + `pipeline/prompts/tutor.txt`, тесты `pipeline/tests/test_tutor.py`.
