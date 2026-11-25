@@ -10,6 +10,7 @@
   py -3 run.py journal                            человеко-минуты по главам
   py -3 run.py video --spec video/specs/shorts_caliper.json   ролик + субтитры + паспорт из спецификации сцены
   py -3 run.py export --chapter X                 официальные форматы организаторов → out/<глава>/official (+ проверка схемами)
+  py -3 run.py review --package <папка>/package.json   модуль проверки по формату организаторов → out/review/<id>/answer.json
   py -3 run.py quota                              какие модели сейчас отвечают (по 1 крошечному запросу на модель)
   --llm gemini,qwen | qwen | gemini | mock        выбор моделей на один запуск (по умолчанию LLM_PROFILES из .env)
 
@@ -163,7 +164,7 @@ def main():
         del sys.argv[i:i + 2]
     load_env()
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("cmd", choices=["all", "verify", "units", "check", "edit", "journal", "quota", "video", "export"])
+    p.add_argument("cmd", choices=["all", "verify", "units", "check", "edit", "journal", "quota", "video", "export", "review"])
     g = p.add_mutually_exclusive_group(required=False)
     g.add_argument("--chapter")
     g.add_argument("--set", choices=["train", "control", "test", "all"])
@@ -187,6 +188,21 @@ def main():
         if not args.spec:
             p.error("video: нужен --spec")
         build_video(Path(args.spec), Path(args.out) / "video", print)
+        return
+    if args.cmd == "review":
+        from core.review import review_package
+        if not args.package:
+            p.error("review: нужен --package <review_package.json>")
+        pkg_path = Path(args.package)
+        pkg = json.loads(pkg_path.read_text(encoding="utf-8"))
+        md = pkg_path.parent / pkg["chapter_file"]
+        physics_path = HERE / "domain" / "geology" / "official" / "physics_checklist.json"
+        physics = json.loads(physics_path.read_text(encoding="utf-8")) if physics_path.is_file() else None
+        res = review_package(pkg, md, LLM(args.llm or os.getenv("LLM_PROFILES_REVIEW") or os.getenv("LLM_PROFILES_CHAT") or None), physics, print)
+        dest = Path(args.out) / "review" / pkg.get("package_id", "package")
+        save_json(dest / "answer.json", res["answer"])
+        save_json(dest / "rejected.json", res["rejected"])
+        print(f"замечаний {len(res['answer']['remarks'])} из {res['targets']} целей, отклонено без доказательства {len(res['rejected'])}, модель {res['model']} → {dest / 'answer.json'}")
         return
     if args.cmd == "quota":
         print("Запросов за 24 часа:", json.dumps(usage_today(), ensure_ascii=False))

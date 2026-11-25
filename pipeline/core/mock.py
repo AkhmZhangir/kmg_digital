@@ -20,7 +20,7 @@ def respond(task: str, payload: dict) -> dict:
         return {"claims": []}
     if task == "tutor":
         return _tutor(payload)
-    return {"outline": _outline, "node": _node, "tasks": _tasks, "check": _check}[task.split("-")[0]](payload)
+    return {"outline": _outline, "node": _node, "tasks": _tasks, "check": _check, "review": _review}[task.split("-")[0]](payload)
 
 
 def _tutor(p):
@@ -115,3 +115,7 @@ def _tasks(p):
                 out.append({"type": "calc", "claim_id": main["id"], "question": f"Какое число приводит автор в этом шаге? (одно из {', '.join(nums[:3])})",
                             "answer": float(nums[0]), "tolerance": 0, "unit": "", "explanation": "Число из текста шага."})
     return {"tasks": out, "card": {"front": p["node"]["title"], "back": main["text"]}}
+
+
+def _review(p):
+    return {"results": [{"id": it["id"], "verdict": "ok"} for it in p["items"]]}
