@@ -272,7 +272,7 @@ class LLM:
                     raise LLMError(f"Все провайдеры цепочки недоступны: {e}") from None
 
     def _post_one(self, prov: Provider, messages, temperature):
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json", "User-Agent": "kmg-pipeline/1.0"}
         if prov.api_key:
             headers["Authorization"] = "Bearer " + prov.api_key
         url = prov.base_url + "/chat/completions"
@@ -338,7 +338,7 @@ def probe(profile: str, models: list[str] | None = None) -> list[dict]:
         body = {"model": m, "messages": [{"role": "user", "content": "1"}], "max_tokens": 1}
         if prov.no_think:
             body["chat_template_kwargs"] = {"enable_thinking": False}
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json", "User-Agent": "kmg-pipeline/1.0"}
         if prov.api_key:
             headers["Authorization"] = "Bearer " + prov.api_key
         req = urllib.request.Request(prov.base_url + "/chat/completions", data=json.dumps(body).encode("utf-8"), headers=headers)
