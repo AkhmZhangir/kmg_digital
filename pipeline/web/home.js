@@ -5,6 +5,7 @@ const status = get('homeStatus');
 let pendingUpload;
 let busy = false;
 let collectionRequest = 0;
+let documentsId;
 
 function element(parent, tag, text = '', css = '') {
   const node = document.createElement(tag);
@@ -34,11 +35,16 @@ get('theme').onclick = () => {
 async function refreshSpaces() {
   const sequence = ++collectionRequest;
   try {
-    const {spaces} = await spaceRequest('');
+    const {spaces, documents} = await spaceRequest('');
     if (sequence !== collectionRequest) return;
     const target = get('uploadLibrary');
     const selected = target.value;
-    target.replaceChildren(new Option('В новую библиотеку', ''));
+    documentsId = documents.id;
+    target.replaceChildren(new Option('Без библиотеки', documentsId));
+    const documentsLink = get('homeDocuments');
+    documentsLink.href = '/spaces/' + documentsId + '?panel=sources';
+    documentsLink.hidden = false;
+    get('homeDocumentsCount').textContent = String(documents.sources);
     for (const library of spaces) target.add(new Option(library.name, library.id));
     if (spaces.some(library => library.id === selected)) target.value = selected;
     const grid = get('spaces');
@@ -84,9 +90,7 @@ async function uploadFromHome() {
   controls.forEach(control => { control.disabled = true; });
   get('uploadRecovery').hidden = true;
   try {
-    const first = pendingUpload.files[0];
-    const suggested = first.name.replace(/\.[^.]+$/, '').trim().slice(0, 150);
-    pendingUpload.id ||= (await spaceRequest('', {name: suggested || 'Новая библиотека'})).id;
+    pendingUpload.id ||= documentsId || (await spaceRequest('')).documents.id;
     const failed = [];
     const messages = [];
     for (const file of pendingUpload.files) {

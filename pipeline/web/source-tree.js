@@ -3,7 +3,7 @@
 let sourceEntries = [];
 let collapsedFolders = new Set(state.collapsedFolders || []);
 let uploadFolder = null;
-let failedFiles = [];
+let failedUpload;
 let draggedEntry = null;
 let uploading = false;
 let treeRefresh = 0;
@@ -36,7 +36,11 @@ async function editTree(action, values, message) {
     const result = await spaceRequest('/' + spaceId, {action, ...values});
     if (sequence !== treeRefresh) return;
     showTree(result, action === 'delete');
-    if (action === 'delete') refreshLibraries();
+    if (action === 'delete' || values.destination) refreshLibraries();
+    if (values.destination && $('sourcePreview').previewEntry === values.id) {
+      previewRequest++;
+      $('sourcePreview').hidden = true;
+    }
     $('sourceStatus').textContent = message;
   } catch (error) { $('sourceStatus').textContent = error.message; }
 }
@@ -63,32 +67,34 @@ function chooseUpload(parent = null) {
   $('sourceFiles').click();
 }
 
-async function uploadTreeFiles(files, parent) {
+async function uploadTreeFiles(files, parent, destination = spaceId) {
   if (uploading || !files.length) return;
   uploading = true;
   $('addSource').disabled = true;
   $('retrySource').hidden = true;
-  failedFiles = [];
+  const failed = [];
   const errors = [];
   let count = 0;
   for (const file of files) {
     $('sourceStatus').textContent = 'Загрузка: ' + file.name;
     try {
       treeRefresh++;
-      const snapshot = await uploadSpaceFile(spaceId, file, parent, () => {
+      const snapshot = await uploadSpaceFile(destination, file, parent, () => {
         $('sourceStatus').textContent = 'Извлекаем текст: ' + file.name;
       });
-      if (parent) collapsedFolders.delete(parent);
-      showTree(snapshot);
+      if (destination === spaceId) {
+        if (parent) collapsedFolders.delete(parent);
+        showTree(snapshot);
+      }
       count++;
     } catch (error) {
-      failedFiles.push(file);
+      failed.push(file);
       errors.push(file.name + ' · ' + error.message);
     }
   }
-  uploadFolder = parent;
+  failedUpload = {files: failed, parent, destination};
   $('sourceStatus').textContent = [count ? 'Добавлено: ' + count + '.' : '', ...errors].filter(Boolean).join(' ');
-  $('retrySource').hidden = !failedFiles.length;
+  $('retrySource').hidden = !failed.length;
   refreshLibraries();
   $('addSource').disabled = false;
   uploading = false;
@@ -115,9 +121,22 @@ function moveTreeEntry(entry) {
     }
   }
   visit(null, '');
+  if (entry.kind === 'source' && libraryTargets.some(target => target.id !== spaceId)) {
+    const libraries = add(destinations, 'optgroup');
+    libraries.label = 'Другие библиотеки';
+    for (const target of libraryTargets.filter(target => target.id !== spaceId)) {
+      add(libraries, 'option', target.name).value = 'space/' + target.id;
+    }
+  }
   destinations.value = entry.parent || '';
-  spaceDialog('Переместить «' + entry.name + '»', 'Папка назначения', [['save', 'Переместить']], destinations)
-    .then(target => { if (target !== null) editTree('move', {id: entry.id, parent: target || null}, 'Расположение сохранено.'); });
+  spaceDialog('Переместить «' + entry.name + '»', 'Куда переместить', [['save', 'Переместить']], destinations)
+    .then(target => {
+      if (target === null) return;
+      if (target.startsWith('space/')) {
+        const library = libraryTargets.find(library => library.id === target.slice(6));
+        if (library) moveToLibrary(entry, library);
+      } else editTree('move', {id: entry.id, parent: target || null}, 'Расположение сохранено.');
+    });
 }
 
 async function deleteTreeEntry(entry) {
@@ -136,6 +155,7 @@ async function openTreeSource(entry, trigger) {
   const request = ++previewRequest;
   const preview = previewContainer(entry.name);
   preview.trigger = trigger;
+  preview.previewEntry = entry.id;
   const url = '/api/spaces/' + spaceId + '/files/' + entry.id;
   const original = add(preview, 'a', 'Открыть оригинал');
   Object.assign(original, {href: url, target: '_blank', rel: 'noopener'});
@@ -172,7 +192,7 @@ function treeMenu(row, entry) {
     const name = await askName('Переименовать', entry.name);
     if (name !== null) await editTree('rename', {id: entry.id, name}, 'Название сохранено.');
   });
-  action('Переместить в папку', () => moveTreeEntry(entry));
+  action(entry.kind === 'source' ? 'Переместить…' : 'Переместить в папку', () => moveTreeEntry(entry));
   action('Удалить', () => deleteTreeEntry(entry));
 }
 
@@ -207,10 +227,59 @@ function treeDrop(row, target, expand) {
   };
 }
 
+function moveToLibrary(entry, library) {
+  const build = knownCourseBuild(entry.id);
+  if (build?.job) rememberCourseBuild(entry.id, build);
+  return editTree('move', {id: entry.id, destination: library.id},
+    'Документ перемещён: ' + library.name + '.');
+}
+
+function libraryDrop(link, target) {
+  link.ondragover = event => {
+    const files = event.dataTransfer.types.includes('Files');
+    if (!files && !draggedEntry) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const allowed = files ? !uploading : draggedEntry.kind === 'source';
+    link.dataset.drop = allowed ? 'allowed' : 'invalid';
+    event.dataTransfer.dropEffect = allowed ? (files ? 'copy' : 'move') : 'none';
+  };
+  link.ondragleave = event => {
+    if (!link.contains(event.relatedTarget)) delete link.dataset.drop;
+  };
+  link.ondrop = event => {
+    const files = Array.from(event.dataTransfer.files);
+    if (!files.length && !draggedEntry) return;
+    event.preventDefault();
+    event.stopPropagation();
+    delete link.dataset.drop;
+    if (files.length) uploadTreeFiles(files, null, target.id);
+    else if (draggedEntry.kind === 'source') moveToLibrary(draggedEntry, target);
+  };
+}
+
 const courseBuilds = new Map(Object.entries(state.courseBuilds || {}));
 const pollingBuilds = new Set();
 
-function showCourseBuild(entryId, panel, build = courseBuilds.get(entryId)) {
+function knownCourseBuild(entryId) {
+  const current = courseBuilds.get(entryId);
+  if (current?.state === 'starting') return current;
+  try {
+    return JSON.parse(localStorage.getItem('geocourse.build.' + entryId)) || current;
+  } catch {
+    return current;
+  }
+}
+
+function rememberCourseBuild(entryId, build) {
+  courseBuilds.set(entryId, build);
+  try {
+    const {job, state, stage, progress, course, error} = build;
+    localStorage.setItem('geocourse.build.' + entryId, JSON.stringify({job, state, stage, progress, course, error}));
+  } catch {}
+}
+
+function showCourseBuild(entryId, panel, build = knownCourseBuild(entryId)) {
   if (!panel) return;
   panel.replaceChildren();
   if (build?.state === 'ready' && /^up_[a-f0-9]+\/index\.html$/.test(build.course)) {
@@ -234,7 +303,7 @@ function showCourseBuild(entryId, panel, build = courseBuilds.get(entryId)) {
   }
   if (build?.error) add(panel, 'small', build.error);
   button(panel, build?.error ? 'Повторить сборку' : 'Собрать курс', async () => {
-    if (['starting', 'queued', 'running'].includes(courseBuilds.get(entryId)?.state)) return;
+    if (['starting', 'queued', 'running'].includes(knownCourseBuild(entryId)?.state)) return;
     courseBuilds.set(entryId, {state: 'starting', stage: 'Отправляем запрос'});
     showCourseBuild(entryId, $('build-' + entryId));
     try {
@@ -249,12 +318,7 @@ function showCourseBuild(entryId, panel, build = courseBuilds.get(entryId)) {
 }
 
 function updateCourseBuild(entryId, build) {
-  courseBuilds.set(entryId, build);
-  (state.courseBuilds ||= {})[entryId] = {
-    job: build.job, state: build.state, stage: build.stage, progress: build.progress,
-    course: build.course, error: build.error
-  };
-  save();
+  rememberCourseBuild(entryId, build);
   showCourseBuild(entryId, $('build-' + entryId));
 }
 
@@ -278,7 +342,7 @@ function pollCourseBuild(entryId, job) {
         return;
       }
     } catch {
-      const build = courseBuilds.get(entryId);
+      const build = knownCourseBuild(entryId);
       showCourseBuild(entryId, $('build-' + entryId),
         {...build, stage: 'Связь прервалась. Повторяем запрос…', connectionError: true});
     }
@@ -292,7 +356,7 @@ function renderTree() {
   tree.replaceChildren();
   const root = add(tree, 'div', '⌂ Корневой раздел', 'treeRoot');
   treeDrop(root, null);
-  if (!sourceEntries.length) add(tree, 'p', 'Перетащите файлы сюда или добавьте папку.', 'muted');
+  if (!sourceEntries.length) add(tree, 'p', 'Перетащи сюда файлы или добавь папку.', 'muted');
   const byParent = new Map();
   for (const entry of sourceEntries) {
     if (!byParent.has(entry.parent)) byParent.set(entry.parent, []);
@@ -314,7 +378,7 @@ function renderTree() {
       row.addEventListener('dragend', () => {
         draggedEntry = null;
         delete row.dataset.dragging;
-        for (const drop of tree.querySelectorAll('[data-drop]')) delete drop.dataset.drop;
+        for (const drop of $('sourcesPanel').querySelectorAll('[data-drop]')) delete drop.dataset.drop;
       });
       if (entry.kind === 'folder') {
         const group = add(item, 'div');
@@ -341,7 +405,7 @@ function renderTree() {
         course.id = 'build-' + entry.id;
         course.setAttribute('aria-live', 'polite');
         showCourseBuild(entry.id, course);
-        const build = courseBuilds.get(entry.id);
+        const build = knownCourseBuild(entry.id);
         if (build && ['queued', 'running'].includes(build.state)) pollCourseBuild(entry.id, build.job);
 
         treeMenu(row, entry);
@@ -355,7 +419,9 @@ function initSourceTree() {
   $('addFolder').hidden = false;
   $('addFolder').onclick = () => addTreeFolder();
   $('addSource').onclick = () => chooseUpload();
-  const retry = button($('sourceStatus').parentElement, 'Повторить загрузку', () => uploadTreeFiles(failedFiles, uploadFolder));
+  const retry = button($('sourceStatus').parentElement, 'Повторить загрузку', () => {
+    if (failedUpload) uploadTreeFiles(failedUpload.files, failedUpload.parent, failedUpload.destination);
+  });
   retry.id = 'retrySource';
   retry.hidden = true;
   $('sourceStatus').after(retry);

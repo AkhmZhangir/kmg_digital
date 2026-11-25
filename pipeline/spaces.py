@@ -16,6 +16,7 @@ from core.tutor import Source, TutorError, _chunks
 from prepare import FORMATS, read_pdf, read_docx
 
 MAX_FILE = 32 * 1024 * 1024
+DOCUMENTS_ID = "0" * 32
 
 
 def timestamp():
@@ -37,7 +38,7 @@ def extract_units(sid, ext, raw):
             with TemporaryDirectory() as folder:
                 path = Path(folder) / ("source" + ext)
                 path.write_bytes(raw)
-                pages = list(read_pdf(path, None).items()) if ext == ".pdf" else [(1, read_docx(path))]
+                pages = list(read_pdf(path, None, whole_book=True).items()) if ext == ".pdf" else [(1, read_docx(path))]
     except UnicodeDecodeError:
         raise TutorError(400, "encoding", "Сохраните текстовый файл в UTF-8.") from None
     except (ValueError, BadZipFile, KeyError, ParseError, SubprocessError) as error:
@@ -75,6 +76,10 @@ class Spaces:
                 CREATE INDEX IF NOT EXISTS space_entries ON entries(space, parent);
             """)
 
+            now = timestamp()
+            db.execute("INSERT OR IGNORE INTO spaces VALUES (?, ?, ?, ?)",
+                       (DOCUMENTS_ID, "Документы без библиотеки", now, now))
+
     @contextmanager
     def db(self, write=False):
         db = sqlite3.connect(self.path)
@@ -104,8 +109,14 @@ class Spaces:
         with self.db() as db:
             return [dict(row) for row in db.execute("""
                 SELECT s.*, (SELECT COUNT(*) FROM entries e WHERE e.space=s.id AND e.kind='source') AS sources
-                FROM spaces s ORDER BY updated DESC, id
-            """)]
+                FROM spaces s WHERE id != ? ORDER BY updated DESC, id
+            """, (DOCUMENTS_ID,))]
+
+    def documents(self):
+        with self.db() as db:
+            count = db.execute("SELECT COUNT(*) FROM entries WHERE space=? AND kind='source'",
+                               (DOCUMENTS_ID,)).fetchone()[0]
+        return {"id": DOCUMENTS_ID, "name": "Без библиотеки", "sources": count}
 
     def view(self, sid):
         with self.db() as db:
@@ -140,6 +151,8 @@ class Spaces:
         now = timestamp()
         with self.db(write=True) as db:
             self.require(db, sid)
+            if sid == DOCUMENTS_ID and action in ("delete_space", "rename_space"):
+                raise TutorError(400, "fixed_space", "Это раздел документов без библиотеки.")
             if action == "delete_space":
                 db.execute("DELETE FROM spaces WHERE id = ?", (sid,))
                 return {"deleted": True}
@@ -159,8 +172,17 @@ class Spaces:
                 if action == "rename":
                     db.execute("UPDATE entries SET name=?, updated=? WHERE id=?", (name_value(req.get("name")), now, eid))
                 elif action == "move":
-                    parent = self.folder(db, sid, req.get("parent"), eid)
-                    db.execute("UPDATE entries SET parent=?, updated=? WHERE id=?", (parent, now, eid))
+                    destination = req.get("destination", sid)
+                    if not isinstance(destination, str):
+                        raise TutorError(400, "bad_destination", "Выберите библиотеку.")
+                    if destination != sid:
+                        if row["kind"] != "source":
+                            raise TutorError(400, "move_source_only", "Между библиотеками можно переносить документы.")
+                        self.require(db, destination)
+                        db.execute("UPDATE spaces SET updated=? WHERE id=?", (now, destination))
+                    parent = self.folder(db, destination, req.get("parent"), eid)
+                    db.execute("UPDATE entries SET space=?, parent=?, updated=? WHERE id=?",
+                               (destination, parent, now, eid))
                 else:
                     if row["kind"] == "folder" and req.get("contents") not in ("keep", "delete"):
                         raise TutorError(400, "choose_contents", "Укажите, что делать с содержимым папки.")

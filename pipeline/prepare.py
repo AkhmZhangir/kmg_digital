@@ -61,13 +61,14 @@ def read_docx(path):
     return "\n\n".join(filter(str.strip, blocks))
 
 
-def read_pdf(path, selected, force_ocr=False):
+def read_pdf(path, selected, force_ocr=False, *, whole_book=False):
     try:
         from pypdf import PdfReader
     except ImportError:
         raise ValueError("Для PDF установите зависимость из pipeline/requirements.txt.") from None
     reader = PdfReader(path)
-    ids = select(range(1, len(reader.pages) + 1), selected)
+    available = range(1, len(reader.pages) + 1)
+    ids = available if whole_book and selected is None else select(available, selected)
     pages = {number: "" if force_ocr else reader.pages[number - 1].extract_text() or "" for number in ids}
     missing = [number for number, text in pages.items() if sum(map(str.isalpha, text)) < 80]
     if missing:

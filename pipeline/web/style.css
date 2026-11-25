@@ -299,8 +299,15 @@ figcaption { color: var(--muted); font-size: .875rem; }
 .libraryNav p { margin: 4px 0 0; font-size: .8rem; }
 .libraryNav p:empty, #homeStatus:empty { display: none; }
 .libraryList { list-style: none; margin: 4px 0; padding: 0; max-height: 11rem; overflow-y: auto; }
-.libraryLink { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 4px 7px; border-radius: 6px; color: var(--ink); overflow-wrap: anywhere; }
+.libraryLink { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 8px; padding: 4px 7px; border-radius: 6px; color: var(--ink); overflow-wrap: anywhere; }
 .libraryLink[href]:hover, .libraryLink[aria-current=page] { background: var(--tint); color: var(--accent); }
+.libraryName { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.documentsNav h3 { margin-top: 12px; }
+.documentsNav + .sourceActions { margin-top: 10px; }
+.homeDocuments { margin-block: 16px; }
+.homeDocuments h2 { font-size: 1.2rem; margin: 0 0 6px; }
+#homeDocumentsCount { margin-inline-start: 8px; }
+
 .homeLayout { margin-block: 16px 24px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
 .homeLayout h2 { font-size: 1.2rem; }
 .homeLayout .panelHeader { min-height: 2.5rem; }

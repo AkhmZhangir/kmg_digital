@@ -132,7 +132,7 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
         def _get(self):
             path = self.path.split("?")[0]
             if path == "/api/spaces":
-                return self._json(200, {"spaces": spaces.list()})
+                return self._json(200, {"spaces": spaces.list(), "documents": spaces.documents()})
             if path == "/api/search":
                 query = parse_qs(urlsplit(self.path).query).get("q", [""])[0].strip()
                 return self._json(200, {"hits": search_sources(lib, query) if 0 < len(query) <= 120 else []})

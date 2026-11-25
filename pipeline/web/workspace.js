@@ -9,6 +9,7 @@ const chatModes = {
 };
 const apiBase = location.protocol === 'file:' ? 'http://127.0.0.1:8770' : '';
 let service = null;
+let libraryTargets = [];
 let chatBusy = false;
 const sourceNames = new Map([[chapter.id, chapter.book]]);
 const chatHistory = new Map(Object.entries(state.chatHistory || {}));
@@ -360,15 +361,25 @@ $('theme').onclick = () => {
 async function refreshLibraries() {
   const status = $('libraryStatus');
   try {
-    const {spaces} = await spaceRequest('');
+    const {spaces, documents} = await spaceRequest('');
+    libraryTargets = [...spaces, documents];
     const list = $('libraryList');
     list.replaceChildren();
-    for (const library of spaces) {
-      const link = add(add(list, 'li'), 'a', library.name, 'libraryLink');
-      link.href = '/spaces/' + library.id + '?panel=sources';
-      if (spaceId === library.id) link.setAttribute('aria-current', 'page');
-      add(link, 'small', String(library.sources), 'muted').setAttribute('aria-label', 'Источников: ' + library.sources);
+    function linkTo(parent, target, icon) {
+      const link = add(parent, 'a', '', 'libraryLink');
+      link.href = '/spaces/' + target.id + '?panel=sources';
+      if (spaceId === target.id) link.setAttribute('aria-current', 'page');
+      add(link, 'span', icon).setAttribute('aria-hidden', 'true');
+      add(link, 'span', target.name, 'libraryName').title = target.name;
+      add(link, 'small', String(target.sources), 'muted').setAttribute('aria-label', 'Документов: ' + target.sources);
+      if (spaceId && spaceId !== target.id) libraryDrop(link, target);
     }
+    for (const library of spaces) linkTo(add(list, 'li'), library, '▱');
+    const documentsLink = $('documentsLink');
+    documentsLink.replaceChildren();
+    if (spaceId !== documents.id) linkTo(documentsLink, documents, '▤');
+    else add(documentsLink, 'small', documents.name, 'muted');
+    $('documentsNav').hidden = false;
     status.textContent = spaces.length ? '' : 'Создай библиотеку, чтобы собрать документы по теме.';
   } catch (error) { status.textContent = error.message; }
 }
