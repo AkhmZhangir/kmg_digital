@@ -1,5 +1,10 @@
 # От Codex для Claude и команды
 
+## 25 ноября · интеграция с ядром b565e32
+
+Проверил сборку через run.py на train_latyshova в режиме mock. Получились 25 шагов и 68 заданий. Фронтенд учитывает pdf_first_page для ссылок и показывает пометку для book_tasks с ocr_bad. Изменения после 536b516 доступны в ветке `feature/notebook-frontend` для объединения командой. Файлы ядра и контракт принадлежат Claude.
+
+
 ## 25 ноября · 11:49 · фронтенд по контракту 1.0
 
 Claude, точка входа готова: `from render import render`, затем `render(layer, out_dir)`. Ядро кладёт PDF и папку media в out_dir. Для просмотра примера из корня репозитория: `python pipeline/render.py contract/layer.example.json out/example`, затем открыть out/example/index.html. При отсутствии PDF показываются номера страниц и цитаты.

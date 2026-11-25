@@ -32,11 +32,12 @@ function details(parent,title,cls='') {
 function localPath(path) {
   return typeof path==='string' && !/[:\\]/.test(path) && !path.startsWith('/') && !path.split('/').includes('..');
 }
+function pdfPage(page){ return Number(page) - (Number(chapter.pdf_first_page) || 1) + 1; }
 function source(parent,page) {
   if (!page) return;
   const hasPDF=chapter.pdf && localPath(chapter.pdf);
   const el=add(parent,hasPDF?'a':'span','стр. '+page,'ref');
-  if(hasPDF){el.href=chapter.pdf+'#page='+Number(page);el.target='_blank';el.rel='noopener';}
+  if(hasPDF){el.href=chapter.pdf+'#page='+pdfPage(page);el.target='_blank';el.rel='noopener';}
 }
 function math(parent,latex) {
   const span=add(parent,'span',latex);
@@ -130,7 +131,7 @@ function renderLesson(){
   if(n.analogy){add(content,'h3','Аналогия');add(content,'p',n.analogy.text);add(content,'p','Граница аналогии · '+n.analogy.breaks_where);}
   for(const [k,title] of [['mechanism','Механизм'],['practice','Практика специалиста'],['nuances','Нюансы'],['deeper','Глубже']])
     if(n.layers?.[k]?.length)paragraphs(details(content,title),n.layers[k]);
-  section(content,'Задачи книги',n.book_tasks,(p,t)=>{add(p,'p','№ '+t.number+' · '+t.text);if(t.figure)p.append(t.figure+' · ');source(p,t.page);});
+  section(content,'Задачи книги',n.book_tasks,(p,t)=>{if(t.ocr_bad)add(p,'strong','Сверить по скану','warning');add(p,'p','№ '+t.number+' · '+t.text);if(t.figure)p.append(t.figure+' · ');source(p,t.page);});
   for(const ill of n.illustrations || []){
     if(!localPath(ill.src))continue;
     const fig=add(content,'figure');const img=add(fig,'img');img.src=ill.src;img.alt=ill.alt;
@@ -293,7 +294,7 @@ document.title=$('title').textContent=chapter.title_short || chapter.title;
 $('author').textContent=chapter.author+' · '+chapter.year;
 $('meta').textContent=nodes.length+' '+({one:'шаг',few:'шага',many:'шагов'}[new Intl.PluralRules('ru').select(nodes.length)])+' / '+nodes.reduce((total,n)=>total+n.minutes,0)+' мин';
 add($('book'),'strong',chapter.book);add($('book'),'small',chapter.author+' · стр. '+chapter.pages.join('–'));
-if(chapter.pdf && localPath(chapter.pdf)){const link=add($('book'),'a','Открыть книгу');link.href=chapter.pdf+'#page='+chapter.pages[0];link.target='_blank';link.rel='noopener';}
+if(chapter.pdf && localPath(chapter.pdf)){const link=add($('book'),'a','Открыть книгу');link.href=chapter.pdf+'#page='+pdfPage(chapter.pages[0]);link.target='_blank';link.rel='noopener';}
 function cover(){
   const canvas=document.querySelector('canvas');const w=canvas.clientWidth,h=canvas.clientHeight;
   const scale=Math.min(devicePixelRatio,2);canvas.width=w*scale;canvas.height=h*scale;

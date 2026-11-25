@@ -14,3 +14,4 @@ input,textarea{background:var(--paper);border:1px solid var(--line);border-radiu
 #mobileNav{display:none}
 @media(max-width:640px){#mobileNav{display:flex;gap:4px;margin:0 0 10px}#mobileNav button{flex:1;font-size:.88rem;padding:9px 4px}#mobileNav [aria-pressed=true]{background:var(--ink);color:var(--paper)}body:not([data-panel=sources]) .columns>aside:first-child,body:not([data-panel=tools]) .lab,body:not([data-panel=read]) .paper{display:none}#route{max-height:none}}
 @media print{#mobileNav{display:none!important}}
+@media(min-width:981px){.columns>aside{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow-y:auto}#route{max-height:45vh;overflow-y:auto}}
