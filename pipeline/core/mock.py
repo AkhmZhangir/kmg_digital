@@ -16,6 +16,8 @@ def _sentences(text: str):
 
 
 def respond(task: str, payload: dict) -> dict:
+    if task == "fix-quotes":
+        return {"claims": []}
     return {"outline": _outline, "node": _node, "tasks": _tasks, "check": _check}[task.split("-")[0]](payload)
 
 

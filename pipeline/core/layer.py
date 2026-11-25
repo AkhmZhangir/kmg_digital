@@ -227,13 +227,22 @@ def fill_node(node: dict, idx: int, chapter_key: str, by_id: dict, llm: LLM, pac
     out = _ask(llm, system, payload, "node", log)
     bad = _bad_claims(out, by_id)
     if bad and not llm.is_mock:
-        payload["previous_answer"] = out
-        payload["errors"] = [f"{c}: {why}" for c, why in bad.items()] + [
-            "Исправь цитаты: они должны быть ДОСЛОВНЫМИ кусками указанной единицы. Остальное не меняй."]
-        out2 = _ask(llm, system, payload, "node-fix", log)
-        if len(_bad_claims(out2, by_id)) < len(bad):
-            out = out2
-        log(f"  узел {node['key']}: повтор из-за {len(bad)} цитат")
+        # Переспрашиваем только плохие утверждения — короткий ответ вместо перегенерации всего шага.
+        by_cid = {str(c.get("id")): c for c in out.get("claims") or [] if isinstance(c, dict)}
+        cited = {by_cid[c].get("unit") for c in bad if c in by_cid}
+        fix_payload = {"task": "fix-quotes",
+                       "units": [_unit_view(u) for u in units if u["id"] in cited or len(units) <= 6],
+                       "claims": [{"id": c, "text": by_cid[c].get("text"), "quote": by_cid[c].get("quote"),
+                                   "unit": by_cid[c].get("unit"), "error": why} for c, why in bad.items() if c in by_cid]}
+        fixed = _ask(llm, _prompt("fix_quotes", pack), fix_payload, "fix-quotes", log)
+        repaired = 0
+        for f in fixed.get("claims") or []:
+            if isinstance(f, dict) and str(f.get("id")) in by_cid and f.get("quote"):
+                trial = dict(by_cid[str(f["id"])], quote=str(f["quote"]), unit=f.get("unit") or by_cid[str(f["id"])].get("unit"))
+                if check_claim(dict(trial), by_id)[0]:
+                    by_cid[str(f["id"])].update(quote=trial["quote"], unit=trial["unit"])
+                    repaired += 1
+        log(f"  узел {node['key']}: исправлено цитат {repaired} из {len(bad)}")
     nid = f"{chapter_key}.{node['key']}"
     claim_map, claims, page_of = {}, [], {}
     for i, c in enumerate(out.get("claims") or [], 1):
