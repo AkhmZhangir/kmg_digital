@@ -41,10 +41,14 @@ def _blocks_local(m: SequenceMatcher, qlen: int) -> bool:
     return span <= qlen * 1.3
 
 
+_REFS = re.compile(r"(?i)(рис(унок|унке|\.)?|табл(ица|ице|\.)?|fig(ure|\.)?|table|§|формул\w*|пример\w*|задач\w*|глав\w*|стр\.?)\s*\d+[а-я]?(?:(?:,\s+|\s*[–-]\s*)\d+[а-я]?(?![.,]\d))*"
+                   r"|\(\d{1,3}\)")
+
+
 def numbers(text: str) -> set[str]:
-    """Числа текста в каноническом виде: '1,50' → '1.5', '−3' → '-3'."""
+    """Числа текста в каноническом виде: '1,50' → '1.5'. Ссылки (рис. 72, § 18, формула (10)) — не числа."""
     out = set()
-    for raw in _NUM.findall(unicodedata.normalize("NFKC", text)):
+    for raw in _NUM.findall(_REFS.sub(" ", unicodedata.normalize("NFKC", text))):
         v = raw.replace(",", ".")
         try:
             f = float(v)
