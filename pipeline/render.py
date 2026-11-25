@@ -1,6 +1,7 @@
 """Render a contract v1 chapter for offline use. Core provides media in out_dir."""
 import argparse
 import json
+import re
 import shutil
 from pathlib import Path
 
@@ -36,6 +37,31 @@ def read_course_audit(artifacts: Path) -> dict:
     return {"report": report, "validation": validation, "needs_review": needs_review}
 
 
+def reference_glossary(nodes: list) -> list:
+    pack = _artifact(WEB.parent / "domain" / "geology" / "pack.json") or {}
+    passages = [(node["id"], item.get("page"), text)
+                for node in nodes
+                for item in (*node.get("claims", []), *node.get("summary", []))
+                if (text := item.get("quote") or item.get("text"))]
+    entries = []
+    for entry in pack.get("glossary_seed", []):
+        term = entry["term"]
+        # Match Russian case endings, keeping abbreviations and word boundaries exact.
+        if term.endswith("ость"):
+            pattern = re.escape(term[:-1]) + "(?:ь|и|ью|ей|ями|ям|ях)"
+        elif term.islower() and term.endswith("р"):
+            pattern = re.escape(term) + "(?:а|у|ом|е|ы|ов|ами|ам|ах)?"
+        else:
+            pattern = re.escape(term)
+        word = re.compile(r"\b" + pattern + r"\b", re.IGNORECASE)
+        for node_id, page, text in passages:
+            if word.search(text):
+                entries.append({**entry, "id": "ref-" + term, "node_id": node_id, "page": page,
+                                "reference": True})
+                break
+    return entries
+
+
 def course_page(layer: dict, artifacts: Path | None = None, *, assets="web/") -> str:
     template = (WEB / "index.html").read_text(encoding="utf-8").replace('"web/', '"' + assets)
     if artifacts is not None:
@@ -43,6 +69,8 @@ def course_page(layer: dict, artifacts: Path | None = None, *, assets="web/") ->
             **read_course_audit(artifacts),
             "coverage": _artifact(artifacts / "coverage.json"),
         }}
+    if layer.get("nodes") and not layer.get("glossary") and layer.get("chapter", {}).get("domain", "geology") == "geology":
+        layer = {**layer, "glossary": reference_glossary(layer["nodes"])}
     data = json.dumps(layer, ensure_ascii=False).replace("<", "\\u003c")
     return template.replace("__LAYER__", data)
 

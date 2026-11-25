@@ -3,6 +3,7 @@
   --bg: #f6f7fa;
   --paper: #fff;
   --ink: #202334;
+  --emphasis: #393753;
   --muted: #575c70;
   --line: #dce0eb;
   --accent: #4338ca;
@@ -18,6 +19,7 @@
   --bg: #151621;
   --paper: #1d1f2d;
   --ink: #f2f0fb;
+  --emphasis: #dedbf2;
   --muted: #b4b7cd;
   --line: #3c3f57;
   --accent: #b9b1ff;
@@ -51,6 +53,9 @@ input[type=checkbox], input[type=radio], progress { accent-color: var(--accent);
 textarea { width: 100%; resize: vertical; }
 small, .muted { color: var(--muted); font-size: .875rem; }
 h1, h2, h3, h4 { line-height: 1.2; overflow-wrap: anywhere; }
+h1, h2, h3, h4, strong, th { color: var(--emphasis); }
+h1, h2, h3, h4, strong { font-weight: 650; }
+:where(button, a, summary, .muted) strong { color: inherit; }
 p { overflow-wrap: anywhere; }
 .skip, .sr { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); }
 .skip:focus {
@@ -103,7 +108,7 @@ main { max-width: 1600px; margin: auto; padding: 22px clamp(12px, 3vw, 48px) 50p
 }
 .cover canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; opacity: .52; }
 .cover h1 {
-  margin: 5px 0 8px; max-width: 25ch; font-weight: 750;
+  margin: 5px 0 8px; max-width: 25ch; font-weight: 700;
   font-size: clamp(1.6rem, 2.9vw, 2.85rem); letter-spacing: -.045em;
 }
 .cover span { color: var(--muted); font-size: .9rem; }
@@ -237,6 +242,7 @@ figcaption { color: var(--muted); font-size: .875rem; }
     color-scheme: light;
     --bg: #fff;
     --paper: #fff;
+    --emphasis: #242333;
     --muted: #4b5563;
     --accent: #343873;
     --line: #d5d8e1;
@@ -273,7 +279,7 @@ figcaption { color: var(--muted); font-size: .875rem; }
 .spaceGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); grid-auto-rows: 1fr; gap: 12px; }
 .spaceCard, .spaceEmpty { border: 1px solid var(--line); border-radius: 12px; background: var(--paper); padding: 16px; }
 .spaceCard h3 { margin: 0; overflow-wrap: anywhere; }
-.spaceCard h3 a { color: var(--ink); }
+.spaceCard h3 a { color: inherit; }
 .spaceCard h3 a:hover { color: var(--accent); }
 .spaceGrid > .spaceCard, .homeLibrary { display: flex; flex-direction: column; min-width: 0; }
 .spaceGrid .qualityBadge { align-self: start; margin: auto 0 0; }

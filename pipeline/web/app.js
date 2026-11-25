@@ -352,9 +352,11 @@ function renderStudy(){
       if(state.cards[c.id]===choice)b.className='primary';
     }
   }
-  if(view==='terms' && !glossary.length) add(content,'p','В этой сборке главы словарь пока пуст.');
+  if(view==='terms' && !glossary.length) add(content,'p','Сборка не содержит определений, и в тексте шагов не нашлось терминов из геологического справочника.');
   if(view==='terms')for(const t of glossary){
-    add(content,'h3',t.term);add(content,'small',t.en);bookText(content,'p',t.definition);source(content,t.page);
+    add(content,'h3',t.term);add(content,'small',t.en);bookText(content,'p',t.definition);
+    if (t.reference) add(content, 'small', 'Определение из геологического справочника QABAT. ');
+    source(content,t.page,t.reference ? 'Упоминание в книге · стр. '+t.page : undefined);
     button(content,'К шагу',()=>openNode(t.node_id));
   }
   if(view==='summary'){

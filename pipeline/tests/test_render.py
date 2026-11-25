@@ -24,6 +24,24 @@ class CoursePageTest(unittest.TestCase):
         self.assertIsNone(audit["validation"])
         self.assertNotIn("course_audit", layer)
 
+    def test_empty_glossary_uses_only_reference_terms_mentioned_in_the_chapter(self):
+        layer = {"chapter": {}, "nodes": [{"id": "n1", "claims": [
+            {"page": 12, "quote": "Гистограмма пористости коллекторов."}],
+            "summary": [{"page": 13, "text": "Комплекс ГИС."}]}], "glossary": []}
+
+        def entries():
+            html = course_page(layer)
+            return json.loads(re.search(r'id="layer">(.+?)</script>', html).group(1))["glossary"]
+
+        by_term = {row["term"]: row for row in entries()}
+        self.assertEqual(set(by_term), {"пористость", "коллектор", "ГИС"})
+        self.assertEqual(by_term["ГИС"]["page"], 13)
+        self.assertEqual(by_term["пористость"]["node_id"], "n1")
+        self.assertTrue(all(row["reference"] for row in by_term.values()))
+        self.assertEqual(layer["glossary"], [])
+        layer["glossary"] = [{"term": "Авторский термин"}]
+        self.assertEqual(entries(), layer["glossary"])
+
     def test_quality_requires_all_schema_checks_and_at_least_80_percent_citations(self):
         with TemporaryDirectory() as folder:
             path = Path(folder)
