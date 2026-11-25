@@ -13,10 +13,13 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import traceback
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.parse import parse_qs, quote, urlsplit
+from types import SimpleNamespace
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
@@ -25,12 +28,16 @@ from core.llm import LLM, load_env  # noqa: E402
 from laboratory import LabTutor, activity, candidates, evaluate, excerpt, lab_context, registry, tutor_hint
 from core.tutor import Library, TutorError, chat  # noqa: E402
 
+from spaces import MAX_FILE, Spaces
+
 MAX_BODY = 5 * 1024 * 1024
 UPLOAD_TYPES = {"txt", "md"}
 
 
 def make_handler(lib: Library, llm: LLM, out_dir: Path):
+    out_dir = out_dir.resolve()
     lab_model = LabTutor(llm)
+    spaces = Spaces(out_dir / ".geocourse" / "spaces.sqlite3")
 
     class Handler(SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
@@ -41,10 +48,11 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                 sys.stderr.write("%s %s\n" % (self.log_date_time_string(), fmt % args))
 
         def end_headers(self):
-            if self.path.startswith("/api/"):
+            if self.path.startswith("/api/") and not self.path.startswith("/api/spaces"):
                 self.send_header("Access-Control-Allow-Origin", "*")  # курс, открытый как file://
                 self.send_header("Access-Control-Allow-Headers", "Content-Type")
                 self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+            if self.path.startswith("/api/"):
                 self.send_header("Cache-Control", "no-store")
             super().end_headers()
 
@@ -59,12 +67,21 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
         def _error(self, status: int, code: str, message: str):
             self._json(status, {"error": {"code": code, "message": message}})
 
+        def _length(self):
+            try:
+                return int(self.headers.get("Content-Length") or 0)
+            except ValueError:
+                raise TutorError(400, "bad_length", "Некорректный размер запроса.") from None
+
         def _body(self):
-            n = int(self.headers.get("Content-Length") or 0)
-            if n > MAX_BODY:
+            n = self._length()
+            if not 0 <= n <= MAX_BODY:
                 raise TutorError(413, "too_large", "Запрос больше 5 МБ")
             try:
-                return json.loads(self.rfile.read(n).decode("utf-8") or "{}")
+                value = json.loads(self.rfile.read(n).decode("utf-8") or "{}")
+                if not isinstance(value, dict):
+                    raise TutorError(400, "bad_json", "Ожидается JSON-объект.")
+                return value
             except (UnicodeDecodeError, json.JSONDecodeError):
                 raise TutorError(400, "bad_json", "Тело запроса — не JSON") from None
 
@@ -72,8 +89,74 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
             self.send_response(204)
             self.end_headers()
 
+        def _send(self, body, kind, disposition=None):
+            self.send_response(200)
+            self.send_header("Content-Type", kind)
+            self.send_header("Content-Length", str(len(body)))
+            self.send_header("X-Content-Type-Options", "nosniff")
+            if disposition:
+                self.send_header("Content-Disposition", disposition)
+            self.end_headers()
+            self.wfile.write(body)
+
+        def translate_path(self, path):
+            # Keep private workspace storage outside the public static namespace.
+            public = Path(super().translate_path(path))
+            relative = public.relative_to(out_dir)
+            if relative.parts and relative.parts[0] in {"assets", ".geocourse"}:
+                if relative.parts[0] == "assets":
+                    return str(HERE / "web" / Path(*relative.parts[1:]))
+                return str(out_dir / ".private-unavailable")
+            return str(public)
+
         def do_GET(self):
+            try:
+                self._check_space_origin()
+                return self._get()
+            except TutorError as e:
+                return self._error(e.status, e.code, e.message)
+
+        def _check_space_origin(self):
+            if not self.path.startswith("/api/spaces"):
+                return
+            origin = self.headers.get("Origin")
+            if origin and urlsplit(origin).netloc != self.headers.get("Host"):
+                raise TutorError(403, "wrong_origin", "Откройте учебное пространство на странице GeoCourse.")
+
+        def _lesson_page(self, layer):
+            data = json.dumps(layer, ensure_ascii=False).replace("<", "\\u003c")
+            template = (HERE / "web" / "index.html").read_text(encoding="utf-8").replace('"web/', '"/assets/')
+            return self._send(template.replace("__LAYER__", data).encode(), "text/html; charset=utf-8")
+
+        def _get(self):
             path = self.path.split("?")[0]
+            if path == "/api/spaces":
+                return self._json(200, {"spaces": spaces.list()})
+            if path == "/api/catalog":
+                return self._json(200, {"courses": [
+                    {**item, "chapter": lib.get(item["id"]).layer["chapter"]}
+                    for item in lib.list() if item["kind"] == "chapter"
+                ]})
+            space_page = re.fullmatch(r"/spaces/([a-f0-9]{32})/?", path)
+            if space_page:
+                space = spaces.view(space_page[1])
+                chapter = {"id": "space-" + space["id"], "title": space["name"], "pages": []}
+                return self._lesson_page({"space_id": space["id"], "chapter": chapter, "nodes": [], "parts": []})
+            match = re.fullmatch(r"/api/spaces/([a-f0-9]{32})(?:/files/(src-[a-f0-9]{32})(/text)?)?", path)
+            if match:
+                sid, eid, preview = match.groups()
+                if not eid:
+                    return self._json(200, spaces.view(sid))
+                if preview:
+                    src = spaces.get_source(sid, eid)
+                    return self._json(200, {"text": "\n\n".join(u["text"] for u in src.units[:25])})
+                row = spaces.original(sid, eid)
+                kind = {".pdf": "application/pdf", ".docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"}.get(row["ext"], "text/plain; charset=utf-8")
+                mode = "inline" if row["ext"] == ".pdf" else "attachment"
+                filename = row["name"]
+                if not filename.lower().endswith(row["ext"]):
+                    filename += row["ext"]
+                return self._send(row["original"], kind, mode + "; filename*=UTF-8''" + quote(filename, safe=""))
             if path.startswith("/api/lab/media/"):
                 asset = next((a for a in registry() if path == "/api/lab/media/" + a["asset_id"]), None)
                 if not asset or not (HERE / asset["media_url"]).is_file():
@@ -93,46 +176,47 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                 return self._error(404, "not_found", "Нет такого метода")
             if path in ("/", "/index.html"):
                 return self._catalog()
+            course = re.fullmatch(r"/([^/]+)(?:/index\.html|/)", path)
+            if course:
+                folder = Path(super().translate_path("/" + course[1]))
+                for src in lib.sources.copy().values():
+                    if src.folder == folder and src.layer.get("schema_version") == "1.0" and src.nodes:
+                        return self._lesson_page(src.layer)
             return super().do_GET()
 
         def _catalog(self):
-            """Каталог курсов вместо служебного «Directory listing»."""
-            import html as H
-            rows = []
-            for s in sorted(lib.list(), key=lambda x: x.get("folder") or ""):
-                if s.get("kind") != "chapter" or not s.get("folder"):
-                    continue
-                layer = lib.sources[s["id"]].layer or {}
-                ch = layer.get("chapter", {})
-                model = (ch.get("built_with") or {}).get("model", "")
-                draft = model == "mock"
-                kind = "обучающая" if s["folder"].startswith("train") else "контрольная" if s["folder"].startswith("ctrl") else "глава"
-                rows.append(f'<a class="c{" draft" if draft else ""}" href="{H.escape(s["folder"])}/index.html">'
-                            f'<small>{kind} · {H.escape(ch.get("author", ""))} · стр. {"–".join(map(str, s.get("pages") or []))}</small>'
-                            f'<b>{H.escape(ch.get("title", s["name"]))}</b><span>{H.escape(ch.get("book", ""))}</span>'
-                            f'<em>{"черновик: глава ещё не обработана моделью" if draft else f"шагов {s['nodes']} · собрано моделью {H.escape(model)}"}</em></a>')
-            page = ("<!doctype html><html lang=ru><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
-                    "<title>Глава → курс</title><style>:root{color-scheme:light dark;--bg:#f6f7fa;--card:#fff;--ink:#202334;--mut:#575c70;--acc:#4338ca}"
-                    "@media(prefers-color-scheme:dark){:root{--bg:#151621;--card:#1d1f2d;--ink:#f2f0fb;--mut:#b4b7cd;--acc:#b9b1ff}}"
-                    "body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui}main{max-width:960px;margin:auto;padding:32px 16px}"
-                    "h1{margin:0 0 4px}p{color:var(--mut)}.g{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}"
-                    ".c{display:grid;gap:4px;padding:16px;border-radius:12px;background:var(--card);color:inherit;text-decoration:none;border:1px solid #8884}"
-                    ".c:hover,.c:focus-visible{border-color:var(--acc)}.c small,.c span{color:var(--mut)}.c em{font-style:normal;color:var(--acc);font-size:.9em}"
-                    ".draft{opacity:.7}.draft em{color:var(--mut)}</style><main><h1>Глава → курс</h1>"
-                    f"<p>Курсы по главам книг. Тьютор: {H.escape(llm.name)}.</p><div class=g>{''.join(rows)}</div></main>")
-            body = page.encode("utf-8")
-            self.send_response(200)
-            self.send_header("Content-Type", "text/html; charset=utf-8")
-            self.send_header("Content-Length", str(len(body)))
-            self.end_headers()
-            self.wfile.write(body)
+            return self._send((HERE / "web" / "home.html").read_bytes(), "text/html; charset=utf-8")
 
         def do_POST(self):
-            path = self.path.split("?")[0]
+            url = urlsplit(self.path)
+            path = url.path
             try:
+                self._check_space_origin()
+                if path == "/api/spaces":
+                    return self._json(201, spaces.create(self._body().get("name")))
+                scope = re.fullmatch(r"/api/spaces/([a-f0-9]{32})(?:/(upload|chat|lab/(?:open|grade|hint|recommend)))?", path)
+                active_lib = lib
+                if scope:
+                    space_id, operation = scope.groups()
+                    if not operation:
+                        return self._json(200, spaces.edit(space_id, self._body()))
+                    if operation == "upload":
+                        size = self._length()
+                        if not 0 < size <= MAX_FILE:
+                            raise TutorError(413, "file_size", "Выберите файл размером до 32 МБ.")
+                        if self.headers.get_content_type() != "application/octet-stream":
+                            raise TutorError(415, "bad_upload", "Ожидается содержимое файла.")
+                        params = parse_qs(url.query)
+                        raw = self.rfile.read(size)
+                        if len(raw) != size:
+                            raise TutorError(400, "incomplete_upload", "Загрузка прервалась. Повторите попытку.")
+                        result = spaces.upload(space_id, params.get("name", [""])[0], params.get("parent", [None])[0], raw)
+                        return self._json(201, result)
+                    active_lib = SimpleNamespace(get=lambda eid: spaces.get_source(space_id, eid))
+                    path = "/api/" + operation
                 if path in ("/api/lab/open", "/api/lab/grade", "/api/lab/hint", "/api/lab/recommend"):
                     req = self._body()
-                    node = lab_context(lib, req)
+                    node = lab_context(active_lib, req)
                     if path.endswith("/recommend"):
                         return self._json(200, {"available": bool(candidates(excerpt(node)))})
                     operation = {"/api/lab/open": activity, "/api/lab/grade": evaluate, "/api/lab/hint": tutor_hint}[path]
@@ -146,13 +230,13 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                     return self._json(200, result)
                 if path == "/api/chat":
                     req = self._body()
-                    reply = chat(lib, llm, req)
+                    reply = chat(active_lib, llm, req)
                     if reply["mode"] == "practice":
                         for sid in reversed(req["sources"]):
-                            src = lib.get(sid)
+                            src = active_lib.get(sid)
                             if src.layer and req.get("lesson") not in src.nodes:
                                 continue
-                            node = lab_context(lib, {"source": sid, "node": req.get("lesson")})
+                            node = lab_context(active_lib, {"source": sid, "node": req.get("lesson")})
                             if candidates(excerpt(node)):
                                 reply["action"] = {"type": "open_virtual_lab", "source": sid, "node": req.get("lesson")}
                                 break
@@ -174,7 +258,7 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                 return self._error(e.status, e.code, e.message)
             except Exception as e:  # noqa: BLE001
                 traceback.print_exc()
-                return self._error(500, "internal", f"{type(e).__name__}: {e}")
+                return self._error(500, "internal", "Внутренняя ошибка сервера.")
 
     return Handler
 

@@ -3,26 +3,28 @@
 (function () {
   function place() {
     const box = document.getElementById('content');
-    if (!box || typeof current === 'undefined') return;
+    if (!box || typeof current === 'undefined' || view !== 'lesson') return;
     box.querySelectorAll('.stepVideo').forEach(e => e.remove());
-    for (const v of current.videos || []) {
+    for (const v of current?.videos || []) {
+      if (!localPath(v.src)) continue;
       const fig = document.createElement('figure');
       fig.className = 'stepVideo';
       const video = document.createElement('video');
       video.controls = true;
       video.preload = 'metadata';
       video.src = v.src;
-      if (v.poster) video.poster = v.poster;
+      if (v.poster && localPath(v.poster)) video.poster = v.poster;
       video.style.cssText = 'max-width:100%;max-height:70vh;border-radius:12px;display:block;margin:auto;background:#000';
-      if (v.captions) {
+      if (v.captions && localPath(v.captions)) {
         const tr = document.createElement('track');
         tr.kind = 'subtitles'; tr.srclang = 'ru'; tr.label = 'Русские'; tr.src = v.captions; tr.default = true;
         video.append(tr);
       }
+      const passport = v.passport && localPath(v.passport);
       const cap = document.createElement('figcaption');
-      cap.textContent = (v.format === 'shorts' ? 'Шортс · ' : 'Разбор · ') + v.title + (v.passport ? ' · ' : '');
-      if (v.passport) {
-        const a = document.createElement('a'); a.href = v.passport; a.target = '_blank'; a.textContent = 'паспорт ролика';
+      cap.textContent = (v.format === 'shorts' ? 'Шортс · ' : 'Разбор · ') + v.title + (passport ? ' · ' : '');
+      if (passport) {
+        const a = document.createElement('a'); a.href = v.passport; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'паспорт ролика';
         cap.append(a);
       }
       cap.style.cssText = 'text-align:center;color:var(--muted);font-size:.9rem;margin-top:6px';
@@ -32,7 +34,9 @@
       (h ? h.nextSibling : box.firstChild) ? box.insertBefore(fig, h ? h.nextSibling : box.firstChild) : box.append(fig);
     }
   }
-  new MutationObserver(() => { if (!document.querySelector('#content .stepVideo') && (current.videos || []).length) place(); })
+  new MutationObserver(() => {
+    if (view === 'lesson' && current?.videos?.some(video => localPath(video.src)) && !document.querySelector('#content .stepVideo')) place();
+  })
     .observe(document.getElementById('content'), {childList: true});
   place();
 })();

@@ -17,9 +17,9 @@ function labLink(parent, label, url) {
 
 function textExercise(parent, node, instruction) {
   add(parent, 'p', instruction);
-  const claim = node.claims?.find(c => c.verified && c.quote);
+  const claim = node?.claims?.find(c => c.verified && c.quote);
   if (!claim) {
-    button(parent, 'Открыть материал урока', () => openView('lesson'));
+    if (node) button(parent, 'Открыть материал урока', () => openView('lesson'));
     return;
   }
   const label = add(parent, 'label', 'Сформулируй вывод своими словами');
@@ -50,7 +50,7 @@ async function specimenLab(parent) {
   status.setAttribute('role', 'status');
   let task;
   try {
-    task = await labPost('open', {source: sourceId, node: node.id, review: state.done.includes(node.id)});
+    task = await labPost('open', {source: sourceId, node: node?.id ?? null, review: state.done.includes(node?.id)});
   } catch (error) {
     status.textContent = 'Не удалось открыть задание. ' + error.message;
     button(parent, 'Повторить', () => { parent.replaceChildren(); specimenLab(parent); });
@@ -74,7 +74,7 @@ async function specimenLab(parent) {
   }
   add(parent, 'small', task.guidance + ' · ' + (task.activity === 'mineral_identification' ? 'Определение минерала' : 'Определение породы'), 'kicker');
   add(parent, 'p', task.instructions);
-  const body = {source: sourceId, node: node.id, asset_id: task.asset_id};
+  const body = {source: sourceId, node: node?.id ?? null, asset_id: task.asset_id};
   const form = document.createElement('form');
   specimenViewer(parent, task, () => {
     form.hidden = true;
@@ -106,7 +106,7 @@ async function specimenLab(parent) {
   const submit = add(form, 'button', 'Проверить ответ', 'primary');
   const feedback = add(form, 'p');
   feedback.setAttribute('role', 'status');
-  const progressKey = sourceId + '/' + node.id + '/' + task.asset_id;
+  const progressKey = sourceId + '/' + (node?.id || '') + '/' + task.asset_id;
   if (state.labPassed?.[progressKey]) feedback.textContent = 'Работа уже зачтена. Можно потренироваться ещё раз.';
   form.onsubmit = async event => {
     event.preventDefault();
