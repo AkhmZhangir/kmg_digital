@@ -1,0 +1,100 @@
+[
+ {
+  "unit": "train_latyshova-p107-u1",
+  "page": 107,
+  "kind": "текст",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ },
+ {
+  "unit": "train_latyshova-p107-u2",
+  "page": 107,
+  "kind": "текст",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ },
+ {
+  "unit": "train_latyshova-p107-u3",
+  "page": 107,
+  "kind": "текст",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ },
+ {
+  "unit": "train_latyshova-p107-u4",
+  "page": 107,
+  "kind": "текст",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ },
+ {
+  "unit": "train_latyshova-p107-u5",
+  "page": 107,
+  "kind": "пример",
+  "node": "train_latyshova-p107-1",
+  "reason": ""
+ },
+ {
+  "unit": "train_latyshova-p107-u6",
+  "page": 107,
+  "kind": "текст",
+  "node": "train_latyshova-p107-1",
+  "reason": ""
+ },
+ {
+  "unit": "train_latyshova-p107-u7",
+  "page": 107,
+  "kind": "заголовок",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ },
+ {
+  "unit": "train_latyshova-p107-u8",
+  "page": 107,
+  "kind": "текст",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ },
+ {
+  "unit": "train_latyshova-p107-u9",
+  "page": 107,
+  "kind": "описание иллюстрации OCR",
+  "node": null,
+  "reason": "Сверить описание с рисунком в PDF"
+ },
+ {
+  "unit": "train_latyshova-p107-u10",
+  "page": 107,
+  "kind": "текст",
+  "node": "train_latyshova-p107-1",
+  "reason": ""
+ },
+ {
+  "unit": "train_latyshova-p107-u11",
+  "page": 107,
+  "kind": "текст",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ },
+ {
+  "unit": "train_latyshova-p107-u12",
+  "page": 107,
+  "kind": "пример",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ },
+ {
+  "unit": "train_latyshova-p107-u13",
+  "page": 107,
+  "kind": "текст",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ },
+ {
+  "unit": "train_latyshova-p107-u14",
+  "page": 107,
+  "kind": "текст",
+  "node": null,
+  "reason": "Модель пропустила фрагмент"
+ }
+]
