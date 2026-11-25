@@ -270,6 +270,18 @@ class LLM:
             except _ProviderDown as e:
                 if not self._next_provider(prov, str(e)):
                     raise LLMError(f"Все провайдеры цепочки недоступны: {e}") from None
+            except _TooLarge as e:
+                # Слишком большой запрос для этого провайдера — пробуем следующих, не выключая его для остальных запросов.
+                for other in self.providers[self.providers.index(prov) + 1:]:
+                    if other.dead or other.is_mock:
+                        continue
+                    try:
+                        with other.slots:
+                            raw, usage, model = self._post_one(other, messages, temperature)
+                        return raw, usage, model, other
+                    except (_TooLarge, _ProviderDown):
+                        continue
+                raise LLMError(f"HTTP 400 запрос слишком велик для всех провайдеров ({e})") from None
 
     def _post_one(self, prov: Provider, messages, temperature):
         headers = {"Content-Type": "application/json", "User-Agent": "kmg-pipeline/1.0"}
@@ -293,7 +305,9 @@ class LLM:
                 return data["choices"][0]["message"]["content"] or "", data.get("usage") or {}, model
             except urllib.error.HTTPError as e:
                 detail = e.read().decode("utf-8", "replace")[:4000]
-                if e.code == 400 and json_mode and "response_format" in detail:
+                if e.code == 413 or (e.code == 400 and ("too large" in detail.lower() or "context" in detail.lower())):
+                    raise _TooLarge(f"HTTP {e.code} ({model}): запрос слишком велик")
+                if e.code == 400 and json_mode and ("response_format" in detail or "Failed to generate JSON" in detail):
                     json_mode = False  # сервер не умеет json_object
                     continue
                 if e.code == 429 and "PerDay" in detail:
@@ -327,6 +341,10 @@ class LLM:
 
 
 class _ProviderDown(Exception):
+    pass
+
+
+class _TooLarge(Exception):
     pass
 
 
