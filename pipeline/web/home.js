@@ -141,24 +141,35 @@ drop.ondrop = event => {
   startUpload(Array.from(event.dataTransfer.files));
 };
 get('retryHome').onclick = uploadFromHome;
+let catalogRequest = 0;
+async function refreshCatalog() {
+  const request = ++catalogRequest;
+  try {
+    const response = await fetch('/api/catalog', {cache: 'no-store'});
+    if (!response.ok) throw Error('Каталог курсов недоступен.');
+    const {courses} = await response.json();
+    if (request !== catalogRequest) return;
+    get('emptyCatalog').hidden = Boolean(courses.length);
+    const catalog = get('catalog');
+    catalog.replaceChildren();
+    for (const course of courses) {
+      const data = course.chapter;
+      const card = element(catalog, 'article', '', 'spaceCard');
+      const heading = element(element(card, 'h3'), 'a', data.title_short || data.title || course.name);
+      heading.href = '/' + encodeURIComponent(course.folder) + '/index.html';
+      const meta = [data.author, course.pages?.length ? 'стр. ' + course.pages.join('–') : '', 'Шагов: ' + course.nodes];
+      element(card, 'p', meta.filter(Boolean).join(' · '), 'muted');
+      if (data.built_with?.model === 'mock') element(card, 'small', 'Черновик', 'qualityBadge');
+    }
+  } catch (error) {
+    if (request === catalogRequest) status.textContent = error.message;
+  }
+}
+
 window.addEventListener('pageshow', () => {
   showTheme(readGeoTheme());
   refreshSpaces();
+  refreshCatalog();
 });
-
-fetch('/api/catalog').then(response => {
-  if (!response.ok) throw Error('Каталог курсов недоступен.');
-  return response.json();
-}).then(({courses}) => {
-  get('emptyCatalog').hidden = Boolean(courses.length);
-  for (const course of courses) {
-    const data = course.chapter;
-    const card = element(get('catalog'), 'article', '', 'spaceCard');
-    const heading = element(element(card, 'h3'), 'a', data.title_short || data.title || course.name);
-    heading.href = '/' + encodeURIComponent(course.folder) + '/index.html';
-    const meta = [data.author, course.pages?.length ? 'стр. ' + course.pages.join('–') : '', 'Шагов: ' + course.nodes];
-    element(card, 'p', meta.filter(Boolean).join(' · '), 'muted');
-    if (data.built_with?.model === 'mock') element(card, 'small', 'Черновик', 'qualityBadge');
-  }
-}).catch(error => { status.textContent = error.message; });
+window.addEventListener('focus', refreshCatalog);
 startCoverAnimation();

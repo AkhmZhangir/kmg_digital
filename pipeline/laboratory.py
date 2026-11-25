@@ -11,7 +11,12 @@ from core.tutor import TutorError
 
 HERE = Path(__file__).resolve().parent
 ALTERNATIVE = "Другая гипотеза"
-LICENSES = {"Public domain": None, "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/"}
+LICENSES = {
+    "Public domain": None,
+    "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "CC0 1.0": "https://creativecommons.org/publicdomain/zero/1.0/",
+}
 
 
 @lru_cache(maxsize=1)
@@ -20,6 +25,34 @@ def registry():
     return [a for a in rows if a["verification_status"] == "verified"
             and a["license"] in LICENSES and a.get("license_url") == LICENSES[a["license"]]
             and a["source_url"].startswith("https://") and a["attribution"] and a["properties"]]
+
+
+def catalogue():
+    fields = ("asset_id", "name", "category", "media_type", "source_url", "reference",
+              "license", "license_url", "attribution", "locality", "properties", "question")
+    rows = []
+    for asset in registry():
+        identifier = asset["asset_id"]
+        url = "/api/lab/media/" + identifier
+        row = {field: asset[field] for field in fields if field in asset}
+        row["media_url"] = url
+        if asset.get("views"):
+            row["views"] = {mode: url + "/" + mode for mode in asset["views"]}
+        rows.append(row)
+    return rows
+
+
+def observation_hint(llm, request):
+    identifier, question = request.get("asset_id"), request.get("question")
+    asset = next((item for item in registry() if item["asset_id"] == identifier), None)
+    if not asset or not short(question, 400):
+        raise ValueError("Выбери образец и задай вопрос длиной до 400 символов.")
+    reply = model_reply(llm, 'Подскажи, что наблюдать. Используй только проверенные свойства. '
+                        'Верни {"hint":"краткая подсказка"}.',
+                        {"question": question, "specimen": asset["name"], "verified_properties": asset["properties"]})
+    if short(reply.get("hint")):
+        return {"hint": reply["hint"], "by": "ИИ-тьютор"}
+    return {"hint": asset["hint"], "by": "Подсказка из каталога"}
 
 
 def candidates(text, difficulty="beginner", media_type="image"):

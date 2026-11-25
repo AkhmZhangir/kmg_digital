@@ -207,6 +207,86 @@ function treeDrop(row, target, expand) {
   };
 }
 
+const courseBuilds = new Map(Object.entries(state.courseBuilds || {}));
+const pollingBuilds = new Set();
+
+function showCourseBuild(entryId, panel, build = courseBuilds.get(entryId)) {
+  if (!panel) return;
+  panel.replaceChildren();
+  if (build?.state === 'ready' && /^up_[a-f0-9]+\/index\.html$/.test(build.course)) {
+    add(panel, 'a', 'Открыть курс').href = '/' + build.course;
+    return;
+  }
+  if (build && ['starting', 'queued', 'running'].includes(build.state)) {
+    const percent = build.progress?.percent ?? 0;
+    const meter = add(panel, 'progress');
+    meter.max = 100;
+    meter.value = percent;
+    meter.setAttribute('aria-label', 'Готовность курса');
+    const eta = build.progress?.eta_sec;
+    add(panel, 'small', percent + '% · ' + build.stage);
+    if (build.state === 'running' && !build.connectionError) {
+      add(panel, 'small', Number.isFinite(eta)
+        ? 'Осталось около ' + Math.max(1, Math.ceil(eta / 60)) + ' мин'
+        : 'Оцениваем время…');
+    }
+    return;
+  }
+  if (build?.error) add(panel, 'small', build.error);
+  button(panel, build?.error ? 'Повторить сборку' : 'Собрать курс', async () => {
+    if (['starting', 'queued', 'running'].includes(courseBuilds.get(entryId)?.state)) return;
+    courseBuilds.set(entryId, {state: 'starting', stage: 'Отправляем запрос'});
+    showCourseBuild(entryId, $('build-' + entryId));
+    try {
+      const result = await spaceRequest('/' + spaceId + '/build', {entry: entryId});
+      updateCourseBuild(entryId, result);
+      pollCourseBuild(entryId, result.job);
+    } catch (error) {
+      updateCourseBuild(entryId, {state: 'error', error: error.message});
+      $('build-' + entryId)?.querySelector('button')?.focus();
+    }
+  });
+}
+
+function updateCourseBuild(entryId, build) {
+  courseBuilds.set(entryId, build);
+  (state.courseBuilds ||= {})[entryId] = {
+    job: build.job, state: build.state, stage: build.stage, progress: build.progress,
+    course: build.course, error: build.error
+  };
+  save();
+  showCourseBuild(entryId, $('build-' + entryId));
+}
+
+function pollCourseBuild(entryId, job) {
+  if (!job || pollingBuilds.has(job)) return;
+  pollingBuilds.add(job);
+  async function poll() {
+    try {
+      const response = await fetch('/api/build/' + encodeURIComponent(job),
+        {cache: 'no-store', signal: AbortSignal.timeout(10000)});
+      if (response.status === 404) {
+        updateCourseBuild(entryId, {state: 'error', error: 'Сборка прервана. Запусти её снова.'});
+        pollingBuilds.delete(job);
+        return;
+      }
+      if (!response.ok) throw Error('Статус недоступен');
+      const build = await response.json();
+      updateCourseBuild(entryId, build);
+      if (build.state === 'ready' || build.state === 'error') {
+        pollingBuilds.delete(job);
+        return;
+      }
+    } catch {
+      const build = courseBuilds.get(entryId);
+      showCourseBuild(entryId, $('build-' + entryId),
+        {...build, stage: 'Связь прервалась. Повторяем запрос…', connectionError: true});
+    }
+    setTimeout(poll, 4000);
+  }
+  setTimeout(poll, 4000);
+}
+
 function renderTree() {
   const tree = $('localSources');
   tree.replaceChildren();
@@ -257,6 +337,13 @@ function renderTree() {
       } else {
         const label = add(row, 'div', '', 'treeSource');
         sourceRow(label, entry.id, entry.name, entry.ext.slice(1).toUpperCase() + ' · ' + entry.unit_count + ' фрагм.');
+        const course = add(label, 'div', '', 'sourceBuild');
+        course.id = 'build-' + entry.id;
+        course.setAttribute('aria-live', 'polite');
+        showCourseBuild(entry.id, course);
+        const build = courseBuilds.get(entry.id);
+        if (build && ['queued', 'running'].includes(build.state)) pollCourseBuild(entry.id, build.job);
+
         treeMenu(row, entry);
       }
     }

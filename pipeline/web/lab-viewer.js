@@ -97,7 +97,10 @@ function specimenViewer(parent, task, missing, onZoom) {
   };
   const observer = new ResizeObserver(() => { if (frame.isConnected) paint(); else observer.disconnect(); });
   observer.observe(frame);
-  img.onload = paint;
+  img.onload = () => {
+    frame.hidden = bar.hidden = false;
+    paint();
+  };
   img.onerror = () => { frame.hidden = bar.hidden = true; missing?.(); };
   const caption = add(figure, 'figcaption');
   add(caption, 'span', task.locality);
@@ -106,5 +109,12 @@ function specimenViewer(parent, task, missing, onZoom) {
   labLink(caption, 'Оригинал ↗', task.source_url);
   img.src = apiBase + task.media_url;
   zoom(1, undefined, false);
-  return {setZoom: v => zoom(v, undefined, false), scale: () => scale};
+  return {
+    setZoom: v => zoom(v, undefined, false),
+    scale: () => scale,
+    setImage(url, alt) {
+      img.alt = alt;
+      img.src = apiBase + url;
+    }
+  };
 }

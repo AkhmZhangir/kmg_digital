@@ -8,7 +8,7 @@ from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 from http.server import ThreadingHTTPServer
 
-from laboratory import HERE, activity, candidates, evaluate, registry
+from laboratory import HERE, activity, candidates, catalogue, evaluate, registry
 from core.llm import LLM
 from core.tutor import Library
 from server import make_handler
@@ -21,7 +21,10 @@ class LabTest(unittest.TestCase):
         for a in registry():
             self.assertTrue((HERE / a["media_url"]).read_bytes().startswith(b"\xff\xd8"))
             self.assertTrue(a["reference"].startswith("https://"))
-        self.assertEqual(len(registry()), 3)
+        self.assertEqual(len(registry()), 7)
+        thin, = [a for a in catalogue() if a.get("views")]
+        self.assertNotIn("answers", thin)
+        self.assertEqual(set(thin["views"]), {"ppl", "xpl"})
         self.assertEqual(candidates("pyrite")[0]["asset_id"], "mineral_01")
         self.assertFalse(candidates("пирит", media_type="model"))
 
@@ -60,6 +63,17 @@ class LabTest(unittest.TestCase):
                                      headers={"Content-Type": "application/json"})) as response:
                     return json.load(response)
             try:
+                with urlopen(base + "/api/lab/catalogue") as catalog:
+                    slide = next(a for a in json.load(catalog)["assets"] if a.get("views"))
+                pair = []
+                for url in slide["views"].values():
+                    with urlopen(base + url) as photo:
+                        self.assertEqual(photo.headers.get_content_type(), "image/jpeg")
+                        pair.append(photo.read())
+                self.assertNotEqual(*pair)
+                reply = post("lab/observation", {"asset_id": slide["asset_id"], "question": "Что наблюдать?"})
+                self.assertEqual(reply["by"], "Подсказка из каталога")
+
                 src = post("sources", {"name": "rock.md", "text": "Ракушечник содержит фрагменты раковин."})
                 data = {"source": src["id"], "node": None}
                 reply = post("chat", {"sources": [src["id"]], "mode": "practice", "message": "Что содержит ракушечник?"})

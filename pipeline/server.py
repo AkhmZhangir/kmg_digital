@@ -25,10 +25,11 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 from core.llm import LLM, load_env  # noqa: E402
-from laboratory import LabTutor, activity, candidates, evaluate, excerpt, lab_context, registry, tutor_hint
+from laboratory import LabTutor, activity, candidates, evaluate, excerpt, lab_context, registry, tutor_hint, catalogue, observation_hint
 from core.tutor import Library, TutorError, chat  # noqa: E402
 
 from spaces import MAX_FILE, Spaces
+from assessments import generate, search_sources
 
 MAX_BODY = 5 * 1024 * 1024
 UPLOAD_TYPES = {"txt", "md"}
@@ -121,7 +122,7 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                 return
             origin = self.headers.get("Origin")
             if origin and urlsplit(origin).netloc != self.headers.get("Host"):
-                raise TutorError(403, "wrong_origin", "Откройте учебное пространство на странице GeoCourse.")
+                raise TutorError(403, "wrong_origin", "Откройте учебное пространство на странице QABAT.")
 
         def _lesson_page(self, layer):
             data = json.dumps(layer, ensure_ascii=False).replace("<", "\\u003c")
@@ -132,14 +133,17 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
             path = self.path.split("?")[0]
             if path == "/api/spaces":
                 return self._json(200, {"spaces": spaces.list()})
+            if path == "/api/search":
+                query = parse_qs(urlsplit(self.path).query).get("q", [""])[0].strip()
+                return self._json(200, {"hits": search_sources(lib, query) if 0 < len(query) <= 120 else []})
             if path.startswith("/api/build/"):
                 from core.webbuild import status as build_status
                 st = build_status(path.rsplit("/", 1)[-1])
                 return self._json(200, st) if st else self._error(404, "not_found", "Нет такой сборки")
             if path == "/api/catalog":
+                courses = {item["folder"]: item for item in lib.list() if item["kind"] == "chapter"}
                 return self._json(200, {"courses": [
-                    {**item, "chapter": lib.get(item["id"]).layer["chapter"]}
-                    for item in lib.list() if item["kind"] == "chapter"
+                    {**item, "chapter": lib.get(item["id"]).layer["chapter"]} for item in courses.values()
                 ]})
             space_page = re.fullmatch(r"/spaces/([a-f0-9]{32})/?", path)
             if space_page:
@@ -161,16 +165,15 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                 if not filename.lower().endswith(row["ext"]):
                     filename += row["ext"]
                 return self._send(row["original"], kind, mode + "; filename*=UTF-8''" + quote(filename, safe=""))
-            if path.startswith("/api/lab/media/"):
-                asset = next((a for a in registry() if path == "/api/lab/media/" + a["asset_id"]), None)
-                if not asset or not (HERE / asset["media_url"]).is_file():
+            if path == "/api/lab/catalogue":
+                return self._json(200, {"assets": catalogue()})
+            media = re.fullmatch(r"/api/lab/media/([a-z0-9_]+)(?:/(ppl|xpl))?", path)
+            if media:
+                asset = next((a for a in registry() if media[1] == a["asset_id"]), None)
+                item = asset.get("views", {}).get(media[2]) if asset and media[2] else asset and asset["media_url"]
+                if not item or not (HERE / item).is_file():
                     return self._error(404, "missing_image", "Фотография недоступна.")
-                body = (HERE / asset["media_url"]).read_bytes()
-                self.send_response(200)
-                self.send_header("Content-Type", "image/jpeg")
-                self.send_header("Content-Length", str(len(body)))
-                self.end_headers()
-                return self.wfile.write(body)
+                return self._send((HERE / item).read_bytes(), "image/jpeg")
             if path == "/api/health":
                 return self._json(200, {"ok": True, "laboratory": True, "model": llm.name, "mock": llm.is_mock,
                                         "providers": [p.name for p in llm.providers]})
@@ -198,7 +201,7 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                 self._check_space_origin()
                 if path == "/api/spaces":
                     return self._json(201, spaces.create(self._body().get("name")))
-                scope = re.fullmatch(r"/api/spaces/([a-f0-9]{32})(?:/(upload|build|chat|lab/(?:open|grade|hint|recommend)))?", path)
+                scope = re.fullmatch(r"/api/spaces/([a-f0-9]{32})(?:/(upload|build|chat|assessments|lab/(?:open|grade|hint|recommend|observation)))?", path)
                 active_lib = lib
                 if scope:
                     space_id, operation = scope.groups()
@@ -221,6 +224,11 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                         return self._json(201, result)
                     active_lib = SimpleNamespace(get=lambda eid: spaces.get_source(space_id, eid))
                     path = "/api/" + operation
+                if path == "/api/lab/observation":
+                    try:
+                        return self._json(200, observation_hint(lab_model, self._body()))
+                    except ValueError as error:
+                        return self._error(400, "bad_observation", str(error))
                 if path in ("/api/lab/open", "/api/lab/grade", "/api/lab/hint", "/api/lab/recommend"):
                     req = self._body()
                     node = lab_context(active_lib, req)
@@ -235,6 +243,8 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                         c = next((c for c in node.get("claims", []) if c.get("verified") and c.get("quote")), None)
                         result["evidence"] = {"quote": c["quote"][:1200], "page": c.get("page")} if c else None
                     return self._json(200, result)
+                if path == "/api/assessments":
+                    return self._json(200, generate(active_lib, llm, self._body()))
                 if path == "/api/chat":
                     req = self._body()
                     reply = chat(active_lib, llm, req)

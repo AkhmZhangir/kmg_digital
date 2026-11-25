@@ -13,13 +13,13 @@ let chatBusy = false;
 const sourceNames = new Map([[chapter.id, chapter.book]]);
 const chatHistory = new Map(Object.entries(state.chatHistory || {}));
 async function api(path, data, timeout = 180000) {
-  if (spaceId && (path === 'chat' || path.startsWith('lab/'))) path = 'spaces/' + spaceId + '/' + path;
+  if (spaceId && (['chat', 'assessments'].includes(path) || data && path.startsWith('lab/'))) path = 'spaces/' + spaceId + '/' + path;
   const options = {signal: AbortSignal.timeout(timeout)};
   if (data) Object.assign(options, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
   const res = await fetch(apiBase + '/api/' + path, options);
   if (!res.headers.get('content-type')?.includes('application/json')) throw Error('Сервер тьютора недоступен.');
   const result = await res.json();
-  if (!res.ok) throw Error(res.status === 503 ? 'Модель недоступна. Урок доступен без чата.' : result.error?.message || 'Запрос не выполнен.');
+  if (!res.ok) throw Error(result.error?.message || 'Запрос не выполнен.');
   return result;
 }
 const selectedSources = new Set(spaceId ? (state.selected || []) : [chapter.id]);
@@ -37,6 +37,7 @@ function serverSources() {
 }
 
 function showWorkspace(chat) {
+  if (chat && examRunning()) return;
   $('chatPane').hidden = !chat;
   $('lessonPane').hidden = chat;
   $('showLesson').setAttribute('aria-pressed', String(!chat));
@@ -60,7 +61,7 @@ function setChatMode(mode) {
     saveDraft();
     $('chatDraft').focus();
   });
-  if (service?.laboratory && mode === 'practice') button(suggestions, 'В лабораторию', () => openView('lab'));
+  if (service?.laboratory && mode === 'practice') button(suggestions, 'В лабораторию', openCourseLab);
   if (mode !== 'ask' && current) {
     const viewsByMode = {learn: 'lesson', practice: 'practice', review: 'cards'};
     const labels = {learn: 'К уроку', practice: 'Открыть тесты', review: 'Открыть карточки'};
@@ -185,7 +186,7 @@ function previewContainer(name) {
 
 if (spaceId) {
   $('book').hidden = $('routeTitle').hidden = true;
-  for (const panel of document.querySelectorAll('.studioExtra')) panel.hidden = true;
+  $('note').closest('details').hidden = true;
   initSourceTree();
 } else {
   installChapterSources();
@@ -274,18 +275,18 @@ for (const [mode, [label]] of Object.entries(chatModes)) {
 $('chatDraft').value = state.chatDraft || '';
 $('chatDraft').oninput = saveDraft;
 function renderChatAnswer(turn, result, sources, lessonId) {
-    const answer = add(turn, 'p', result.answer);
+    const answer = bookText(turn, 'p', result.answer);
     answer.style.whiteSpace = 'pre-line';
     if (result.insufficient) add(turn, 'small', 'Недостаточно сведений в выбранных источниках.');
     if (result.unverified) add(turn, 'small', 'Ответ не подтверждён цитатой.');
     for (const c of result.citations || []) {
       const d = details(turn, c.source + ' · стр. ' + c.page);
-      add(d, 'blockquote', c.quote);
+      bookText(d, 'blockquote', c.quote);
       if (c.source_id === chapter.id) source(d, c.page);
     }
     if (result.task?.question) {
-      add(turn, 'p', result.task.question);
-      add(details(turn, 'Показать ответ'), 'p', result.task.answer);
+      bookText(turn, 'p', result.task.question);
+      bookText(details(turn, 'Показать ответ'), 'p', result.task.answer);
     }
     for (const q of result.followups || []) button(turn, q, () => {
       $('chatDraft').value = q; saveDraft(); $('chatDraft').focus();
@@ -300,7 +301,7 @@ function renderChatAnswer(turn, result, sources, lessonId) {
           if (checkbox.sourceId === preferredSource) checkbox.checked = true;
         }
         if (lessonId) openNode(lessonId);
-        openView('lab');
+        openCourseLab();
       });
     }
 }
@@ -376,11 +377,17 @@ if (location.protocol === 'file:') {
   document.querySelector('.brand').removeAttribute('href');
   document.querySelector('.homeLink').hidden = true;
 }
+if (state.exam) {
+  view = 'exam';
+  panel('read');
+}
 showWorkspace(false);
 startCoverAnimation();
 render();
 
-api('health', null, 3500).then(health => {
+if (layer.offline_demo) {
+  $('chatStatus').textContent = 'В публичном демо доступны уроки, поиск, тесты и экзамен.';
+} else api('health', null, 3500).then(health => {
   if (!health.ok) return;
   service = health;
   if (location.protocol !== 'file:') {

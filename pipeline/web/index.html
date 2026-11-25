@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <link rel="icon" href="data:,">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ГеоКурс</title>
+  <title>QABAT</title>
   <link rel="stylesheet" href="web/vendor/katex.min.css">
-  <link rel="stylesheet" href="web/style.css">
+  <link rel="stylesheet" href="web/style.css?v=6">
 </head>
 <body>
   <a class="skip" href="#reader">К учебному материалу</a>
   <header class="topbar">
-    <a class="brand" href="/"><i aria-hidden="true"></i>GeoCourse</a>
+    <a class="brand" href="/"><i aria-hidden="true"></i>QABAT</a>
     <a class="homeLink" href="/">На главную</a>
     <div class="topActions">
       <button id="toggleSources" aria-controls="sourcesPanel" aria-expanded="true">Источники</button>
@@ -31,25 +31,27 @@
     <nav id="mobileNav" aria-label="Панели тетради"></nav>
     <div class="columns" id="workspace">
       <aside id="sourcesPanel" aria-labelledby="sourcesTitle" tabindex="-1">
-        <div class="panelHeader"><h2 id="sourcesTitle">Источники</h2></div>
-        <section id="libraryNav" class="libraryNav" aria-labelledby="libraryTitle" hidden>
-          <div class="panelHeader"><h3 id="libraryTitle">Библиотеки</h3><button id="newLibrary">＋ Создать</button></div>
-          <ul id="libraryList" class="libraryList"></ul>
-          <p id="libraryStatus" class="muted" role="status"></p>
-        </section>
-        <div class="sourceActions">
-          <button id="addSource">＋ Добавить источник</button>
-          <button id="addFolder" hidden>▱ Создать папку</button>
+        <div class="panelContents">
+          <div class="panelHeader"><h2 id="sourcesTitle">Источники</h2></div>
+          <section id="libraryNav" class="libraryNav" aria-labelledby="libraryTitle" hidden>
+            <div class="panelHeader"><h3 id="libraryTitle">Библиотеки</h3><button id="newLibrary">＋ Создать</button></div>
+            <ul id="libraryList" class="libraryList"></ul>
+            <p id="libraryStatus" class="muted" role="status"></p>
+          </section>
+          <div class="sourceActions">
+            <button id="addSource">＋ Добавить источник</button>
+            <button id="addFolder" hidden>▱ Создать папку</button>
+          </div>
+          <input id="sourceFiles" type="file" accept=".pdf,.docx,.txt,.md" multiple hidden>
+          <p id="sourceStatus" class="muted" role="status"></p>
+          <div id="book" class="book"></div>
+          <div id="localSources"></div>
+          <div id="sourcePreview" hidden tabindex="-1"></div>
+          <h3 id="routeTitle">Маршрут</h3>
+          <nav id="route" aria-label="Шаги урока"></nav>
+          <label for="progress" id="progressLabel"></label>
+          <progress id="progress"></progress>
         </div>
-        <input id="sourceFiles" type="file" accept=".pdf,.docx,.txt,.md" multiple hidden>
-        <p id="sourceStatus" class="muted" role="status"></p>
-        <div id="book" class="book"></div>
-        <div id="localSources"></div>
-        <div id="sourcePreview" hidden tabindex="-1"></div>
-        <h3 id="routeTitle">Маршрут</h3>
-        <nav id="route" aria-label="Шаги урока"></nav>
-        <label for="progress" id="progressLabel"></label>
-        <progress id="progress"></progress>
         <div class="panelGrip" id="resizeSources" role="separator" aria-label="Ширина панели источников" aria-controls="sourcesPanel" aria-orientation="vertical" tabindex="0"></div>
       </aside>
 
@@ -86,23 +88,25 @@
       </section>
 
       <aside class="lab" id="studioPanel" aria-labelledby="studioTitle" tabindex="-1">
-        <div class="panelHeader"><h2 id="studioTitle">Учебная студия</h2></div>
-        <div id="tools"></div>
-        <details class="studioExtra">
-          <summary>Поиск по главе</summary>
-          <form id="search">
-            <label class="sr" for="query">Термин или фраза</label>
-            <input id="query" type="search" placeholder="Термин или фраза" required>
-            <button>Найти</button>
-          </form>
-          <div id="results" aria-live="polite"></div>
-        </details>
-        <details class="studioExtra">
-          <summary>Моя заметка</summary>
-          <label class="sr" for="note">Заметка к текущему шагу</label>
-          <textarea id="note" rows="4" placeholder="Что важно запомнить?"></textarea>
-          <small id="saved" role="status"></small>
-        </details>
+        <div class="panelContents">
+          <div class="panelHeader"><h2 id="studioTitle">Учебная студия</h2></div>
+          <div id="tools"></div>
+          <details class="studioExtra">
+            <summary>Поиск по главам</summary>
+            <form id="search">
+              <label class="sr" for="query">Термин или фраза</label>
+              <input id="query" type="search" maxlength="120" placeholder="Термин или фраза" required>
+              <button>Найти</button>
+            </form>
+            <div id="results" aria-live="polite"></div>
+          </details>
+          <details class="studioExtra">
+            <summary>Моя заметка</summary>
+            <label class="sr" for="note">Заметка к текущему шагу</label>
+            <textarea id="note" rows="4" placeholder="Что важно запомнить?"></textarea>
+            <small id="saved" role="status"></small>
+          </details>
+        </div>
         <div class="panelGrip" id="resizeStudio" role="separator" aria-label="Ширина панели студии" aria-controls="studioPanel" aria-orientation="vertical" tabindex="0"></div>
       </aside>
     </div>
@@ -111,11 +115,14 @@
   <script src="web/vendor/katex.min.js"></script>
   <script src="web/cover.js"></script>
   <script src="web/space-dialog.js"></script>
-  <script src="web/app.js"></script>
-  <script src="web/lab-viewer.js"></script>
+  <script src="web/app.js?v=4"></script>
+  <script src="web/lab-viewer.js?v=2"></script>
   <script src="web/laboratory.js"></script>
-  <script src="web/source-tree.js"></script>
-  <script src="web/workspace.js"></script>
+  <script src="web/lab-workspace.js"></script>
+  <script src="web/lab-models.js"></script>
+  <script src="web/source-tree.js?v=2"></script>
+  <script src="web/assessment.js?v=2"></script>
+  <script src="web/workspace.js?v=2"></script>
   <script src="web/video.js"></script>
 </body>
 </html>

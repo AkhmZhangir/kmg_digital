@@ -4,22 +4,23 @@
   <meta charset="utf-8">
   <link rel="icon" href="data:,">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>GeoCourse</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <title>QABAT</title>
+  <link rel="stylesheet" href="/assets/style.css?v=6">
   <script src="/assets/space-dialog.js" defer></script>
   <script src="/assets/cover.js" defer></script>
-  <script src="/assets/home.js" defer></script>
+  <script src="/assets/home.js?v=2" defer></script>
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="/"><i aria-hidden="true"></i>GeoCourse</a>
+    <a class="brand" href="/"><i aria-hidden="true"></i>QABAT</a>
     <button id="theme" type="button" aria-pressed="false">Тёмная тема</button>
   </header>
   <main class="homePage">
     <section class="cover">
       <canvas aria-hidden="true"></canvas>
       <div>
-        <h1>GeoCourse</h1>
+        <h1>QABAT</h1>
+        <p class="homeMotto">QABAT — Intelligence Beneath the Surface</p>
         <p>Изучайте геологию по своим материалам, задавайте вопросы тьютору и практикуйтесь в виртуальной лаборатории.</p>
       </div>
     </section>
@@ -30,7 +31,7 @@
         <p id="emptySpaces" class="muted" hidden>Здесь будут твои библиотеки.</p>
       </aside>
       <section class="spaceCard" id="upload" aria-labelledby="uploadTitle">
-        <h2 id="uploadTitle">Загрузить документы</h2>
+        <div class="panelHeader"><h2 id="uploadTitle">Загрузить документы</h2></div>
         <label class="uploadDestination">Куда загрузить
           <select id="uploadLibrary"><option value="">В новую библиотеку</option></select>
         </label>

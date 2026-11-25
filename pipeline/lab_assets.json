@@ -40,12 +40,158 @@
     "source_url": "https://commons.wikimedia.org/wiki/File:Pyrite-278315.jpg",
     "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
     "attribution": "Rob Lavinsky, iRocks.com · исходное фото без изменений",
-    "reference": "https://commons.wikimedia.org/wiki/File:Pyrite-278315.jpg",
+    "reference": "https://www.handbookofmineralogy.org/pdfs/pyrite.pdf",
     "locality": "Рудник Уансала, Перу · образец 10,3 × 7,8 × 4,6 см",
-    "properties": {"appearance": "Описание этого образца указывает на латунно-жёлтые блестящие сросшиеся октаэдрические кристаллы."},
+    "properties": {"appearance": "Описание этого образца указывает на латунно-жёлтые блестящие сросшиеся октаэдрические кристаллы.", "composition": "Пирит — дисульфид железа (FeS₂)."},
     "question": "Какой блеск или какую форму кристаллов ты видишь на образце?",
     "answers": ["металлический блеск", "зеркальный блеск", "октаэдры", "октаэдрическая форма", "metallic luster", "octahedra"],
     "hint": "Увеличь границы соседних кристаллов и сравни отражения света на плоских гранях.",
     "followup": "Что у этого экземпляра можно установить по граням, а что потребовало бы дополнительного испытания?"
+  },
+  {
+    "asset_id": "mineral_02",
+    "name": "Кварц",
+    "category": "mineral",
+    "topics": [
+      "кварц",
+      "quartz"
+    ],
+    "media_type": "image",
+    "media_url": "specimens/quartz.jpg",
+    "difficulty": "beginner",
+    "verification_status": "verified",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Quartz_(GeoDIL_number_-_393).jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "Shannon Heinle · Geoscience Digital Image Library",
+    "reference": "https://www.handbookofmineralogy.org/pdfs/quartz.pdf",
+    "locality": "Вблизи Крипл-Крика, Колорадо, США · длина около 5 см",
+    "properties": {
+      "appearance": "Призматический кристалл с окончаниями с двух сторон.",
+      "composition": "Кварц состоит из диоксида кремния (SiO₂). Твёрдость 7 по шкале Мооса."
+    },
+    "question": "Какую форму имеет кристалл?",
+    "answers": [
+      "призма",
+      "призматическая форма",
+      "призматический кристалл"
+    ],
+    "hint": "Сравни плоские боковые грани и окончания с двух сторон.",
+    "followup": "Какой видимый признак подтверждает твой вывод?",
+    "options": [
+      "Кальцит",
+      "Кварц",
+      "Пирит"
+    ]
+  },
+  {
+    "asset_id": "rock_03",
+    "name": "Гнейс",
+    "category": "metamorphic_rock",
+    "topics": [
+      "гнейс",
+      "метаморфическ",
+      "gneiss"
+    ],
+    "media_type": "image",
+    "media_url": "specimens/gneiss.jpg",
+    "difficulty": "beginner",
+    "verification_status": "verified",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Gneiss.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution": "Siim Sepp · Музей геологии Тартуского университета",
+    "reference": "https://commons.wikimedia.org/wiki/File:Gneiss.jpg",
+    "locality": "Образец из музейной коллекции",
+    "properties": {
+      "texture": "На фото заметна гнейсовидная полосчатость с чередованием светлых и тёмных полос."
+    },
+    "question": "Какой признак структуры виден на фото?",
+    "answers": [
+      "полосчатость",
+      "чередование светлых и тёмных полос"
+    ],
+    "hint": "Проследи светлые и тёмные полосы по поверхности.",
+    "followup": "Какой видимый признак подтверждает твой вывод?",
+    "options": [
+      "Гнейс",
+      "Базальт",
+      "Ракушечник"
+    ]
+  },
+  {
+    "asset_id": "rock_04",
+    "name": "Керн нефтенасыщенного песчаника",
+    "category": "core",
+    "topics": [
+      "керн",
+      "песчаник",
+      "sandstone"
+    ],
+    "media_type": "image",
+    "media_url": "specimens/core.jpg",
+    "difficulty": "beginner",
+    "verification_status": "verified",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bohrkern_Oelsandstein.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution": "Techcollector",
+    "reference": "https://commons.wikimedia.org/wiki/File:Bohrkern_Oelsandstein.jpg",
+    "locality": "Месторождение Заттледт, Верхняя Австрия · верхний эоцен",
+    "properties": {
+      "texture": "На снимке срез керна песчаника. Без измерений по фотографии нельзя надёжно определить пористость и насыщенность."
+    },
+    "question": "Какой тип образца показан?",
+    "answers": [
+      "керн",
+      "срез керна"
+    ],
+    "hint": "Посмотри на форму среза и сравни со свободно сколотыми образцами.",
+    "followup": "Какой видимый признак подтверждает твой вывод?",
+    "options": [
+      "Керн нефтенасыщенного песчаника",
+      "Шлиф оливина",
+      "Кристалл кварца"
+    ]
+  },
+  {
+    "asset_id": "thin_01",
+    "name": "Оливин в шлифе",
+    "category": "thin_section",
+    "topics": [
+      "оливин",
+      "шлиф",
+      "петрограф",
+      "olivine"
+    ],
+    "media_type": "thin_section",
+    "media_url": "specimens/ppl.jpg",
+    "difficulty": "beginner",
+    "verification_status": "verified",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Min_Oliv_20x_XPL.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "M. C. Rygel",
+    "reference": "https://commons.wikimedia.org/wiki/File:Min_Oliv_20x_XPL.jpg",
+    "locality": "Парная микрофотография одного участка шлифа",
+    "properties": {
+      "appearance": "PPL показывает участок при плоской поляризации. XPL показывает тот же участок между скрещёнными поляризаторами.",
+      "texture": "При переключении сравни трещины и границы зёрен. Интерференционные цвета проявляются в XPL."
+    },
+    "question": "В каком режиме видны интерференционные цвета?",
+    "answers": [
+      "xpl",
+      "скрещённые поляризаторы"
+    ],
+    "hint": "Переключи PPL и XPL, наблюдая за одним и тем же зерном.",
+    "followup": "Какой видимый признак подтверждает твой вывод?",
+    "options": [
+      "PPL",
+      "XPL"
+    ],
+    "views": {
+      "ppl": "specimens/ppl.jpg",
+      "xpl": "specimens/xpl.jpg"
+    }
   }
 ]
