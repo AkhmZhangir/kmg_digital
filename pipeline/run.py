@@ -95,6 +95,7 @@ def run_chapter(cid: str, cfg: dict, args, log) -> dict:
     cfg = dict(cfg, _pdf=bool(pdf), _git=git_sha())
     pack = json.loads((HERE / "domain" / cfg["domain"] / "pack.json").read_text(encoding="utf-8"))
     llm = LLM(args.llm or os.getenv("LLM_PROFILES_BUILD") or None)  # анализ книг: по умолчанию серверный Qwen
+    llm.namespace = cid  # кеш ответов модели — в папке этой главы
     log(f"{cid}: {len(units)} единиц, модель {llm.name}")
     layer, coverage = build_layer(cid, cfg, units, llm, pack, log)
     if pdf:
@@ -198,7 +199,9 @@ def main():
         md = pkg_path.parent / pkg["chapter_file"]
         physics_path = HERE / "domain" / "geology" / "official" / "physics_checklist.json"
         physics = json.loads(physics_path.read_text(encoding="utf-8")) if physics_path.is_file() else None
-        res = review_package(pkg, md, LLM(args.llm or os.getenv("LLM_PROFILES_REVIEW") or os.getenv("LLM_PROFILES_CHAT") or None), physics, print)
+        rllm = LLM(args.llm or os.getenv("LLM_PROFILES_REVIEW") or os.getenv("LLM_PROFILES_CHAT") or None)
+        rllm.namespace = "review_" + pkg.get("package_id", "package")
+        res = review_package(pkg, md, rllm, physics, print)
         dest = Path(args.out) / "review" / pkg.get("package_id", "package")
         save_json(dest / "answer.json", res["answer"])
         save_json(dest / "rejected.json", res["rejected"])

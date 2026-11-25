@@ -158,6 +158,7 @@ class LLM:
         else:
             self.providers = [Provider("env", {k: v for k, v in os.environ.items() if k.startswith("LLM_")})]
         self.p = 0
+        self.namespace = None  # папка кеша для текущей главы/пакета (.cache/llm/<namespace>/)
         self.calls = 0
         self.cache_hits = 0
         self.used = {}
@@ -203,11 +204,22 @@ class LLM:
         keys += [self._hash([messages, temperature])]
         keys += [self._hash([m, messages, temperature]) for p in self.providers for m in p.models]
         for k in keys:
-            path = CACHE / f"{k}.json"
-            if path.is_file():
+            # Сначала папка главы, потом общая куча, потом папки других глав.
+            cands = ([CACHE / self.namespace / f"{k}.json"] if self.namespace else []) + [CACHE / f"{k}.json"]
+            cands += [x for x in CACHE.glob(f"*/{k}.json") if x not in cands]
+            for path in cands:
+                if not path.is_file():
+                    continue
                 entry = json.loads(path.read_text(encoding="utf-8"))
                 base = entry.get("base") or (GEMINI_BASE if str(entry.get("model", "")).startswith("gemini") else "")
                 if base.rstrip("/") in bases:
+                    if self.namespace and path.parent == CACHE:  # переносим старый ответ в папку своей главы
+                        dest = CACHE / self.namespace / path.name
+                        dest.parent.mkdir(parents=True, exist_ok=True)
+                        try:
+                            path.replace(dest)
+                        except OSError:
+                            pass
                     return entry
         return None
 
@@ -232,8 +244,8 @@ class LLM:
         with self._lock:
             self.calls += 1
             self.used[model] = self.used.get(model, 0) + 1
-        path = CACHE / f"{self._hash([prov.base_url, messages, temperature])}.json"
-        CACHE.mkdir(parents=True, exist_ok=True)
+        path = (CACHE / self.namespace if self.namespace else CACHE) / f"{self._hash([prov.base_url, messages, temperature])}.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
         tmp = path.with_suffix(f".{threading.get_ident()}.tmp")
         tmp.write_text(json.dumps({"task": task, "model": model, "base": prov.base_url, "raw": raw, "parsed": parsed},
                                   ensure_ascii=False), encoding="utf-8")
