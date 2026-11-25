@@ -8,6 +8,7 @@
   LLM_TIMEOUT    секунды (по умолчанию 300)
   LLM_JSON_MODE  1 — передавать response_format=json_object (по умолчанию 1)
   LLM_MAX_TOKENS предел длины ответа (для llama.cpp полезно 8192)
+  LLM_NO_THINK   1 — выключить режим рассуждений Qwen3 (chat_template_kwargs.enable_thinking=false)
   LLM_PARALLEL   сколько запросов одновременно (llama.cpp с одним слотом — 1)
 Профиль можно держать в отдельном файле и выбирать флагом: py -3 run.py all --env .env.qwen ...
 """
@@ -178,6 +179,8 @@ class LLM:
             body = {"model": model, "messages": messages, "temperature": temperature}
             if os.getenv("LLM_MAX_TOKENS"):
                 body["max_tokens"] = int(os.environ["LLM_MAX_TOKENS"])
+            if os.getenv("LLM_NO_THINK") == "1":  # Qwen3 / llama.cpp: без длинных рассуждений <think>
+                body["chat_template_kwargs"] = {"enable_thinking": False}
             if json_mode:
                 body["response_format"] = {"type": "json_object"}
             req = urllib.request.Request(url, data=json.dumps(body).encode("utf-8"), headers=headers)
