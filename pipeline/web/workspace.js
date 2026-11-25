@@ -328,7 +328,7 @@ $('theme').onclick = () => {
 };
 
 showWorkspace(false);
-new ResizeObserver(cover).observe(document.querySelector('.cover'));
+startCoverAnimation();
 render();
 
 api('health', null, 3500).then(health => {
