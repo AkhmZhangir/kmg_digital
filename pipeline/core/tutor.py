@@ -38,6 +38,36 @@ def _stems(text: str) -> set[str]:
     return {w[:6] for w in _WORD.findall(text.lower().replace("ё", "е")) if len(w) > 2 and w not in _STOP}
 
 
+CHUNK = 1200  # знаков на единицу загруженного файла: поиск точнее, а текст не обрезается
+
+
+def _chunks(body: str) -> list[str]:
+    """Абзацы по пустым строкам; длинный абзац (обычный TXT без пустых строк) — по строкам, затем по предложениям.
+    Ничего не отбрасывается, кроме пустых и совсем коротких обрывков."""
+    out = []
+    for para in re.split(r"\n\s*\n", body):
+        para = para.strip()
+        if not para:
+            continue
+        if len(para) <= CHUNK:
+            pieces = [para]
+        else:
+            pieces, cur = [], ""
+            for line in re.split(r"\n|(?<=[.!?])\s+", para):
+                line = line.strip()
+                while len(line) > CHUNK:  # строка без переносов и точек
+                    pieces.append(line[:CHUNK])
+                    line = line[CHUNK:]
+                if cur and len(cur) + len(line) + 1 > CHUNK:
+                    pieces.append(cur)
+                    cur = ""
+                cur = (cur + "\n" + line).strip()
+            if cur:
+                pieces.append(cur)
+        out += [p for p in pieces if len(p) >= 20 or (p and not out)]
+    return out
+
+
 class Source:
     def __init__(self, sid: str, name: str, units: list[dict], layer: dict | None = None, folder: Path | None = None):
         self.id, self.name, self.units, self.layer, self.folder = sid, name, units, layer, folder
@@ -47,8 +77,9 @@ class Source:
 
     def meta(self) -> dict:
         ch = (self.layer or {}).get("chapter", {})
+        pages = ch.get("pages") or [min(u["page"] for u in self.units), max(u["page"] for u in self.units)]
         return {"id": self.id, "name": self.name, "kind": "chapter" if self.layer else "upload",
-                "units": len(self.units), "pages": ch.get("pages"), "nodes": len(self.nodes),
+                "units": len(self.units), "pages": pages, "nodes": len(self.nodes),
                 "folder": self.folder.name if self.folder else None}
 
 
@@ -80,15 +111,13 @@ class Library:
         if not text:
             raise TutorError(400, "empty_source", "Файл пустой")
         sid = "src-" + hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
-        units, page = [], 1
-        for i, para in enumerate(p.strip() for p in re.split(r"\n\s*\n", text)):
-            m = re.match(r"<!--\s*page\s+(\d+)\s*-->", para)
-            if m:
-                page = int(m.group(1))
-                para = para[m.end():].strip()
-            if len(para) < 20:
-                continue
-            units.append({"id": f"{sid}.u{i + 1:03d}", "page": page, "text": para[:3000]})
+        units = []
+        # Метки <!-- page N --> — в любом месте текста; без меток весь файл = страница 1.
+        parts = re.split(r"<!--\s*page\s+(\d+)\s*-->", text)
+        pages = [(1, parts[0])] + [(int(n), body) for n, body in zip(parts[1::2], parts[2::2])]
+        for page, body in pages:
+            for chunk in _chunks(body):
+                units.append({"id": f"{sid}.u{len(units) + 1:03d}", "page": page, "text": chunk})
         if not units:
             raise TutorError(400, "empty_source", "В файле нет абзацев текста")
         src = Source(sid, name, units)

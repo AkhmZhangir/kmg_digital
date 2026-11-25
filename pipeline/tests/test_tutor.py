@@ -62,6 +62,20 @@ class TutorTest(unittest.TestCase):
         self.assertEqual(src.units[0]["page"], 5)
         self.assertEqual(len(src.units), 1)
 
+    def test_upload_long_txt_not_truncated(self):
+        # Обычный TXT без пустых строк: раньше становился одним куском и обрезался до 3000 знаков.
+        lines = [f"Строка {i}: пласт номер {i} описан как песчаник средней плотности." for i in range(1, 150)]
+        lines.append("Важно: в пласте номер 150 получен приток нефти 42 тонны в сутки.")
+        src = self.lib.add_text("big.txt", "\n".join(lines))
+        self.assertGreater(len(src.units), 3)
+        self.assertTrue(all(len(u["text"]) <= 1200 for u in src.units))
+        self.assertIn("42 тонны", src.units[-1]["text"])
+
+    def test_upload_page_markers_inline(self):
+        src = self.lib.add_text("p.md", "Шапка файла\n<!-- page 1 -->\nСкважина 17: сужение ствола в коллекторе.\n<!-- page 2 -->\nНиже плотные известняки, не коллектор.")
+        self.assertEqual([u["page"] for u in src.units if "известняки" in u["text"]], [2])
+        self.assertEqual(src.meta()["pages"], [1, 2])
+
 
 if __name__ == "__main__":
     unittest.main()
