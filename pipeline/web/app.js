@@ -160,7 +160,7 @@ function openView(name){
 const views = {
   lesson: 'Урок', practice: 'Тесты', cards: 'Карточки', summary: 'Конспект',
   map: 'Карта связей', terms: 'Словарь', lab: 'Виртуальная лаборатория',
-  progress: 'Прогресс', exam: 'Экзамен'
+  progress: 'Прогресс', exam: 'Экзамен', audit: 'Как собран курс'
 };
 function renderLesson(){
   const n=current;
@@ -168,6 +168,7 @@ function renderLesson(){
   rich(add(content,'h2'),n.title);
   if (n.fallback || chapter.built_with?.model === 'mock') add(content, 'small', 'Черновик', 'qualityBadge');
   rich(add(content,'small','','muted'), n.book_title);
+  renderStepFormat(content, n.format);
   if (chapter.pdf && chapter.id === 'latyshova') {
     if (n.id === 'latyshova.part3-4' || n.id === 'latyshova.carbonate-cutoff-porosity') {
       source(content, 107, 'Рис. 77 · стр. 107');
@@ -340,6 +341,7 @@ function renderStudy(){
     }
   }
   if (view === 'exam') renderExam();
+  if (view === 'audit') renderCourseAudit(content);
   if(view==='cards')for(const c of cards){
     const box=add(content,'section','','box');const original=layer.nodes.find(n=>n.id===c.node_id);
     bookText(box,'strong',original && c.front===original.title ? nodeById.get(c.node_id).title : c.front);
@@ -462,7 +464,7 @@ function render(){
   $('tools').replaceChildren();
   const activities = [
     ['summary','≡'], ['cards','▤'], ['practice','?'], ['map','⌘'],
-    ['lab','◇'], ['progress','◫'], ['exam','✓'], ['terms','А']
+    ['lab','◇'], ['progress','◫'], ['exam','✓'], ['terms','А'], ['audit','ⓘ']
   ];
   if (spaceId) add($('tools'), 'p', serverSources().length
     ? 'Загруженные материалы доступны в чате, тестах и лаборатории.'
@@ -539,3 +541,7 @@ $('title').textContent=chapter.title_short || chapter.title;
 document.title=$('title').textContent + ' · QABAT';
 $('author').textContent=[chapter.author, chapter.year].filter(Boolean).join(' · ');
 $('meta').textContent=spaceId ? 'Учебное пространство' : nodes.length+' '+({one:'шаг',few:'шага',many:'шагов'}[new Intl.PluralRules('ru').select(nodes.length)])+(nodes.every(n=>n.minutes) ? ' / '+nodes.reduce((total,n)=>total+n.minutes,0)+' мин' : '');
+if (chapter.built_with?.model) {
+  $('builtWith').textContent = 'Собрано моделью ' + chapter.built_with.model;
+  $('builtWith').hidden = false;
+}

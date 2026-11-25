@@ -233,9 +233,19 @@ figcaption { color: var(--muted); font-size: .875rem; }
   button { transition: none; }
 }
 @media print {
+  :root, :root[data-dark=true] {
+    color-scheme: light;
+    --bg: #fff;
+    --paper: #fff;
+    --muted: #4b5563;
+    --accent: #343873;
+    --line: #d5d8e1;
+  }
+  h2, h3 { break-after: avoid; }
   .topbar, .cover canvas, #mobileNav, aside, .tutorHeader, .tools, .skip, .navrow, button { display: none !important; }
   #workspace.columns, #workspace #reader, main { display: block; border: 0; padding: 0; background: white; color: black; }
-  .cover, .cover > div { background: white; color: black; padding: 0; }
+  .cover, .cover > div { background: white; color: black; border: 0; padding: 0; }
+  #lessonPane { padding: 0; }
   .box { break-inside: avoid; }
 }
 
@@ -383,3 +393,16 @@ figcaption { color: var(--muted); font-size: .875rem; }
 .sourceBuild { display: grid; justify-items: start; gap: 3px; margin: 6px 0; }
 .sourceBuild button { font-size: .875rem; }
 .sourceBuild progress { width: 100%; }
+
+.coverModel { display: block; margin-top: 4px; }
+.stepFormat { max-width: 70ch; font-size: .875rem; }
+.auditStats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+  gap: 10px; margin-block: 16px;
+}
+.auditStats .box { margin: 0; }
+.auditStats dd { margin: 3px 0 0; font-weight: 650; }
+.coverageTable { width: 100%; }
+.coverageTable th { text-align: start; }
+.coverageTable td, .coverageTable th { vertical-align: top; }
+.coverageTable button { text-align: start; overflow-wrap: anywhere; }

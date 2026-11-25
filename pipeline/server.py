@@ -29,6 +29,7 @@ from laboratory import LabTutor, activity, candidates, evaluate, excerpt, lab_co
 from core.tutor import Library, TutorError, chat  # noqa: E402
 
 from spaces import MAX_FILE, Spaces
+from render import course_page
 from assessments import generate, search_sources
 
 MAX_BODY = 5 * 1024 * 1024
@@ -124,10 +125,8 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
             if origin and urlsplit(origin).netloc != self.headers.get("Host"):
                 raise TutorError(403, "wrong_origin", "Откройте учебное пространство на странице QABAT.")
 
-        def _lesson_page(self, layer):
-            data = json.dumps(layer, ensure_ascii=False).replace("<", "\\u003c")
-            template = (HERE / "web" / "index.html").read_text(encoding="utf-8").replace('"web/', '"/assets/')
-            return self._send(template.replace("__LAYER__", data).encode(), "text/html; charset=utf-8")
+        def _lesson_page(self, layer, folder=None):
+            return self._send(course_page(layer, folder, assets="/assets/").encode(), "text/html; charset=utf-8")
 
         def _get(self):
             path = self.path.split("?")[0]
@@ -188,7 +187,7 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                 folder = Path(super().translate_path("/" + course[1]))
                 for src in lib.sources.copy().values():
                     if src.folder == folder and src.layer.get("schema_version") == "1.0" and src.nodes:
-                        return self._lesson_page(src.layer)
+                        return self._lesson_page(src.layer, src.folder)
             return super().do_GET()
 
         def _catalog(self):
