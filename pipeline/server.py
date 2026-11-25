@@ -208,7 +208,9 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                         return self._json(200, spaces.edit(space_id, self._body()))
                     if operation == "build":
                         from core.webbuild import start as build_start
-                        return self._json(202, build_start(spaces, space_id, str(self._body().get("entry") or ""), lib, out_dir))
+                        req = self._body()
+                        return self._json(202, build_start(spaces, space_id, str(req.get("entry") or ""), lib, out_dir,
+                                                           req.get("page_from"), req.get("page_to")))
                     if operation == "upload":
                         size = self._length()
                         if not 0 < size <= MAX_FILE:

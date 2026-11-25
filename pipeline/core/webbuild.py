@@ -32,16 +32,26 @@ def status(job: str) -> dict | None:
     return None if j is None else {k: v for k, v in j.items() if k != "thread"}
 
 
-def start(spaces, space_id: str, entry_id: str, lib, out_dir: Path) -> dict:
+def start(spaces, space_id: str, entry_id: str, lib, out_dir: Path, page_from=None, page_to=None) -> dict:
+    """page_from/page_to — диапазон страниц файла (номера как в предпросмотре: метки <!-- page N --> или страницы PDF)."""
+    from types import SimpleNamespace
+    from .tutor import TutorError
     src = spaces.get_source(space_id, entry_id)
     row = spaces.original(space_id, entry_id)
+    have = sorted({int(u["page"]) for u in src.units})
+    if page_from is not None or page_to is not None:
+        a = int(page_from if page_from is not None else have[0])
+        b = int(page_to if page_to is not None else have[-1])
+        if a > b or a not in have and not any(a <= p <= b for p in have):
+            raise TutorError(400, "bad_pages", f"В файле нет страниц {a}–{b}. Доступны {have[0]}–{have[-1]}.")
+        src = SimpleNamespace(units=[u for u in src.units if a <= int(u["page"]) <= b])
     pages = sorted({u["page"] for u in src.units})
     chars = sum(len(u["text"]) for u in src.units)
     if len(pages) > MAX_PAGES or chars > MAX_CHARS:
         from .tutor import TutorError
         raise TutorError(413, "too_big_for_course",
                          f"Для курса загрузите одну главу: до {MAX_PAGES} страниц (сейчас {len(pages)}). Тьютор при этом может отвечать по всей книге.")
-    folder = "up_" + entry_id.replace("src-", "")[:10]
+    folder = "up_" + entry_id.replace("src-", "")[:10] + (f"_p{pages[0]}-{pages[-1]}" if (page_from is not None or page_to is not None) else "")
     with _LOCK:  # повторный запрос (вторая вкладка) — та же сборка, а не новая в очередь
         same = next((x for x in JOBS.values() if x["folder"] == folder and x["state"] in ("queued", "running")), None)
     if same:
