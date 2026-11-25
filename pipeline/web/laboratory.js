@@ -27,47 +27,6 @@ function textExercise(parent, node, instruction) {
   evidence(details(parent, 'Сверить с цитатой автора'), claim);
 }
 
-function specimenViewer(parent, task, missing) {
-  const figure = add(parent, 'figure', '', 'specimen');
-  const frame = add(figure, 'div', '', 'specimenFrame');
-  frame.tabIndex = 0;
-  frame.setAttribute('role', 'region');
-  frame.setAttribute('aria-label', 'Фотография образца. После увеличения перемещайся полосами прокрутки или стрелками.');
-  const img = add(frame, 'img');
-  img.alt = 'Геологический образец · ' + task.locality;
-  img.loading = 'lazy';
-  const controls = add(figure, 'div', '', 'modeControls');
-  const label = add(controls, 'label', 'Масштаб ');
-  const zoom = add(label, 'input');
-  Object.assign(zoom, {type: 'range', min: 100, max: 350, step: 25, value: 100});
-  zoom.oninput = () => { img.style.width = zoom.value + '%'; };
-  frame.onpointerdown = event => {
-    if (event.pointerType !== 'mouse' || event.button !== 0 || +zoom.value === 100) return;
-    frame.setPointerCapture(event.pointerId);
-    const {clientX, clientY} = event;
-    const {scrollLeft, scrollTop} = frame;
-    frame.onpointermove = move => frame.scrollTo(scrollLeft + clientX - move.clientX, scrollTop + clientY - move.clientY);
-  };
-  frame.onlostpointercapture = () => { frame.onpointermove = null; };
-  if (document.fullscreenEnabled) button(controls, 'На весь экран', async () => {
-    try {
-      if (document.fullscreenElement) await document.exitFullscreen();
-      else await figure.requestFullscreen();
-    } catch { add(controls, 'span', 'Полноэкранный режим недоступен.'); }
-  });
-  const caption = add(figure, 'figcaption');
-  add(caption, 'span', task.locality);
-  add(caption, 'span', task.attribution + ' · ' + task.license);
-  if (task.license_url) labLink(caption, 'Условия лицензии', task.license_url);
-  labLink(caption, 'Оригинал фотографии ↗', task.source_url);
-  img.onerror = () => {
-    frame.hidden = controls.hidden = true;
-    missing();
-  };
-  img.draggable = false;
-  img.src = apiBase + task.media_url;
-}
-
 async function specimenLab(parent) {
   const sources = details(parent, 'Внешние учебные коллекции');
   for (const [name, url] of [

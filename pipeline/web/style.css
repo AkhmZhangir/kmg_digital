@@ -219,8 +219,8 @@ figcaption { color: var(--muted); font-size: .875rem; }
 }
 
 .specimen { margin: 1rem 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
-.specimenFrame { height: clamp(240px, 44vh, 500px); overflow: auto; background: var(--soft); }
-.specimenFrame img { display: block; width: 100%; max-width: none; height: auto; min-height: 100%; object-fit: contain; }
+.specimenFrame { height: clamp(240px, 44vh, 500px); overflow: hidden; position: relative; touch-action: none; background: var(--soft); }
+.specimenFrame img { position: absolute; left: 50%; top: 50%; max-width: none; max-height: none; transform-origin: center; user-select: none; pointer-events: none; }
 .specimen:fullscreen .specimenFrame { height: 80vh; }
 .specimen .modeControls, .specimen figcaption { padding: .6rem 1rem; }
 .specimen figcaption { display: flex; gap: .3rem 1rem; flex-wrap: wrap; color: var(--muted); font-size: .88rem; }
