@@ -299,7 +299,7 @@ function cover(){
   const canvas=document.querySelector('canvas');const w=canvas.clientWidth,h=canvas.clientHeight;
   const scale=Math.min(devicePixelRatio,2);canvas.width=w*scale;canvas.height=h*scale;
   const ctx=canvas.getContext('2d');ctx.scale(scale,scale);
-  const colors=['#7d8f84','#b8ad86','#dac499','#aa7954','#ba8b62','#856f5a','#5e8078','#3f6667','#365759'];
+  const colors=['#91a9a3','#bacbc8','#d2dedb','#8da9b6','#7190a1','#91b3ad','#6f9996','#527984','#3d606c'];
   colors.forEach((color,i)=>{
     ctx.beginPath();ctx.moveTo(w*.36,h+4);
     for(let x=w*.36;x<=w+3;x+=3){
