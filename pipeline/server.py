@@ -132,6 +132,10 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
             path = self.path.split("?")[0]
             if path == "/api/spaces":
                 return self._json(200, {"spaces": spaces.list()})
+            if path.startswith("/api/build/"):
+                from core.webbuild import status as build_status
+                st = build_status(path.rsplit("/", 1)[-1])
+                return self._json(200, st) if st else self._error(404, "not_found", "Нет такой сборки")
             if path == "/api/catalog":
                 return self._json(200, {"courses": [
                     {**item, "chapter": lib.get(item["id"]).layer["chapter"]}
@@ -194,12 +198,15 @@ def make_handler(lib: Library, llm: LLM, out_dir: Path):
                 self._check_space_origin()
                 if path == "/api/spaces":
                     return self._json(201, spaces.create(self._body().get("name")))
-                scope = re.fullmatch(r"/api/spaces/([a-f0-9]{32})(?:/(upload|chat|lab/(?:open|grade|hint|recommend)))?", path)
+                scope = re.fullmatch(r"/api/spaces/([a-f0-9]{32})(?:/(upload|build|chat|lab/(?:open|grade|hint|recommend)))?", path)
                 active_lib = lib
                 if scope:
                     space_id, operation = scope.groups()
                     if not operation:
                         return self._json(200, spaces.edit(space_id, self._body()))
+                    if operation == "build":
+                        from core.webbuild import start as build_start
+                        return self._json(202, build_start(spaces, space_id, str(self._body().get("entry") or ""), lib, out_dir))
                     if operation == "upload":
                         size = self._length()
                         if not 0 < size <= MAX_FILE:
