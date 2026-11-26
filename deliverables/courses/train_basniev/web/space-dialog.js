@@ -34,7 +34,10 @@ function spaceDialog(title, label, choices, field) {
     const control = document.createElement('button');
     control.value = value;
     control.textContent = caption;
-    control.formNoValidate = value === 'cancel';
+    if (value === 'cancel') {
+      control.type = 'button';
+      control.onclick = () => dialog.close('cancel');
+    }
     if (value === 'save') control.className = 'primary';
     footer.append(control);
   }

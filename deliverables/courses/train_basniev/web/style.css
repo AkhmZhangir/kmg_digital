@@ -194,6 +194,7 @@ details { margin-block: 8px; }
 details.evidence { font-size: .85rem; color: var(--muted); }
 .warning { color: var(--accent); font-weight: 700; }
 .term { text-decoration: none; cursor: help; }
+.table-scroll { position: relative; }
 .table-scroll, .math, .katex-display { max-width: 100%; overflow: auto; }
 table { border-collapse: collapse; }
 td, th { border: 1px solid var(--line); padding: 6px 10px; }
@@ -439,3 +440,9 @@ figcaption { color: var(--muted); font-size: .875rem; }
   padding: 10px; background: var(--soft); border: 1px solid var(--line); border-radius: 8px; font: inherit;
 }
 #courseReviewBadge { margin: 6px 0 0; }
+
+/* Keep course materials outside the active exam, including on mobile. */
+body:has(.examAttempt[data-running=true]) #workspace { grid-template-columns: minmax(0, 1fr); }
+body:has(.examAttempt[data-running=true]) :is(#sourcesPanel, #studioPanel, #mobileNav, #toggleSources, #toggleStudio) {
+  display: none;
+}
