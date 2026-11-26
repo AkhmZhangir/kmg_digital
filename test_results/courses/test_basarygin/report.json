@@ -1,0 +1,51 @@
+{
+ "nodes": 15,
+ "tasks": 37,
+ "task_types": {
+  "single": 10,
+  "cloze": 9,
+  "order": 7,
+  "multi": 7,
+  "calc": 4
+ },
+ "cards": 15,
+ "coverage": {
+  "units": 125,
+  "linked": 113,
+  "skipped_with_reason": 12,
+  "uncovered": 0
+ },
+ "claims": 150,
+ "claims_ok": 150,
+ "paras": 355,
+ "paras_number_issues": 1,
+ "claims_verified_share": 1.0,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [
+  {
+   "node_id": "basarygin.hard-vs-soft-shut-in",
+   "message": "числа без опоры в цитате: 15",
+   "text": "В тексте книги упоминаются номера элементов устьевого оборудования и линий: задвижка 10, штуцерная линия 9, превентор 6,"
+  }
+ ],
+ "illustrations": 16,
+ "status": "ok",
+ "chapter": "test_basarygin",
+ "model": "gemini-3.5-flash-lite+qwen/qwen3.8-27b",
+ "llm_calls": 32,
+ "cache_hits": 0,
+ "seconds": 247.2,
+ "official": {
+  "layer.json": true,
+  "coverage.json": true,
+  "routing.json": true,
+  "tasks.json": true,
+  "illustrations.json": true
+ },
+ "stage": "verify"
+}

@@ -1,0 +1,16 @@
+[
+ {
+  "target": "C008",
+  "why": "доказательство не найдено в главе",
+  "model": {
+   "id": "C008",
+   "verdict": "error",
+   "category": "wrong_scaling",
+   "severity": "critical",
+   "problem": "В формуле показатель степени равен 1/n, а не n.",
+   "fix": "Формула 7.1: отношение (a·Rw)/(Rt·φ^m) возводится в степень 1/n, то есть Sw = ((a·Rw)/(Rt·φ^m))^(1/n).",
+   "page": 126,
+   "evidence": "S_w = \\left( \\frac{a \\times R_w}{R_t \\times \\phi^m} \\right)^{\\frac{1}{n}}"
+  }
+ }
+]

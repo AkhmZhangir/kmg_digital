@@ -1,0 +1,3010 @@
+[
+ {
+  "unit": "u126-01",
+  "page": 126,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы или технический артефакт",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-02",
+  "page": 126,
+  "kind": "para",
+  "node": null,
+  "reason": "библиографическая ссылка",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-03",
+  "page": 126,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок главы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-04",
+  "page": 126,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-05",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.log-interpretation-overview",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-06",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.log-interpretation-overview",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-07",
+  "page": 126,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-08",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.reconnaissance-scanning",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-09",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.reconnaissance-scanning",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-10",
+  "page": 126,
+  "kind": "figure",
+  "node": "asquith.reconnaissance-scanning",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-11",
+  "page": 126,
+  "kind": "figure",
+  "node": "asquith.reconnaissance-scanning",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-12",
+  "page": 126,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-13",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-14",
+  "page": 126,
+  "kind": "formula",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-15",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-16",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-17",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-18",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-19",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-20",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u126-21",
+  "page": 126,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-01",
+  "page": 127,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-02",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-03",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-04",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-05",
+  "page": 127,
+  "kind": "list",
+  "node": "asquith.archie-water-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-06",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-07",
+  "page": 127,
+  "kind": "formula",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-08",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-09",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-10",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-11",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-12",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-13",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-14",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-15",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-16",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.flushed-zone-saturation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-17",
+  "page": 127,
+  "kind": "heading",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-18",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-19",
+  "page": 127,
+  "kind": "formula",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-20",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-21",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-22",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-23",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-24",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-25",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-26",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-27",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-28",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-29",
+  "page": 127,
+  "kind": "formula",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-30",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-31",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-32",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-33",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-34",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-35",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-36",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-37",
+  "page": 127,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u127-38",
+  "page": 127,
+  "kind": "para",
+  "node": null,
+  "reason": "обрыв предложения перед переносом страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-01",
+  "page": 128,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-02",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-03",
+  "page": 128,
+  "kind": "formula",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-04",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-05",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-06",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-07",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-08",
+  "page": 128,
+  "kind": "formula",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-09",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-10",
+  "page": 128,
+  "kind": "formula",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-11",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-12",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-13",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-14",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-15",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-16",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-17",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-18",
+  "page": 128,
+  "kind": "list",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-19",
+  "page": 128,
+  "kind": "list",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-20",
+  "page": 128,
+  "kind": "list",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-21",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-22",
+  "page": 128,
+  "kind": "formula",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-23",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-24",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-25",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-26",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-27",
+  "page": 128,
+  "kind": "list",
+  "node": "asquith.ratio-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-28",
+  "page": 128,
+  "kind": "heading",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-29",
+  "page": 128,
+  "kind": "heading",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-30",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-31",
+  "page": 128,
+  "kind": "list",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-32",
+  "page": 128,
+  "kind": "heading",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-33",
+  "page": 128,
+  "kind": "para",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-34",
+  "page": 128,
+  "kind": "heading",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-35",
+  "page": 128,
+  "kind": "list",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-36",
+  "page": 128,
+  "kind": "heading",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u128-37",
+  "page": 128,
+  "kind": "list",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-01",
+  "page": 129,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-02",
+  "page": 129,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-03",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-04",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-05",
+  "page": 129,
+  "kind": "formula",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-06",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-07",
+  "page": 129,
+  "kind": "formula",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-08",
+  "page": 129,
+  "kind": "formula",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-09",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-10",
+  "page": 129,
+  "kind": "formula",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-11",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-12",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.quick-look-rxo-rt",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-13",
+  "page": 129,
+  "kind": "heading",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-14",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-15",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-16",
+  "page": 129,
+  "kind": "list",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-17",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-18",
+  "page": 129,
+  "kind": "list",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-19",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-20",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-21",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-22",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-23",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-24",
+  "page": 129,
+  "kind": "formula",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-25",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-26",
+  "page": 129,
+  "kind": "formula",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-27",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-28",
+  "page": 129,
+  "kind": "formula",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-29",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-30",
+  "page": 129,
+  "kind": "formula",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u129-31",
+  "page": 129,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-01",
+  "page": 130,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-02",
+  "page": 130,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-03",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-04",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-05",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-06",
+  "page": 130,
+  "kind": "formula",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-07",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-08",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-09",
+  "page": 130,
+  "kind": "list",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-10",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.apparent-water-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-11",
+  "page": 130,
+  "kind": "heading",
+  "node": "asquith.conductivity-derived-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-12",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.conductivity-derived-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-13",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.conductivity-derived-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-14",
+  "page": 130,
+  "kind": "heading",
+  "node": "asquith.conductivity-derived-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-15",
+  "page": 130,
+  "kind": "list",
+  "node": "asquith.conductivity-derived-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-16",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.conductivity-derived-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-17",
+  "page": 130,
+  "kind": "heading",
+  "node": "asquith.conductivity-derived-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-18",
+  "page": 130,
+  "kind": "list",
+  "node": "asquith.conductivity-derived-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-19",
+  "page": 130,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок без содержательного текста",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-20",
+  "page": 130,
+  "kind": "para",
+  "node": null,
+  "reason": "введение в погрешности Rw, не образует отдельный узел концепта",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-21",
+  "page": 130,
+  "kind": "heading",
+  "node": "asquith.conductivity-derived-porosity-basis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-22",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.conductivity-derived-porosity-basis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-23",
+  "page": 130,
+  "kind": "formula",
+  "node": "asquith.conductivity-derived-porosity-basis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-24",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.conductivity-derived-porosity-basis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-25",
+  "page": 130,
+  "kind": "formula",
+  "node": "asquith.conductivity-derived-porosity-basis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-26",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.conductivity-derived-porosity-basis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-27",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.conductivity-derived-porosity-basis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-28",
+  "page": 130,
+  "kind": "para",
+  "node": "asquith.conductivity-derived-porosity-basis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u130-29",
+  "page": 130,
+  "kind": "formula",
+  "node": "asquith.conductivity-derived-porosity-basis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-01",
+  "page": 131,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-02",
+  "page": 131,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-03",
+  "page": 131,
+  "kind": "heading",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-04",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-05",
+  "page": 131,
+  "kind": "heading",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-06",
+  "page": 131,
+  "kind": "list",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-07",
+  "page": 131,
+  "kind": "heading",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-08",
+  "page": 131,
+  "kind": "list",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-09",
+  "page": 131,
+  "kind": "heading",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-10",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-11",
+  "page": 131,
+  "kind": "heading",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-12",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-13",
+  "page": 131,
+  "kind": "formula",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-14",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.wet-resistivity-ro-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-15",
+  "page": 131,
+  "kind": "heading",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-16",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-17",
+  "page": 131,
+  "kind": "formula",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-18",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-19",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-20",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-21",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-22",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-23",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-24",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-25",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-26",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-27",
+  "page": 131,
+  "kind": "table",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u131-28",
+  "page": 131,
+  "kind": "para",
+  "node": "asquith.bulk-volume-water-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-01",
+  "page": 132,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-02",
+  "page": 132,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-03",
+  "page": 132,
+  "kind": "para",
+  "node": null,
+  "reason": "вводный описательный абзац к кроссплотам",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-04",
+  "page": 132,
+  "kind": "heading",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-05",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-06",
+  "page": 132,
+  "kind": "list",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-07",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-08",
+  "page": 132,
+  "kind": "formula",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-09",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-10",
+  "page": 132,
+  "kind": "formula",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-11",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-12",
+  "page": 132,
+  "kind": "formula",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-13",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-14",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-15",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-16",
+  "page": 132,
+  "kind": "formula",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-17",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-18",
+  "page": 132,
+  "kind": "list",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-19",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-20",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-21",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-22",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-23",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u132-24",
+  "page": 132,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-01",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-02",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-03",
+  "page": 133,
+  "kind": "formula",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-04",
+  "page": 133,
+  "kind": "formula",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-05",
+  "page": 133,
+  "kind": "formula",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-06",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-07",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-08",
+  "page": 133,
+  "kind": "formula",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-09",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-10",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-11",
+  "page": 133,
+  "kind": "list",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-12",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-13",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-14",
+  "page": 133,
+  "kind": "table",
+  "node": "asquith.pickett-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-15",
+  "page": 133,
+  "kind": "heading",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-16",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-17",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-18",
+  "page": 133,
+  "kind": "formula",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-19",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-20",
+  "page": 133,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u133-21",
+  "page": 133,
+  "kind": "list",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-01",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-02",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-03",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-04",
+  "page": 134,
+  "kind": "list",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-05",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-06",
+  "page": 134,
+  "kind": "formula",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-07",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-08",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-09",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-10",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-11",
+  "page": 134,
+  "kind": "list",
+  "node": "asquith.hinge-crossplot-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-12",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-13",
+  "page": 134,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-14",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u134-15",
+  "page": 134,
+  "kind": "para",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-01",
+  "page": 135,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-02",
+  "page": 135,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул автора",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-03",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-04",
+  "page": 135,
+  "kind": "table",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-05",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-06",
+  "page": 135,
+  "kind": "table",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-07",
+  "page": 135,
+  "kind": "heading",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-08",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-09",
+  "page": 135,
+  "kind": "formula",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-10",
+  "page": 135,
+  "kind": "formula",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-11",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-12",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-13",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-14",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-15",
+  "page": 135,
+  "kind": "heading",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-16",
+  "page": 135,
+  "kind": "formula",
+  "node": "asquith.permeability-wyllie-rose-timur",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-17",
+  "page": 135,
+  "kind": "heading",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-18",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-19",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u135-20",
+  "page": 135,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-01",
+  "page": 136,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-02",
+  "page": 136,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-03",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-04",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-05",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-06",
+  "page": 136,
+  "kind": "formula",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-07",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-08",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-09",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-10",
+  "page": 136,
+  "kind": "formula",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-11",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-12",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-13",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-14",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-15",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-16",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-17",
+  "page": 136,
+  "kind": "formula",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-18",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-19",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-20",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-21",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-22",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-23",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-24",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.permeability-coates-dumanoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-25",
+  "page": 136,
+  "kind": "heading",
+  "node": "asquith.shaly-sand-effects-models",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-26",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.shaly-sand-effects-models",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-27",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.shaly-sand-effects-models",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-28",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.shaly-sand-effects-models",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-29",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.shaly-sand-effects-models",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-30",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.shaly-sand-effects-models",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u136-31",
+  "page": 136,
+  "kind": "para",
+  "node": "asquith.shaly-sand-effects-models",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-01",
+  "page": 140,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-02",
+  "page": 140,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-03",
+  "page": 140,
+  "kind": "figure_desc",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-04",
+  "page": 140,
+  "kind": "para",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-05",
+  "page": 140,
+  "kind": "figure",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-06",
+  "page": 140,
+  "kind": "heading",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-07",
+  "page": 140,
+  "kind": "para",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-08",
+  "page": 140,
+  "kind": "heading",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-09",
+  "page": 140,
+  "kind": "para",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-10",
+  "page": 140,
+  "kind": "para",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-11",
+  "page": 140,
+  "kind": "para",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-12",
+  "page": 140,
+  "kind": "figure_desc",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-13",
+  "page": 140,
+  "kind": "para",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-14",
+  "page": 140,
+  "kind": "figure",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-15",
+  "page": 140,
+  "kind": "para",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-16",
+  "page": 140,
+  "kind": "para",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u140-17",
+  "page": 140,
+  "kind": "para",
+  "node": "asquith.log-interpretation-workflow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u141-01",
+  "page": 141,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u141-02",
+  "page": 141,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул автора",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u141-03",
+  "page": 141,
+  "kind": "figure",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u141-04",
+  "page": 141,
+  "kind": "para",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u141-05",
+  "page": 141,
+  "kind": "para",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u141-06",
+  "page": 141,
+  "kind": "para",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u141-07",
+  "page": 141,
+  "kind": "figure",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u141-08",
+  "page": 141,
+  "kind": "figure",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u141-09",
+  "page": 141,
+  "kind": "figure",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-01",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-02",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.buckles-plot-bvw",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-03",
+  "page": 142,
+  "kind": "figure_desc",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-04",
+  "page": 142,
+  "kind": "figure",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-05",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-06",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-07",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-08",
+  "page": 142,
+  "kind": "formula",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-09",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-10",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-11",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-12",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-13",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-14",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-15",
+  "page": 142,
+  "kind": "formula",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-16",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-17",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-18",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-19",
+  "page": 142,
+  "kind": "formula",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-20",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-21",
+  "page": 142,
+  "kind": "formula",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-22",
+  "page": 142,
+  "kind": "formula",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u142-23",
+  "page": 142,
+  "kind": "para",
+  "node": "asquith.pickett-hingle-comparison",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u143-01",
+  "page": 143,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u143-02",
+  "page": 143,
+  "kind": "para",
+  "node": null,
+  "reason": "технический колонтитул автора",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u143-03",
+  "page": 143,
+  "kind": "figure_desc",
+  "node": "asquith.hingle-plot-sandstones-carbonates",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u143-04",
+  "page": 143,
+  "kind": "figure",
+  "node": "asquith.hingle-plot-sandstones-carbonates",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u144-01",
+  "page": 144,
+  "kind": "para",
+  "node": "asquith.hingle-plot-sandstones-carbonates",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u144-02",
+  "page": 144,
+  "kind": "para",
+  "node": "asquith.hingle-plot-sandstones-carbonates",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u144-03",
+  "page": 144,
+  "kind": "figure_desc",
+  "node": "asquith.hingle-plot-sandstones-carbonates",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u144-04",
+  "page": 144,
+  "kind": "figure",
+  "node": "asquith.hingle-plot-sandstones-carbonates",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-01",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-sandstones-carbonates",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-02",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-sandstones-carbonates",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-03",
+  "page": 145,
+  "kind": "figure",
+  "node": "asquith.hingle-plot-sandstones-carbonates",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-04",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-05",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-06",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-07",
+  "page": 145,
+  "kind": "formula",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-08",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-09",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-10",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-11",
+  "page": 145,
+  "kind": "formula",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-12",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-13",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-14",
+  "page": 145,
+  "kind": "figure_desc",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-15",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-16",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-17",
+  "page": 145,
+  "kind": "formula",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-18",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-19",
+  "page": 145,
+  "kind": "formula",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-20",
+  "page": 145,
+  "kind": "formula",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u145-21",
+  "page": 145,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u146-01",
+  "page": 146,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u146-02",
+  "page": 146,
+  "kind": "para",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u146-03",
+  "page": 146,
+  "kind": "figure_desc",
+  "node": "asquith.hingle-plot-rw-sw-calculation",
+  "reason": "",
+  "ocr_bad": false
+ }
+]

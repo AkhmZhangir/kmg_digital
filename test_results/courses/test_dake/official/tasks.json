@@ -1,0 +1,872 @@
+{
+ "chapter": "test_dake",
+ "tasks": [
+  {
+   "id": "dake.radial-flow-intro-and-assumptions.q1",
+   "type": "single",
+   "step_id": "dake.radial-flow-intro-and-assumptions",
+   "claim_ids": [
+    "dake.radial-flow-intro-and-assumptions#c2"
+   ],
+   "prompt": "Почему базовое уравнение радиального течения считается нелинейным?",
+   "explanation": "Уравнение нелинейно, так как коэффициенты являются функцией зависимой переменной — давления.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что коэффициенты в нем зависят от давления",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что скважина расположена в центре пласта",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что в пласте присутствует только один флюид",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что используются цилиндрические координаты",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "dake.radial-flow-intro-and-assumptions.q3",
+   "type": "order",
+   "step_id": "dake.radial-flow-intro-and-assumptions",
+   "claim_ids": [
+    "dake.radial-flow-intro-and-assumptions#c5"
+   ],
+   "prompt": "Расположите этапы и допущения моделирования радиального течения в логической последовательности",
+   "explanation": "Сначала задаются основные физические допущения о пласте, скважине и насыщении, а затем выполняется линеаризация уравнения.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Предположение об однородности пласта и изотропии проницаемости",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Вскрытие скважиной всей толщины пласта для радиального течения",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Полное насыщение формации единственным флюидом",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Линеаризация базового нелинейного уравнения для получения аналитического решения",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "dake.compressibility-and-basic-nonlinear-equation.q2",
+   "type": "single",
+   "step_id": "dake.compressibility-and-basic-nonlinear-equation",
+   "claim_ids": [
+    "dake.compressibility-and-basic-nonlinear-equation#c8"
+   ],
+   "prompt": "Почему базовое дифференциальное уравнение радиального течения называется нелинейным?",
+   "explanation": "Уравнение называется нелинейным именно из-за того, что плотность, сжимаемость и вязкость в коэффициентах неявно зависят от давления.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за неявной зависимости плотности, сжимаемости и вязкости от давления в коэффициентах",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за постоянства всех физических свойств флюида независимо от давления",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за использования цилиндрических координат вместо декартовых",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Из-за пренебрежения силами гравитации притока жидкости",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "dake.compressibility-and-basic-nonlinear-equation.q3",
+   "type": "gap",
+   "step_id": "dake.compressibility-and-basic-nonlinear-equation",
+   "claim_ids": [
+    "dake.compressibility-and-basic-nonlinear-equation#c10"
+   ],
+   "prompt": "Для реального газа используется интегральное преобразование {{1}}.",
+   "explanation": "Для реального газа применяется строгий метод с использованием интегрального преобразования Кирхгофа.",
+   "kind": "understanding",
+   "answer": [
+    "Кирхгофа"
+   ]
+  },
+  {
+   "id": "dake.solution-conditions-overview.q1",
+   "type": "gap",
+   "step_id": "dake.solution-conditions-overview",
+   "claim_ids": [
+    "dake.solution-conditions-overview#c1"
+   ],
+   "prompt": "Для уравнения 5.1 существует {{1}} много решений в зависимости от начальных и граничных условий.",
+   "explanation": "В зависимости от заданных условий уравнение 5.1 имеет бесконечно много решений.",
+   "kind": "understanding",
+   "answer": [
+    "бесконечно"
+   ]
+  },
+  {
+   "id": "dake.solution-conditions-overview.q2",
+   "type": "order",
+   "step_id": "dake.solution-conditions-overview",
+   "claim_ids": [
+    "dake.solution-conditions-overview#c4"
+   ],
+   "prompt": "Расставьте три основных режима фильтрации в порядке, упомянутом в тексте",
+   "explanation": "В тексте режимы перечисляются в последовательности: неустановившийся, квазиустановившийся, установившийся.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "неустановившийся",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "квазиустановившийся",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "установившийся",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "dake.solution-conditions-overview.q3",
+   "type": "multiple",
+   "step_id": "dake.solution-conditions-overview",
+   "claim_ids": [
+    "dake.solution-conditions-overview#c5"
+   ],
+   "prompt": "От каких факторов зависят применимость различных режимов фильтрации?",
+   "explanation": "Режимы применимы в разное время после начала добычи и для разных предполагаемых граничных условий.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Время после начала добычи",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Предполагаемые граничные условия",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Количество растворенного газа в нефти",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Глубина залегания фундамента",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "dake.transient-flow-condition.q1",
+   "type": "single",
+   "step_id": "dake.transient-flow-condition",
+   "claim_ids": [
+    "dake.transient-flow-condition#c1"
+   ],
+   "prompt": "Сколько по времени применим неустановившийся (транзиентный) режим течения?",
+   "explanation": "Транзиентный режим применим только короткое время после изменения давления или расхода.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Только короткое время после возмущения давления",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В течение всей разработки месторождения",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "До полной стабилизации давления на годы",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "dake.transient-flow-condition.q2",
+   "type": "multiple",
+   "step_id": "dake.transient-flow-condition",
+   "claim_ids": [
+    "dake.transient-flow-condition#c2"
+   ],
+   "prompt": "Что характерно для пласта в период транзиентного режима? Выберите все верные варианты.",
+   "explanation": "В этот период границы еще не влияют на систему, поэтому пласт математически рассматривается как бесконечный.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Внешние границы не влияют на отклик системы",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пласт математически выглядит бесконечным",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Границы пласта полностью определяют текущее давление",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Размеры пласта обязаны быть меньше радиуса скважины",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "dake.semi-steady-state-condition.q1",
+   "type": "single",
+   "step_id": "dake.semi-steady-state-condition",
+   "claim_ids": [
+    "dake.semi-steady-state-condition#c1"
+   ],
+   "prompt": "Когда наступает квазистационарный режим течения в резервуаре?",
+   "explanation": "Квазистационарный режим наступает, когда скважина работает достаточно долго, чтобы ощутить влияние внешней границы.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Когда влияние внешней границы достигает скважины при постоянном дебите",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Сразу после начала запуска новой скважины в работу",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Когда прекращается любой приток жидкости из пласта",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "dake.semi-steady-state-condition.q2",
+   "type": "gap",
+   "step_id": "dake.semi-steady-state-condition",
+   "claim_ids": [
+    "dake.semi-steady-state-condition#c3"
+   ],
+   "prompt": "На внешней границе радиуса устанавливается стенка с нулевым потоком, где производная давления по радиусу равна {{1}} по закону Дарси.",
+   "explanation": "На внешней границе производная давления по радиусу равна нулю, что эквивалентно непроницаемой стенке.",
+   "kind": "understanding",
+   "answer": [
+    "нулю"
+   ]
+  },
+  {
+   "id": "dake.semi-steady-state-condition.q3",
+   "type": "order",
+   "step_id": "dake.semi-steady-state-condition",
+   "claim_ids": [
+    "dake.semi-steady-state-condition#c5"
+   ],
+   "prompt": "Расположите этапы и понятия в логической последовательности для нахождения константы падения давления:",
+   "explanation": "Константа падения давления находится последовательно через материальный баланс и сжимаемость после того, как режим установился.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Работа скважины при постоянном дебите до влияния границы",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Составление уравнения материального баланса",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Учет сжимаемости флюида и породы",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Определение константы падения давления",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "dake.steady-state-condition.q1",
+   "type": "order",
+   "step_id": "dake.steady-state-condition",
+   "claim_ids": [
+    "dake.steady-state-condition#c8"
+   ],
+   "prompt": "Расставьте по порядку этапы при изменении темпа добычи скважины:",
+   "explanation": "При изменении темпа добычи сначала возникают переходные условия, которые сменяются стабилизированным течением.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Изменение темпа добычи скважины",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Краткий период переходных условий",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Установление стабилизированного течения",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "dake.steady-state-condition.q2",
+   "type": "multiple",
+   "step_id": "dake.steady-state-condition",
+   "claim_ids": [
+    "dake.steady-state-condition#c5"
+   ],
+   "prompt": "Какие факторы могут обеспечивать поддержание давления в резервуаре для стационарного режима? (Выберите два варианта)",
+   "explanation": "Поддержание давления в резервуаре обеспечивается естественным притоком воды или закачкой вытесняющего флюида.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Естественный приток воды",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Закачка вытесняющего флюида",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Полное прекращение добычи нефти",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Снижение проницаемости пласта",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "dake.steady-state-condition.q3",
+   "type": "calc",
+   "step_id": "dake.steady-state-condition",
+   "claim_ids": [
+    "dake.steady-state-condition#c4"
+   ],
+   "prompt": "Чему равна производная давления по времени (dp/dt) для всех радиусов и моментов времени при стационарном режиме?",
+   "explanation": "При стационарном режиме производная давления по времени строго равна нулю для всех точек и моментов времени.",
+   "kind": "data",
+   "answer": 0.0,
+   "tolerance": 0.0,
+   "unit": "Па/с"
+  },
+  {
+   "id": "dake.linearization-for-small-compressibility.q1",
+   "type": "single",
+   "step_id": "dake.linearization-for-small-compressibility",
+   "claim_ids": [
+    "dake.linearization-for-small-compressibility#c6"
+   ],
+   "prompt": "Какие свойства жидкости позволяют пренебречь частью слагаемых при линеаризации уравнения течения?",
+   "explanation": "В тексте указано, что вязкость принимается константой, а градиент давления — малым.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Постоянство вязкости и малость градиента давления",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Высокая сжимаемость и переменная плотность",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Равенство нулю скорости фильтрации и постоянная температура",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Зависимость вязкости от давления и большой градиент давления",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "dake.linearization-for-small-compressibility.q2",
+   "type": "gap",
+   "step_id": "dake.linearization-for-small-compressibility",
+   "claim_ids": [
+    "dake.linearization-for-small-compressibility#c9"
+   ],
+   "prompt": "Финальное допущение о постоянстве {{1}} делает коэффициент перед производной постоянным, линеаризуя базовое уравнение.",
+   "explanation": "Именно постоянство сжимаемости делает коэффициент phi*mu*c/k постоянным.",
+   "kind": "understanding",
+   "answer": [
+    "сжимаемости"
+   ]
+  },
+  {
+   "id": "dake.total-compressibility-and-limitations.q1",
+   "type": "gap",
+   "step_id": "dake.total-compressibility-and-limitations",
+   "claim_ids": [
+    "dake.total-compressibility-and-limitations#c1"
+   ],
+   "prompt": "Простая линеаризация путем удаления членов должна применяться с {{1}}.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "осторожностью"
+   ]
+  },
+  {
+   "id": "dake.total-compressibility-and-limitations.q2",
+   "type": "order",
+   "step_id": "dake.total-compressibility-and-limitations",
+   "claim_ids": [
+    "dake.total-compressibility-and-limitations#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Простая линеаризация путем удаления членов должна применяться с осторожностью.",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Линеаризация применима только когда произведение сжимаемости на давление много меньше единицы.",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Сжимаемость должна быть не просто постоянной, но и малой.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "dake.total-compressibility-and-limitations.q3",
+   "type": "multiple",
+   "step_id": "dake.total-compressibility-and-limitations",
+   "claim_ids": [
+    "dake.total-compressibility-and-limitations#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Простая линеаризация путем удаления членов должна применяться с осторожностью.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Линеаризация применима только когда произведение сжимаемости на давление много меньше единицы.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "dake.diffusivity-equation-analogy.q1",
+   "type": "single",
+   "step_id": "dake.diffusivity-equation-analogy",
+   "claim_ids": [
+    "dake.diffusivity-equation-analogy#c1"
+   ],
+   "prompt": "Как называется коэффициент k/(φμc) в радиальном уравнении пьезопроводности?",
+   "explanation": "В тексте прямо указано, что данный коэффициент именуется константой пьезопроводности.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Константа пьезопроводности",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Абсолютная температура",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Коэффициент теплопроводности",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Динамическая вязкость",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "dake.diffusivity-equation-analogy.q2",
+   "type": "multiple",
+   "step_id": "dake.diffusivity-equation-analogy",
+   "claim_ids": [
+    "dake.diffusivity-equation-analogy#c5"
+   ],
+   "prompt": "Почему в инженерных работах по разработке месторождений ссылаются на труд Карслоу и Егера «Теплопроводность в твердых телах»?",
+   "explanation": "Общность уравнений позволяет использовать математические решения из книги Карслоу и Егера для задач фильтрации.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за математической общности уравнения пьезопроводности и теплопроводности",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Книга содержит готовые решения для различных начальных и граничных условий",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В книге описаны методы бурения нефтяных скважин",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Труд полностью посвящен механике горных пород",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "dake.exponential-integral-solution.q4",
+   "type": "calc",
+   "step_id": "dake.exponential-integral-solution",
+   "claim_ids": [
+    "dake.exponential-integral-solution#c2"
+   ],
+   "prompt": "Аргумент функции x = 0,01 — на границе применимости приближения ei(x) ≈ −ln x − 0,5772. Чему примерно равно ei(x)?",
+   "explanation": "−ln 0,01 − 0,5772 = 4,605 − 0,577 ≈ 4.03. Чем меньше x (то есть больше время t), тем больше ei(x) (стр. 88).",
+   "kind": "data",
+   "answer": 4.03,
+   "tolerance": 0.03,
+   "unit": null
+  },
+  {
+   "id": "dake.wellbore-flow-regimes.q1",
+   "type": "single",
+   "step_id": "dake.wellbore-flow-regimes",
+   "claim_ids": [
+    "dake.wellbore-flow-regimes#c4"
+   ],
+   "prompt": "Почему начальная стадия притока называется транзиентной и «бесконечной»?",
+   "explanation": "В начальный период границы дренирования еще не оказывают влияния на отклик давления у забоя.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пласт имеет неограниченные запасы нефти на протяжении всей разработки",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Волна давления еще не дошла до границ пласта и они не влияют на забой",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Скважина работает с бесконечно большим дебитом",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "dake.wellbore-flow-regimes.q3",
+   "type": "order",
+   "step_id": "dake.wellbore-flow-regimes",
+   "claim_ids": [
+    "dake.wellbore-flow-regimes#c1"
+   ],
+   "prompt": "Расставьте стадии изменения давления при постоянном расходе в порядке их смены во времени:",
+   "explanation": "Процесс последовательно проходит от ранней транзиентной стадии к поздней, а затем к стабилизированному режиму.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Ранняя транзиентная стадия (пласт ведет себя как бесконечный)",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Поздняя транзиентная стадия (ощущается влияние границ)",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Стабилизированный режим (скорость падения давления постоянна)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "dake.line-source-approximation.q1",
+   "type": "order",
+   "step_id": "dake.line-source-approximation",
+   "claim_ids": [
+    "dake.line-source-approximation#c2"
+   ],
+   "prompt": "Расставьте этапы применения приближения линейного источника в правильной последовательности:",
+   "explanation": "Сначала скважина заменяется линией, что ведет к упрощению математики и позволяет задать граничные условия.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Замена реального радиуса скважины на линию в бесконечном пласте",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Упрощение математического аппарата уравнения пьезопроводности",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Формулировка строгих начальных и граничных условий для давления",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "dake.line-source-approximation.q2",
+   "type": "multiple",
+   "step_id": "dake.line-source-approximation",
+   "claim_ids": [
+    "dake.line-source-approximation#c6"
+   ],
+   "prompt": "Какие допущения базовой теории сохраняются при использовании модели линейного источника?",
+   "explanation": "Модель требует постоянной вязкости и малой (а не высокой) постоянной сжимаемости жидкости.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Однородная и изотропная пористая среда",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Полностью вскрытая скважина",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Переменная и высокая сжимаемость жидкости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Постоянная вязкость жидкости",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "d"
+   ]
+  },
+  {
+   "id": "dake.exponential-integral-solution.q1",
+   "type": "gap",
+   "step_id": "dake.exponential-integral-solution",
+   "claim_ids": [
+    "dake.exponential-integral-solution#c5"
+   ],
+   "prompt": "Если аргумент x меньше {{1}}, функцию ei(x) можно аппроксимировать через логарифм.",
+   "explanation": "Порог применимости логарифмического приближения составляет x < 0.01.",
+   "kind": "understanding",
+   "answer": [
+    "0.01"
+   ]
+  },
+  {
+   "id": "dake.exponential-integral-solution.q2",
+   "type": "single",
+   "step_id": "dake.exponential-integral-solution",
+   "claim_ids": [
+    "dake.exponential-integral-solution#c3"
+   ],
+   "prompt": "Аргумент x = φμcr²/(4kt). Что происходит с x при росте времени t после пуска скважины?",
+   "explanation": "t стоит в знаменателе, поэтому x убывает со временем; при малых x работает логарифмическое приближение ei(x) (стр. 88).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Уменьшается: время стоит в знаменателе",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Растёт пропорционально времени",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Не зависит от времени",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Растёт пропорционально квадрату радиуса скважины со временем",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "dake.exponential-integral-solution.q3",
+   "type": "multiple",
+   "step_id": "dake.exponential-integral-solution",
+   "claim_ids": [
+    "dake.exponential-integral-solution#c11"
+   ],
+   "prompt": "В каких случаях нельзя использовать упрощенное логарифмическое приближение для ei(x)? Выберите все верные варианты.",
+   "explanation": "При большом расстоянии r аргумент x возрастает и превышает 0.01, поэтому логарифмическое приближение становится недействительным.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При больших значениях расстояния r (например, в пульс-тестах)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Когда аргумент x превышает порог 0.01",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "При проведении измерений непосредственно на забое скважины при r = r_w",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Когда пласт кажется бесконечным в транзитном режиме",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  }
+ ]
+}

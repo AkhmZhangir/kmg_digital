@@ -1,0 +1,45 @@
+{
+ "nodes": 8,
+ "tasks": 22,
+ "task_types": {
+  "single": 6,
+  "cloze": 4,
+  "order": 5,
+  "multi": 4,
+  "calc": 3
+ },
+ "cards": 8,
+ "coverage": {
+  "units": 83,
+  "linked": 57,
+  "skipped_with_reason": 26,
+  "uncovered": 0
+ },
+ "claims": 68,
+ "claims_ok": 68,
+ "paras": 140,
+ "paras_number_issues": 0,
+ "claims_verified_share": 1.0,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [],
+ "illustrations": 8,
+ "status": "ok",
+ "chapter": "test_slatt",
+ "model": "gemini-3.5-flash-lite+qwen/qwen3.8-27b",
+ "llm_calls": 19,
+ "cache_hits": 0,
+ "seconds": 284.1,
+ "official": {
+  "layer.json": true,
+  "coverage.json": true,
+  "routing.json": true,
+  "tasks.json": true,
+  "illustrations.json": true
+ },
+ "stage": "verify"
+}

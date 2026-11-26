@@ -1,0 +1,666 @@
+[
+ {
+  "unit": "u410-01",
+  "page": 410,
+  "kind": "para",
+  "node": null,
+  "reason": "заголовок главы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u410-02",
+  "page": 410,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u410-03",
+  "page": 410,
+  "kind": "para",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u410-04",
+  "page": 410,
+  "kind": "para",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u410-05",
+  "page": 410,
+  "kind": "para",
+  "node": "slatt.delta-controls-sea-level-and-switching",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u410-06",
+  "page": 410,
+  "kind": "para",
+  "node": "slatt.delta-controls-sea-level-and-switching",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u410-07",
+  "page": 410,
+  "kind": "figure_desc",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u410-08",
+  "page": 410,
+  "kind": "para",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u411-01",
+  "page": 411,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u411-02",
+  "page": 411,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u411-03",
+  "page": 411,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u411-04",
+  "page": 411,
+  "kind": "heading",
+  "node": null,
+  "reason": "подзаголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u411-05",
+  "page": 411,
+  "kind": "para",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u411-06",
+  "page": 411,
+  "kind": "para",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u411-07",
+  "page": 411,
+  "kind": "figure_desc",
+  "node": null,
+  "reason": "описание рисунка, дублирующее контекст карты",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u411-08",
+  "page": 411,
+  "kind": "figure",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u412-01",
+  "page": 412,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u412-02",
+  "page": 412,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u412-03",
+  "page": 412,
+  "kind": "figure_desc",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u412-04",
+  "page": 412,
+  "kind": "figure_desc",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u412-05",
+  "page": 412,
+  "kind": "figure",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u413-01",
+  "page": 413,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u413-02",
+  "page": 413,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u413-03",
+  "page": 413,
+  "kind": "figure_desc",
+  "node": "slatt.delta-controls-sea-level-and-switching",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u413-04",
+  "page": 413,
+  "kind": "figure",
+  "node": "slatt.delta-controls-sea-level-and-switching",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u413-05",
+  "page": 413,
+  "kind": "figure_desc",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u413-06",
+  "page": 413,
+  "kind": "figure",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u413-07",
+  "page": 413,
+  "kind": "para",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u414-01",
+  "page": 414,
+  "kind": "figure_desc",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u414-02",
+  "page": 414,
+  "kind": "figure",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u415-01",
+  "page": 415,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u415-02",
+  "page": 415,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u415-03",
+  "page": 415,
+  "kind": "figure_desc",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u415-04",
+  "page": 415,
+  "kind": "figure",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u415-05",
+  "page": 415,
+  "kind": "para",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u416-01",
+  "page": 416,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u416-02",
+  "page": 416,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u416-03",
+  "page": 416,
+  "kind": "figure_desc",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u416-04",
+  "page": 416,
+  "kind": "para",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u416-05",
+  "page": 416,
+  "kind": "para",
+  "node": "slatt.river-dominated-delta-facies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u416-06",
+  "page": 416,
+  "kind": "heading",
+  "node": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u416-07",
+  "page": 416,
+  "kind": "para",
+  "node": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u417-01",
+  "page": 417,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u417-02",
+  "page": 417,
+  "kind": "figure_desc",
+  "node": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u417-03",
+  "page": 417,
+  "kind": "figure",
+  "node": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u417-04",
+  "page": 417,
+  "kind": "para",
+  "node": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u417-05",
+  "page": 417,
+  "kind": "para",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u417-06",
+  "page": 417,
+  "kind": "para",
+  "node": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u417-07",
+  "page": 417,
+  "kind": "para",
+  "node": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u418-01",
+  "page": 418,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u418-02",
+  "page": 418,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u418-03",
+  "page": 418,
+  "kind": "figure_desc",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u418-04",
+  "page": 418,
+  "kind": "para",
+  "node": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u418-05",
+  "page": 418,
+  "kind": "para",
+  "node": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u419-01",
+  "page": 419,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u419-02",
+  "page": 419,
+  "kind": "figure_desc",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u419-03",
+  "page": 419,
+  "kind": "figure",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u419-04",
+  "page": 419,
+  "kind": "para",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u419-05",
+  "page": 419,
+  "kind": "para",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u420-01",
+  "page": 420,
+  "kind": "figure_desc",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u420-02",
+  "page": 420,
+  "kind": "figure",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u420-03",
+  "page": 420,
+  "kind": "figure_desc",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u420-04",
+  "page": 420,
+  "kind": "figure",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u421-01",
+  "page": 421,
+  "kind": "figure_desc",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u421-02",
+  "page": 421,
+  "kind": "figure",
+  "node": "slatt.shale-continuity-reservoir-management-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u421-03",
+  "page": 421,
+  "kind": "figure_desc",
+  "node": "slatt.shale-continuity-reservoir-management-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u421-04",
+  "page": 421,
+  "kind": "figure",
+  "node": "slatt.shale-continuity-reservoir-management-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u422-01",
+  "page": 422,
+  "kind": "para",
+  "node": null,
+  "reason": "заголовок/служебный текст",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u422-02",
+  "page": 422,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u422-03",
+  "page": 422,
+  "kind": "figure_desc",
+  "node": "slatt.shale-continuity-reservoir-management-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u422-04",
+  "page": 422,
+  "kind": "para",
+  "node": "slatt.shale-continuity-reservoir-management-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u422-05",
+  "page": 422,
+  "kind": "para",
+  "node": "slatt.shale-continuity-reservoir-management-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u422-06",
+  "page": 422,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u422-07",
+  "page": 422,
+  "kind": "para",
+  "node": "slatt.kuparuk-progradational-architecture",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u423-01",
+  "page": 423,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u423-02",
+  "page": 423,
+  "kind": "para",
+  "node": null,
+  "reason": "название книги/служебный текст",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u423-03",
+  "page": 423,
+  "kind": "figure_desc",
+  "node": "slatt.kuparuk-progradational-architecture",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u423-04",
+  "page": 423,
+  "kind": "figure",
+  "node": "slatt.kuparuk-progradational-architecture",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u423-05",
+  "page": 423,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u423-06",
+  "page": 423,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок подраздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u423-07",
+  "page": 423,
+  "kind": "para",
+  "node": "slatt.wave-dominated-delta-deposits",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u423-08",
+  "page": 423,
+  "kind": "para",
+  "node": "slatt.wave-dominated-delta-deposits",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u423-09",
+  "page": 423,
+  "kind": "para",
+  "node": "slatt.wave-dominated-delta-deposits",
+  "reason": "",
+  "ocr_bad": false
+ }
+]

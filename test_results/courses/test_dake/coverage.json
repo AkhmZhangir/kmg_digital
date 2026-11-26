@@ -1,0 +1,1714 @@
+[
+ {
+  "unit": "u075-01",
+  "page": 75,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-02",
+  "page": 75,
+  "kind": "para",
+  "node": null,
+  "reason": "заголовок главы книги",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-03",
+  "page": 75,
+  "kind": "list",
+  "node": null,
+  "reason": "список литературы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-04",
+  "page": 75,
+  "kind": "list",
+  "node": null,
+  "reason": "список литературы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-05",
+  "page": 75,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-06",
+  "page": 75,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-07",
+  "page": 75,
+  "kind": "heading",
+  "node": "dake.radial-flow-intro-and-assumptions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-08",
+  "page": 75,
+  "kind": "para",
+  "node": "dake.radial-flow-intro-and-assumptions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-09",
+  "page": 75,
+  "kind": "formula",
+  "node": "dake.radial-flow-intro-and-assumptions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-10",
+  "page": 75,
+  "kind": "para",
+  "node": "dake.radial-flow-intro-and-assumptions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-11",
+  "page": 75,
+  "kind": "heading",
+  "node": "dake.radial-flow-intro-and-assumptions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-12",
+  "page": 75,
+  "kind": "para",
+  "node": "dake.radial-flow-intro-and-assumptions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u075-13",
+  "page": 75,
+  "kind": "para",
+  "node": "dake.radial-flow-intro-and-assumptions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-01",
+  "page": 76,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-02",
+  "page": 76,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-03",
+  "page": 76,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-04",
+  "page": 76,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-05",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.radial-flow-intro-and-assumptions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-06",
+  "page": 76,
+  "kind": "figure",
+  "node": "dake.radial-flow-intro-and-assumptions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-07",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-08",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-09",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-10",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-11",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-12",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-13",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-14",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-15",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-16",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-17",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-18",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.mass-conservation-radial-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-19",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-20",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-21",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-22",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-23",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-24",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-25",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-26",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-27",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-28",
+  "page": 76,
+  "kind": "formula",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-29",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.compressibility-and-basic-nonlinear-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-30",
+  "page": 76,
+  "kind": "heading",
+  "node": "dake.solution-conditions-overview",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u076-31",
+  "page": 76,
+  "kind": "para",
+  "node": "dake.solution-conditions-overview",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-01",
+  "page": 77,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-02",
+  "page": 77,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-03",
+  "page": 77,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-04",
+  "page": 77,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-05",
+  "page": 77,
+  "kind": "heading",
+  "node": "dake.transient-flow-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-06",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.transient-flow-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-07",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.transient-flow-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-08",
+  "page": 77,
+  "kind": "formula",
+  "node": "dake.transient-flow-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-09",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.transient-flow-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-10",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.transient-flow-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-11",
+  "page": 77,
+  "kind": "heading",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-12",
+  "page": 77,
+  "kind": "figure",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-13",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-14",
+  "page": 77,
+  "kind": "formula",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-15",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-16",
+  "page": 77,
+  "kind": "formula",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-17",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-18",
+  "page": 77,
+  "kind": "formula",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-19",
+  "page": 77,
+  "kind": "formula",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-20",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-21",
+  "page": 77,
+  "kind": "formula",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-22",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-23",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-24",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-25",
+  "page": 77,
+  "kind": "formula",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-26",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-27",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-28",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u077-29",
+  "page": 77,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-01",
+  "page": 78,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-02",
+  "page": 78,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-03",
+  "page": 78,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-04",
+  "page": 78,
+  "kind": "figure",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-05",
+  "page": 78,
+  "kind": "formula",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-06",
+  "page": 78,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-07",
+  "page": 78,
+  "kind": "formula",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-08",
+  "page": 78,
+  "kind": "para",
+  "node": "dake.semi-steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-09",
+  "page": 78,
+  "kind": "para",
+  "node": "dake.steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-10",
+  "page": 78,
+  "kind": "figure",
+  "node": "dake.steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-11",
+  "page": 78,
+  "kind": "para",
+  "node": "dake.steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-12",
+  "page": 78,
+  "kind": "formula",
+  "node": "dake.steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-13",
+  "page": 78,
+  "kind": "formula",
+  "node": "dake.steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-14",
+  "page": 78,
+  "kind": "para",
+  "node": "dake.steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-15",
+  "page": 78,
+  "kind": "para",
+  "node": "dake.steady-state-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-16",
+  "page": 78,
+  "kind": "heading",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-17",
+  "page": 78,
+  "kind": "para",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-18",
+  "page": 78,
+  "kind": "formula",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-19",
+  "page": 78,
+  "kind": "para",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-20",
+  "page": 78,
+  "kind": "formula",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-21",
+  "page": 78,
+  "kind": "para",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u078-22",
+  "page": 78,
+  "kind": "formula",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-01",
+  "page": 79,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-02",
+  "page": 79,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-03",
+  "page": 79,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-04",
+  "page": 79,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-05",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-06",
+  "page": 79,
+  "kind": "list",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-07",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-08",
+  "page": 79,
+  "kind": "formula",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-09",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-10",
+  "page": 79,
+  "kind": "formula",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-11",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.linearization-for-small-compressibility",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-12",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-13",
+  "page": 79,
+  "kind": "formula",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-14",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-15",
+  "page": 79,
+  "kind": "formula",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-16",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-17",
+  "page": 79,
+  "kind": "formula",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-18",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-19",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-20",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-21",
+  "page": 79,
+  "kind": "formula",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-22",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-23",
+  "page": 79,
+  "kind": "formula",
+  "node": "dake.total-compressibility-and-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-24",
+  "page": 79,
+  "kind": "para",
+  "node": null,
+  "reason": "остаточный фрагмент предыдущего параграфа про сжимаемость, не относящийся к текущей теме",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-25",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.diffusivity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-26",
+  "page": 79,
+  "kind": "formula",
+  "node": "dake.diffusivity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-27",
+  "page": 79,
+  "kind": "para",
+  "node": "dake.diffusivity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-28",
+  "page": 79,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела литературы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-29",
+  "page": 79,
+  "kind": "list",
+  "node": null,
+  "reason": "элемент списка литературы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-30",
+  "page": 79,
+  "kind": "list",
+  "node": null,
+  "reason": "элемент списка литературы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u079-31",
+  "page": 79,
+  "kind": "list",
+  "node": null,
+  "reason": "элемент списка литературы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-01",
+  "page": 87,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-02",
+  "page": 87,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-03",
+  "page": 87,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-04",
+  "page": 87,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-05",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.wellbore-flow-regimes",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-06",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.wellbore-flow-regimes",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-07",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.wellbore-flow-regimes",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-08",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.wellbore-flow-regimes",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-09",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.wellbore-flow-regimes",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-10",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.wellbore-flow-regimes",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-11",
+  "page": 87,
+  "kind": "heading",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-12",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-13",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-14",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-15",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-16",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-17",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-18",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-19",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-20",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-21",
+  "page": 87,
+  "kind": "formula",
+  "node": "dake.line-source-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-22",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-23",
+  "page": 87,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-24",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-25",
+  "page": 87,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-26",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-27",
+  "page": 87,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u087-28",
+  "page": 87,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-01",
+  "page": 88,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-02",
+  "page": 88,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-03",
+  "page": 88,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-04",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-05",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-06",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-07",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-08",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-09",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-10",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-11",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-12",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-13",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-14",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-15",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-16",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-17",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-18",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-19",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-20",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-21",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-22",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-23",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-24",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-25",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-26",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-27",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-28",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-29",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-30",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-31",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.boltzmann-transformation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-32",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-33",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-34",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-35",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-36",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-37",
+  "page": 88,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u088-38",
+  "page": 88,
+  "kind": "formula",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-01",
+  "page": 89,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-02",
+  "page": 89,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-03",
+  "page": 89,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-04",
+  "page": 89,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-05",
+  "page": 89,
+  "kind": "figure_desc",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-06",
+  "page": 89,
+  "kind": "figure",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-07",
+  "page": 89,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-08",
+  "page": 89,
+  "kind": "formula",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-09",
+  "page": 89,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-10",
+  "page": 89,
+  "kind": "formula",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-11",
+  "page": 89,
+  "kind": "formula",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-12",
+  "page": 89,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-13",
+  "page": 89,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-14",
+  "page": 89,
+  "kind": "formula",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-15",
+  "page": 89,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-16",
+  "page": 89,
+  "kind": "formula",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-17",
+  "page": 89,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-18",
+  "page": 89,
+  "kind": "figure_desc",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-19",
+  "page": 89,
+  "kind": "figure",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-20",
+  "page": 89,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-21",
+  "page": 89,
+  "kind": "formula",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u089-22",
+  "page": 89,
+  "kind": "para",
+  "node": "dake.exponential-integral-solution",
+  "reason": "",
+  "ocr_bad": false
+ }
+]
