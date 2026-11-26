@@ -1,0 +1,150 @@
+{
+ "nodes": 29,
+ "tasks": 69,
+ "task_types": {
+  "single": 16,
+  "cloze": 15,
+  "order": 15,
+  "multi": 15,
+  "calc": 8
+ },
+ "cards": 29,
+ "coverage": {
+  "units": 178,
+  "linked": 176,
+  "skipped_with_reason": 2,
+  "uncovered": 0
+ },
+ "claims": 249,
+ "claims_ok": 239,
+ "paras": 528,
+ "paras_number_issues": 11,
+ "claims_verified_share": 0.96,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [
+  {
+   "node_id": "vendelshtein.part0-1",
+   "message": "числа без опоры в цитате: 1.1",
+   "text": "Рассчитать граничное значение удельного коэффициента продуктивности по формуле (1.1)."
+  },
+  {
+   "node_id": "vendelshtein.part0-1",
+   "message": "числа без опоры в цитате: 1.2",
+   "text": "Рассчитать критическую величину проницаемости по формуле (1.2) с учетом вязкости нефти или газа."
+  },
+  {
+   "node_id": "vendelshtein.part0-1",
+   "message": "числа без опоры в цитате: 1.1, 1.2",
+   "text": "Использование формул (1.1) и (1.2) для расчета граничных параметров продуктивности и проницаемости."
+  },
+  {
+   "node_id": "vendelshtein.part0-3",
+   "claim": "part0-3.c12",
+   "message": "цитата не найдена в u011-07 (совпадение 0%)"
+  },
+  {
+   "node_id": "vendelshtein.part0-4",
+   "claim": "part0-4.c11",
+   "message": "цитата не найдена в u012-02 (совпадение 0%)"
+  },
+  {
+   "node_id": "vendelshtein.part0-5",
+   "message": "числа без опоры в цитате: 0.3, 0.8",
+   "text": "Величина αₔₚ для терригенных коллекторов с рассеянной глинистостью варьируется в пределах 0,3—0,8."
+  },
+  {
+   "node_id": "vendelshtein.part0-5",
+   "message": "числа без опоры в цитате: 0.4, 0.5",
+   "text": "Для крупных провинций αₔₚ* ≥ 0,5 в нефтеносных и ≥ 0,4 в газоносных коллекторах."
+  },
+  {
+   "node_id": "vendelshtein.part0-5",
+   "message": "числа без опоры в цитате: 0.2, 0.3",
+   "text": "При слоистой глинистости αₔₚ* снижается до 0,2 (газ) и 0,3 (нефть)."
+  },
+  {
+   "node_id": "vendelshtein.part0-5",
+   "message": "числа без опоры в цитате: 0.2, 0.3, 0.4, 0.5",
+   "text": "Выбрать порог αₔₚ* (0,5/0,4 для крупных провинций, 0,3/0,2 для слоистой)."
+  },
+  {
+   "node_id": "vendelshtein.part0-5",
+   "message": "числа без опоры в цитате: 0.3, 0.8",
+   "text": "Диапазон αₔₚ для терригенных коллекторов: 0,3—0,8."
+  },
+  {
+   "node_id": "vendelshtein.part0-5",
+   "message": "числа без опоры в цитате: 0.4, 0.5",
+   "text": "Порог αₔₚ* для крупных провинций: ≥ 0,5 (нефть), ≥ 0,4 (газ)."
+  },
+  {
+   "node_id": "vendelshtein.part0-5",
+   "message": "числа без опоры в цитате: 0.2, 0.3",
+   "text": "Порог αₔₚ* для слоистой глинистости: до 0,2 (газ), до 0,3 (нефть)."
+  },
+  {
+   "node_id": "vendelshtein.gamma-ray-method-limitations",
+   "claim": "gamma-ray-method-limitations.c4",
+   "message": "цитата не найдена в u013-05 (совпадение 0%)"
+  },
+  {
+   "node_id": "vendelshtein.part2-3",
+   "claim": "part2-3.c8",
+   "message": "цитата не найдена в u023-08 (совпадение 0%)"
+  },
+  {
+   "node_id": "vendelshtein.part2-3",
+   "claim": "part2-3.c9",
+   "message": "цитата не найдена в u023-10 (совпадение 0%)"
+  },
+  {
+   "node_id": "vendelshtein.part2-3",
+   "claim": "part2-3.c10",
+   "message": "цитата не найдена в u023-11 (совпадение 0%)"
+  },
+  {
+   "node_id": "vendelshtein.part2-3",
+   "claim": "part2-3.c11",
+   "message": "цитата не найдена в u023-11 (совпадение 0%)"
+  },
+  {
+   "node_id": "vendelshtein.part2-4",
+   "claim": "part2-4.c3",
+   "message": "цитата не найдена в u024-01 (совпадение 0%)"
+  },
+  {
+   "node_id": "vendelshtein.part3-6",
+   "claim": "part3-6.c5",
+   "message": "цитата не найдена в u029-06 (совпадение 0%)"
+  },
+  {
+   "node_id": "vendelshtein.neutron-decay-gas-formula",
+   "message": "числа без опоры в цитате: 4.75",
+   "text": "Гипотеза: Если в пласте присутствует смесь газов с разным составом, коэффициент 4,75 может потребовать калибровки, так к"
+  },
+  {
+   "node_id": "vendelshtein.apparent-porosity-correction",
+   "claim": "apparent-porosity-correction.c2",
+   "message": "цитата не найдена в u030-05 (совпадение 0%)"
+  }
+ ],
+ "illustrations": 35,
+ "status": "ok",
+ "chapter": "ctrl_vendelshtein",
+ "model": "gemini-3.1-flash-lite+gemini-3.5-flash-lite+qwen/qwen3.8-27b",
+ "llm_calls": 70,
+ "cache_hits": 0,
+ "seconds": 3032.2,
+ "official": {
+  "layer.json": true,
+  "coverage.json": true,
+  "routing.json": true,
+  "tasks.json": true,
+  "illustrations.json": true
+ }
+}

@@ -1,0 +1,425 @@
+{
+ "nodes": 27,
+ "tasks": 38,
+ "task_types": {
+  "single": 8,
+  "cloze": 10,
+  "order": 8,
+  "multi": 8,
+  "calc": 4
+ },
+ "cards": 27,
+ "coverage": {
+  "units": 413,
+  "linked": 383,
+  "skipped_with_reason": 30,
+  "uncovered": 0
+ },
+ "claims": 162,
+ "claims_ok": 120,
+ "paras": 629,
+ "paras_number_issues": 34,
+ "claims_verified_share": 0.741,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [
+  {
+   "node_id": "basniev.reservoir-depletion-equation",
+   "message": "числа без опоры в цитате: 23.7",
+   "text": "Уравнение (23.7) является основой для приближённых решений теории упругого режима."
+  },
+  {
+   "node_id": "basniev.elastic-filtration-system",
+   "message": "числа без опоры в цитате: 20",
+   "text": "На месторождении Тенгиз при упругом режиме будет отобрано до 20% запасов нефти."
+  },
+  {
+   "node_id": "basniev.piezoconductivity-derivation",
+   "message": "числа без опоры в цитате: 10, 30",
+   "text": "Коэффициент сжимаемости жидкости для нефтей составляет от 7·10⁻¹⁰ до 30·10⁻¹⁰ Па⁻¹."
+  },
+  {
+   "node_id": "basniev.piezoconductivity-derivation",
+   "message": "числа без опоры в цитате: 0.3, 10",
+   "text": "Коэффициент сжимаемости пласта составляет от 0,3·10⁻¹⁰ до 2·10⁻¹⁰ Па⁻¹."
+  },
+  {
+   "node_id": "basniev.piezoconductivity-derivation",
+   "message": "числа без опоры в цитате: 10, 30",
+   "text": "Коэффициент сжимаемости нефти: 7·10⁻¹⁰ – 30·10⁻¹⁰ Па⁻¹."
+  },
+  {
+   "node_id": "basniev.piezoconductivity-derivation",
+   "message": "числа без опоры в цитате: 10, 2.7",
+   "text": "Коэффициент сжимаемости пластовых вод: 2,7·10⁻¹⁰ – 5·10⁻¹⁰ Па⁻¹."
+  },
+  {
+   "node_id": "basniev.piezoconductivity-derivation",
+   "message": "числа без опоры в цитате: 0.3, 10",
+   "text": "Коэффициент объемной упругости пласта: (0,3 – 2)·10⁻¹⁰ Па⁻¹."
+  },
+  {
+   "node_id": "basniev.solving-ode-and-erf",
+   "claim": "solving-ode-and-erf.c6",
+   "message": "цитата не найдена в u483-12 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.pressure-distribution-curve",
+   "claim": "pressure-distribution-curve.c2",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "basniev.well-flow-rate-decay",
+   "message": "числа без опоры в цитате: 23.3",
+   "text": "Дебит рассчитывается по формуле (23.30) для оценки отбора жидкости."
+  },
+  {
+   "node_id": "basniev.cumulative-production-growth",
+   "claim": "cumulative-production-growth.c1",
+   "message": "цитата не найдена в u485-05 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.cumulative-production-growth",
+   "claim": "cumulative-production-growth.c5",
+   "message": "цитата не найдена в u485-05 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.cumulative-production-growth",
+   "claim": "cumulative-production-growth.c6",
+   "message": "цитата не найдена в u485-05 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.cumulative-production-growth",
+   "claim": "cumulative-production-growth.c7",
+   "message": "цитата не найдена в u485-05 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.constant-rate-boundary-condition",
+   "message": "числа без опоры в цитате: 23.31",
+   "text": "Уравнение (23.31) является системой граничных условий для дифференциального уравнения в частных производных."
+  },
+  {
+   "node_id": "basniev.linear-flow-pressure-distribution",
+   "message": "числа без опоры в цитате: 23.38",
+   "text": "Распределение давления при линейном потоке упругой жидкости описывается формулой (23.38), связывающей давление в точке с"
+  },
+  {
+   "node_id": "basniev.linear-flow-pressure-distribution",
+   "message": "числа без опоры в цитате: 23.35",
+   "text": "Чтобы найти распределение давления, интегрируют уравнение (23.35) по x при фиксированном времени t."
+  },
+  {
+   "node_id": "basniev.linear-flow-pressure-distribution",
+   "message": "числа без опоры в цитате: 23.36",
+   "text": "Последнее слагаемое в промежуточном уравнении (23.36) интегрируется по частям."
+  },
+  {
+   "node_id": "basniev.linear-flow-pressure-distribution",
+   "message": "числа без опоры в цитате: 23.38",
+   "text": "Получается финальная формула (23.38) для давления в любой точке потока."
+  },
+  {
+   "node_id": "basniev.linear-flow-pressure-distribution",
+   "message": "числа без опоры в цитате: 23.38",
+   "text": "Формула (23.38) позволяет рассчитать давление в любой точке потока, зная давление на галерее."
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c1",
+   "message": "цитата не найдена в u488-03 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c12",
+   "message": "цитата не найдена в u488-03 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c14",
+   "message": "цитата не найдена в u487-13 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c17",
+   "message": "цитата не найдена в u488-03 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c18",
+   "message": "цитата не найдена в u488-03 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c21",
+   "message": "цитата не найдена в u488-06 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c23",
+   "message": "нет единицы "
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c24",
+   "message": "нет единицы "
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c25",
+   "message": "цитата не найдена в u487-13 (совпадение 7%)"
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c27",
+   "message": "нет единицы "
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c28",
+   "message": "цитата не найдена в u488-06 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "claim": "linear-flow-well-pressure-limit.c29",
+   "message": "нет единицы "
+  },
+  {
+   "node_id": "basniev.radial-flow-formulation",
+   "message": "числа без опоры в цитате: 23.16",
+   "text": "Распределение давления p(r, t) в любой точке в любой момент времени определяется интегрированием уравнения (23.16)."
+  },
+  {
+   "node_id": "basniev.radial-flow-formulation",
+   "message": "числа без опоры в цитате: 23.4",
+   "text": "Для радиального течения в цилиндрической системе координат уравнение имеет вид (23.40)."
+  },
+  {
+   "node_id": "basniev.radial-flow-formulation",
+   "message": "числа без опоры в цитате: 23.42",
+   "text": "Последнее условие (дебит) записывается в виде (23.42)."
+  },
+  {
+   "node_id": "basniev.radial-flow-formulation",
+   "message": "числа без опоры в цитате: 23.4",
+   "text": "Формулируется уравнение пьезопроводности для радиального течения (23.40)."
+  },
+  {
+   "node_id": "basniev.radial-flow-formulation",
+   "message": "числа без опоры в цитате: 23.41",
+   "text": "Задаются начальные и граничные условия (23.41) и условие на дебит."
+  },
+  {
+   "node_id": "basniev.radial-flow-formulation",
+   "message": "числа без опоры в цитате: 23.42",
+   "text": "Условие на дебит преобразуется в формулу (23.42)."
+  },
+  {
+   "node_id": "basniev.radial-flow-integration",
+   "claim": "radial-flow-integration.c1",
+   "message": "цитата не найдена в u489-17 (совпадение 14%)"
+  },
+  {
+   "node_id": "basniev.radial-flow-integration",
+   "claim": "radial-flow-integration.c2",
+   "message": "цитата не найдена в u489-19 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.radial-flow-integration",
+   "claim": "radial-flow-integration.c3",
+   "message": "цитата не найдена в u490-04 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.radial-flow-integration",
+   "claim": "radial-flow-integration.c4",
+   "message": "цитата не найдена в u490-06 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.radial-flow-integration",
+   "claim": "radial-flow-integration.c5",
+   "message": "цитата не найдена в u490-09 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.radial-flow-integration",
+   "claim": "radial-flow-integration.c6",
+   "message": "цитата не найдена в u490-11 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.radial-flow-integration",
+   "claim": "radial-flow-integration.c8",
+   "message": "цитата не найдена в u490-13 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.exponential-integral-function",
+   "message": "числа без опоры в цитате: 23.52",
+   "text": "Формула (23.52) определяет давление в любой точке пласта при упругом режиме фильтрации."
+  },
+  {
+   "node_id": "basniev.exponential-integral-function",
+   "message": "числа без опоры в цитате: 23.52",
+   "text": "Давление в точке плоскорадиального потока при упругом режиме вычисляется по формуле (23.52)."
+  },
+  {
+   "node_id": "basniev.pressure-formula-approximation",
+   "claim": "pressure-formula-approximation.c3",
+   "message": "цитата не найдена в u491-10 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.pressure-formula-approximation",
+   "claim": "pressure-formula-approximation.c5",
+   "message": "цитата не найдена в u491-13 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.pressure-formula-approximation",
+   "claim": "pressure-formula-approximation.c6",
+   "message": "цитата не найдена в u491-14 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.pressure-formula-approximation",
+   "message": "числа без опоры в цитате: 0.5772",
+   "text": "Для значений r^2/(4kappa t) <= 1 давление определяется по формуле p(r, t) = p_k - (Q_0 mu)/(4 pi k h) * (ln(4kappa t / r"
+  },
+  {
+   "node_id": "basniev.pressure-formula-approximation",
+   "message": "числа без опоры в цитате: 10",
+   "text": "Для расчетов с точностью до 0,2% в открытом круговом пласте при r <= 0,1 R_k требуется R_k >= 10^5 r_c и Fo <= 0,2."
+  },
+  {
+   "node_id": "basniev.psss-linear-flow",
+   "claim": "psss-linear-flow.c11",
+   "message": "цитата не найдена в u495-14 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.psss-linear-flow",
+   "claim": "psss-linear-flow.c14",
+   "message": "цитата не найдена в u496-04 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.psss-linear-flow",
+   "claim": "psss-linear-flow.c20",
+   "message": "цитата не найдена в u496-14 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.psss-linear-flow",
+   "claim": "psss-linear-flow.c25",
+   "message": "цитата не найдена в u497-10 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.psss-linear-flow",
+   "claim": "psss-linear-flow.c26",
+   "message": "цитата не найдена в u496-17 (совпадение 0%)"
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 10",
+   "text": "Метод дает погрешность около 5-10% в зависимости от времени и граничных условий."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 24.14",
+   "text": "Для постоянного дебита вычисляем радиус возмущения R(t) по формуле (24.14)."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 24.1",
+   "text": "Подставляем R(t) в формулу стационарного распределения давления (24.10)."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 24.16",
+   "text": "Вычисляем депрессию на забое по формуле (24.16)."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 10.6, 100",
+   "text": "Погрешность 10,6% при f0 = 100."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 10, 7.5",
+   "text": "Погрешность 7,5% при f0 = 10^3."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 10, 5.7",
+   "text": "Погрешность 5,7% при f0 = 10^4."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 23.52",
+   "text": "Сравнение с точной формулой (23.52) для различных значений f0 = kappa*t/rc^2."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 10, 100",
+   "text": "Вычисление относительной погрешности для f0 = 100, 10^3, 10^4."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "message": "числа без опоры в цитате: 10, 10.6, 100, 5.7, 7.5",
+   "text": "Погрешность составляет 10,6% при f0=100, 7,5% при f0=10^3, 5,7% при f0=10^4."
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "claim": "pressure-front-dynamics.c2",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "claim": "pressure-front-dynamics.c3",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "claim": "pressure-front-dynamics.c11",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "claim": "pressure-front-dynamics.c12",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "claim": "pressure-front-dynamics.c13",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "claim": "pressure-front-dynamics.c14",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "claim": "pressure-front-dynamics.c15",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "claim": "pressure-front-dynamics.c16",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "claim": "pressure-front-dynamics.c17",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  }
+ ],
+ "illustrations": 41,
+ "status": "ok",
+ "chapter": "train_basniev",
+ "model": "qwen/qwen3.8-27b+/home/shizuko/shiza_models/Qwen_Qwen3.6-35B-A3B-Q4_K_M.gguf+gemini-flash-lite-latest",
+ "llm_calls": 37,
+ "cache_hits": 18,
+ "seconds": 4637.6,
+ "official": {
+  "layer.json": true,
+  "coverage.json": true,
+  "routing.json": true,
+  "tasks.json": true,
+  "illustrations.json": true
+ }
+}

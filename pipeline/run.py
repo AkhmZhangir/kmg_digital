@@ -181,6 +181,10 @@ def main():
     p.add_argument("--what", help="edit: что исправлено")
     p.add_argument("--node", default="", help="edit: id узла")
     p.add_argument("--who", default="")
+    p.add_argument("--file", default="", help="edit: какой файл изменён")
+    p.add_argument("--people", type=int, default=1, help="edit: сколько человек правило")
+    p.add_argument("--run-no", type=int, default=1, help="edit: номер прогона, результат которого правили")
+    p.add_argument("--reason", default="", help="edit: почему понадобилась правка")
     args = p.parse_args()
     chapters = json.loads(Path(args.config).read_text(encoding="utf-8"))["chapters"]
     from core import journal
@@ -225,7 +229,8 @@ def main():
     if args.cmd == "edit":
         if not (args.chapter and args.minutes is not None and args.what):
             p.error("edit: нужны --chapter, --minutes, --what")
-        print(journal.add(args.chapter, args.minutes, args.what, args.node, args.who))
+        print(journal.add(args.chapter, args.minutes, args.what, args.node, args.who, file=args.file,
+                          people=args.people, run_no=args.run_no, reason=args.reason))
         return
     ids = [args.chapter] if args.chapter else [k for k, c in chapters.items() if args.set in ("all", c["set"])]
     log = lambda m: print(m, flush=True)

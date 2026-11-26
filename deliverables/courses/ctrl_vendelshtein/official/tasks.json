@@ -1,0 +1,1982 @@
+{
+ "chapter": "ctrl_vendelshtein",
+ "tasks": [
+  {
+   "id": "vendelshtein.part0-1.q1",
+   "type": "single",
+   "step_id": "vendelshtein.part0-1",
+   "claim_ids": [
+    "vendelshtein.part0-1#c4"
+   ],
+   "prompt": "Почему при изменении экономических условий в регионе граничные значения параметров для выделения коллекторов могут потребовать пересчета?",
+   "explanation": "Граничные значения параметров напрямую привязаны к экономически рентабельному дебиту, который меняется вместе с экономическими условиями.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что меняются физические свойства горных пород в пласте.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что граничные значения зависят от нижнего предела экономически рентабельного дебита.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что геофизические приборы устаревают и требуют калибровки.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что меняется вязкость нефти или газа в пластовых условиях.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.part0-1.q2",
+   "type": "gap",
+   "step_id": "vendelshtein.part0-1",
+   "claim_ids": [
+    "vendelshtein.part0-1#c1"
+   ],
+   "prompt": "Прямые качественные методы выделения коллекторов имеют ряд недостатков, поэтому в последние годы активно внедряются способы, основанные на использовании {{1}} критериев.",
+   "explanation": "Текст прямо указывает, что для устранения недостатков качественных методов были разработаны способы с использованием количественных критериев.",
+   "kind": "understanding",
+   "answer": [
+    "количественных"
+   ]
+  },
+  {
+   "id": "vendelshtein.part0-1.q3",
+   "type": "order",
+   "step_id": "vendelshtein.part0-1",
+   "claim_ids": [
+    "vendelshtein.part0-1#c5"
+   ],
+   "prompt": "Расставьте этапы определения критической величины проницаемости в логическом порядке:",
+   "explanation": "Сначала определяется экономический порог, затем на его основе рассчитывается коэффициент продуктивности, и в конце, с учетом вязкости, вычисляется проницаемость.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Определение нижнего предела экономически рентабельного дебита для района",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Расчет граничного значения удельного коэффициента продуктивности",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Учет вязкости флюида в пластовых условиях",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Расчет критической величины проницаемости",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "vendelshtein.part0-2.q1",
+   "type": "order",
+   "step_id": "vendelshtein.part0-2",
+   "claim_ids": [
+    "vendelshtein.part0-2#c9"
+   ],
+   "prompt": "Расставьте по порядку этапы определения граничных значений геофизических параметров:",
+   "explanation": "Процесс начинается с подготовки данных (интервалы), их количественной оценки, статистического анализа и завершается расчетом порогов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Выбор однородных интервалов испытаний",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Расчет проницаемости по гидродинамическим данным",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Усреднение геофизических параметров для выбранных интервалов",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Построение корреляционной связи между проницаемостью и геофизическими параметрами",
+     "misconception": null
+    },
+    {
+     "id": "s5",
+     "text": "Определение граничных значений через уравнение регрессии",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5"
+   ]
+  },
+  {
+   "id": "vendelshtein.part0-2.q2",
+   "type": "multiple",
+   "step_id": "vendelshtein.part0-2",
+   "claim_ids": [
+    "vendelshtein.part0-2#c3"
+   ],
+   "prompt": "Почему граничные значения проницаемости не являются неизменными константами? Выберите все верные утверждения:",
+   "explanation": "Граничные значения — это условные величины, которые адаптируются под текущие экономические условия и возможности технологий добычи.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Они зависят от текущего технического уровня разработки месторождений",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Они определяются только физическими свойствами породы, которые не меняются",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Они зависят от экономических критериев отрасли",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Они жестко зафиксированы международными стандартами",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.part0-2.q3",
+   "type": "calc",
+   "step_id": "vendelshtein.part0-2",
+   "claim_ids": [
+    "vendelshtein.part0-2#c15"
+   ],
+   "prompt": "Если граничному значению проницаемости 1 мД соответствует пористость 16%, то какой будет верхняя граница пористости при учете диапазона изменения в 1%?",
+   "explanation": "Согласно тексту, диапазон изменения составляет 1%, поэтому 16% + 1% = 17%.",
+   "kind": "data",
+   "answer": 17.0,
+   "tolerance": 0.1,
+   "unit": "%"
+  },
+  {
+   "id": "vendelshtein.part0-3.q1",
+   "type": "calc",
+   "step_id": "vendelshtein.part0-3",
+   "claim_ids": [
+    "vendelshtein.part0-3#c12"
+   ],
+   "prompt": "В тексте главы указано, что числовые значения физических величин для расчетов в данных параграфах:",
+   "explanation": "В тексте прямо сказано, что числовые значения физических величин в рассматриваемых параграфах не заданы.",
+   "kind": "data",
+   "answer": 0,
+   "tolerance": 0,
+   "unit": "шт"
+  },
+  {
+   "id": "vendelshtein.part0-3.q2",
+   "type": "single",
+   "step_id": "vendelshtein.part0-3",
+   "claim_ids": [
+    "vendelshtein.part0-3#c7"
+   ],
+   "prompt": "Почему методы пористости редко применяются для выделения коллекторов в типичных терригенных разрезах?",
+   "explanation": "В тексте указано, что для типичных терригенных разрезов этот способ применяют редко, так как возникают трудности при учете влияния глинистости.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за высокой стоимости проведения акустического и нейтронного методов.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за сложности учета влияния глинистости на показания приборов.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что терригенные породы слишком плотные для данных методов.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что методы пористости работают только в карбонатных породах.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.part0-3.q3",
+   "type": "gap",
+   "step_id": "vendelshtein.part0-3",
+   "claim_ids": [
+    "vendelshtein.part0-3#c11"
+   ],
+   "prompt": "При условии постоянства минерализации вод и литологии вмещающих пород, аномалия СП позволяет оценить {{1}}.",
+   "explanation": "Согласно тексту, при постоянстве минерализации и литологии аномалия СП отражает относительную глинистость породы.",
+   "kind": "understanding",
+   "answer": [
+    "относительную глинистость"
+   ]
+  },
+  {
+   "id": "vendelshtein.part0-4.q1",
+   "type": "gap",
+   "step_id": "vendelshtein.part0-4",
+   "claim_ids": [
+    "vendelshtein.part0-4#c13"
+   ],
+   "prompt": "Использование относительной амплитуды {{1}} вместо абсолютной позволяет исключить технические погрешности масштаба диаграммы и влияние различий в минерализации бурового раствора.",
+   "explanation": "Относительная амплитуда α_СП нормирует данные, что нивелирует влияние внешних факторов и погрешностей измерений.",
+   "kind": "understanding",
+   "answer": [
+    "α_СП"
+   ]
+  },
+  {
+   "id": "vendelshtein.part0-4.q2",
+   "type": "order",
+   "step_id": "vendelshtein.part0-4",
+   "claim_ids": [
+    "vendelshtein.part0-4#c9"
+   ],
+   "prompt": "Расставьте типы отложений по порядку возрастания их типичного значения η_гл",
+   "explanation": "Значения η_гл увеличиваются от 0,3–0,4 для кайнозоя до 0,5–0,6 для глубокозалегающих пород.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Кайнозойские отложения с монтмориллонитом",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Мезозой и верхний палеозой (глубина до 3-4 км)",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Глубокозалегающие породы (более 4 км)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "vendelshtein.part0-4.q3",
+   "type": "multiple",
+   "step_id": "vendelshtein.part0-4",
+   "claim_ids": [
+    "vendelshtein.part0-4#c7"
+   ],
+   "prompt": "В каких случаях применение параметра η_гл* для разделения пород на коллекторы и неколлекторы будет наиболее эффективным?",
+   "explanation": "Модель η_гл наиболее надежна при отсутствии посторонних примесей в цементе и его однородности.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При наличии в породе нескольких видов цемента разного состава",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При отсутствии в коллекторах других видов цемента, кроме глинистого",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "При однородном минеральном составе глинистого цемента",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "При высокой неоднородности минерального состава глинистого цемента",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.sp-critical-value-determination.q1",
+   "type": "single",
+   "step_id": "vendelshtein.sp-critical-value-determination",
+   "claim_ids": [
+    "vendelshtein.sp-critical-value-determination#c2"
+   ],
+   "prompt": "Почему методы определения критического значения СП не применяются на ранних этапах разведки месторождения?",
+   "explanation": "Методы требуют статистической базы данных опробования, которая накапливается только на поздних стадиях разведки или разработки.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за отсутствия необходимых петрофизических формул.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за необходимости иметь результаты опробования большого числа объектов.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за высокой погрешности измерений на ранних стадиях.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Из-за невозможности построить график зависимости от коэффициента продуктивности.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.sp-critical-value-determination.q2",
+   "type": "gap",
+   "step_id": "vendelshtein.sp-critical-value-determination",
+   "claim_ids": [
+    "vendelshtein.sp-critical-value-determination#c7"
+   ],
+   "prompt": "При наложении диаграмм распределения коллекторов и неколлекторов, искомое критическое значение альфа СП соответствует {{1}} точки их пересечения.",
+   "explanation": "Согласно тексту, именно абсцисса точки пересечения распределений указывает на искомую величину.",
+   "kind": "understanding",
+   "answer": [
+    "абсциссе"
+   ]
+  },
+  {
+   "id": "vendelshtein.sp-critical-value-determination.q3",
+   "type": "order",
+   "step_id": "vendelshtein.sp-critical-value-determination",
+   "claim_ids": [
+    "vendelshtein.sp-critical-value-determination#c5"
+   ],
+   "prompt": "Расставьте по порядку действия при определении критического значения, если нижний предел коэффициента продуктивности не определен:",
+   "explanation": "Логика метода заключается в экстраполяции имеющейся зависимости до нулевого значения продуктивности.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Построение зависимости альфа СП от коэффициента продуктивности",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Продление графика до пересечения с осью ординат",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Определение критического значения при нулевом коэффициенте продуктивности",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "vendelshtein.gamma-ray-method-limitations.q1",
+   "type": "order",
+   "step_id": "vendelshtein.gamma-ray-method-limitations",
+   "claim_ids": [
+    "vendelshtein.gamma-ray-method-limitations#c7"
+   ],
+   "prompt": "Расставьте этапы определения критического значения относительной амплитуды (ΔJγ*) по порядку:",
+   "explanation": "Порядок соответствует методам определения критического порога, описанным в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Анализ корреляционной связи между амплитудой и глинистостью",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Сопоставление амплитуды с коэффициентом продуктивности испытанных объектов",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Сравнение распределений амплитуд для коллекторов и неколлекторов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "vendelshtein.gamma-ray-method-limitations.q2",
+   "type": "multiple",
+   "step_id": "vendelshtein.gamma-ray-method-limitations",
+   "claim_ids": [
+    "vendelshtein.gamma-ray-method-limitations#c10"
+   ],
+   "prompt": "В каких случаях гамма-метод может дать ошибочные результаты при выделении коллекторов? Выберите все верные варианты:",
+   "explanation": "Глауконит, вулканиты и полевые шпаты повышают радиоактивность, что маскирует коллекторы, делая их похожими на глины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В разрезах с высоким содержанием глауконита",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В чистых песчаниках с минимальной радиоактивностью",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В вулканогенных отложениях",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "В полимиктовых песчаниках с полевым шпатом",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "vendelshtein.gamma-ray-method-limitations.q3",
+   "type": "calc",
+   "step_id": "vendelshtein.gamma-ray-method-limitations",
+   "claim_ids": [
+    "vendelshtein.gamma-ray-method-limitations#c5"
+   ],
+   "prompt": "Для расчета относительной амплитуды Jγ используются три значения интенсивности. Какие из них необходимы для формулы?",
+   "explanation": "Для расчета нужны интенсивность в пласте, а также минимальная и максимальная интенсивности для данного разреза (всего 3 значения).",
+   "kind": "data",
+   "answer": 3,
+   "tolerance": 0,
+   "unit": "параметра"
+  },
+  {
+   "id": "vendelshtein.nmr-reservoir-detection.q1",
+   "type": "calc",
+   "step_id": "vendelshtein.nmr-reservoir-detection",
+   "claim_ids": [
+    "vendelshtein.nmr-reservoir-detection#c9"
+   ],
+   "prompt": "При какой глубине зоны кольматации (в см) метод ЯМР становится неприменимым для выделения высокопроницаемых коллекторов?",
+   "explanation": "Согласно тексту, метод неприменим при наличии глубоких зон кольматации более 2-3 см.",
+   "kind": "data",
+   "answer": 2.5,
+   "tolerance": 0.5,
+   "unit": "см"
+  },
+  {
+   "id": "vendelshtein.nmr-reservoir-detection.q2",
+   "type": "single",
+   "step_id": "vendelshtein.nmr-reservoir-detection",
+   "claim_ids": [
+    "vendelshtein.nmr-reservoir-detection#c3"
+   ],
+   "prompt": "Что из перечисленного является необходимым условием для того, чтобы аномалия на кривых U была признана коллектором?",
+   "explanation": "Текст прямо указывает, что аномалия выше уровня помех при эффективной пористости не менее 1% соответствует коллектору.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Аномалия должна быть выше уровня помех и соответствовать эффективной пористости не менее 1%.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Аномалия должна быть зафиксирована только на первой кривой U1.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Аномалия должна быть зафиксирована в вулканогенных отложениях.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Аномалия должна быть получена при использовании нефтяных добавок в раствор.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein.nmr-reservoir-detection.q3",
+   "type": "gap",
+   "step_id": "vendelshtein.nmr-reservoir-detection",
+   "claim_ids": [
+    "vendelshtein.nmr-reservoir-detection#c1"
+   ],
+   "prompt": "Метод ЯМР в варианте сигнала свободной прецессии регистрирует три кривые величины U сигнала свободной прецессии {{1}}.",
+   "explanation": "Метод ЯМР основан на регистрации сигнала от ядер водорода.",
+   "kind": "understanding",
+   "answer": [
+    "ядер водорода"
+   ]
+  },
+  {
+   "id": "vendelshtein.drilling-and-mud-logging-methods.q1",
+   "type": "gap",
+   "step_id": "vendelshtein.drilling-and-mud-logging-methods",
+   "claim_ids": [
+    "vendelshtein.drilling-and-mud-logging-methods#c3"
+   ],
+   "prompt": "Фильтрационный метод позволяет оценить коллекторские свойства пород путем фиксации объема {{1}}, который поглощается пластом в процессе бурения.",
+   "explanation": "Фильтрационный метод основан на измерении поглощения промывочной жидкости, которая уходит в проницаемые пласты (коллекторы).",
+   "kind": "understanding",
+   "answer": [
+    "жидкости"
+   ]
+  },
+  {
+   "id": "vendelshtein.drilling-and-mud-logging-methods.q2",
+   "type": "order",
+   "step_id": "vendelshtein.drilling-and-mud-logging-methods",
+   "claim_ids": [
+    "vendelshtein.drilling-and-mud-logging-methods#c7"
+   ],
+   "prompt": "Расставьте этапы изменения условий бурения по мере увеличения глубины",
+   "explanation": "С увеличением глубины (более 4-5 км) меняется тип промывочной жидкости и характер пород, что требует смены методики интерпретации.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Бурение на пресном глинистом растворе",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Уплотнение пород и рост глубины свыше 4—5 км",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Переход на использование технической или минерализованной воды",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Применение методов для сложных карбонатных коллекторов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "vendelshtein.drilling-and-mud-logging-methods.q3",
+   "type": "multiple",
+   "step_id": "vendelshtein.drilling-and-mud-logging-methods",
+   "claim_ids": [
+    "vendelshtein.drilling-and-mud-logging-methods#c6"
+   ],
+   "prompt": "В каких условиях стандартные методы выделения межзерновых коллекторов (по данным АСПБ) наиболее эффективны?",
+   "explanation": "Метод эффективен для терригенных пород слабой/средней уплотненности на глубинах до 4-5 км при использовании пресного глинистого раствора.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "На глубинах до 4—5 км",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При использовании минерализованной воды",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В терригенных разрезах со слабой и средней уплотненностью",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "В сильно уплотненных карбонатных породах",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.mud-activation-and-time-studies.q1",
+   "type": "multiple",
+   "step_id": "vendelshtein.mud-activation-and-time-studies",
+   "claim_ids": [
+    "vendelshtein.mud-activation-and-time-studies#c2"
+   ],
+   "prompt": "Почему метод временных исследований с активацией глинистого раствора не применяется повсеместно в любых скважинах?",
+   "explanation": "Метод ограничен параметрическими скважинами именно из-за необходимости простоя и затрат на материалы.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Он требует длительного простоя скважины.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Он неэффективен для трещинно-кавернозных коллекторов.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Он требует дополнительных финансовых затрат на активированный раствор.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Он дает неточные результаты при высокой пористости.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.mud-activation-and-time-studies.q2",
+   "type": "calc",
+   "step_id": "vendelshtein.mud-activation-and-time-studies",
+   "claim_ids": [
+    "vendelshtein.mud-activation-and-time-studies#c6"
+   ],
+   "prompt": "Какова минимальная разница в концентрации NaCl (в г/л), необходимая для обнаружения пласта с эффективной пористостью более 3% при нефтенасыщенности менее 5%?",
+   "explanation": "Согласно тексту, для обнаружения таких пластов достаточно разницы в 150-200 г/л.",
+   "kind": "data",
+   "answer": 150,
+   "tolerance": 50,
+   "unit": "г/л"
+  },
+  {
+   "id": "vendelshtein.mud-activation-and-time-studies.q3",
+   "type": "single",
+   "step_id": "vendelshtein.mud-activation-and-time-studies",
+   "claim_ids": [
+    "vendelshtein.mud-activation-and-time-studies#c3"
+   ],
+   "prompt": "Для каких целей применяются нейтронные методы в уже обсаженных скважинах?",
+   "explanation": "В обсаженных скважинах нейтронные методы используются для оценки насыщения и мониторинга контактов флюидов в процессе разработки.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Для первичного бурения и вскрытия пласта.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Для контроля за перемещением водонефтяного и газожидкостного контактов.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Для активации глинистого раствора в открытом стволе.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Для замены стандартных методов каротажа при бурении.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.saturation-evaluation-resistivity.q1",
+   "type": "single",
+   "step_id": "vendelshtein.saturation-evaluation-resistivity",
+   "claim_ids": [
+    "vendelshtein.saturation-evaluation-resistivity#c12"
+   ],
+   "prompt": "Что произойдет, если глубина зоны проникновения бурового раствора окажется больше глубины исследования используемых зондов?",
+   "explanation": "Согласно тексту, при несоблюдении условия глубины зоны проникновения однозначное разделение коллекторов без дополнительных сведений невозможно.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Метод станет более точным за счет увеличения объема исследуемой породы.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Разделить коллекторы на продуктивные и водоносные без дополнительных данных будет невозможно.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Результаты измерений автоматически скорректируются с помощью палеток.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Это никак не повлияет на достоверность оценки характера насыщения.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.saturation-evaluation-resistivity.q2",
+   "type": "gap",
+   "step_id": "vendelshtein.saturation-evaluation-resistivity",
+   "claim_ids": [
+    "vendelshtein.saturation-evaluation-resistivity#c3"
+   ],
+   "prompt": "Оценка характера насыщения пласта необходима для принятия решения о целесообразности {{1}} колонны и последующего опробования объектов.",
+   "explanation": "Текст прямо указывает, что оценка используется для решения вопроса о целесообразности спуска колонны.",
+   "kind": "understanding",
+   "answer": [
+    "спуска"
+   ]
+  },
+  {
+   "id": "vendelshtein.saturation-evaluation-resistivity.q3",
+   "type": "order",
+   "step_id": "vendelshtein.saturation-evaluation-resistivity",
+   "claim_ids": [
+    "vendelshtein.saturation-evaluation-resistivity#c2"
+   ],
+   "prompt": "Расставьте этапы оценки характера насыщения пласта по порядку:",
+   "explanation": "Процесс последовательно идет от получения первичных данных сопротивления к вычислениям, сравнению с порогами и итоговому заключению.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Определение электрического удельного сопротивления породы в неизмененной части",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Вычисление параметра насыщения P_n с учетом коэффициента пористости",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Сравнение полученных значений с критическими величинами",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Формирование вывода о промышленной нефтегазоносности объекта",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-1.q1",
+   "type": "order",
+   "step_id": "vendelshtein.part2-1",
+   "claim_ids": [
+    "vendelshtein.part2-1#c3"
+   ],
+   "prompt": "Расставьте факторы в порядке возрастания критического значения водонасыщения (от меньшего к большему):",
+   "explanation": "Критическое значение водонасыщения увеличивается при росте глинистости и уменьшении размера каналов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Низкая глинистость, крупные каналы",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Средняя глинистость, средние каналы",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Высокая глинистость, мелкие каналы",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-1.q2",
+   "type": "multiple",
+   "step_id": "vendelshtein.part2-1",
+   "claim_ids": [
+    "vendelshtein.part2-1#c9"
+   ],
+   "prompt": "Какие факторы могут привести к ложному признаку продуктивности (отскоку точки вверх) в водоносном коллекторе?",
+   "explanation": "Глубокое проникновение фильтрата повышает измеренное сопротивление, что имитирует продуктивный пласт.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Глубокое проникновение фильтрата глинистого раствора",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Высокая пористость пласта",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Неблагоприятные условия исследования",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Низкая глинистость коллектора",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-2.q2",
+   "type": "single",
+   "step_id": "vendelshtein.part2-2",
+   "claim_ids": [
+    "vendelshtein.part2-2#c2"
+   ],
+   "prompt": "Что означает ситуация, когда показания микроэкранированного зонда (МК) выше показаний экранированного зонда (МКК) в терригенном коллекторе?",
+   "explanation": "В терригенных и высокопористых карбонатных отложениях условие ρМК > ρМКК прямо указывает на продуктивный коллектор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пласт является водоносным",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пласт является продуктивным",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Зона проникновения полностью расформирована",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Пласт обладает низкой пористостью",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.part2-2.q3",
+   "type": "gap",
+   "step_id": "vendelshtein.part2-2",
+   "claim_ids": [
+    "vendelshtein.part2-2#c9"
+   ],
+   "prompt": "При высокой глинистости и минерализации пластовых вод для получения более надежных результатов предпочтительнее использовать {{1}} нейтронные методы.",
+   "explanation": "Текст указывает, что с ростом минерализации и глинистости преимущество переходит именно к импульсным нейтронным методам.",
+   "kind": "understanding",
+   "answer": [
+    "импульсные"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-3.q1",
+   "type": "gap",
+   "step_id": "vendelshtein.part2-3",
+   "claim_ids": [
+    "vendelshtein.part2-3#c4"
+   ],
+   "prompt": "Для эффективного применения метода при пористости 10% контрастность времен жизни нейтронов в пластовом флюиде и фильтрате должна составлять не менее {{1}} раз.",
+   "explanation": "Согласно тексту, при пористости 10% требуется контрастность не менее чем в 2,5 раза.",
+   "kind": "understanding",
+   "answer": [
+    "2,5"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-3.q2",
+   "type": "order",
+   "step_id": "vendelshtein.part2-3",
+   "claim_ids": [
+    "vendelshtein.part2-3#c6"
+   ],
+   "prompt": "Расставьте по порядку этапы обработки данных для выявления изменения насыщения:",
+   "explanation": "Алгоритм предполагает сначала сбор данных, затем их очистку, визуализацию в виде графика и последующий статистический анализ.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Выполнение фонового и повторных замеров",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Исправление показаний на аппаратурные эффекты и фон",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Построение корреляционного графика замеров",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Проведение линии регрессии для выделения отклоняющихся пластов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-3.q3",
+   "type": "multiple",
+   "step_id": "vendelshtein.part2-3",
+   "claim_ids": [
+    "vendelshtein.part2-3#c3"
+   ],
+   "prompt": "Какие условия критически важны для корректного сравнения результатов замеров?",
+   "explanation": "Текст требует идентичности приборов, режимов и обязательного эталонирования, но не требует проведения всех замеров в один день (напротив, интервалы увеличиваются).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Использование идентичных приборов и источников излучения",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Проведение всех замеров в один и тот же день",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Одинаковые режимы работы оборудования при каждом замере",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Обязательное эталонирование приборов перед каждым исследованием",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-4.q1",
+   "type": "multiple",
+   "step_id": "vendelshtein.part2-4",
+   "claim_ids": [
+    "vendelshtein.part2-4#c6"
+   ],
+   "prompt": "Какие изменения в показаниях ИНМ и декременте затухания λ произойдут при вытеснении соленого фильтрата нефтью?",
+   "explanation": "Согласно тексту, вытеснение соленого фильтрата нефтью способствует увеличению показаний ИНМ и уменьшению λ.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Показания ИНМ увеличатся",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Показания ИНМ уменьшатся",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Декремент затухания λ увеличится",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Декремент затухания λ уменьшится",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "d"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-4.q2",
+   "type": "calc",
+   "step_id": "vendelshtein.part2-4",
+   "claim_ids": [
+    "vendelshtein.part2-4#c4"
+   ],
+   "prompt": "Если среднеквадратическое отклонение σ равно 5, то в каких пределах (±σ) от линии регрессии y = ax + b будут находиться точки, соответствующие неизменным пластам?",
+   "explanation": "По тексту пласты считаются неизменными, если их точки попадают в полосу ±2σ, что при σ=5 составляет ±10.",
+   "kind": "data",
+   "answer": 10,
+   "tolerance": 0.1,
+   "unit": "единиц"
+  },
+  {
+   "id": "vendelshtein.part2-4.q3",
+   "type": "single",
+   "step_id": "vendelshtein.part2-4",
+   "claim_ids": [
+    "vendelshtein.part2-4#c4"
+   ],
+   "prompt": "Что означает выход точки пласта за пределы полосы ±2σ на корреляционном графике?",
+   "explanation": "Выход точки за пределы полосы ±2σ указывает на изменение нейтронных свойств прискважинной зоны из-за замещения фильтрата пластовым флюидом.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пласт обладает высокой проницаемостью",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Произошло изменение нейтронных свойств прискважинной зоны",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Прибор для замера был неисправен",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Фильтрат бурового раствора полностью отсутствует",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.part2-5.q1",
+   "type": "single",
+   "step_id": "vendelshtein.part2-5",
+   "claim_ids": [
+    "vendelshtein.part2-5#c3"
+   ],
+   "prompt": "В чем заключается главное преимущество метода ИНМ-КВ при оценке характера насыщения?",
+   "explanation": "ИНМ-КВ позволяет установить вид флюида в прискважинной части по однократным замерам, что отличает его от традиционных методов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Возможность работы только в открытом стволе скважины",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Определение вида флюида по результатам однократных замеров",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Необходимость обязательного комплексирования с другими методами",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Использование исключительно повторных замеров через длительные промежутки времени",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.part2-5.q2",
+   "type": "gap",
+   "step_id": "vendelshtein.part2-5",
+   "claim_ids": [
+    "vendelshtein.part2-5#c4"
+   ],
+   "prompt": "Для увеличения радиуса исследования в обсаженной скважине в широкополосной модификации акустического метода используется {{1}} частота излучения.",
+   "explanation": "Согласно тексту, для увеличения радиуса исследования применяется именно низкая частота (1 – 5 сигма_кв).",
+   "kind": "understanding",
+   "answer": [
+    "низкая"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-5.q3",
+   "type": "order",
+   "step_id": "vendelshtein.part2-5",
+   "claim_ids": [
+    "vendelshtein.part2-5#c7"
+   ],
+   "prompt": "Расставьте этапы анализа сигнала при переходе от водонасыщенного коллектора к нефтенасыщенному (при ВНК)",
+   "explanation": "Нефтенасыщенная часть характеризуется одновременным снижением сигнала альфа_f и увеличением сигнала альфа_s по сравнению с водонасыщенным коллектором.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Фиксация исходного сигнала в водонасыщенном коллекторе",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Наблюдение снижения сигнала альфа_f",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Наблюдение увеличения сигнала альфа_s",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Определение нефтенасыщенной части пласта",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-6.q1",
+   "type": "multiple",
+   "step_id": "vendelshtein.part2-6",
+   "claim_ids": [
+    "vendelshtein.part2-6#c1"
+   ],
+   "prompt": "Какие утверждения верно описывают методику изучения характера насыщения коллекторов в обсаженной скважине?",
+   "explanation": "Текст прямо указывает на использование схемы радиометрических исследований для проведения временных акустических исследований в обсаженных скважинах.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Акустический метод в обсаженной скважине требует уникальной схемы, отличной от всех других методов.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Временные исследования акустическим методом опираются на схему, принятую в радиометрических методах.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Для оценки насыщения в обсаженной скважине применяются временные исследования.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Радиометрические методы не подходят для временных исследований в обсаженных скважинах.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.part2-6.q2",
+   "type": "single",
+   "step_id": "vendelshtein.part2-6",
+   "claim_ids": [
+    "vendelshtein.part2-6#c1"
+   ],
+   "prompt": "Почему для акустического метода в обсаженной скважине выбрана именно схема радиометрических исследований?",
+   "explanation": "Методика заимствована из радиометрии как проверенный способ проведения временных исследований для оценки характера насыщения.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что акустический метод физически идентичен радиометрическому.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что эта схема уже отработана и эффективна для проведения временных исследований в обсаженных скважинах.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что акустический метод не может работать без радиоактивного источника.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что это единственный способ измерения, доступный в обсаженной скважине.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.part3-1.q2",
+   "type": "single",
+   "step_id": "vendelshtein.part3-1",
+   "claim_ids": [
+    "vendelshtein.part3-1#c5"
+   ],
+   "prompt": "Почему при бурении высокопроницаемых коллекторов с большой репрессией аномалии газометрии могут не проявиться?",
+   "explanation": "Значительная репрессия при высокой проницаемости способствует глубокому проникновению фильтрата, что препятствует фиксации газовых аномалий.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за слишком высокой скорости бурения.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за глубокого проникновения фильтрата, блокирующего выход газа в скважину.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за того, что газ в таких пластах состоит только из метана.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Из-за химической реакции глинистого раствора с породой.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.part3-1.q3",
+   "type": "gap",
+   "step_id": "vendelshtein.part3-1",
+   "claim_ids": [
+    "vendelshtein.part3-1#c3"
+   ],
+   "prompt": "На диаграммах газометрии нефтеносные коллекторы выделяются аномалией тяжелых углеводородов, а газоносные — аномалией {{1}} фракции.",
+   "explanation": "Согласно тексту, именно метановая фракция является индикатором газоносных коллекторов.",
+   "kind": "understanding",
+   "answer": [
+    "метановой"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-2.q1",
+   "type": "gap",
+   "step_id": "vendelshtein.part3-2",
+   "claim_ids": [
+    "vendelshtein.part3-2#c10"
+   ],
+   "prompt": "Наличие переходной зоны в нижней части нефтенасыщенного коллектора обусловлено влиянием {{1}} сил на распределение воды в порах.",
+   "explanation": "Переходная зона формируется именно из-за капиллярных сил, удерживающих воду в порах коллектора.",
+   "kind": "understanding",
+   "answer": [
+    "капиллярных"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-2.q2",
+   "type": "order",
+   "step_id": "vendelshtein.part3-2",
+   "claim_ids": [
+    "vendelshtein.part3-2#c5"
+   ],
+   "prompt": "Расставьте по порядку действия при определении эффективной мощности неоднородного пласта",
+   "explanation": "Эффективная мощность в неоднородном пласте получается путем вычитания неколлекторов из общей мощности пласта.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Определение общей мощности пласта",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Выделение прослоев-неколлекторов по комплексу ГИС",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Исключение мощности прослоев-неколлекторов из общей мощности",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Получение итоговой эффективной мощности",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-2.q3",
+   "type": "multiple",
+   "step_id": "vendelshtein.part3-2",
+   "claim_ids": [
+    "vendelshtein.part3-2#c7"
+   ],
+   "prompt": "В каких случаях для определения эффективной мощности применяют методику анизотропина?",
+   "explanation": "Методика анизотропина разработана специально для тонких переслаиваний и позволяет определять мощность вместе с нефтегазонасыщением.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При работе с однородными пластами большой мощности",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При наличии ультратонких переслаиваний коллекторов и неколлекторов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Когда необходимо одновременно оценить коэффициент нефтегазонасыщения",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Для определения положения водонефтяного контакта",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-3.q1",
+   "type": "multiple",
+   "step_id": "vendelshtein.part3-3",
+   "claim_ids": [
+    "vendelshtein.part3-3#c6"
+   ],
+   "prompt": "Что из перечисленного верно характеризует водонефтяной контакт (ВНК) и переходную зону?",
+   "explanation": "ВНК определяется по порогу промышленного притока, а верхняя граница переходной зоны дает безводную нефть.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "ВНК всегда совпадает с зеркалом воды в нижней части переходной зоны.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "ВНК устанавливается по уровню, где возможен промышленный приток нефти с водой.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Переходная зона характеризуется постоянным нефтенасыщением по всей своей мощности.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "При испытании верхней части переходной зоны можно получить приток безводной нефти.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "d"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-3.q3",
+   "type": "single",
+   "step_id": "vendelshtein.part3-3",
+   "claim_ids": [
+    "vendelshtein.part3-3#c7"
+   ],
+   "prompt": "Какую часть разреза скважины геологи включают в эффективную мощность для подсчета запасов нефти?",
+   "explanation": "Согласно тексту, эффективная мощность для подсчета запасов включает интервал от ВНК до кровли переходной зоны.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Весь интервал от зеркала воды до кровли пласта.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Только интервал зоны предельного нефтенасыщения.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Интервал от водонефтяного контакта (ВНК) до кровли переходной зоны.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Интервал от зеркала воды до подошвы зоны предельного нефтенасыщения.",
+     "misconception": null
+    }
+   ],
+   "answer": "c"
+  },
+  {
+   "id": "vendelshtein.part3-4.q1",
+   "type": "single",
+   "step_id": "vendelshtein.part3-4",
+   "claim_ids": [
+    "vendelshtein.part3-4#c5"
+   ],
+   "prompt": "Почему при определении ВНК методом сопротивлений без учета влияния фильтрата бурового раствора возможна ошибка?",
+   "explanation": "Проникновение фильтрата бурового раствора в пласт может искажать данные сопротивления, создавая ложное впечатление о наличии нефти там, где её нет.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Фильтрат вымывает нефть, делая породу полностью водонасыщенной.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Фильтрат проникает в пласт и искажает показания сопротивления, имитируя нефтенасыщенную породу.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Метод сопротивлений не работает в обсаженных скважинах из-за влияния металла.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Гравитационное перераспределение флюидов полностью уничтожает переходную зону.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.part3-4.q2",
+   "type": "gap",
+   "step_id": "vendelshtein.part3-4",
+   "claim_ids": [
+    "vendelshtein.part3-4#c4"
+   ],
+   "prompt": "Мощность переходной зоны существенно зависит от литологии: в чистых кварцевых песчаниках она составляет доли метра, тогда как в глинистых коллекторах может достигать {{1}} метров.",
+   "explanation": "Согласно тексту, мощность переходной зоны в глинистых коллекторах варьируется от 20 до 30 метров.",
+   "kind": "understanding",
+   "answer": [
+    "20-30"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-4.q3",
+   "type": "order",
+   "step_id": "vendelshtein.part3-4",
+   "claim_ids": [
+    "vendelshtein.part3-4#c1"
+   ],
+   "prompt": "Расставьте этапы определения ВНК в правильном порядке",
+   "explanation": "Логическая последовательность начинается с анализа границ, построения модели, выбора критериев и завершается определением искомой глубины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Определение границ переходной зоны",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Построение графика зависимости сопротивления от глубины",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Установление критических порогов сопротивления и проницаемости",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Фиксация глубины ВНК как точки пересечения графика с критическим порогом",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-5.q1",
+   "type": "order",
+   "step_id": "vendelshtein.part3-5",
+   "claim_ids": [
+    "vendelshtein.part3-5#c5"
+   ],
+   "prompt": "Расставьте по порядку этапы статистического определения порогового значения λ* для классификации пластов:",
+   "explanation": "Алгоритм предполагает сначала накопление достоверных данных, затем визуализацию распределений, поиск зоны пересечения и, наконец, выбор порога для принятия решения.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Сбор данных по скважинам с надежно установленным характером насыщения",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Построение кривых распределения декремента затухания λ для водоносных и нефтеносных пластов",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Определение области неоднозначности путем сопоставления распределений",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Выбор порогового значения λ* для классификации пластов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-5.q2",
+   "type": "multiple",
+   "step_id": "vendelshtein.part3-5",
+   "claim_ids": [
+    "vendelshtein.part3-5#c2"
+   ],
+   "prompt": "Какие факторы могут привести к некорректной работе нейтронных методов в обсаженных скважинах?",
+   "explanation": "Малый радиус исследования требует расформирования зоны проникновения, а низкая минерализация делает пласты неразличимыми для нейтронных методов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Наличие нерасформированной зоны проникновения фильтрата",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Слишком высокая минерализация поровых вод",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Низкая пористость коллектора при низкой минерализации вод",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Использование комплекса ИНМ и НГМ в высокопористых пластах",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-5.q3",
+   "type": "calc",
+   "step_id": "vendelshtein.part3-5",
+   "claim_ids": [
+    "vendelshtein.part3-5#c3"
+   ],
+   "prompt": "Минимально допустимая минерализация поровых вод (г/л) для разделения пластов в чистых высокопористых коллекторах согласно тексту:",
+   "explanation": "В тексте прямо указано, что для чистых относительно-высокопористых коллекторов требуется минерализация более 20 г/л.",
+   "kind": "data",
+   "answer": 20,
+   "tolerance": 0,
+   "unit": "г/л"
+  },
+  {
+   "id": "vendelshtein.part3-6.q1",
+   "type": "single",
+   "step_id": "vendelshtein.part3-6",
+   "claim_ids": [
+    "vendelshtein.part3-6#c1"
+   ],
+   "prompt": "Почему при определении нефтеносности пласта недостаточно использовать только параметр λ?",
+   "explanation": "Если диапазоны значений λ для водоносных и нефтеносных пластов перекрываются, требуется дополнительный учет глинистости и пористости для корректной классификации.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Параметр λ не связан с физическими свойствами породы.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Диапазоны значений λ для разных типов насыщения могут пересекаться.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Параметр λ всегда равен нулю в водоносных пластах.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Методы измерения λ слишком неточные для практического применения.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.part3-6.q2",
+   "type": "gap",
+   "step_id": "vendelshtein.part3-6",
+   "claim_ids": [
+    "vendelshtein.part3-6#c4"
+   ],
+   "prompt": "Для устранения влияния глинистости из измеренного значения λ необходимо {{1}} величину поправки Δλгл.",
+   "explanation": "Согласно тексту, исправление за влияние глинистости сводится к вычитанию из λ величины Δλгл.",
+   "kind": "understanding",
+   "answer": [
+    "вычесть"
+   ]
+  },
+  {
+   "id": "vendelshtein.part3-6.q3",
+   "type": "calc",
+   "step_id": "vendelshtein.part3-6",
+   "claim_ids": [
+    "vendelshtein.part3-6#c7"
+   ],
+   "prompt": "Если приведение значений λ к типичному коэффициенту пористости (Kн) требует вычисления поправки Δλн, то что происходит с исходным значением λ в процессе этой операции?",
+   "explanation": "Поправка Δλн рассчитывается для приведения λ к типичному значению Kн, что подразумевает математическую корректировку исходного показателя.",
+   "kind": "data",
+   "answer": 0,
+   "tolerance": 0,
+   "unit": "единиц"
+  },
+  {
+   "id": "vendelshtein.wnl-detection-pulsed-neutron.q1",
+   "type": "gap",
+   "step_id": "vendelshtein.wnl-detection-pulsed-neutron",
+   "claim_ids": [
+    "vendelshtein.wnl-detection-pulsed-neutron#c3"
+   ],
+   "prompt": "Для корректного определения ВНК замеры ИНМ рекомендуется проводить только после {{1}} зоны проникновения бурового раствора.",
+   "explanation": "Замеры в зоне проникновения могут дать искаженные результаты, так как буровой раствор замещает пластовый флюид.",
+   "kind": "understanding",
+   "answer": [
+    "расформирования"
+   ]
+  },
+  {
+   "id": "vendelshtein.wnl-detection-pulsed-neutron.q2",
+   "type": "order",
+   "step_id": "vendelshtein.wnl-detection-pulsed-neutron",
+   "claim_ids": [
+    "vendelshtein.wnl-detection-pulsed-neutron#c4"
+   ],
+   "prompt": "Расставьте по порядку процессы, приводящие к повышению чувствительности ИНМ при работе скважины:",
+   "explanation": "Снижение давления вызывает газовыделение, которое меняет физические свойства среды, что фиксируется прибором как повышение показаний.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Снижение забойного давления ниже давления насыщения",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Выделение свободного газа в прискважинной зоне",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Повышение показаний прибора ИНМ",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "vendelshtein.wnl-detection-pulsed-neutron.q3",
+   "type": "multiple",
+   "step_id": "vendelshtein.wnl-detection-pulsed-neutron",
+   "claim_ids": [
+    "vendelshtein.wnl-detection-pulsed-neutron#c2"
+   ],
+   "prompt": "Какие факторы необходимо учитывать для повышения надежности результатов ИНМ?",
+   "explanation": "Глинистость и нефтенасыщенность напрямую влияют на нейтронные свойства пласта, поэтому их учет критически важен для интерпретации данных.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Коэффициент глинистости (kгл)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Атмосферное давление на поверхности",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Коэффициент нефтенасыщенности (kн)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Цвет бурового раствора",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.dual-measurement-gas-correction.q1",
+   "type": "multiple",
+   "step_id": "vendelshtein.dual-measurement-gas-correction",
+   "claim_ids": [
+    "vendelshtein.dual-measurement-gas-correction#c1"
+   ],
+   "prompt": "Почему необходимо выдерживать паузу в 5—10 часов после остановки скважины перед вторым замером?",
+   "explanation": "Пауза необходима для стабилизации условий в стволе скважины, так как нестабильный газовый фактор искажает данные.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Чтобы накопить достаточное количество газа в пласте для точного замера",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Для стабилизации условий в стволе скважины и исключения влияния нестабильного газа",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Чтобы приборы нейтронного метода успели остыть после работы в скважине",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Для того чтобы глинистость пласта перестала влиять на показания приборов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b"
+   ]
+  },
+  {
+   "id": "vendelshtein.gnl-detection-conditions.q1",
+   "type": "single",
+   "step_id": "vendelshtein.gnl-detection-conditions",
+   "claim_ids": [
+    "vendelshtein.gnl-detection-conditions#c1"
+   ],
+   "prompt": "Почему при низких пластовых давлениях (менее 200–300 кгс/см²) важно отсутствие зоны проникновения для работы нейтронных методов?",
+   "explanation": "Нейтронные методы реагируют на изменение плотности водородсодержащих флюидов, а зона проникновения нарушает естественное распределение этих флюидов в поровом пространстве.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Зона проникновения искажает плотность водородсодержащих флюидов, на которые реагируют нейтронные методы.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При низком давлении нейтронные методы работают только в условиях вакуума.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Зона проникновения делает пластовое давление выше 500 кгс/см², что запрещено для этих методов.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Нейтронные методы не могут работать, если в пласте есть хоть какая-то жидкость.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein.neutron-decay-gas-formula.q1",
+   "type": "multiple",
+   "step_id": "vendelshtein.neutron-decay-gas-formula",
+   "claim_ids": [
+    "vendelshtein.neutron-decay-gas-formula#c1"
+   ],
+   "prompt": "Почему важно уметь рассчитывать декремент затухания поля нейтронов в газе?",
+   "explanation": "Расчет декремента позволяет отделить влияние газа от общей картины затухания, что необходимо для оценки насыщения пласта.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Чтобы математически выделить вклад газа из общего процесса затухания нейтронного поля.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Чтобы напрямую измерить общую мощность коллектора без учета других фаз.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Чтобы оценить насыщение пласта в импульсных нейтронных методах.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Чтобы полностью исключить влияние инструментальных шумов прибора.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein.apparent-porosity-correction.q2",
+   "type": "single",
+   "step_id": "vendelshtein.apparent-porosity-correction",
+   "claim_ids": [
+    "vendelshtein.apparent-porosity-correction#c1"
+   ],
+   "prompt": "Почему нейтронные методы требуют коррекции на глинистость при определении пористости?",
+   "explanation": "Нейтронные методы чувствительны к водороду, а связанная вода в глине искажает показания, завышая кажущуюся пористость.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Глина поглощает нейтроны, что приводит к занижению пористости.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Связанная вода в глине воспринимается прибором как пористость, завышая показания.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глинистые минералы полностью блокируют работу нейтронного прибора.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Нейтронные методы измеряют только плотность, а не пористость.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "vendelshtein.porosity-clay-correlation.q2",
+   "type": "order",
+   "step_id": "vendelshtein.porosity-clay-correlation",
+   "claim_ids": [
+    "vendelshtein.porosity-clay-correlation#c2"
+   ],
+   "prompt": "Расставьте этапы оценки пласта при использовании двухмерного сопоставления:",
+   "explanation": "Сначала анализируются данные, затем оценивается их дифференциация, что определяет необходимость поправок.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Анализ данных нейтронных методов",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Оценка степени дифференциации показаний между типами флюидов",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Принятие решения о необходимости введения дополнительных поправок",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  }
+ ]
+}

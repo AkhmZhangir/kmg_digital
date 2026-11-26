@@ -1,0 +1,1442 @@
+[
+ {
+  "unit": "u038-01",
+  "page": 38,
+  "kind": "heading",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u038-02",
+  "page": 38,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u038-03",
+  "page": 38,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u038-04",
+  "page": 38,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-01",
+  "page": 39,
+  "kind": "formula",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-02",
+  "page": 39,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-03",
+  "page": 39,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-04",
+  "page": 39,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-05",
+  "page": 39,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-06",
+  "page": 39,
+  "kind": "formula",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-07",
+  "page": 39,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-08",
+  "page": 39,
+  "kind": "formula",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-09",
+  "page": 39,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-10",
+  "page": 39,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-11",
+  "page": 39,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-12",
+  "page": 39,
+  "kind": "para",
+  "node": "barenblatt.piezoconductivity-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-01",
+  "page": 40,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-02",
+  "page": 40,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-03",
+  "page": 40,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-04",
+  "page": 40,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-05",
+  "page": 40,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-06",
+  "page": 40,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-07",
+  "page": 40,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-08",
+  "page": 40,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-09",
+  "page": 40,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-10",
+  "page": 40,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-11",
+  "page": 40,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-12",
+  "page": 40,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-13",
+  "page": 40,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-14",
+  "page": 40,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-15",
+  "page": 40,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-16",
+  "page": 40,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-01",
+  "page": 41,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-02",
+  "page": 41,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-03",
+  "page": 41,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-04",
+  "page": 41,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-05",
+  "page": 41,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-06",
+  "page": 41,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-07",
+  "page": 41,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-08",
+  "page": 41,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-09",
+  "page": 41,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-10",
+  "page": 41,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-11",
+  "page": 41,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-12",
+  "page": 41,
+  "kind": "formula",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-13",
+  "page": 41,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-14",
+  "page": 41,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-01",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.linear-1d-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-02",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-03",
+  "page": 42,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-04",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-05",
+  "page": 42,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-06",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-07",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-08",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-09",
+  "page": 42,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-10",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-11",
+  "page": 42,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-12",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-13",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-14",
+  "page": 42,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-15",
+  "page": 42,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-16",
+  "page": 42,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-01",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-02",
+  "page": 43,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-03",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-04",
+  "page": 43,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-05",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-06",
+  "page": 43,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-07",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-08",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-09",
+  "page": 43,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-10",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-11",
+  "page": 43,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-12",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-13",
+  "page": 43,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-14",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-15",
+  "page": 43,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-16",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-17",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-18",
+  "page": 43,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-01",
+  "page": 44,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-02",
+  "page": 44,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-03",
+  "page": 44,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-04",
+  "page": 44,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-05",
+  "page": 44,
+  "kind": "figure",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-06",
+  "page": 44,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-07",
+  "page": 44,
+  "kind": "figure_desc",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-08",
+  "page": 44,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-09",
+  "page": 44,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u045-01",
+  "page": 45,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u045-02",
+  "page": 45,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u045-03",
+  "page": 45,
+  "kind": "para",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u045-04",
+  "page": 45,
+  "kind": "formula",
+  "node": "barenblatt.radial-flow-and-parameters",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u045-05",
+  "page": 45,
+  "kind": "para",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u045-06",
+  "page": 45,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-01",
+  "page": 46,
+  "kind": "formula",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-02",
+  "page": 46,
+  "kind": "para",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-03",
+  "page": 46,
+  "kind": "formula",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-04",
+  "page": 46,
+  "kind": "para",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-05",
+  "page": 46,
+  "kind": "formula",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-06",
+  "page": 46,
+  "kind": "para",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-07",
+  "page": 46,
+  "kind": "formula",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-08",
+  "page": 46,
+  "kind": "para",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-09",
+  "page": 46,
+  "kind": "para",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-10",
+  "page": 46,
+  "kind": "formula",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-11",
+  "page": 46,
+  "kind": "para",
+  "node": "barenblatt.laplace-pressure-transient-analysis",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-12",
+  "page": 46,
+  "kind": "para",
+  "node": "barenblatt.equivalent-well-radius-in-methods",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-13",
+  "page": 46,
+  "kind": "para",
+  "node": "barenblatt.equivalent-well-radius-in-methods",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-14",
+  "page": 46,
+  "kind": "formula",
+  "node": "barenblatt.equivalent-well-radius-in-methods",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u046-15",
+  "page": 46,
+  "kind": "para",
+  "node": "barenblatt.equivalent-well-radius-in-methods",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u047-01",
+  "page": 47,
+  "kind": "formula",
+  "node": "barenblatt.equivalent-well-radius-in-methods",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u047-02",
+  "page": 47,
+  "kind": "para",
+  "node": "barenblatt.equivalent-well-radius-in-methods",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u047-03",
+  "page": 47,
+  "kind": "para",
+  "node": "barenblatt.equivalent-well-radius-in-methods",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u047-04",
+  "page": 47,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u047-05",
+  "page": 47,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u047-06",
+  "page": 47,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u047-07",
+  "page": 47,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-01",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-02",
+  "page": 48,
+  "kind": "formula",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-03",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-04",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-05",
+  "page": 48,
+  "kind": "formula",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-06",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-07",
+  "page": 48,
+  "kind": "formula",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-08",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-09",
+  "page": 48,
+  "kind": "formula",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-10",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-11",
+  "page": 48,
+  "kind": "formula",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-12",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-13",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-14",
+  "page": 48,
+  "kind": "formula",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-15",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-16",
+  "page": 48,
+  "kind": "formula",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-17",
+  "page": 48,
+  "kind": "formula",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-18",
+  "page": 48,
+  "kind": "formula",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u048-19",
+  "page": 48,
+  "kind": "para",
+  "node": "barenblatt.integral-relations-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-01",
+  "page": 49,
+  "kind": "figure_desc",
+  "node": null,
+  "reason": "автоописание рисунка",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-02",
+  "page": 49,
+  "kind": "figure",
+  "node": null,
+  "reason": "подпись к рисунку",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-03",
+  "page": 49,
+  "kind": "para",
+  "node": null,
+  "reason": "пояснения к рисунку",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-04",
+  "page": 49,
+  "kind": "figure",
+  "node": null,
+  "reason": "подпись к рисунку",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-05",
+  "page": 49,
+  "kind": "para",
+  "node": null,
+  "reason": "пояснения к рисунку",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-06",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-07",
+  "page": 49,
+  "kind": "formula",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-08",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-09",
+  "page": 49,
+  "kind": "formula",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-10",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-11",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-12",
+  "page": 49,
+  "kind": "formula",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-13",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-14",
+  "page": 49,
+  "kind": "formula",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-15",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-16",
+  "page": 49,
+  "kind": "formula",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-17",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-18",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-19",
+  "page": 49,
+  "kind": "formula",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-20",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u049-21",
+  "page": 49,
+  "kind": "para",
+  "node": "barenblatt.approximate-solutions-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-01",
+  "page": 50,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-02",
+  "page": 50,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-03",
+  "page": 50,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-04",
+  "page": 50,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-05",
+  "page": 50,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-06",
+  "page": 50,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-07",
+  "page": 50,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-08",
+  "page": 50,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-09",
+  "page": 50,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-10",
+  "page": 50,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-11",
+  "page": 50,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-12",
+  "page": 50,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-13",
+  "page": 50,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-14",
+  "page": 50,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-15",
+  "page": 50,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u050-16",
+  "page": 50,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u051-01",
+  "page": 51,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u051-02",
+  "page": 51,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u051-03",
+  "page": 51,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u051-04",
+  "page": 51,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u051-05",
+  "page": 51,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u051-06",
+  "page": 51,
+  "kind": "formula",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u051-07",
+  "page": 51,
+  "kind": "para",
+  "node": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ }
+]

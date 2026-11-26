@@ -1,0 +1,1426 @@
+[
+ {
+  "unit": "u009-01",
+  "page": 9,
+  "kind": "para",
+  "node": "vendelshtein.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u009-02",
+  "page": 9,
+  "kind": "para",
+  "node": "vendelshtein.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u009-03",
+  "page": 9,
+  "kind": "para",
+  "node": "vendelshtein.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u009-04",
+  "page": 9,
+  "kind": "para",
+  "node": "vendelshtein.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u009-05",
+  "page": 9,
+  "kind": "formula",
+  "node": "vendelshtein.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u009-06",
+  "page": 9,
+  "kind": "para",
+  "node": "vendelshtein.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-01",
+  "page": 10,
+  "kind": "formula",
+  "node": "vendelshtein.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-02",
+  "page": 10,
+  "kind": "para",
+  "node": "vendelshtein.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-03",
+  "page": 10,
+  "kind": "para",
+  "node": "vendelshtein.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-04",
+  "page": 10,
+  "kind": "para",
+  "node": "vendelshtein.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-05",
+  "page": 10,
+  "kind": "para",
+  "node": "vendelshtein.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-06",
+  "page": 10,
+  "kind": "para",
+  "node": "vendelshtein.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-07",
+  "page": 10,
+  "kind": "figure",
+  "node": "vendelshtein.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-08",
+  "page": 10,
+  "kind": "figure_desc",
+  "node": "vendelshtein.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-09",
+  "page": 10,
+  "kind": "para",
+  "node": "vendelshtein.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-10",
+  "page": 10,
+  "kind": "para",
+  "node": "vendelshtein.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u010-11",
+  "page": 10,
+  "kind": "para",
+  "node": "vendelshtein.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u011-01",
+  "page": 11,
+  "kind": "para",
+  "node": "vendelshtein.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u011-02",
+  "page": 11,
+  "kind": "para",
+  "node": "vendelshtein.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u011-03",
+  "page": 11,
+  "kind": "figure",
+  "node": "vendelshtein.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u011-04",
+  "page": 11,
+  "kind": "para",
+  "node": "vendelshtein.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u011-05",
+  "page": 11,
+  "kind": "figure",
+  "node": "vendelshtein.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u011-06",
+  "page": 11,
+  "kind": "para",
+  "node": "vendelshtein.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u011-07",
+  "page": 11,
+  "kind": "formula",
+  "node": "vendelshtein.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u011-08",
+  "page": 11,
+  "kind": "para",
+  "node": "vendelshtein.part0-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u011-09",
+  "page": 11,
+  "kind": "para",
+  "node": "vendelshtein.part0-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u012-01",
+  "page": 12,
+  "kind": "para",
+  "node": "vendelshtein.part0-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u012-02",
+  "page": 12,
+  "kind": "formula",
+  "node": "vendelshtein.part0-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u012-03",
+  "page": 12,
+  "kind": "para",
+  "node": "vendelshtein.part0-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u012-04",
+  "page": 12,
+  "kind": "para",
+  "node": "vendelshtein.part0-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u012-05",
+  "page": 12,
+  "kind": "para",
+  "node": "vendelshtein.part0-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u012-06",
+  "page": 12,
+  "kind": "figure",
+  "node": "vendelshtein.part0-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u012-07",
+  "page": 12,
+  "kind": "para",
+  "node": "vendelshtein.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u012-08",
+  "page": 12,
+  "kind": "para",
+  "node": "vendelshtein.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u012-09",
+  "page": 12,
+  "kind": "para",
+  "node": "vendelshtein.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-01",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.sp-critical-value-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-02",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.sp-critical-value-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-03",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-04",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-05",
+  "page": 13,
+  "kind": "formula",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-06",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-07",
+  "page": 13,
+  "kind": "figure",
+  "node": "vendelshtein.sp-critical-value-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-08",
+  "page": 13,
+  "kind": "figure",
+  "node": "vendelshtein.sp-critical-value-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-09",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-10",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-11",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-12",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-13",
+  "page": 13,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u013-14",
+  "page": 13,
+  "kind": "list",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-01",
+  "page": 14,
+  "kind": "list",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-02",
+  "page": 14,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-03",
+  "page": 14,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-04",
+  "page": 14,
+  "kind": "para",
+  "node": "vendelshtein.gamma-ray-method-limitations",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-05",
+  "page": 14,
+  "kind": "para",
+  "node": "vendelshtein.nmr-reservoir-detection",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-06",
+  "page": 14,
+  "kind": "para",
+  "node": "vendelshtein.nmr-reservoir-detection",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-07",
+  "page": 14,
+  "kind": "para",
+  "node": "vendelshtein.drilling-and-mud-logging-methods",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-08",
+  "page": 14,
+  "kind": "para",
+  "node": "vendelshtein.drilling-and-mud-logging-methods",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-09",
+  "page": 14,
+  "kind": "figure",
+  "node": "vendelshtein.nmr-reservoir-detection",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-10",
+  "page": 14,
+  "kind": "para",
+  "node": "vendelshtein.nmr-reservoir-detection",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u014-11",
+  "page": 14,
+  "kind": "figure_desc",
+  "node": null,
+  "reason": "автоописание рисунка, не текст автора",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-01",
+  "page": 20,
+  "kind": "para",
+  "node": "vendelshtein.mud-activation-and-time-studies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-02",
+  "page": 20,
+  "kind": "para",
+  "node": "vendelshtein.mud-activation-and-time-studies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-03",
+  "page": 20,
+  "kind": "para",
+  "node": "vendelshtein.mud-activation-and-time-studies",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-04",
+  "page": 20,
+  "kind": "heading",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-05",
+  "page": 20,
+  "kind": "para",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-06",
+  "page": 20,
+  "kind": "figure",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-07",
+  "page": 20,
+  "kind": "para",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-08",
+  "page": 20,
+  "kind": "para",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-09",
+  "page": 20,
+  "kind": "para",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-10",
+  "page": 20,
+  "kind": "para",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u020-11",
+  "page": 20,
+  "kind": "para",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u021-01",
+  "page": 21,
+  "kind": "para",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u021-02",
+  "page": 21,
+  "kind": "figure",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u021-03",
+  "page": 21,
+  "kind": "figure",
+  "node": "vendelshtein.saturation-evaluation-resistivity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u021-04",
+  "page": 21,
+  "kind": "para",
+  "node": "vendelshtein.part2-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u021-05",
+  "page": 21,
+  "kind": "para",
+  "node": "vendelshtein.part2-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u021-06",
+  "page": 21,
+  "kind": "para",
+  "node": "vendelshtein.part2-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-01",
+  "page": 22,
+  "kind": "para",
+  "node": "vendelshtein.part2-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-02",
+  "page": 22,
+  "kind": "figure",
+  "node": "vendelshtein.part2-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-03",
+  "page": 22,
+  "kind": "figure",
+  "node": "vendelshtein.part2-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-04",
+  "page": 22,
+  "kind": "para",
+  "node": "vendelshtein.part2-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-05",
+  "page": 22,
+  "kind": "para",
+  "node": "vendelshtein.part2-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-06",
+  "page": 22,
+  "kind": "para",
+  "node": "vendelshtein.part2-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-07",
+  "page": 22,
+  "kind": "para",
+  "node": "vendelshtein.part2-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-08",
+  "page": 22,
+  "kind": "para",
+  "node": "vendelshtein.part2-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-09",
+  "page": 22,
+  "kind": "para",
+  "node": "vendelshtein.part2-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u022-10",
+  "page": 22,
+  "kind": "para",
+  "node": "vendelshtein.part2-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-01",
+  "page": 23,
+  "kind": "para",
+  "node": "vendelshtein.part2-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-02",
+  "page": 23,
+  "kind": "list",
+  "node": "vendelshtein.part2-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-03",
+  "page": 23,
+  "kind": "figure",
+  "node": "vendelshtein.part2-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-04",
+  "page": 23,
+  "kind": "para",
+  "node": "vendelshtein.part2-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-05",
+  "page": 23,
+  "kind": "list",
+  "node": "vendelshtein.part2-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-06",
+  "page": 23,
+  "kind": "para",
+  "node": "vendelshtein.part2-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-07",
+  "page": 23,
+  "kind": "para",
+  "node": "vendelshtein.part2-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-08",
+  "page": 23,
+  "kind": "formula",
+  "node": "vendelshtein.part2-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-09",
+  "page": 23,
+  "kind": "para",
+  "node": "vendelshtein.part2-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-10",
+  "page": 23,
+  "kind": "formula",
+  "node": "vendelshtein.part2-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-11",
+  "page": 23,
+  "kind": "formula",
+  "node": "vendelshtein.part2-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-12",
+  "page": 23,
+  "kind": "formula",
+  "node": "vendelshtein.part2-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-13",
+  "page": 23,
+  "kind": "para",
+  "node": "vendelshtein.part2-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u023-14",
+  "page": 23,
+  "kind": "para",
+  "node": "vendelshtein.part2-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-01",
+  "page": 24,
+  "kind": "formula",
+  "node": "vendelshtein.part2-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-02",
+  "page": 24,
+  "kind": "para",
+  "node": "vendelshtein.part2-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-03",
+  "page": 24,
+  "kind": "para",
+  "node": "vendelshtein.part2-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-04",
+  "page": 24,
+  "kind": "para",
+  "node": "vendelshtein.part2-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-05",
+  "page": 24,
+  "kind": "para",
+  "node": "vendelshtein.part2-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-06",
+  "page": 24,
+  "kind": "para",
+  "node": "vendelshtein.part2-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-07",
+  "page": 24,
+  "kind": "figure_desc",
+  "node": "vendelshtein.part2-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-08",
+  "page": 24,
+  "kind": "figure",
+  "node": "vendelshtein.part2-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-09",
+  "page": 24,
+  "kind": "para",
+  "node": "vendelshtein.part2-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u024-10",
+  "page": 24,
+  "kind": "para",
+  "node": "vendelshtein.part2-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-01",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part2-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-02",
+  "page": 25,
+  "kind": "figure",
+  "node": "vendelshtein.part2-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-03",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part2-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-04",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part2-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-05",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part3-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-06",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part3-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-07",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part3-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-08",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part3-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-09",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part3-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-10",
+  "page": 25,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-11",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part3-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-12",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part3-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-13",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part3-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u025-14",
+  "page": 25,
+  "kind": "para",
+  "node": "vendelshtein.part3-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u026-01",
+  "page": 26,
+  "kind": "para",
+  "node": "vendelshtein.part3-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u026-02",
+  "page": 26,
+  "kind": "figure_desc",
+  "node": "vendelshtein.part3-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u026-03",
+  "page": 26,
+  "kind": "para",
+  "node": "vendelshtein.part3-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u026-04",
+  "page": 26,
+  "kind": "figure",
+  "node": "vendelshtein.part3-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u026-05",
+  "page": 26,
+  "kind": "figure",
+  "node": "vendelshtein.part3-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u026-06",
+  "page": 26,
+  "kind": "para",
+  "node": "vendelshtein.part3-3",
+  "reason": "",
+  "ocr_bad": true
+ },
+ {
+  "unit": "u027-01",
+  "page": 27,
+  "kind": "figure",
+  "node": "vendelshtein.part3-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-02",
+  "page": 27,
+  "kind": "para",
+  "node": "vendelshtein.part3-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-03",
+  "page": 27,
+  "kind": "para",
+  "node": "vendelshtein.part3-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-04",
+  "page": 27,
+  "kind": "para",
+  "node": "vendelshtein.part3-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-05",
+  "page": 27,
+  "kind": "figure_desc",
+  "node": "vendelshtein.part3-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-06",
+  "page": 27,
+  "kind": "para",
+  "node": "vendelshtein.part3-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-07",
+  "page": 27,
+  "kind": "para",
+  "node": "vendelshtein.part3-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-08",
+  "page": 27,
+  "kind": "figure",
+  "node": "vendelshtein.part3-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-09",
+  "page": 27,
+  "kind": "para",
+  "node": "vendelshtein.part3-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-10",
+  "page": 27,
+  "kind": "figure_desc",
+  "node": "vendelshtein.part3-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-11",
+  "page": 27,
+  "kind": "para",
+  "node": "vendelshtein.part3-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-12",
+  "page": 27,
+  "kind": "para",
+  "node": "vendelshtein.part3-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u027-13",
+  "page": 27,
+  "kind": "para",
+  "node": "vendelshtein.part3-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u028-01",
+  "page": 28,
+  "kind": "para",
+  "node": "vendelshtein.part3-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u028-02",
+  "page": 28,
+  "kind": "para",
+  "node": "vendelshtein.part3-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u028-03",
+  "page": 28,
+  "kind": "para",
+  "node": "vendelshtein.part3-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u028-04",
+  "page": 28,
+  "kind": "para",
+  "node": "vendelshtein.part3-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u028-05",
+  "page": 28,
+  "kind": "figure",
+  "node": "vendelshtein.part3-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u028-06",
+  "page": 28,
+  "kind": "figure_desc",
+  "node": "vendelshtein.part3-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u028-07",
+  "page": 28,
+  "kind": "figure",
+  "node": "vendelshtein.part3-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-01",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.part3-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-02",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.part3-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-03",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.part3-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-04",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.part3-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-05",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.part3-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-06",
+  "page": 29,
+  "kind": "formula",
+  "node": "vendelshtein.part3-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-07",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.part3-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-08",
+  "page": 29,
+  "kind": "formula",
+  "node": "vendelshtein.part3-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-09",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.part3-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-10",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.wnl-detection-pulsed-neutron",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-11",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.dual-measurement-gas-correction",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-12",
+  "page": 29,
+  "kind": "figure",
+  "node": "vendelshtein.dual-measurement-gas-correction",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-13",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.dual-measurement-gas-correction",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-14",
+  "page": 29,
+  "kind": "figure",
+  "node": "vendelshtein.gnl-detection-conditions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-15",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.gnl-detection-conditions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-16",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.gnl-detection-conditions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-17",
+  "page": 29,
+  "kind": "figure_desc",
+  "node": "vendelshtein.gnl-detection-conditions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u029-18",
+  "page": 29,
+  "kind": "para",
+  "node": "vendelshtein.gnl-detection-conditions",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-01",
+  "page": 30,
+  "kind": "formula",
+  "node": "vendelshtein.neutron-decay-gas-formula",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-02",
+  "page": 30,
+  "kind": "para",
+  "node": "vendelshtein.neutron-decay-gas-formula",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-03",
+  "page": 30,
+  "kind": "para",
+  "node": "vendelshtein.apparent-porosity-correction",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-04",
+  "page": 30,
+  "kind": "formula",
+  "node": "vendelshtein.apparent-porosity-correction",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-05",
+  "page": 30,
+  "kind": "formula",
+  "node": "vendelshtein.apparent-porosity-correction",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-06",
+  "page": 30,
+  "kind": "para",
+  "node": "vendelshtein.apparent-porosity-correction",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-07",
+  "page": 30,
+  "kind": "para",
+  "node": "vendelshtein.apparent-porosity-correction",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-08",
+  "page": 30,
+  "kind": "para",
+  "node": "vendelshtein.porosity-clay-correlation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-09",
+  "page": 30,
+  "kind": "para",
+  "node": "vendelshtein.porosity-clay-correlation",
+  "reason": "",
+  "ocr_bad": false
+ }
+]

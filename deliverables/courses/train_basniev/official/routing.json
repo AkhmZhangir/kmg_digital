@@ -1,0 +1,410 @@
+{
+ "chapter": "train_basniev",
+ "routes": [
+  {
+   "node_id": "basniev.elastic-drive-mechanics",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие», изменение во времени. Текст с формулами и пояснениями, так как тема требует понимания физических механизмов."
+  },
+  {
+   "node_id": "basniev.elastic-reserve-estimation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие»"
+  },
+  {
+   "node_id": "basniev.reservoir-depletion-equation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие», изменение во времени"
+  },
+  {
+   "node_id": "basniev.elastic-filtration-system",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: скачок масштаба"
+  },
+  {
+   "node_id": "basniev.piezoconductivity-derivation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие»"
+  },
+  {
+   "node_id": "basniev.piezoconductivity-properties",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: изменение во времени, контринтуитивность. Текст с формулами и пояснениями, так как узел требует понимания физической размерности и условий применимости модели."
+  },
+  {
+   "node_id": "basniev.1d-gallery-flow-problem",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие», изменение во времени"
+  },
+  {
+   "node_id": "basniev.dimensionless-variables-and-autosimilarity",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: контринтуитивность, цепочка «причина → следствие»"
+  },
+  {
+   "node_id": "basniev.reduction-to-ode",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: контринтуитивность. Текст с формулами, так как процесс строго математический и требует точного следования шагам дифференцирования."
+  },
+  {
+   "node_id": "basniev.solving-ode-and-erf",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: контринтуитивность. Текстовый формат с формулами необходим для точной передачи математического вывода и определения переменных, так как визуализация процесса интегрирования менее важна, чем сам результат и его структура."
+  },
+  {
+   "node_id": "basniev.pressure-distribution-curve",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым. Текст с графиком, так как важно показать изменение формы кривой во времени."
+  },
+  {
+   "node_id": "basniev.well-flow-rate-decay",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: изменение во времени, контринтуитивность"
+  },
+  {
+   "node_id": "basniev.cumulative-production-growth",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: изменение во времени. Текст с формулами, так как узел содержит строгое математическое описание зависимости и требует точной передачи коэффициентов."
+  },
+  {
+   "node_id": "basniev.constant-rate-boundary-condition",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: контринтуитивность. Текстовый формат с формулами подходит для передачи математической постановки задачи, так как требует точного цитирования условий и переменных."
+  },
+  {
+   "node_id": "basniev.velocity-equation-analogy",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: контринтуитивность"
+  },
+  {
+   "node_id": "basniev.linear-flow-pressure-distribution",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: изменение во времени, контринтуитивность"
+  },
+  {
+   "node_id": "basniev.linear-flow-well-pressure-limit",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: контринтуитивность, цепочка «причина → следствие». Текст подходит для изучения формул и условий применимости моделей."
+  },
+  {
+   "node_id": "basniev.radial-flow-formulation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: скачок масштаба"
+  },
+  {
+   "node_id": "basniev.radial-flow-dimensionless",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: контринтуитивность"
+  },
+  {
+   "node_id": "basniev.radial-flow-integration",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: изменение во времени. Текстовый формат с формулами необходим, так как узел содержит строго математический вывод. Визуализация процесса интегрирования затруднена без интерактивного графика, но основная ценность здесь — в структуре формул и связи параметров."
+  },
+  {
+   "node_id": "basniev.exponential-integral-function",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: контринтуитивность, невидимое становится видимым. Текст с формулами, так как узел содержит строгие математические выражения и определения, требующие точной передачи символов."
+  },
+  {
+   "node_id": "basniev.pressure-formula-approximation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: изменение во времени, контринтуитивность. Текст содержит математический формализм, формулы и числовые оценки погрешностей, поэтому лучше всего подходит для текстового объяснения с формульными блоками."
+  },
+  {
+   "node_id": "basniev.psss-method-concept",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: контринтуитивность, цепочка «причина → следствие». Текстовый формат с четким разделением на механизм и шаги, так как метод описывает алгоритмический подход к упрощению математической модели, что близко ИТ-специалистам (аппроксимация, дискретизация по времени)."
+  },
+  {
+   "node_id": "basniev.psss-linear-flow",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: изменение во времени, скачок масштаба. Текст подходит для изучения формул и алгоритмов вывода, так как узел содержит строгие математические выкладки и сравнение погрешностей."
+  },
+  {
+   "node_id": "basniev.psss-radial-flow",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: изменение во времени, контринтуитивность"
+  },
+  {
+   "node_id": "basniev.pscc-method-accuracy",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: контринтуитивность. Текст компактный и содержит четкие качественные выводы о применимости метода, что удобно для текстового блока или карточки в курсе."
+  },
+  {
+   "node_id": "basniev.pressure-front-dynamics",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: изменение во времени, скачок масштаба. Текстовое описание с графиками, так как узел описывает динамику процесса и визуальную зависимость."
+  }
+ ]
+}

@@ -1,0 +1,547 @@
+{
+ "chapter": "ctrl_barenblatt",
+ "tasks": [
+  {
+   "id": "barenblatt.piezoconductivity-equation.q1",
+   "type": "single",
+   "step_id": "barenblatt.piezoconductivity-equation",
+   "claim_ids": [
+    "barenblatt.piezoconductivity-equation#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Движение однородной слабосжимаемой жидкости в упруго деформируемом пласте описывается уравнением пьезопроводности для давления p.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "barenblatt.piezoconductivity-equation.q2",
+   "type": "gap",
+   "step_id": "barenblatt.piezoconductivity-equation",
+   "claim_ids": [
+    "barenblatt.piezoconductivity-equation#c1"
+   ],
+   "prompt": "Движение однородной слабосжимаемой жидкости в упруго деформируемом пласте описывается уравнением {{1}} для давления p.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "пьезопроводности"
+   ]
+  },
+  {
+   "id": "barenblatt.piezoconductivity-equation.q3",
+   "type": "order",
+   "step_id": "barenblatt.piezoconductivity-equation",
+   "claim_ids": [
+    "barenblatt.piezoconductivity-equation#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Движение однородной слабосжимаемой жидкости в упруго деформируемом пласте описывается уравнением пьезопроводности для да",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Существует единственное распределение давления, удовлетворяющее уравнению и условиям.",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Уравнение пьезопроводности по форме совпадает с уравнением теплопроводности.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "barenblatt.linear-1d-flow.q1",
+   "type": "order",
+   "step_id": "barenblatt.linear-1d-flow",
+   "claim_ids": [
+    "barenblatt.linear-1d-flow#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Плоскопараллельное одномерное движение.",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Пусть скорость течения параллельна оси $x$ не зависит от координат $y$ и $z$.",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Давление при этом удовлетворяет уравнению",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "barenblatt.linear-1d-flow.q2",
+   "type": "multiple",
+   "step_id": "barenblatt.linear-1d-flow",
+   "claim_ids": [
+    "barenblatt.linear-1d-flow#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Плоскопараллельное одномерное движение.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пусть скорость течения параллельна оси $x$ не зависит от координат $y$ и $z$.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "barenblatt.linear-1d-flow.q3",
+   "type": "calc",
+   "step_id": "barenblatt.linear-1d-flow",
+   "claim_ids": [
+    "barenblatt.linear-1d-flow#c1"
+   ],
+   "prompt": "Какое число приводит автор в этом шаге? (одно из 1, 0, 2)",
+   "explanation": "Число из текста шага.",
+   "kind": "data",
+   "answer": 1.0,
+   "tolerance": 0,
+   "unit": null
+  },
+  {
+   "id": "barenblatt.laplace-pressure-transient-analysis.q1",
+   "type": "gap",
+   "step_id": "barenblatt.laplace-pressure-transient-analysis",
+   "claim_ids": [
+    "barenblatt.laplace-pressure-transient-analysis#c3"
+   ],
+   "prompt": "Функция $U$ удовлетворяет уравнению (II.110) и однородным условиям на внешних границах пласта, при этом она {{1}} от режима работы скважины.",
+   "explanation": "В тексте прямо указано, что функция U не зависит от режима работы скважины.",
+   "kind": "understanding",
+   "answer": [
+    "не зависит"
+   ]
+  },
+  {
+   "id": "barenblatt.laplace-pressure-transient-analysis.q2",
+   "type": "order",
+   "step_id": "barenblatt.laplace-pressure-transient-analysis",
+   "claim_ids": [
+    "barenblatt.laplace-pressure-transient-analysis#c7"
+   ],
+   "prompt": "Расставьте шаги определения параметров пласта в правильном порядке.",
+   "explanation": "Согласно тексту, из известных функций p1(t) и q(t) численно получают P1(σ) и Q(σ), затем находят ψ(σ), из которого определяются параметры пласта.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Известны функции p1(t) и q(t)",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Численно получены зависимости P1(σ) и Q(σ)",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Определена функция ψ(σ)",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Определены параметры пласта",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "barenblatt.laplace-pressure-transient-analysis.q3",
+   "type": "multiple",
+   "step_id": "barenblatt.laplace-pressure-transient-analysis",
+   "claim_ids": [
+    "barenblatt.laplace-pressure-transient-analysis#c12"
+   ],
+   "prompt": "Что позволяет ограничиться вычислением интегралов лишь при трех-четырех значениях τ?",
+   "explanation": "Текст утверждает, что именно прямолинейность зависимости Ψ(ln τ) позволяет ограничиться малым числом вычислений.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Прямолинейность зависимости Ψ(ln τ)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Малые значения аргумента функций K0 и K1",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Независимость функции U от режима скважины",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Ограничение минимального значения τ",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a"
+   ]
+  },
+  {
+   "id": "barenblatt.equivalent-well-radius-in-methods.q1",
+   "type": "multiple",
+   "step_id": "barenblatt.equivalent-well-radius-in-methods",
+   "claim_ids": [
+    "barenblatt.equivalent-well-radius-in-methods#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Описанный общий подход позволяет получать методом восстановления давления некоторые параметры неоднородного пласта.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пусть скважина радиусом $\\rho$ расположена в центре круговой зоны радиуса $R$ в бесконечном пласте.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "barenblatt.equivalent-well-radius-in-methods.q2",
+   "type": "calc",
+   "step_id": "barenblatt.equivalent-well-radius-in-methods",
+   "claim_ids": [
+    "barenblatt.equivalent-well-radius-in-methods#c1"
+   ],
+   "prompt": "Какое число приводит автор в этом шаге? (одно из 1, 2, 46)",
+   "explanation": "Число из текста шага.",
+   "kind": "data",
+   "answer": 1.0,
+   "tolerance": 0,
+   "unit": null
+  },
+  {
+   "id": "barenblatt.equivalent-well-radius-in-methods.q3",
+   "type": "single",
+   "step_id": "barenblatt.equivalent-well-radius-in-methods",
+   "claim_ids": [
+    "barenblatt.equivalent-well-radius-in-methods#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Описанный общий подход позволяет получать методом восстановления давления некоторые параметры неоднородного пласта.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "barenblatt.integral-relations-method.q1",
+   "type": "single",
+   "step_id": "barenblatt.integral-relations-method",
+   "claim_ids": [
+    "barenblatt.integral-relations-method#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Метод интегральных соотношений.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "barenblatt.integral-relations-method.q2",
+   "type": "gap",
+   "step_id": "barenblatt.integral-relations-method",
+   "claim_ids": [
+    "barenblatt.integral-relations-method#c1"
+   ],
+   "prompt": "Метод {{1}} соотношений.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "интегральных"
+   ]
+  },
+  {
+   "id": "barenblatt.integral-relations-method.q3",
+   "type": "order",
+   "step_id": "barenblatt.integral-relations-method",
+   "claim_ids": [
+    "barenblatt.integral-relations-method#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Метод интегральных соотношений.",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Хорошо разработанная теория уравнений математической физики позволяет получить в принципе точные решения широкого класса",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Однако эти решения не всегда удовлетворяют требованиям простоты и обозримости.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "barenblatt.approximate-solutions-linear-flow.q1",
+   "type": "order",
+   "step_id": "barenblatt.approximate-solutions-linear-flow",
+   "claim_ids": [
+    "barenblatt.approximate-solutions-linear-flow#c14"
+   ],
+   "prompt": "Расставьте этапы развития приближенных решений для линейного притока в правильном порядке (от простого к сложному, с учетом описанных трудностей).",
+   "explanation": "Текст описывает последовательность: сначала n=1, затем n=2 (достигает цели), затем обсуждается n=3 (совпадает со вторым при определенных условиях) и, наконец, общие трудности при повышении порядка.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Построение первого приближения (n=1), совпадающего с методом последовательной смены стационарных состояний",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Построение второго приближения (n=2), достигающего основной цели получения простых аналитических зависимостей",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Попытка построения третьего приближения (n=3), которое при использовании условия (II.127) совпадает со вторым",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Возникновение трудностей при построении приближений более высокого порядка из-за отсутствия правил выбора условий и необходимости использовать многочлены высокого порядка",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "barenblatt.approximate-solutions-linear-flow.q2",
+   "type": "multiple",
+   "step_id": "barenblatt.approximate-solutions-linear-flow",
+   "claim_ids": [
+    "barenblatt.approximate-solutions-linear-flow#c11"
+   ],
+   "prompt": "Какие трудности возникают при построении приближенных решений более высокого порядка (n > 2)?",
+   "explanation": "Пункты 0 и 1 прямо названы в тексте как причины трудностей. Пункт 2 неверен (решения совпадают), пункт 4 неверен (второе приближение близко к точному и достигает цели).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Отсутствуют обоснованные правила выбора наилучшего из нескольких дополнительных условий",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Приходится строить приближения функций с помощью многочленов высокого порядка",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Решение для n=1 не совпадает с методом последовательной смены стационарных состояний",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Второе приближение дает результат, значительно отличающийся от точного решения",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "barenblatt.approximate-solutions-linear-flow.q3",
+   "type": "calc",
+   "step_id": "barenblatt.approximate-solutions-linear-flow",
+   "claim_ids": [
+    "barenblatt.approximate-solutions-linear-flow#c8"
+   ],
+   "prompt": "На какой номер приближения (n) приходится результат, если использовать соотношения (II.122), (II.123) и (II.127) для третьего приближения?",
+   "explanation": "В тексте сказано: «Если для третьего приближения (n = 3) использовать соотношения (II.122), (II.123) и (II.127), то третье приближение совпадает со вторым». Следовательно, результат соответствует второму порядку.",
+   "kind": "data",
+   "answer": 2,
+   "tolerance": 0,
+   "unit": "порядок"
+  },
+  {
+   "id": "barenblatt.axisymmetric-inflow-bounded-reservoir.q1",
+   "type": "calc",
+   "step_id": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+   "claim_ids": [
+    "barenblatt.axisymmetric-inflow-bounded-reservoir#c1"
+   ],
+   "prompt": "Какое число приводит автор в этом шаге? (одно из 1, 0, 2)",
+   "explanation": "Число из текста шага.",
+   "kind": "data",
+   "answer": 1.0,
+   "tolerance": 0,
+   "unit": null
+  },
+  {
+   "id": "barenblatt.axisymmetric-inflow-bounded-reservoir.q2",
+   "type": "single",
+   "step_id": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+   "claim_ids": [
+    "barenblatt.axisymmetric-inflow-bounded-reservoir#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Рассмотрим без подробных выкладок осемимметричную задачу о пуске скважин с заданным дебитом q в бесконечном пласте.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "barenblatt.axisymmetric-inflow-bounded-reservoir.q3",
+   "type": "gap",
+   "step_id": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+   "claim_ids": [
+    "barenblatt.axisymmetric-inflow-bounded-reservoir#c1"
+   ],
+   "prompt": "Рассмотрим без подробных выкладок {{1}} задачу о пуске скважин с заданным дебитом q в бесконечном пласте.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "осемимметричную"
+   ]
+  }
+ ]
+}

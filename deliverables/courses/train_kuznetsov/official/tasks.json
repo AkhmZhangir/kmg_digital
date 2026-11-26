@@ -1,0 +1,1326 @@
+{
+ "chapter": "train_kuznetsov",
+ "tasks": [
+  {
+   "id": "kuznetsov.organic-build-ups-classification.q1",
+   "type": "single",
+   "step_id": "kuznetsov.organic-build-ups-classification",
+   "claim_ids": [
+    "kuznetsov.organic-build-ups-classification#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Рифы содержат порядка 10–12 % мировых запасов углеводородов при небольшой площади.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.organic-build-ups-classification.q2",
+   "type": "gap",
+   "step_id": "kuznetsov.organic-build-ups-classification",
+   "claim_ids": [
+    "kuznetsov.organic-build-ups-classification#c1"
+   ],
+   "prompt": "Рифы содержат порядка 10–12 % мировых запасов {{1}} при небольшой площади.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "углеводородов"
+   ]
+  },
+  {
+   "id": "kuznetsov.organic-build-ups-classification.q3",
+   "type": "order",
+   "step_id": "kuznetsov.organic-build-ups-classification",
+   "claim_ids": [
+    "kuznetsov.organic-build-ups-classification#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Рифы содержат порядка 10–12 % мировых запасов углеводородов при небольшой площади.",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Неоправданное расширение понятия рифа привело к введению дополнительных терминов и иерархии.",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Введен термин органогенная постройка для геологических образований из нараставших организмов.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-lithology-and-zonation.q1",
+   "type": "order",
+   "step_id": "kuznetsov.reef-lithology-and-zonation",
+   "claim_ids": [
+    "kuznetsov.reef-lithology-and-zonation#c8"
+   ],
+   "prompt": "Расставьте по порядку зоны атолловидного рифа, начиная от внешнего края к центру:",
+   "explanation": "Согласно тексту, биогермные породы образуют кольцо по периферии, а внутри него находится лагуна, где отлагаются светлые микрозернистые известняки.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Биогермное кольцо (ядро рифа)",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Лагуна",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Светлые микрозернистые известняки",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-lithology-and-zonation.q2",
+   "type": "multiple",
+   "step_id": "kuznetsov.reef-lithology-and-zonation",
+   "claim_ids": [
+    "kuznetsov.reef-lithology-and-zonation#c5"
+   ],
+   "prompt": "Какие типы известняков, согласно тексту, достаточно обычны в рифовых комплексах?",
+   "explanation": "Текст прямо перечисляет раковинные, оолитовые и микрозернистые известняки как обычные в рифах, тогда как гранит является магматической породой и не упоминается.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Раковинные",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Оолитовые",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Микрозернистые",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Гранитные",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-pore-space-and-collectors.q1",
+   "type": "calc",
+   "step_id": "kuznetsov.reef-pore-space-and-collectors",
+   "claim_ids": [
+    "kuznetsov.reef-pore-space-and-collectors#c1"
+   ],
+   "prompt": "Какое число приводит автор в этом шаге? (одно из 4)",
+   "explanation": "Число из текста шага.",
+   "kind": "data",
+   "answer": 4.0,
+   "tolerance": 0,
+   "unit": null
+  },
+  {
+   "id": "kuznetsov.reef-pore-space-and-collectors.q2",
+   "type": "single",
+   "step_id": "kuznetsov.reef-pore-space-and-collectors",
+   "claim_ids": [
+    "kuznetsov.reef-pore-space-and-collectors#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Разнообразие типов коллекторов и структуры пустотного пространства рифов определяется структурой пород и их вторичной переработкой.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.reef-pore-space-and-collectors.q3",
+   "type": "gap",
+   "step_id": "kuznetsov.reef-pore-space-and-collectors",
+   "claim_ids": [
+    "kuznetsov.reef-pore-space-and-collectors#c1"
+   ],
+   "prompt": "{{1}} типов коллекторов и структуры пустотного пространства рифов определяется структурой пород и их вторичной переработкой.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "Разнообразие"
+   ]
+  },
+  {
+   "id": "kuznetsov.rainbow-reef-reservoir-structure.q1",
+   "type": "gap",
+   "step_id": "kuznetsov.rainbow-reef-reservoir-structure",
+   "claim_ids": [
+    "kuznetsov.rainbow-reef-reservoir-structure#c1"
+   ],
+   "prompt": "В очень большой степени от морфолого-генетического типа рифов зависит площадное {{1}} зон улучшенных коллекторских свойств.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "распространение"
+   ]
+  },
+  {
+   "id": "kuznetsov.rainbow-reef-reservoir-structure.q2",
+   "type": "order",
+   "step_id": "kuznetsov.rainbow-reef-reservoir-structure",
+   "claim_ids": [
+    "kuznetsov.rainbow-reef-reservoir-structure#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "В очень большой степени от морфолого-генетического типа рифов зависит площадное распространение зон улучшенных коллектор",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Наиболее простое распределение коллекторских свойств отмечается в относительно небольших и слабо дифференцированных один",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Риф Рейнбоу А — это островершинный риф (пиннакл) общей мощностью 200–250 м.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "kuznetsov.rainbow-reef-reservoir-structure.q3",
+   "type": "multiple",
+   "step_id": "kuznetsov.rainbow-reef-reservoir-structure",
+   "claim_ids": [
+    "kuznetsov.rainbow-reef-reservoir-structure#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В очень большой степени от морфолого-генетического типа рифов зависит площадное распространение зон улучшенных коллектор",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Наиболее простое распределение коллекторских свойств отмечается в относительно небольших и слабо дифференцированных один",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "kuznetsov.lateral-porosity-zonality-in-reefs-1.q1",
+   "type": "multiple",
+   "step_id": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+   "claim_ids": [
+    "kuznetsov.lateral-porosity-zonality-in-reefs-1#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В фациях рифового гребня, образовавшихся в зоне активной волновой деятельности, пористость связана с внутренними полостя",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Здесь же волны могут образовывать бароподобные валы из хорошо окатанных и отсортированных обломков рифовых пород, облада",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "kuznetsov.lateral-porosity-zonality-in-reefs-1.q2",
+   "type": "calc",
+   "step_id": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+   "claim_ids": [
+    "kuznetsov.lateral-porosity-zonality-in-reefs-1#c1"
+   ],
+   "prompt": "Какое число приводит автор в этом шаге? (одно из 7, 2, 3)",
+   "explanation": "Число из текста шага.",
+   "kind": "data",
+   "answer": 7.0,
+   "tolerance": 0,
+   "unit": null
+  },
+  {
+   "id": "kuznetsov.lateral-porosity-zonality-in-reefs-1.q3",
+   "type": "single",
+   "step_id": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+   "claim_ids": [
+    "kuznetsov.lateral-porosity-zonality-in-reefs-1#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В фациях рифового гребня, образовавшихся в зоне активной волновой деятельности, пористость связана с внутренними полостями органических остатков и пространством между ними, с пещеровидными пустотами.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.lateral-porosity-zonality-in-reefs-2.q1",
+   "type": "single",
+   "step_id": "kuznetsov.lateral-porosity-zonality-in-reefs-2",
+   "claim_ids": [
+    "kuznetsov.lateral-porosity-zonality-in-reefs-2#c2"
+   ],
+   "prompt": "Почему порода с пористостью 7 % и проницаемостью 0,00005 мкм² не считается коллектором согласно тексту?",
+   "explanation": "Для классификации как коллектор требуется выполнение обоих условий: пористость > 6 % И проницаемость > 0,0001 мкм².",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что пористость должна быть менее 6 %",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что проницаемость ниже требуемого порога (0,0001 мкм²)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что это шлейфовые отложения",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что коллекторы определяются только по пористости",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "kuznetsov.lateral-porosity-zonality-in-reefs-2.q2",
+   "type": "gap",
+   "step_id": "kuznetsov.lateral-porosity-zonality-in-reefs-2",
+   "claim_ids": [
+    "kuznetsov.lateral-porosity-zonality-in-reefs-2#c2"
+   ],
+   "prompt": "Породы считаются коллекторами, если их пористость превышает {{1}} %, а проницаемость превышает 0,0001 мкм².",
+   "explanation": "В тексте указано, что порог пористости для коллекторов составляет более 6 %.",
+   "kind": "understanding",
+   "answer": [
+    "6"
+   ]
+  },
+  {
+   "id": "kuznetsov.vertical-heterogeneity-in-reefs-1.q1",
+   "type": "order",
+   "step_id": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+   "claim_ids": [
+    "kuznetsov.vertical-heterogeneity-in-reefs-1#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "В рифовом резервуаре существует значительная вертикальная неоднородность наряду с латеральными изменениями.",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Мнение об однородном массивном разрезе рифа и равномерном распределении коллекторских свойств является чрезвычайно упрощ",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Разрез рифов и размещение проницаемых пачек более равномерны по сравнению со слоистыми толщами.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "kuznetsov.vertical-heterogeneity-in-reefs-1.q2",
+   "type": "multiple",
+   "step_id": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+   "claim_ids": [
+    "kuznetsov.vertical-heterogeneity-in-reefs-1#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В рифовом резервуаре существует значительная вертикальная неоднородность наряду с латеральными изменениями.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Мнение об однородном массивном разрезе рифа и равномерном распределении коллекторских свойств является чрезвычайно упрощ",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "kuznetsov.vertical-heterogeneity-in-reefs-1.q3",
+   "type": "single",
+   "step_id": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+   "claim_ids": [
+    "kuznetsov.vertical-heterogeneity-in-reefs-1#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В рифовом резервуаре существует значительная вертикальная неоднородность наряду с латеральными изменениями.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.vertical-heterogeneity-in-reefs-2.q1",
+   "type": "calc",
+   "step_id": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+   "claim_ids": [
+    "kuznetsov.vertical-heterogeneity-in-reefs-2#c1"
+   ],
+   "prompt": "Какое число приводит автор в этом шаге? (одно из 3, 2, 65)",
+   "explanation": "Число из текста шага.",
+   "kind": "data",
+   "answer": 3.0,
+   "tolerance": 0,
+   "unit": null
+  },
+  {
+   "id": "kuznetsov.vertical-heterogeneity-in-reefs-2.q2",
+   "type": "single",
+   "step_id": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+   "claim_ids": [
+    "kuznetsov.vertical-heterogeneity-in-reefs-2#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ограничение мощности выщелачивания приводит к пластообразному и слоистому залеганию зон карстообразования.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.vertical-heterogeneity-in-reefs-2.q3",
+   "type": "gap",
+   "step_id": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+   "claim_ids": [
+    "kuznetsov.vertical-heterogeneity-in-reefs-2#c1"
+   ],
+   "prompt": "Ограничение мощности выщелачивания приводит к пластообразному и слоистому залеганию зон {{1}}.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "карстообразования"
+   ]
+  },
+  {
+   "id": "kuznetsov.fluid-filtration-in-reef-reservoirs.q1",
+   "type": "gap",
+   "step_id": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+   "claim_ids": [
+    "kuznetsov.fluid-filtration-in-reef-reservoirs#c1"
+   ],
+   "prompt": "ПР рифов отличаются ограниченной площадью и резкой фациальной {{1}}, контролирующей коллекторы.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "контрастностью"
+   ]
+  },
+  {
+   "id": "kuznetsov.fluid-filtration-in-reef-reservoirs.q2",
+   "type": "order",
+   "step_id": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+   "claim_ids": [
+    "kuznetsov.fluid-filtration-in-reef-reservoirs#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "ПР рифов отличаются ограниченной площадью и резкой фациальной контрастностью, контролирующей коллекторы.",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Характер размещения и фильтрации флюидов в природных резервуарах различных рифов не одинаков.",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "В небольших куполовидных рифах со слабо дифференцированным разрезом формируется относительно однородный массивный резерв",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "kuznetsov.fluid-filtration-in-reef-reservoirs.q3",
+   "type": "multiple",
+   "step_id": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+   "claim_ids": [
+    "kuznetsov.fluid-filtration-in-reef-reservoirs#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "ПР рифов отличаются ограниченной площадью и резкой фациальной контрастностью, контролирующей коллекторы.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Характер размещения и фильтрации флюидов в природных резервуарах различных рифов не одинаков.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-traps-and-cap-rocks.q1",
+   "type": "multiple",
+   "step_id": "kuznetsov.reef-traps-and-cap-rocks",
+   "claim_ids": [
+    "kuznetsov.reef-traps-and-cap-rocks#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Рост рифов происходит в эпохи трансгрессий и повышения уровня моря.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Отложение непроницаемых пород приводит к формированию замкнутого объема или ловушки.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-traps-and-cap-rocks.q2",
+   "type": "single",
+   "step_id": "kuznetsov.reef-traps-and-cap-rocks",
+   "claim_ids": [
+    "kuznetsov.reef-traps-and-cap-rocks#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Рост рифов происходит в эпохи трансгрессий и повышения уровня моря.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.reef-traps-and-cap-rocks.q3",
+   "type": "gap",
+   "step_id": "kuznetsov.reef-traps-and-cap-rocks",
+   "claim_ids": [
+    "kuznetsov.reef-traps-and-cap-rocks#c1"
+   ],
+   "prompt": "Рост рифов происходит в эпохи {{1}} и повышения уровня моря.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "трансгрессий"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-trap-types-classification.q1",
+   "type": "single",
+   "step_id": "kuznetsov.reef-trap-types-classification",
+   "claim_ids": [
+    "kuznetsov.reef-trap-types-classification#c1"
+   ],
+   "prompt": "Сколько основных групп выделяют среди рифовых ловушек с учетом рельефа, литологии и тектоники?",
+   "explanation": "В тексте прямо указано, что все рифовые ловушки можно разделить на четыре группы.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Две",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Три",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Четыре",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Пять",
+     "misconception": null
+    }
+   ],
+   "answer": "c"
+  },
+  {
+   "id": "kuznetsov.reef-trap-types-classification.q2",
+   "type": "gap",
+   "step_id": "kuznetsov.reef-trap-types-classification",
+   "claim_ids": [
+    "kuznetsov.reef-trap-types-classification#c1"
+   ],
+   "prompt": "На формирование объема пространства и типов ловушек влияют рельеф, {{1}} и последующие тектонические движения.",
+   "explanation": "Согласно тексту, помимо рельефа и тектоники, ключевым фактором является литологическое замещение.",
+   "kind": "understanding",
+   "answer": [
+    "литологическое замещение"
+   ]
+  },
+  {
+   "id": "kuznetsov.paleogeomorphological-reef-traps.q1",
+   "type": "order",
+   "step_id": "kuznetsov.paleogeomorphological-reef-traps",
+   "claim_ids": [
+    "kuznetsov.paleogeomorphological-reef-traps#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Чисто палеогеоморфологические ловушки чаще всего образуются в одиночных изолированных рифах или в одиночных куполовидных",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Максимальная высота, а следовательно, и объем ловушки в общем случае определяется величиной превышения рифа над внерифов",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Та часть рифового массива, которая находится гипсометрически ниже, чем залегают непроницаемые толщи, исключается из объе",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "kuznetsov.paleogeomorphological-reef-traps.q2",
+   "type": "multiple",
+   "step_id": "kuznetsov.paleogeomorphological-reef-traps",
+   "claim_ids": [
+    "kuznetsov.paleogeomorphological-reef-traps#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Чисто палеогеоморфологические ловушки чаще всего образуются в одиночных изолированных рифах или в одиночных куполовидных",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Максимальная высота, а следовательно, и объем ловушки в общем случае определяется величиной превышения рифа над внерифов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "kuznetsov.paleogeomorphological-reef-traps.q3",
+   "type": "single",
+   "step_id": "kuznetsov.paleogeomorphological-reef-traps",
+   "claim_ids": [
+    "kuznetsov.paleogeomorphological-reef-traps#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Чисто палеогеоморфологические ловушки чаще всего образуются в одиночных изолированных рифах или в одиночных куполовидных рифах, возникающих на асимметричной рифовой системе.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.reef-morphology-and-trap-shape.q1",
+   "type": "single",
+   "step_id": "kuznetsov.reef-morphology-and-trap-shape",
+   "claim_ids": [
+    "kuznetsov.reef-morphology-and-trap-shape#c4"
+   ],
+   "prompt": "Какой характерной чертой обладают ловушки плосковершинных «столовых» рифов в отличие от конусовидных?",
+   "explanation": "Согласно тексту, ловушки столовых рифов имеют крутые склоны и относительно плоскую вершину.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Имеют треугольное поперечное сечение и островершинную форму",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Обладают крутыми склонами и относительно плоской вершиной",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Характеризуются ясно выраженными периферическими гребнями",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Имеют сложную серповидную или подковообразную форму в плане",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "kuznetsov.reef-morphology-and-trap-shape.q2",
+   "type": "gap",
+   "step_id": "kuznetsov.reef-morphology-and-trap-shape",
+   "claim_ids": [
+    "kuznetsov.reef-morphology-and-trap-shape#c3"
+   ],
+   "prompt": "Ловушки рифов со сложной плановой формой являются островершинными и имеют {{1}} поперечное сечение.",
+   "explanation": "В тексте указано, что при сложной форме рифа ловушки имеют треугольное поперечное сечение.",
+   "kind": "understanding",
+   "answer": [
+    "треугольное"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-morphology-and-trap-shape.q3",
+   "type": "order",
+   "step_id": "kuznetsov.reef-morphology-and-trap-shape",
+   "claim_ids": [
+    "kuznetsov.reef-morphology-and-trap-shape#c1"
+   ],
+   "prompt": "Расставьте типы рифовых ловушек от простейшей формы к наиболее сложной плановой конфигурации, согласно тексту.",
+   "explanation": "Текст описывает эволюцию формы от простых округлых конусовидных к сложным изогнутым грядам, а также выделяет столовые и атолловидные типы как отдельные классы с нарастающей спецификой конфигурации.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Конусовидные округлые (простая округлая форма)",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Плосковершинные столовые (округлые или слегка удлиненные)",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Атолловидные (изометричные с периферическими гребнями)",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Сложной плановой формы (удлиненные, изогнутые, серповидные гряды)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "kuznetsov.structural-tectonic-reef-traps.q1",
+   "type": "gap",
+   "step_id": "kuznetsov.structural-tectonic-reef-traps",
+   "claim_ids": [
+    "kuznetsov.structural-tectonic-reef-traps#c1"
+   ],
+   "prompt": "Наложение движений на риф ведет к структурно-{{1}} ловушкам.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "палеогеоморфологическим"
+   ]
+  },
+  {
+   "id": "kuznetsov.structural-tectonic-reef-traps.q2",
+   "type": "order",
+   "step_id": "kuznetsov.structural-tectonic-reef-traps",
+   "claim_ids": [
+    "kuznetsov.structural-tectonic-reef-traps#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Наложение движений на риф ведет к структурно-палеогеоморфологическим ловушкам.",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Это увеличивает высоту, объем ловушки и смещает ее свод.",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "При региональных наклонах ловушка смещается вверх по восстанию, занимая часть рифа.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "kuznetsov.structural-tectonic-reef-traps.q3",
+   "type": "multiple",
+   "step_id": "kuznetsov.structural-tectonic-reef-traps",
+   "claim_ids": [
+    "kuznetsov.structural-tectonic-reef-traps#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Наложение движений на риф ведет к структурно-палеогеоморфологическим ловушкам.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Это увеличивает высоту, объем ловушки и смещает ее свод.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-deposits-and-pool-types.q1",
+   "type": "multiple",
+   "step_id": "kuznetsov.reef-deposits-and-pool-types",
+   "claim_ids": [
+    "kuznetsov.reef-deposits-and-pool-types#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Разнообразие рифовых ловушек и резервуаров определяет разнообразие залежей, среди которых самые простые — массивные в те",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пластовые сводовые и массивные залежи формируются в структурных ловушках с рифовым резервуаром при пересечении антиклина",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-deposits-and-pool-types.q2",
+   "type": "single",
+   "step_id": "kuznetsov.reef-deposits-and-pool-types",
+   "claim_ids": [
+    "kuznetsov.reef-deposits-and-pool-types#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Разнообразие рифовых ловушек и резервуаров определяет разнообразие залежей, среди которых самые простые — массивные в теле рифа.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.reef-deposits-and-pool-types.q3",
+   "type": "gap",
+   "step_id": "kuznetsov.reef-deposits-and-pool-types",
+   "claim_ids": [
+    "kuznetsov.reef-deposits-and-pool-types#c1"
+   ],
+   "prompt": "{{1}} рифовых ловушек и резервуаров определяет разнообразие залежей, среди которых самые простые — массивные в теле рифа.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "Разнообразие"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-exploration-strategy-group1-2.q1",
+   "type": "single",
+   "step_id": "kuznetsov.reef-exploration-strategy-group1-2",
+   "claim_ids": [
+    "kuznetsov.reef-exploration-strategy-group1-2#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Современные геофизические методы и сейсмика позволяют определить морфолого-генетический тип рифа для прогноза ловушки и стратегии разведки.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.reef-exploration-strategy-group1-2.q2",
+   "type": "gap",
+   "step_id": "kuznetsov.reef-exploration-strategy-group1-2",
+   "claim_ids": [
+    "kuznetsov.reef-exploration-strategy-group1-2#c1"
+   ],
+   "prompt": "Современные {{1}} методы и сейсмика позволяют определить морфолого-генетический тип рифа для прогноза ловушки и стратегии разведки.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "геофизические"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-exploration-strategy-group1-2.q3",
+   "type": "order",
+   "step_id": "kuznetsov.reef-exploration-strategy-group1-2",
+   "claim_ids": [
+    "kuznetsov.reef-exploration-strategy-group1-2#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Современные геофизические методы и сейсмика позволяют определить морфолого-генетический тип рифа для прогноза ловушки и ",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Залежи в рифах для целей разведки делятся на три большие группы.",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Первая группа залежей связана с небольшими одиночными куполовидными рифами, имеющими конусовидную форму в сечении и окру",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-exploration-strategy-group3.q1",
+   "type": "order",
+   "step_id": "kuznetsov.reef-exploration-strategy-group3",
+   "claim_ids": [
+    "kuznetsov.reef-exploration-strategy-group3#c1"
+   ],
+   "prompt": "Расставьте мысли в порядке, как в тексте шага",
+   "explanation": "Так их излагает автор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Залежи третьей группы связаны с асимметричными рифовыми системами и отличаются сложностью строения ловушки и резервуара.",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Высота ловушки определяется первичным превышением рифового гребня, литологическим экраном и амплитудой тектонических дис",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Коллекторские свойства улучшаются в пределах рифового гребня, его внешней зоны и в верхней части предрифового шлейфа.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-exploration-strategy-group3.q2",
+   "type": "multiple",
+   "step_id": "kuznetsov.reef-exploration-strategy-group3",
+   "claim_ids": [
+    "kuznetsov.reef-exploration-strategy-group3#c1"
+   ],
+   "prompt": "Какие утверждения есть в тексте шага?",
+   "explanation": "Оба утверждения приведены в тексте.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Залежи третьей группы связаны с асимметричными рифовыми системами и отличаются сложностью строения ловушки и резервуара.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Высота ловушки определяется первичным превышением рифового гребня, литологическим экраном и амплитудой тектонических дис",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "kuznetsov.reef-exploration-strategy-group3.q3",
+   "type": "single",
+   "step_id": "kuznetsov.reef-exploration-strategy-group3",
+   "claim_ids": [
+    "kuznetsov.reef-exploration-strategy-group3#c1"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Залежи третьей группы связаны с асимметричными рифовыми системами и отличаются сложностью строения ловушки и резервуара.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.volume-based-well-spacing-reef.q1",
+   "type": "calc",
+   "step_id": "kuznetsov.volume-based-well-spacing-reef",
+   "claim_ids": [
+    "kuznetsov.volume-based-well-spacing-reef#c2"
+   ],
+   "prompt": "Какое число приводит автор в этом шаге? (одно из 2, 1, 500)",
+   "explanation": "Число из текста шага.",
+   "kind": "data",
+   "answer": 2.0,
+   "tolerance": 0,
+   "unit": null
+  },
+  {
+   "id": "kuznetsov.volume-based-well-spacing-reef.q2",
+   "type": "single",
+   "step_id": "kuznetsov.volume-based-well-spacing-reef",
+   "claim_ids": [
+    "kuznetsov.volume-based-well-spacing-reef#c2"
+   ],
+   "prompt": "Какое утверждение есть в тексте шага?",
+   "explanation": "Это утверждение приведено в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Мощность залежи убывает от максимальной в центре до нулевой на крыльях.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В главе об этом говорится обратное.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Глава этого не обсуждает.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov.volume-based-well-spacing-reef.q3",
+   "type": "gap",
+   "step_id": "kuznetsov.volume-based-well-spacing-reef",
+   "claim_ids": [
+    "kuznetsov.volume-based-well-spacing-reef#c2"
+   ],
+   "prompt": "Мощность залежи убывает от {{1}} в центре до нулевой на крыльях.",
+   "explanation": "Слово взято из текста шага.",
+   "kind": "understanding",
+   "answer": [
+    "максимальной"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3306 @@
+[
+ {
+  "unit": "u474-01",
+  "page": 474,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u474-02",
+  "page": 474,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u474-03",
+  "page": 474,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u474-04",
+  "page": 474,
+  "kind": "para",
+  "node": "basniev.elastic-drive-mechanics",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u474-05",
+  "page": 474,
+  "kind": "para",
+  "node": "basniev.elastic-drive-mechanics",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u474-06",
+  "page": 474,
+  "kind": "para",
+  "node": "basniev.elastic-drive-mechanics",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u474-07",
+  "page": 474,
+  "kind": "para",
+  "node": "basniev.elastic-drive-mechanics",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u475-01",
+  "page": 475,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u475-02",
+  "page": 475,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u475-03",
+  "page": 475,
+  "kind": "para",
+  "node": "basniev.elastic-drive-mechanics",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u475-04",
+  "page": 475,
+  "kind": "para",
+  "node": "basniev.elastic-drive-mechanics",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u475-05",
+  "page": 475,
+  "kind": "para",
+  "node": null,
+  "reason": "историческая справка",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u475-06",
+  "page": 475,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u475-07",
+  "page": 475,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u475-08",
+  "page": 475,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-01",
+  "page": 476,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-02",
+  "page": 476,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-03",
+  "page": 476,
+  "kind": "formula",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-04",
+  "page": 476,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-05",
+  "page": 476,
+  "kind": "formula",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-06",
+  "page": 476,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-07",
+  "page": 476,
+  "kind": "formula",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-08",
+  "page": 476,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-09",
+  "page": 476,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-10",
+  "page": 476,
+  "kind": "formula",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-11",
+  "page": 476,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-12",
+  "page": 476,
+  "kind": "formula",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-13",
+  "page": 476,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-14",
+  "page": 476,
+  "kind": "formula",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-15",
+  "page": 476,
+  "kind": "para",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-16",
+  "page": 476,
+  "kind": "formula",
+  "node": "basniev.elastic-reserve-estimation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u476-17",
+  "page": 476,
+  "kind": "para",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-01",
+  "page": 477,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-02",
+  "page": 477,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-03",
+  "page": 477,
+  "kind": "para",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-04",
+  "page": 477,
+  "kind": "formula",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-05",
+  "page": 477,
+  "kind": "para",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-06",
+  "page": 477,
+  "kind": "para",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-07",
+  "page": 477,
+  "kind": "para",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-08",
+  "page": 477,
+  "kind": "formula",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-09",
+  "page": 477,
+  "kind": "para",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-10",
+  "page": 477,
+  "kind": "formula",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-11",
+  "page": 477,
+  "kind": "para",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-12",
+  "page": 477,
+  "kind": "para",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-13",
+  "page": 477,
+  "kind": "formula",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-14",
+  "page": 477,
+  "kind": "para",
+  "node": "basniev.reservoir-depletion-equation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-15",
+  "page": 477,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u477-16",
+  "page": 477,
+  "kind": "para",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-01",
+  "page": 478,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-02",
+  "page": 478,
+  "kind": "para",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-03",
+  "page": 478,
+  "kind": "para",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-04",
+  "page": 478,
+  "kind": "formula",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-05",
+  "page": 478,
+  "kind": "formula",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-06",
+  "page": 478,
+  "kind": "formula",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-07",
+  "page": 478,
+  "kind": "para",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-08",
+  "page": 478,
+  "kind": "formula",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-09",
+  "page": 478,
+  "kind": "formula",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-10",
+  "page": 478,
+  "kind": "formula",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-11",
+  "page": 478,
+  "kind": "formula",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-12",
+  "page": 478,
+  "kind": "para",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-13",
+  "page": 478,
+  "kind": "formula",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-14",
+  "page": 478,
+  "kind": "formula",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u478-15",
+  "page": 478,
+  "kind": "para",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-01",
+  "page": 479,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-02",
+  "page": 479,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-03",
+  "page": 479,
+  "kind": "para",
+  "node": "basniev.elastic-filtration-system",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-04",
+  "page": 479,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-05",
+  "page": 479,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-06",
+  "page": 479,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-07",
+  "page": 479,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-08",
+  "page": 479,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-09",
+  "page": 479,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-10",
+  "page": 479,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-11",
+  "page": 479,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-12",
+  "page": 479,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-13",
+  "page": 479,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-14",
+  "page": 479,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-15",
+  "page": 479,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-16",
+  "page": 479,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-17",
+  "page": 479,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-18",
+  "page": 479,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u479-19",
+  "page": 479,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-01",
+  "page": 480,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-02",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-03",
+  "page": 480,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-04",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-05",
+  "page": 480,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-06",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-07",
+  "page": 480,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-08",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-09",
+  "page": 480,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-10",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-11",
+  "page": 480,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-12",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-13",
+  "page": 480,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-14",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-15",
+  "page": 480,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-16",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-17",
+  "page": 480,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-derivation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-18",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-properties",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u480-19",
+  "page": 480,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-properties",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-01",
+  "page": 481,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-02",
+  "page": 481,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-03",
+  "page": 481,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-properties",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-04",
+  "page": 481,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-properties",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-05",
+  "page": 481,
+  "kind": "formula",
+  "node": "basniev.piezoconductivity-properties",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-06",
+  "page": 481,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-properties",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-07",
+  "page": 481,
+  "kind": "para",
+  "node": "basniev.piezoconductivity-properties",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-08",
+  "page": 481,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-09",
+  "page": 481,
+  "kind": "para",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-10",
+  "page": 481,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-11",
+  "page": 481,
+  "kind": "para",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-12",
+  "page": 481,
+  "kind": "para",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u481-13",
+  "page": 481,
+  "kind": "formula",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-01",
+  "page": 482,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-02",
+  "page": 482,
+  "kind": "para",
+  "node": null,
+  "reason": "колонтитул",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-03",
+  "page": 482,
+  "kind": "para",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-04",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-05",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-06",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-07",
+  "page": 482,
+  "kind": "para",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-08",
+  "page": 482,
+  "kind": "para",
+  "node": "basniev.1d-gallery-flow-problem",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-09",
+  "page": 482,
+  "kind": "para",
+  "node": "basniev.dimensionless-variables-and-autosimilarity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-10",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.dimensionless-variables-and-autosimilarity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-11",
+  "page": 482,
+  "kind": "para",
+  "node": "basniev.dimensionless-variables-and-autosimilarity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-12",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.dimensionless-variables-and-autosimilarity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-13",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.dimensionless-variables-and-autosimilarity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-14",
+  "page": 482,
+  "kind": "para",
+  "node": "basniev.reduction-to-ode",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-15",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.reduction-to-ode",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-16",
+  "page": 482,
+  "kind": "para",
+  "node": "basniev.reduction-to-ode",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-17",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.reduction-to-ode",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-18",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.reduction-to-ode",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u482-19",
+  "page": 482,
+  "kind": "formula",
+  "node": "basniev.reduction-to-ode",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-01",
+  "page": 483,
+  "kind": "para",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-02",
+  "page": 483,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-03",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.reduction-to-ode",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-04",
+  "page": 483,
+  "kind": "formula",
+  "node": "basniev.reduction-to-ode",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-05",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-06",
+  "page": 483,
+  "kind": "formula",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-07",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-08",
+  "page": 483,
+  "kind": "formula",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-09",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-10",
+  "page": 483,
+  "kind": "formula",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-11",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-12",
+  "page": 483,
+  "kind": "formula",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-13",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-14",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-15",
+  "page": 483,
+  "kind": "formula",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-16",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-17",
+  "page": 483,
+  "kind": "formula",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-18",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-19",
+  "page": 483,
+  "kind": "formula",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u483-20",
+  "page": 483,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-01",
+  "page": 484,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-02",
+  "page": 484,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-03",
+  "page": 484,
+  "kind": "formula",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-04",
+  "page": 484,
+  "kind": "para",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-05",
+  "page": 484,
+  "kind": "formula",
+  "node": "basniev.solving-ode-and-erf",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-06",
+  "page": 484,
+  "kind": "para",
+  "node": "basniev.pressure-distribution-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-07",
+  "page": 484,
+  "kind": "figure_desc",
+  "node": "basniev.pressure-distribution-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-08",
+  "page": 484,
+  "kind": "figure",
+  "node": "basniev.pressure-distribution-curve",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-09",
+  "page": 484,
+  "kind": "para",
+  "node": "basniev.well-flow-rate-decay",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-10",
+  "page": 484,
+  "kind": "formula",
+  "node": "basniev.well-flow-rate-decay",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-11",
+  "page": 484,
+  "kind": "para",
+  "node": "basniev.well-flow-rate-decay",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-12",
+  "page": 484,
+  "kind": "formula",
+  "node": "basniev.well-flow-rate-decay",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-13",
+  "page": 484,
+  "kind": "para",
+  "node": "basniev.well-flow-rate-decay",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u484-14",
+  "page": 484,
+  "kind": "formula",
+  "node": "basniev.well-flow-rate-decay",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-01",
+  "page": 485,
+  "kind": "para",
+  "node": "basniev.well-flow-rate-decay",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-02",
+  "page": 485,
+  "kind": "para",
+  "node": "basniev.well-flow-rate-decay",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-03",
+  "page": 485,
+  "kind": "para",
+  "node": "basniev.well-flow-rate-decay",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-04",
+  "page": 485,
+  "kind": "para",
+  "node": "basniev.cumulative-production-growth",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-05",
+  "page": 485,
+  "kind": "formula",
+  "node": "basniev.cumulative-production-growth",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-06",
+  "page": 485,
+  "kind": "para",
+  "node": "basniev.cumulative-production-growth",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-07",
+  "page": 485,
+  "kind": "para",
+  "node": "basniev.constant-rate-boundary-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-08",
+  "page": 485,
+  "kind": "para",
+  "node": "basniev.constant-rate-boundary-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-09",
+  "page": 485,
+  "kind": "formula",
+  "node": "basniev.constant-rate-boundary-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-10",
+  "page": 485,
+  "kind": "para",
+  "node": "basniev.constant-rate-boundary-condition",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-11",
+  "page": 485,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u485-12",
+  "page": 485,
+  "kind": "figure",
+  "node": "basniev.cumulative-production-growth",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-01",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-02",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-03",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-04",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-05",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-06",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-07",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-08",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-09",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-10",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-11",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-12",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-13",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-14",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-15",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-16",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-17",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-18",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-19",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-20",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.velocity-equation-analogy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-21",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-22",
+  "page": 486,
+  "kind": "para",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u486-23",
+  "page": 486,
+  "kind": "formula",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-01",
+  "page": 487,
+  "kind": "para",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-02",
+  "page": 487,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-03",
+  "page": 487,
+  "kind": "para",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-04",
+  "page": 487,
+  "kind": "formula",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-05",
+  "page": 487,
+  "kind": "para",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-06",
+  "page": 487,
+  "kind": "formula",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-07",
+  "page": 487,
+  "kind": "para",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-08",
+  "page": 487,
+  "kind": "formula",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-09",
+  "page": 487,
+  "kind": "para",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-10",
+  "page": 487,
+  "kind": "formula",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-11",
+  "page": 487,
+  "kind": "para",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-12",
+  "page": 487,
+  "kind": "formula",
+  "node": "basniev.linear-flow-pressure-distribution",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u487-13",
+  "page": 487,
+  "kind": "para",
+  "node": "basniev.linear-flow-well-pressure-limit",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-01",
+  "page": 488,
+  "kind": "para",
+  "node": "basniev.linear-flow-well-pressure-limit",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-02",
+  "page": 488,
+  "kind": "para",
+  "node": "basniev.linear-flow-well-pressure-limit",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-03",
+  "page": 488,
+  "kind": "formula",
+  "node": "basniev.linear-flow-well-pressure-limit",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-04",
+  "page": 488,
+  "kind": "para",
+  "node": "basniev.linear-flow-well-pressure-limit",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-05",
+  "page": 488,
+  "kind": "formula",
+  "node": "basniev.linear-flow-well-pressure-limit",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-06",
+  "page": 488,
+  "kind": "para",
+  "node": "basniev.linear-flow-well-pressure-limit",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-07",
+  "page": 488,
+  "kind": "heading",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-08",
+  "page": 488,
+  "kind": "para",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-09",
+  "page": 488,
+  "kind": "para",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-10",
+  "page": 488,
+  "kind": "formula",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-11",
+  "page": 488,
+  "kind": "para",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-12",
+  "page": 488,
+  "kind": "formula",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-13",
+  "page": 488,
+  "kind": "formula",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-14",
+  "page": 488,
+  "kind": "formula",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u488-15",
+  "page": 488,
+  "kind": "para",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-01",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-02",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-03",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-04",
+  "page": 489,
+  "kind": "formula",
+  "node": "basniev.radial-flow-formulation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-05",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-06",
+  "page": 489,
+  "kind": "formula",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-07",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-08",
+  "page": 489,
+  "kind": "formula",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-09",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-10",
+  "page": 489,
+  "kind": "formula",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-11",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-12",
+  "page": 489,
+  "kind": "formula",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-13",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-14",
+  "page": 489,
+  "kind": "formula",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-15",
+  "page": 489,
+  "kind": "formula",
+  "node": "basniev.radial-flow-dimensionless",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-16",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-17",
+  "page": 489,
+  "kind": "formula",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-18",
+  "page": 489,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u489-19",
+  "page": 489,
+  "kind": "formula",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-01",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-02",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-03",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-04",
+  "page": 490,
+  "kind": "formula",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-05",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-06",
+  "page": 490,
+  "kind": "formula",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-07",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-08",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-09",
+  "page": 490,
+  "kind": "formula",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-10",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-11",
+  "page": 490,
+  "kind": "formula",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-12",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-13",
+  "page": 490,
+  "kind": "formula",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-14",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-15",
+  "page": 490,
+  "kind": "formula",
+  "node": "basniev.radial-flow-integration",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-16",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-17",
+  "page": 490,
+  "kind": "formula",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-18",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-19",
+  "page": 490,
+  "kind": "formula",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-20",
+  "page": 490,
+  "kind": "para",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u490-21",
+  "page": 490,
+  "kind": "formula",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-01",
+  "page": 491,
+  "kind": "para",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-02",
+  "page": 491,
+  "kind": "para",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-03",
+  "page": 491,
+  "kind": "para",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-04",
+  "page": 491,
+  "kind": "formula",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-05",
+  "page": 491,
+  "kind": "para",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-06",
+  "page": 491,
+  "kind": "para",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-07",
+  "page": 491,
+  "kind": "formula",
+  "node": "basniev.exponential-integral-function",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-08",
+  "page": 491,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-09",
+  "page": 491,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-10",
+  "page": 491,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-11",
+  "page": 491,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-12",
+  "page": 491,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-13",
+  "page": 491,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-14",
+  "page": 491,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-15",
+  "page": 491,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-16",
+  "page": 491,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-17",
+  "page": 491,
+  "kind": "figure_desc",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u491-18",
+  "page": 491,
+  "kind": "figure",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-01",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-02",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-03",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-04",
+  "page": 492,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-05",
+  "page": 492,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-06",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-07",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-08",
+  "page": 492,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-09",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-10",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-11",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-12",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-13",
+  "page": 492,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-14",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u492-15",
+  "page": 492,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-01",
+  "page": 493,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-02",
+  "page": 493,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-03",
+  "page": 493,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-04",
+  "page": 493,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-05",
+  "page": 493,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-06",
+  "page": 493,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-07",
+  "page": 493,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-08",
+  "page": 493,
+  "kind": "formula",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-09",
+  "page": 493,
+  "kind": "figure",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u493-10",
+  "page": 493,
+  "kind": "para",
+  "node": "basniev.pressure-formula-approximation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u494-01",
+  "page": 494,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u494-02",
+  "page": 494,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u494-03",
+  "page": 494,
+  "kind": "para",
+  "node": "basniev.psss-method-concept",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u494-04",
+  "page": 494,
+  "kind": "heading",
+  "node": "basniev.psss-method-concept",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u494-05",
+  "page": 494,
+  "kind": "para",
+  "node": "basniev.psss-method-concept",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u494-06",
+  "page": 494,
+  "kind": "para",
+  "node": "basniev.psss-method-concept",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-01",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-method-concept",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-02",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-method-concept",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-03",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-method-concept",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-04",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-method-concept",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-05",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-06",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-07",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-08",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-09",
+  "page": 495,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-10",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-11",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-12",
+  "page": 495,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-13",
+  "page": 495,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-14",
+  "page": 495,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-15",
+  "page": 495,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-16",
+  "page": 495,
+  "kind": "figure_desc",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u495-17",
+  "page": 495,
+  "kind": "figure",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-01",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-02",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-03",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-04",
+  "page": 496,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-05",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-06",
+  "page": 496,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-07",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-08",
+  "page": 496,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-09",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-10",
+  "page": 496,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-11",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-12",
+  "page": 496,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-13",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-14",
+  "page": 496,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-15",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-16",
+  "page": 496,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-17",
+  "page": 496,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-18",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-19",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-20",
+  "page": 496,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u496-21",
+  "page": 496,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-01",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-02",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-03",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-04",
+  "page": 497,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-05",
+  "page": 497,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-06",
+  "page": 497,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-07",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-08",
+  "page": 497,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-09",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-10",
+  "page": 497,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-11",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-12",
+  "page": 497,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-13",
+  "page": 497,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-14",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-15",
+  "page": 497,
+  "kind": "formula",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-16",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-17",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-linear-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-18",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u497-19",
+  "page": 497,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-01",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-02",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-03",
+  "page": 498,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-04",
+  "page": 498,
+  "kind": "figure_desc",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-05",
+  "page": 498,
+  "kind": "figure",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-06",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-07",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-08",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-09",
+  "page": 498,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-10",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-11",
+  "page": 498,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-12",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-13",
+  "page": 498,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-14",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-15",
+  "page": 498,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-16",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-17",
+  "page": 498,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-18",
+  "page": 498,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u498-19",
+  "page": 498,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-01",
+  "page": 499,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-02",
+  "page": 499,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-03",
+  "page": 499,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-04",
+  "page": 499,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-05",
+  "page": 499,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-06",
+  "page": 499,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-07",
+  "page": 499,
+  "kind": "formula",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-08",
+  "page": 499,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-09",
+  "page": 499,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-10",
+  "page": 499,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-11",
+  "page": 499,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-12",
+  "page": 499,
+  "kind": "para",
+  "node": "basniev.psss-radial-flow",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-13",
+  "page": 499,
+  "kind": "figure_desc",
+  "node": "basniev.pressure-front-dynamics",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u499-14",
+  "page": 499,
+  "kind": "figure",
+  "node": "basniev.pressure-front-dynamics",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u500-01",
+  "page": 500,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u500-02",
+  "page": 500,
+  "kind": "para",
+  "node": null,
+  "reason": "заголовок главы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u500-03",
+  "page": 500,
+  "kind": "para",
+  "node": "basniev.pscc-method-accuracy",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u500-04",
+  "page": 500,
+  "kind": "para",
+  "node": "basniev.pscc-method-accuracy",
+  "reason": "",
+  "ocr_bad": false
+ }
+]

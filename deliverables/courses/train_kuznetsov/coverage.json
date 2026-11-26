@@ -1,0 +1,1170 @@
+[
+ {
+  "unit": "u200-01",
+  "page": 200,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u200-02",
+  "page": 200,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u200-03",
+  "page": 200,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u200-04",
+  "page": 200,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u200-05",
+  "page": 200,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u200-06",
+  "page": 200,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-01",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-02",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-03",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-04",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-05",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-06",
+  "page": 201,
+  "kind": "figure_desc",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-07",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-08",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-09",
+  "page": 201,
+  "kind": "figure",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-10",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-11",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-12",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-13",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-14",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u201-15",
+  "page": 201,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u202-01",
+  "page": 202,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u202-02",
+  "page": 202,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u202-03",
+  "page": 202,
+  "kind": "para",
+  "node": "kuznetsov.organic-build-ups-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u202-04",
+  "page": 202,
+  "kind": "heading",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u202-05",
+  "page": 202,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u202-06",
+  "page": 202,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u202-07",
+  "page": 202,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u202-08",
+  "page": 202,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u203-01",
+  "page": 203,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u203-02",
+  "page": 203,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u203-03",
+  "page": 203,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u203-04",
+  "page": 203,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u203-05",
+  "page": 203,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u203-06",
+  "page": 203,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u203-07",
+  "page": 203,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u204-01",
+  "page": 204,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u204-02",
+  "page": 204,
+  "kind": "para",
+  "node": "kuznetsov.reef-lithology-and-zonation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u204-03",
+  "page": 204,
+  "kind": "para",
+  "node": "kuznetsov.reef-pore-space-and-collectors",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u204-04",
+  "page": 204,
+  "kind": "para",
+  "node": "kuznetsov.reef-pore-space-and-collectors",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u204-05",
+  "page": 204,
+  "kind": "para",
+  "node": "kuznetsov.reef-pore-space-and-collectors",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u205-01",
+  "page": 205,
+  "kind": "para",
+  "node": "kuznetsov.reef-pore-space-and-collectors",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u205-02",
+  "page": 205,
+  "kind": "para",
+  "node": "kuznetsov.reef-pore-space-and-collectors",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u205-03",
+  "page": 205,
+  "kind": "para",
+  "node": "kuznetsov.reef-pore-space-and-collectors",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u205-04",
+  "page": 205,
+  "kind": "heading",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u205-05",
+  "page": 205,
+  "kind": "para",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u205-06",
+  "page": 205,
+  "kind": "para",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u205-07",
+  "page": 205,
+  "kind": "para",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u206-01",
+  "page": 206,
+  "kind": "figure_desc",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u206-02",
+  "page": 206,
+  "kind": "figure_desc",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u206-03",
+  "page": 206,
+  "kind": "figure",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u206-04",
+  "page": 206,
+  "kind": "para",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u206-05",
+  "page": 206,
+  "kind": "para",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u207-01",
+  "page": 207,
+  "kind": "para",
+  "node": "kuznetsov.rainbow-reef-reservoir-structure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u207-02",
+  "page": 207,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u207-03",
+  "page": 207,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u207-04",
+  "page": 207,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u207-05",
+  "page": 207,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u207-06",
+  "page": 207,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u208-01",
+  "page": 208,
+  "kind": "figure_desc",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u208-02",
+  "page": 208,
+  "kind": "figure",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u208-03",
+  "page": 208,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u209-01",
+  "page": 209,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u209-02",
+  "page": 209,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u209-03",
+  "page": 209,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u209-04",
+  "page": 209,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u209-05",
+  "page": 209,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u209-06",
+  "page": 209,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u209-07",
+  "page": 209,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u210-01",
+  "page": 210,
+  "kind": "figure_desc",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u210-02",
+  "page": 210,
+  "kind": "figure",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u210-03",
+  "page": 210,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u210-04",
+  "page": 210,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u211-01",
+  "page": 211,
+  "kind": "figure_desc",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u211-02",
+  "page": 211,
+  "kind": "figure_desc",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u211-03",
+  "page": 211,
+  "kind": "figure",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u211-04",
+  "page": 211,
+  "kind": "para",
+  "node": "kuznetsov.lateral-porosity-zonality-in-reefs-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u212-01",
+  "page": 212,
+  "kind": "figure_desc",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u212-02",
+  "page": 212,
+  "kind": "figure",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u212-03",
+  "page": 212,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u212-04",
+  "page": 212,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u212-05",
+  "page": 212,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u212-06",
+  "page": 212,
+  "kind": "figure",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u212-07",
+  "page": 212,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u212-08",
+  "page": 212,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u213-01",
+  "page": 213,
+  "kind": "figure_desc",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u213-02",
+  "page": 213,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u213-03",
+  "page": 213,
+  "kind": "figure_desc",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u213-04",
+  "page": 213,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u213-05",
+  "page": 213,
+  "kind": "figure_desc",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u213-06",
+  "page": 213,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u213-07",
+  "page": 213,
+  "kind": "figure_desc",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-01",
+  "page": 214,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-02",
+  "page": 214,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-03",
+  "page": 214,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-04",
+  "page": 214,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-05",
+  "page": 214,
+  "kind": "para",
+  "node": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-06",
+  "page": 214,
+  "kind": "para",
+  "node": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-07",
+  "page": 214,
+  "kind": "para",
+  "node": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-08",
+  "page": 214,
+  "kind": "figure",
+  "node": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-09",
+  "page": 214,
+  "kind": "para",
+  "node": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u214-10",
+  "page": 214,
+  "kind": "para",
+  "node": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u215-01",
+  "page": 215,
+  "kind": "table",
+  "node": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u215-02",
+  "page": 215,
+  "kind": "para",
+  "node": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u216-01",
+  "page": 216,
+  "kind": "para",
+  "node": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u216-02",
+  "page": 216,
+  "kind": "para",
+  "node": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u216-03",
+  "page": 216,
+  "kind": "heading",
+  "node": "kuznetsov.reef-traps-and-cap-rocks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u216-04",
+  "page": 216,
+  "kind": "para",
+  "node": "kuznetsov.reef-traps-and-cap-rocks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u216-05",
+  "page": 216,
+  "kind": "para",
+  "node": "kuznetsov.reef-traps-and-cap-rocks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u216-06",
+  "page": 216,
+  "kind": "para",
+  "node": "kuznetsov.reef-traps-and-cap-rocks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u216-07",
+  "page": 216,
+  "kind": "para",
+  "node": "kuznetsov.reef-traps-and-cap-rocks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u216-08",
+  "page": 216,
+  "kind": "para",
+  "node": "kuznetsov.reef-traps-and-cap-rocks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u217-01",
+  "page": 217,
+  "kind": "table",
+  "node": "kuznetsov.reef-trap-types-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u217-02",
+  "page": 217,
+  "kind": "figure",
+  "node": "kuznetsov.reef-trap-types-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u218-01",
+  "page": 218,
+  "kind": "para",
+  "node": "kuznetsov.reef-trap-types-classification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u218-02",
+  "page": 218,
+  "kind": "para",
+  "node": "kuznetsov.paleogeomorphological-reef-traps",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u218-03",
+  "page": 218,
+  "kind": "para",
+  "node": "kuznetsov.reef-morphology-and-trap-shape",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u218-04",
+  "page": 218,
+  "kind": "para",
+  "node": "kuznetsov.reef-morphology-and-trap-shape",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u218-05",
+  "page": 218,
+  "kind": "para",
+  "node": "kuznetsov.reef-morphology-and-trap-shape",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u218-06",
+  "page": 218,
+  "kind": "para",
+  "node": "kuznetsov.paleogeomorphological-reef-traps",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u218-07",
+  "page": 218,
+  "kind": "para",
+  "node": "kuznetsov.paleogeomorphological-reef-traps",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u218-08",
+  "page": 218,
+  "kind": "para",
+  "node": "kuznetsov.structural-tectonic-reef-traps",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u218-09",
+  "page": 218,
+  "kind": "para",
+  "node": null,
+  "reason": "номер страницы",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u219-01",
+  "page": 219,
+  "kind": "para",
+  "node": "kuznetsov.structural-tectonic-reef-traps",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u219-02",
+  "page": 219,
+  "kind": "para",
+  "node": "kuznetsov.structural-tectonic-reef-traps",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u219-03",
+  "page": 219,
+  "kind": "para",
+  "node": "kuznetsov.structural-tectonic-reef-traps",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u219-04",
+  "page": 219,
+  "kind": "para",
+  "node": "kuznetsov.reef-deposits-and-pool-types",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u219-05",
+  "page": 219,
+  "kind": "para",
+  "node": "kuznetsov.reef-deposits-and-pool-types",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u219-06",
+  "page": 219,
+  "kind": "para",
+  "node": "kuznetsov.paleogeomorphological-reef-traps",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u219-07",
+  "page": 219,
+  "kind": "para",
+  "node": "kuznetsov.paleogeomorphological-reef-traps",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u220-01",
+  "page": 220,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u220-02",
+  "page": 220,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u220-03",
+  "page": 220,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u220-04",
+  "page": 220,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u220-05",
+  "page": 220,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u220-06",
+  "page": 220,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u220-07",
+  "page": 220,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u220-08",
+  "page": 220,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u221-01",
+  "page": 221,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u221-02",
+  "page": 221,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u221-03",
+  "page": 221,
+  "kind": "para",
+  "node": "kuznetsov.reef-exploration-strategy-group3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u221-04",
+  "page": 221,
+  "kind": "para",
+  "node": "kuznetsov.volume-based-well-spacing-reef",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u221-05",
+  "page": 221,
+  "kind": "para",
+  "node": "kuznetsov.volume-based-well-spacing-reef",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u222-01",
+  "page": 222,
+  "kind": "para",
+  "node": "kuznetsov.volume-based-well-spacing-reef",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u222-02",
+  "page": 222,
+  "kind": "para",
+  "node": "kuznetsov.volume-based-well-spacing-reef",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u222-03",
+  "page": 222,
+  "kind": "para",
+  "node": "kuznetsov.volume-based-well-spacing-reef",
+  "reason": "",
+  "ocr_bad": false
+ }
+]

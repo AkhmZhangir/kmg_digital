@@ -1,0 +1,275 @@
+{
+ "chapter": "train_kuznetsov",
+ "routes": [
+  {
+   "node_id": "kuznetsov.organic-build-ups-classification",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: невидимое становится видимым, скачок масштаба. текст с концептуальной схемой подходит для объяснения пространственных геологических терминов и их иерархии."
+  },
+  {
+   "node_id": "kuznetsov.reef-lithology-and-zonation",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критерии видеоёмкости: цепочка «причина → следствие», невидимое становится видимым. Текст оптимален для объяснения пространственных закономерностей литологии и фациальной зональности рифов."
+  },
+  {
+   "node_id": "kuznetsov.reef-pore-space-and-collectors",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие», контринтуитивность. Текст оптимален для детального разбора классификации пустотного пространства и геологических терминов без сложных интерактивных расчетов."
+  },
+  {
+   "node_id": "kuznetsov.rainbow-reef-reservoir-structure",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: невидимое становится видимым, скачок масштаба. Текст с детальным описанием параметров рифового резервуара и классификацией коллекторов оптимально передается через текстовый формат с элементами структурированных списков."
+  },
+  {
+   "node_id": "kuznetsov.lateral-porosity-zonality-in-reefs-1",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критерии видеоёмкости: скачок масштаба, цепочка «причина → следствие». заглушка mock"
+  },
+  {
+   "node_id": "kuznetsov.lateral-porosity-zonality-in-reefs-2",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критерии видеоёмкости: скачок масштаба, цепочка «причина → следствие». Текст с таблицей/легендой, так как узел описывает классификацию по дискретным категориям и порогам."
+  },
+  {
+   "node_id": "kuznetsov.vertical-heterogeneity-in-reefs-1",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: изменение во времени, цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "kuznetsov.vertical-heterogeneity-in-reefs-2",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: изменение во времени, цепочка «причина → следствие». Текст оптимален для объяснения пространственно-структурных особенностей слоистости рифовых резервуаров с опорой на фактические данные разрезов скважин."
+  },
+  {
+   "node_id": "kuznetsov.fluid-filtration-in-reef-reservoirs",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "kuznetsov.reef-traps-and-cap-rocks",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "timeline-growth",
+   "why": "Тип «геологическое время»; критерии видеоёмкости: изменение во времени, цепочка «причина → следствие». Текст оптимален для объяснения теоретических геологических механизмов формирования ловушек и покрышек без сложных математических формул."
+  },
+  {
+   "node_id": "kuznetsov.reef-trap-types-classification",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст оптимален для структурированного описания классификации и категорий."
+  },
+  {
+   "node_id": "kuznetsov.paleogeomorphological-reef-traps",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критерии видеоёмкости: цепочка «причина → следствие», невидимое становится видимым. заглушка mock"
+  },
+  {
+   "node_id": "kuznetsov.reef-morphology-and-trap-shape",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критерии видеоёмкости: невидимое становится видимым, скачок масштаба. текст"
+  },
+  {
+   "node_id": "kuznetsov.structural-tectonic-reef-traps",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: цепочка «причина → следствие», изменение во времени. текст"
+  },
+  {
+   "node_id": "kuznetsov.reef-deposits-and-pool-types",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критерии видеоёмкости: невидимое становится видимым. Текст оптимален для изучения классификации типов залежей и условий их формирования без сложных интерактивных расчетов."
+  },
+  {
+   "node_id": "kuznetsov.reef-exploration-strategy-group1-2",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критерии видеоёмкости: цепочка «причина → следствие», контринтуитивность. Текст содержит четкие классификации, правила и пошаговые стратегии разведки, которые удобно представить в виде структурированного руководства и схемы для специалистов ИТ."
+  },
+  {
+   "node_id": "kuznetsov.reef-exploration-strategy-group3",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критерии видеоёмкости: цепочка «причина → следствие». Текст оптимален для текстового формата, так как содержит строгую процедуру поиска и методику анализа пространственного строения ловушек без сложных формул или интерактивных графиков."
+  },
+  {
+   "node_id": "kuznetsov.volume-based-well-spacing-reef",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: контринтуитивность, цепочка «причина → следствие». Текст содержит четкие методические правила и классификацию геометрий бурения для разных типов рифов, что удобно для структурированного текстового урока."
+  }
+ ]
+}

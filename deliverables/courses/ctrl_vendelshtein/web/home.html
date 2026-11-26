@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="data:,">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>QABAT</title>
+  <link rel="stylesheet" href="/assets/style.css?v=7">
+  <script src="/assets/space-dialog.js" defer></script>
+  <script src="/assets/cover.js" defer></script>
+  <script src="/assets/home.js?v=3" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><i aria-hidden="true"></i>QABAT</a>
+    <button id="theme" type="button" aria-pressed="false">Тёмная тема</button>
+  </header>
+  <main class="homePage">
+    <section class="cover">
+      <canvas aria-hidden="true"></canvas>
+      <div>
+        <h1>QABAT</h1>
+        <p class="homeMotto">QABAT — Intelligence Beneath the Surface</p>
+        <p>Изучайте геологию по своим материалам, задавайте вопросы тьютору и практикуйтесь в виртуальной лаборатории.</p>
+      </div>
+    </section>
+    <div class="homeLayout">
+      <aside class="spaceCard" aria-labelledby="spacesTitle">
+        <div class="panelHeader"><h2 id="spacesTitle">Библиотеки</h2><button id="createSpace">＋ Создать</button></div>
+        <div id="spaces" class="homeLibraries"></div>
+        <p id="emptySpaces" class="muted" hidden>Здесь будут твои библиотеки.</p>
+      </aside>
+      <section class="spaceCard" id="upload" aria-labelledby="uploadTitle">
+        <div class="panelHeader"><h2 id="uploadTitle">Загрузить документы</h2></div>
+        <label class="uploadDestination">Куда загрузить
+          <select id="uploadLibrary"><option value="">Без библиотеки</option></select>
+        </label>
+        <div class="homeDrop" id="homeDrop">
+          <p>Перетащи сюда PDF, DOCX, TXT или Markdown</p>
+          <button class="primary" id="uploadHome">Выбрать файлы</button>
+          <input type="file" accept=".pdf,.docx,.txt,.md" id="homeFile" multiple hidden>
+        </div>
+        <p id="homeStatus" class="muted" role="status"></p>
+        <div id="uploadRecovery" class="spaceActions" hidden>
+          <button id="retryHome">Повторить загрузку</button>
+          <a id="openAfterFailure">Открыть библиотеку</a>
+        </div>
+      </section>
+    </div>
+    <section class="spaceCard homeDocuments" aria-labelledby="homeDocumentsTitle">
+      <h2 id="homeDocumentsTitle">Документы</h2>
+      <a id="homeDocuments" hidden>Документы без библиотеки</a>
+      <span id="homeDocumentsCount" class="muted"></span>
+    </section>
+    <section aria-labelledby="catalogTitle">
+      <h2 id="catalogTitle">Готовые курсы</h2>
+      <div id="catalog" class="spaceGrid"></div>
+      <p id="emptyCatalog" class="muted" hidden>Собранные главы появятся здесь, когда будут готовы.</p>
+    </section>
+  </main>
+</body>
+</html>

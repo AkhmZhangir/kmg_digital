@@ -1,0 +1,200 @@
+{
+ "chapter": "ctrl_baraboshkin_b",
+ "routes": [
+  {
+   "node_id": "baraboshkin_b.part0-1",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие». Текст с иллюстрациями (Рис. 1.14, 1.15, 1.16) для визуализации морфологии и классификации дельт."
+  },
+  {
+   "node_id": "baraboshkin_b.part0-2",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "timeline-growth",
+   "why": "Тип «геологическое время»; критериев видеоёмкости нет. текст"
+  },
+  {
+   "node_id": "baraboshkin_b.part0-3",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критериев видеоёмкости нет. Материал описывает пространственное распределение фациальных зон и слои корреляции, поэтому наиболее эффективна интерактивная 3D-схема дельтовой системы."
+  },
+  {
+   "node_id": "baraboshkin_b.part0-4",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие»"
+  },
+  {
+   "node_id": "baraboshkin_b.part0-5",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "timeline-growth",
+   "why": "Тип «геологическое время»; критериев видеоёмкости нет. текст"
+  },
+  {
+   "node_id": "baraboshkin_b.part0-6",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критериев видеоёмкости нет. Текст содержит подробные таблицы и описания литологических разрезов, требующие структурированного пошагового разбора."
+  },
+  {
+   "node_id": "baraboshkin_b.part0-7",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "baraboshkin_b.part0-8",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "timeline-growth",
+   "why": "Тип «геологическое время»; критериев видеоёмкости нет. Текст оптимален для подробного разбора текстовых фациальных описаний и классификации признаков разреза дельты."
+  },
+  {
+   "node_id": "baraboshkin_b.part0-9",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критериев видеоёмкости нет. текст"
+  },
+  {
+   "node_id": "baraboshkin_b.part1-1",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие». Текст подходит для текстового урока с иллюстрациями, так как описывает геологические разрезы и схемы."
+  },
+  {
+   "node_id": "baraboshkin_b.part1-2",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "timeline-growth",
+   "why": "Тип «геологическое время»; критериев видеоёмкости нет. Текст содержит много пространственных описаний и последовательностей слоев, которые эффективно визуализировать схемами разрезов."
+  },
+  {
+   "node_id": "baraboshkin_b.part1-3",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критериев видеоёмкости нет. текст с элементами пространственной структуры оптимален для описания геометрии и фациального состава приливных дельт без геологического бэкграунда"
+  },
+  {
+   "node_id": "baraboshkin_b.part1-4",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие». текст, так как объем информации минимален и представляет собой один факт об отмирании дельт"
+  }
+ ]
+}

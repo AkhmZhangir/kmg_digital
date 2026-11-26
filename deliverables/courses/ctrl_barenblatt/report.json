@@ -1,0 +1,75 @@
+{
+ "nodes": 8,
+ "tasks": 21,
+ "task_types": {
+  "single": 4,
+  "cloze": 4,
+  "order": 5,
+  "multi": 4,
+  "calc": 4
+ },
+ "cards": 8,
+ "coverage": {
+  "units": 180,
+  "linked": 173,
+  "skipped_with_reason": 7,
+  "uncovered": 0
+ },
+ "claims": 116,
+ "claims_ok": 114,
+ "paras": 164,
+ "paras_number_issues": 4,
+ "claims_verified_share": 0.983,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [
+  {
+   "node_id": "barenblatt.linear-1d-flow",
+   "claim": "linear-1d-flow.c11",
+   "message": "цитата не найдена в u040-10 (совпадение 0%)"
+  },
+  {
+   "node_id": "barenblatt.radial-flow-and-parameters",
+   "message": "числа без опоры в цитате: 10",
+   "text": "Радиус скважины ρ обычно равен 10 см или менее."
+  },
+  {
+   "node_id": "barenblatt.radial-flow-and-parameters",
+   "message": "числа без опоры в цитате: 300",
+   "text": "Расстояние между скважинами R > 300 м позволяет применять промежуточную асимптотику."
+  },
+  {
+   "node_id": "barenblatt.radial-flow-and-parameters",
+   "message": "числа без опоры в цитате: 0.7772",
+   "text": "Постоянная Эйлера C равна 0,7772."
+  },
+  {
+   "node_id": "barenblatt.radial-flow-and-parameters",
+   "message": "числа без опоры в цитате: 0.44, 0.57",
+   "text": "В точке касания кривой Δp(t) с прямой из начала координат r^2 / (4π t_1) = 0,44, откуда π = 0,57r^2 / t_1."
+  },
+  {
+   "node_id": "barenblatt.laplace-pressure-transient-analysis",
+   "claim": "laplace-pressure-transient-analysis.c1",
+   "message": "цитата не найдена в u045-05 (совпадение 0%)"
+  }
+ ],
+ "illustrations": 8,
+ "status": "ok",
+ "chapter": "ctrl_barenblatt",
+ "model": "qwen/qwen3.8-27b+gemini-3.5-flash-lite",
+ "llm_calls": 9,
+ "cache_hits": 0,
+ "seconds": 3237.5,
+ "official": {
+  "layer.json": true,
+  "coverage.json": true,
+  "routing.json": true,
+  "tasks.json": true,
+  "illustrations.json": true
+ }
+}

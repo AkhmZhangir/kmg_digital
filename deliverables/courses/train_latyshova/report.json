@@ -1,0 +1,84 @@
+{
+ "nodes": 24,
+ "tasks": 62,
+ "task_types": {
+  "single": 14,
+  "cloze": 12,
+  "order": 15,
+  "multi": 14,
+  "calc": 7
+ },
+ "cards": 24,
+ "coverage": {
+  "units": 177,
+  "linked": 155,
+  "skipped_with_reason": 22,
+  "uncovered": 0
+ },
+ "claims": 205,
+ "claims_ok": 198,
+ "paras": 679,
+ "paras_number_issues": 3,
+ "claims_verified_share": 0.966,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [
+  {
+   "node_id": "latyshova.fluid-saturation-crossplots",
+   "message": "числа без опоры в цитате: 17",
+   "text": "Граница коллектор - неколлектор на графике соответствует kн,ср = 17 %."
+  },
+  {
+   "node_id": "latyshova.critical-saturation-parameters-clayey-reservoir",
+   "message": "числа без опоры в цитате: 50",
+   "text": "Кривая Pn,sp=f(kn,sp) разделяет области промышленно нефтеносных и непродуктивных коллекторов. Условие kn,sp=kn,sp соотве"
+  },
+  {
+   "node_id": "latyshova.saturation-interpretation-tasks",
+   "claim": "saturation-interpretation-tasks.c3",
+   "message": "цитата не найдена в u100-14 (совпадение 62%)"
+  },
+  {
+   "node_id": "latyshova.saturation-interpretation-tasks",
+   "message": "числа без опоры в цитате: 14, 58, 67, 73",
+   "text": "В заданиях используются данные с диаграмм, представленных на рисунках 14, 46, 58, 67, 68, 73 и 76."
+  },
+  {
+   "node_id": "latyshova.laminated-reservoir-effective-thickness",
+   "claim": "laminated-reservoir-effective-thickness.c6",
+   "message": "цитата не найдена в u102-04 (совпадение 0%)"
+  },
+  {
+   "node_id": "latyshova.terrigenous-reservoir-identification",
+   "claim": "terrigenous-reservoir-identification.c3",
+   "message": "цитата не найдена в u104-07 (совпадение 33%)"
+  },
+  {
+   "node_id": "latyshova.terrigenous-reservoir-identification",
+   "claim": "terrigenous-reservoir-identification.c4",
+   "message": "цитата не найдена в u104-07 (совпадение 42%)"
+  },
+  {
+   "node_id": "latyshova.terrigenous-reservoir-identification",
+   "claim": "terrigenous-reservoir-identification.c5",
+   "message": "цитата не найдена в u105-01 (совпадение 71%)"
+  },
+  {
+   "node_id": "latyshova.terrigenous-reservoir-identification",
+   "claim": "terrigenous-reservoir-identification.c8",
+   "message": "цитата не найдена в u104-07 (совпадение 67%)"
+  },
+  {
+   "node_id": "latyshova.terrigenous-reservoir-identification",
+   "claim": "terrigenous-reservoir-identification.c9",
+   "message": "цитата не найдена в u104-07 (совпадение 34%)"
+  }
+ ],
+ "status": "ok",
+ "chapter": "train_latyshova",
+ "stage": "verify"
+}

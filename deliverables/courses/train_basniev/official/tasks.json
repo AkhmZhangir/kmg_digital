@@ -1,0 +1,1076 @@
+{
+ "chapter": "train_basniev",
+ "tasks": [
+  {
+   "id": "basniev.elastic-drive-mechanics.q1",
+   "type": "single",
+   "step_id": "basniev.elastic-drive-mechanics",
+   "claim_ids": [
+    "basniev.elastic-drive-mechanics#c3"
+   ],
+   "prompt": "Что происходит с упругим противодействием пласта при снижении давления у забоя?",
+   "explanation": "Согласно тексту, при снижении пластового давления упругое противодействие пласта вышележащему горному массиву уменьшается.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Оно увеличивается, так как порода становится жестче",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Оно уменьшается, что позволяет поровому пространству сжиматься",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Оно остается неизменным, так как порода неупруга",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Оно исчезает мгновенно, и порода разрушается",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "basniev.elastic-drive-mechanics.q2",
+   "type": "gap",
+   "step_id": "basniev.elastic-drive-mechanics",
+   "claim_ids": [
+    "basniev.elastic-drive-mechanics#c4"
+   ],
+   "prompt": "Уменьшение объема порового пространства приводит к увеличению сжатия {{1}}, что способствует вытеснению жидкости в скважину.",
+   "explanation": "В тексте указано, что уменьшение объема пор увеличивает сжатие жидкости.",
+   "kind": "understanding",
+   "answer": [
+    "жидкости"
+   ]
+  },
+  {
+   "id": "basniev.elastic-drive-mechanics.q3",
+   "type": "order",
+   "step_id": "basniev.elastic-drive-mechanics",
+   "claim_ids": [
+    "basniev.elastic-drive-mechanics#c2"
+   ],
+   "prompt": "Расставьте этапы процесса упругого режима в правильном порядке:",
+   "explanation": "Порядок следует из логической цепочки: снижение давления -> уменьшение противодействия -> сжатие пор -> движение жидкости.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Скважина запускается, давление у забоя снижается",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Упругое противодействие пласта уменьшается",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Поровое пространство сжимается",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Жидкость сжимается и движется к скважине",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basniev.piezoconductivity-properties.q1",
+   "type": "single",
+   "step_id": "basniev.piezoconductivity-properties",
+   "claim_ids": [
+    "basniev.piezoconductivity-properties#c1"
+   ],
+   "prompt": "Что физически характеризует коэффициент пьезопроводности κ?",
+   "explanation": "Согласно тексту, коэффициент κ характеризует скорость перераспределения пластового давления при неустановившейся фильтрации.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Скорость перераспределения пластового давления при неустановившейся фильтрации",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Скорость движения отдельных молекул жидкости в порах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Степень сжимаемости горной породы",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Вязкость пластовой жидкости",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev.piezoconductivity-properties.q2",
+   "type": "gap",
+   "step_id": "basniev.piezoconductivity-properties",
+   "claim_ids": [
+    "basniev.piezoconductivity-properties#c3"
+   ],
+   "prompt": "Наиболее часто встречающиеся в нефтепромысловой практике значения коэффициента пьезопроводности заключены в пределах от {{1}} до 5 м²/с.",
+   "explanation": "В тексте указано, что типичные значения коэффициента пьезопроводности составляют от 0,1 до 5 м²/с.",
+   "kind": "understanding",
+   "answer": [
+    "0,1"
+   ]
+  },
+  {
+   "id": "basniev.reduction-to-ode.q1",
+   "type": "gap",
+   "step_id": "basniev.reduction-to-ode",
+   "claim_ids": [
+    "basniev.reduction-to-ode#c1"
+   ],
+   "prompt": "Свойство {{1}} уравнения пьезопроводности позволяет использовать безразмерную переменную, при этом уравнение для безразмерного давления P идентично уравнению для размерного p.",
+   "explanation": "В тексте прямо указано, что линейность уравнения позволяет использовать безразмерную переменную и сохраняет форму уравнения.",
+   "kind": "understanding",
+   "answer": [
+    "линейность"
+   ]
+  },
+  {
+   "id": "basniev.reduction-to-ode.q2",
+   "type": "multiple",
+   "step_id": "basniev.reduction-to-ode",
+   "claim_ids": [
+    "basniev.reduction-to-ode#c2"
+   ],
+   "prompt": "Какие утверждения верно описывают процесс сведения уравнения к ОДУ согласно тексту?",
+   "explanation": "Текст подтверждает, что частные производные выражаются через u, а подстановка приводит к ОДУ (зависящему от одной переменной), а не к уравнению с частными производными.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Частные производные по x и t выражаются через производные по безразмерной переменной u.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Подстановка производных сводит уравнение в частных производных к обыкновенному.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Итоговое уравнение содержит частные производные по двум переменным.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Решение зависит от двух независимых переменных x и t.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basniev.solving-ode-and-erf.q1",
+   "type": "multiple",
+   "step_id": "basniev.solving-ode-and-erf",
+   "claim_ids": [
+    "basniev.solving-ode-and-erf#c11"
+   ],
+   "prompt": "Какие характеристики интеграла вероятности (функции ошибки) указаны в тексте?",
+   "explanation": "В тексте прямо сказано, что интеграл вероятности является табулированной функцией и изменяется в пределах от 0 до 1.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Является табулированной функцией",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Изменяется в пределах от 0 до 1",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Равна бесконечности при x=0",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Зависит только от времени, но не от расстояния",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basniev.solving-ode-and-erf.q2",
+   "type": "calc",
+   "step_id": "basniev.solving-ode-and-erf",
+   "claim_ids": [
+    "basniev.solving-ode-and-erf#c10"
+   ],
+   "prompt": "Чему равна постоянная интегрирования C1, если известно, что интеграл от экспоненты квадрата от 0 до бесконечности равен корню из пи, деленному на два?",
+   "explanation": "Согласно тексту, постоянная C1 равна 2, деленному на корень из пи (2/√π ≈ 1.128).",
+   "kind": "data",
+   "answer": 1.128,
+   "tolerance": 0.01,
+   "unit": "безразмерная величина"
+  },
+  {
+   "id": "basniev.solving-ode-and-erf.q3",
+   "type": "single",
+   "step_id": "basniev.solving-ode-and-erf",
+   "claim_ids": [
+    "basniev.solving-ode-and-erf#c8"
+   ],
+   "prompt": "Какое условие используется для нахождения постоянной интегрирования C1?",
+   "explanation": "В тексте указано: 'Постоянная находится из условия: при бесконечном расстоянии давление равно начальному'.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Давление равно нулю при x=0",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При бесконечном расстоянии давление равно начальному",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Производная давления равна нулю при t=0",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Давление равно забойному при x=0",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "basniev.pressure-distribution-curve.q1",
+   "type": "single",
+   "step_id": "basniev.pressure-distribution-curve",
+   "claim_ids": [
+    "basniev.pressure-distribution-curve#c2"
+   ],
+   "prompt": "Что происходит с формой кривой распределения давления в пласте по мере увеличения времени?",
+   "explanation": "В тексте прямо указано, что с увеличением времени кривая давления становится более пологой.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Кривая становится более крутой",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Кривая становится более пологой",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Форма кривой не меняется",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Кривая превращается в прямую линию",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "basniev.pressure-distribution-curve.q2",
+   "type": "gap",
+   "step_id": "basniev.pressure-distribution-curve",
+   "claim_ids": [
+    "basniev.pressure-distribution-curve#c3"
+   ],
+   "prompt": "Рассматривается {{1}} прямолинейно-параллельный поток упругой жидкости в галерее.",
+   "explanation": "Согласно тексту, рассматривается именно неустановившийся прямолинейно-параллельный фильтрационный поток.",
+   "kind": "understanding",
+   "answer": [
+    "неустановившийся"
+   ]
+  },
+  {
+   "id": "basniev.cumulative-production-growth.q1",
+   "type": "calc",
+   "step_id": "basniev.cumulative-production-growth",
+   "claim_ids": [
+    "basniev.cumulative-production-growth#c5"
+   ],
+   "prompt": "Сколько составляет коэффициент перед sqrt(t) в результате интегрирования функции 1/sqrt(t) от 0 до t?",
+   "explanation": "В тексте прямо указано, что интеграл от 1/sqrt(t) дает 2*sqrt(t).",
+   "kind": "data",
+   "answer": 2,
+   "tolerance": 0,
+   "unit": null
+  },
+  {
+   "id": "basniev.cumulative-production-growth.q2",
+   "type": "single",
+   "step_id": "basniev.cumulative-production-growth",
+   "claim_ids": [
+    "basniev.cumulative-production-growth#c2"
+   ],
+   "prompt": "Как меняется скорость прироста накопленной добычи со временем?",
+   "explanation": "Текст утверждает, что скорость роста добычи со временем падает, хотя общий объем продолжает увеличиваться.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Скорость прироста постоянно увеличивается",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Скорость прироста падает, хотя общий объем растет",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Скорость прироста остается неизменной",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Скорость прироста сначала падает, а затем резко возрастает",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "basniev.cumulative-production-growth.q3",
+   "type": "gap",
+   "step_id": "basniev.cumulative-production-growth",
+   "claim_ids": [
+    "basniev.cumulative-production-growth#c7"
+   ],
+   "prompt": "Накопленная добыча V_доб пропорциональна {{1}} из времени t.",
+   "explanation": "Согласно тексту, накопленная добыча пропорциональна квадратному корню из времени.",
+   "kind": "understanding",
+   "answer": [
+    "квадратному корню"
+   ]
+  },
+  {
+   "id": "basniev.constant-rate-boundary-condition.q1",
+   "type": "gap",
+   "step_id": "basniev.constant-rate-boundary-condition",
+   "claim_ids": [
+    "basniev.constant-rate-boundary-condition#c3"
+   ],
+   "prompt": "В начальный момент времени (t = 0) давление во всех точках пласта постоянно и равно {{1}}.",
+   "explanation": "Согласно тексту, первое условие задает, что до пуска галереи давление во всех точках постоянно и равно контурному.",
+   "kind": "understanding",
+   "answer": [
+    "контурному"
+   ]
+  },
+  {
+   "id": "basniev.constant-rate-boundary-condition.q2",
+   "type": "order",
+   "step_id": "basniev.constant-rate-boundary-condition",
+   "claim_ids": [
+    "basniev.constant-rate-boundary-condition#c2"
+   ],
+   "prompt": "Расставьте по логическому порядку этапы решения задачи о притоке к галерее с постоянным дебитом.",
+   "explanation": "Сначала задаются начальные и граничные условия (давление в начале, дебит на границе, давление на бесконечности), а затем решается (интегрируется) уравнение.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Определение начального условия: давление во всем пласте равно контурному (pк) при t = 0",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Определение граничного условия на галерее: скорость потока постоянна (w1 = const) при x = 0",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Определение граничного условия на бесконечности: давление равно контурному (pк) при x → ∞",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Интегрирование уравнения фильтрации с учетом всех заданных условий для нахождения p(x, t)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basniev.constant-rate-boundary-condition.q3",
+   "type": "multiple",
+   "step_id": "basniev.constant-rate-boundary-condition",
+   "claim_ids": [
+    "basniev.constant-rate-boundary-condition#c4"
+   ],
+   "prompt": "Что из перечисленного верно для граничных условий задачи с постоянным дебитом на границе?",
+   "explanation": "Текст указывает, что дебит на галерее постоянен, а из третьего условия следует, что давление на бесконечности равно контурному; граница же возмущения уходит в бесконечность, а начальное давление равно pк, а не нулю.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "На галерее (x = 0) поддерживается постоянный объемный дебит Q",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Граница возмущенной зоны имеет фиксированную координату и не меняется со временем",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "При x → ∞ давление стремится к контурному значению pк",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "В начальный момент времени давление в пласте равно нулю",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "basniev.linear-flow-well-pressure-limit.q1",
+   "type": "order",
+   "step_id": "basniev.linear-flow-well-pressure-limit",
+   "claim_ids": [
+    "basniev.linear-flow-well-pressure-limit#c9"
+   ],
+   "prompt": "Расставьте по порядку шаги математического вывода, описанные в тексте:",
+   "explanation": "Текст последовательно описывает: возникновение неопределенности (c8), применение Лопиталя (c9), стремление экспоненты к нулю (c11) и итоговый предел произведения к нулю (c10).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Идентификация неопределенности вида бесконечность на ноль",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Применение правила Лопиталя для раскрытия неопределенности",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Учет того, что экспоненциальный член стремится к нулю",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Вывод о том, что произведение стремится к нулю",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basniev.linear-flow-well-pressure-limit.q2",
+   "type": "multiple",
+   "step_id": "basniev.linear-flow-well-pressure-limit",
+   "claim_ids": [
+    "basniev.linear-flow-well-pressure-limit#c20"
+   ],
+   "prompt": "Какие утверждения из текста объясняют, почему модель не применима при больших временах?",
+   "explanation": "Текст указывает, что при больших временах давление становится отрицательным (c3), что физически невозможно, так как на самом деле произойдет кавитация (c20).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Модель предсказывает отрицательное давление",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В реальных условиях возникнет кавитация",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Решение использует функцию ошибки erf",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Граничное условие задает постоянный дебит",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basniev.linear-flow-well-pressure-limit.q3",
+   "type": "calc",
+   "step_id": "basniev.linear-flow-well-pressure-limit",
+   "claim_ids": [
+    "basniev.linear-flow-well-pressure-limit#c17"
+   ],
+   "prompt": "Сколько единиц числа Пи содержится в знаменателе коэффициента пропорциональности итоговой формулы?",
+   "explanation": "Согласно тексту (c17), коэффициент пропорциональности содержит удвоенное число Пи в знаменателе, то есть 2 * Pi.",
+   "kind": "data",
+   "answer": 2,
+   "tolerance": 0,
+   "unit": "шт"
+  },
+  {
+   "id": "basniev.radial-flow-integration.q1",
+   "type": "multiple",
+   "step_id": "basniev.radial-flow-integration",
+   "claim_ids": [
+    "basniev.radial-flow-integration#c7"
+   ],
+   "prompt": "Какие действия выполняются для определения константы интегрирования C1?",
+   "explanation": "Согласно тексту, для нахождения C1 уравнение умножают на радиус и устремляют радиус к нулю.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Умножение уравнения давления на радиус",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Устремление радиуса к нулю",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Устремление радиуса к бесконечности",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Деление уравнения на вязкость",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basniev.exponential-integral-function.q1",
+   "type": "single",
+   "step_id": "basniev.exponential-integral-function",
+   "claim_ids": [
+    "basniev.exponential-integral-function#c1"
+   ],
+   "prompt": "В каких условиях применима формула (23.52) для определения давления в точке пласта?",
+   "explanation": "Текст прямо указывает, что формула применима только для упругого режима фильтрации и плоскорадиального потока.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Только при упругом режиме фильтрации и плоскорадиальном потоке",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При любом режиме фильтрации, если поток радиальный",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только при упругом режиме, независимо от типа потока",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "При любом режиме и любом типе потока, если известны вязкость и проницаемость",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev.exponential-integral-function.q2",
+   "type": "gap",
+   "step_id": "basniev.exponential-integral-function",
+   "claim_ids": [
+    "basniev.exponential-integral-function#c2"
+   ],
+   "prompt": "Формула (23.52) широко применяется для интерпретации данных {{1}} и расчёта распределения давления.",
+   "explanation": "В тексте указано, что формула применяется для интерпретации данных исследования скважин.",
+   "kind": "understanding",
+   "answer": [
+    "исследования скважин"
+   ]
+  },
+  {
+   "id": "basniev.pressure-formula-approximation.q1",
+   "type": "order",
+   "step_id": "basniev.pressure-formula-approximation",
+   "claim_ids": [
+    "basniev.pressure-formula-approximation#c4"
+   ],
+   "prompt": "Расставьте значения параметра x в порядке возрастания допустимой погрешности аппроксимации (от самой малой погрешности к наибольшей).",
+   "explanation": "Согласно тексту, погрешность растет с увеличением x: 0,25% для x<=0,01, 5,7% для x<=0,1 и 9,7% для x<=0,14.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "x <= 0,01 (погрешность 0,25%)",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "x <= 0,1 (погрешность 5,7%)",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "x <= 0,14 (погрешность 9,7%)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "basniev.pressure-formula-approximation.q2",
+   "type": "multiple",
+   "step_id": "basniev.pressure-formula-approximation",
+   "claim_ids": [
+    "basniev.pressure-formula-approximation#c12"
+   ],
+   "prompt": "Выберите все пары значений безразмерного времени f_0 и соответствующей погрешности расчетов давления, которые указаны в тексте.",
+   "explanation": "Текст прямо перечисляет эти четыре пары значений, а пятый вариант содержит неверное сочетание.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "f_0 = 100, погрешность 0,6%",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "f_0 = 25, погрешность 2,3%",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "f_0 = 10, погрешность 5%",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "f_0 = 5, погрешность 9,4%",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "f_0 = 100, погрешность 9,4%",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "basniev.pressure-formula-approximation.q3",
+   "type": "calc",
+   "step_id": "basniev.pressure-formula-approximation",
+   "claim_ids": [
+    "basniev.pressure-formula-approximation#c11"
+   ],
+   "prompt": "Определите значение постоянной Эйлера, которое используется в формуле для расчета давления вблизи скважины.",
+   "explanation": "В тексте указано, что постоянная Эйлера принимается равной 0,5772.",
+   "kind": "data",
+   "answer": 0.5772,
+   "tolerance": 0.0001,
+   "unit": null
+  },
+  {
+   "id": "basniev.psss-method-concept.q1",
+   "type": "single",
+   "step_id": "basniev.psss-method-concept",
+   "claim_ids": [
+    "basniev.psss-method-concept#c2"
+   ],
+   "prompt": "Почему в методе ПССС допустимо считать процесс стационарным в каждый конкретный момент времени?",
+   "explanation": "Согласно тексту, метод основан на допущении, что временные изменения давления медленнее пространственных, что позволяет аппроксимировать процесс стационарным.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что давление меняется во времени значительно медленнее, чем по координатам",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что жидкость в пласте является несжимаемой",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что скважина находится в центре пласта",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что температура в пласте остается постоянной",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev.psss-method-concept.q2",
+   "type": "gap",
+   "step_id": "basniev.psss-method-concept",
+   "claim_ids": [
+    "basniev.psss-method-concept#c9"
+   ],
+   "prompt": "В невозмущенной области давление всюду постоянно и равно {{1}}.",
+   "explanation": "Текст прямо указывает, что в невозмущенной области давление постоянно и равно начальному контурному давлению.",
+   "kind": "understanding",
+   "answer": [
+    "начальному контурному давлению"
+   ]
+  },
+  {
+   "id": "basniev.psss-method-concept.q3",
+   "type": "order",
+   "step_id": "basniev.psss-method-concept",
+   "claim_ids": [
+    "basniev.psss-method-concept#c12"
+   ],
+   "prompt": "Расставьте по логическому порядку этапы применения метода ПССС для нахождения решения в конкретный момент времени.",
+   "explanation": "Сначала задается структура (разделение на области), затем определяются граничные условия (контур питания), после этого решается стационарная задача (уравнение Лапласа), и наконец, по балансу определяется движение самой границы.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Разделить пласт на возмущенную и невозмущенную области",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Принять внешнюю границу возмущенной области за контур питания",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Рассчитать распределение давления в возмущенной области, используя уравнение Лапласа",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Определить положение границы, решая уравнение материального баланса с граничными условиями",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basniev.psss-linear-flow.q1",
+   "type": "gap",
+   "step_id": "basniev.psss-linear-flow",
+   "claim_ids": [
+    "basniev.psss-linear-flow#c13"
+   ],
+   "prompt": "Разность давлений $\\Delta p$ равна {{1}} разницы между начальным давлением $p_к$ и забойным давлением $p_г$.",
+   "explanation": "Согласно тексту, среднее давление является средним арифметическим, поэтому разность $\\Delta p = p_к - \\bar{p}$ равна $(p_к - p_г)/2$.",
+   "kind": "understanding",
+   "answer": [
+    "половине"
+   ]
+  },
+  {
+   "id": "basniev.psss-linear-flow.q2",
+   "type": "order",
+   "step_id": "basniev.psss-linear-flow",
+   "claim_ids": [
+    "basniev.psss-linear-flow#c16"
+   ],
+   "prompt": "Расставьте этапы применения метода ПССС к линейному потоку в правильном порядке.",
+   "explanation": "Сначала применяется закон Дарси, затем выражается связь давлений и длины, после чего все подставляется в баланс массы (запаса) и интегрируется для получения закона движения границы.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Записывается закон Дарси для установившегося потока в зоне $l(t)$",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Выражается разность давлений через дебит и длину фронта",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Подставляются выражения в баланс упругого запаса",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Уравнение интегрируется для нахождения $l(t)$",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basniev.psss-linear-flow.q3",
+   "type": "multiple",
+   "step_id": "basniev.psss-linear-flow",
+   "claim_ids": [
+    "basniev.psss-linear-flow#c2"
+   ],
+   "prompt": "Выберите верные утверждения о погрешности метода ПССС при разных режимах работы скважины.",
+   "explanation": "В тексте прямо указано: при постоянном дебите погрешность 25%, а при постоянном давлении — 11%.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При постоянном дебите погрешность составляет 25%",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При постоянном давлении погрешность составляет 11%",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "При постоянном дебите погрешность составляет 11%",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "При постоянном давлении погрешность составляет 25%",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basniev.pscc-method-accuracy.q1",
+   "type": "single",
+   "step_id": "basniev.pscc-method-accuracy",
+   "claim_ids": [
+    "basniev.pscc-method-accuracy#c2"
+   ],
+   "prompt": "Какую характеристику метод ПССС позволяет определить с наибольшей точностью?",
+   "explanation": "Согласно тексту, метод дает связь между дебитом и депрессией гораздо точнее, чем распределение давления.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Распределение давления в любой точке пласта",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Связь между дебитом и депрессией",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Точный состав газированной жидкости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Скорость перемещения всех границ пласта",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "basniev.pscc-method-accuracy.q2",
+   "type": "gap",
+   "step_id": "basniev.pscc-method-accuracy",
+   "claim_ids": [
+    "basniev.pscc-method-accuracy#c1"
+   ],
+   "prompt": "Распределение давления в области фильтрации, получаемое по методу ПССС, является довольно {{1}} приближением.",
+   "explanation": "В тексте прямо указано, что распределение давления является грубым приближением.",
+   "kind": "understanding",
+   "answer": [
+    "грубым"
+   ]
+  },
+  {
+   "id": "basniev.pscc-method-accuracy.q3",
+   "type": "order",
+   "step_id": "basniev.pscc-method-accuracy",
+   "claim_ids": [
+    "basniev.pscc-method-accuracy#c3"
+   ],
+   "prompt": "Расположите этапы и задачи применения метода ПССС в логике усложнения описанных в тексте объектов",
+   "explanation": "Текст последовательно описывает базовые возможности метода для дебита-депрессии, а затем расширяет их на движение газированной жидкости и границы разделов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Расчет связи дебита и депрессии",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Задачи о движении газированной жидкости",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Задачи о перемещении границы раздела жидкостей и газов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "basniev.pressure-front-dynamics.q1",
+   "type": "order",
+   "step_id": "basniev.pressure-front-dynamics",
+   "claim_ids": [
+    "basniev.pressure-front-dynamics#c10"
+   ],
+   "prompt": "Расставьте по порядку этапы определения физического радиуса фронта давления R(t) на основе графика:",
+   "explanation": "Сначала фиксируются условия (постоянное давление), затем вычисляется безразмерное время, по нему с графика снимается безразмерный радиус, который переводится в физический.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Зафиксировать постоянство забойного давления p_c",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Определить безразмерное время t·fo",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "По графику найти соответствующее значение R(t)/r_c",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Умножить на r_c для получения физического радиуса",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basniev.pressure-front-dynamics.q2",
+   "type": "multiple",
+   "step_id": "basniev.pressure-front-dynamics",
+   "claim_ids": [
+    "basniev.pressure-front-dynamics#c12"
+   ],
+   "prompt": "Какие утверждения верно описывают динамику продвижения фронта давления согласно тексту?",
+   "explanation": "Текст указывает, что радиус растет, но скорость замедляется (выпуклость вверх), а за фронтом давление исходное (невозмущенная область).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Радиус фронта растет со временем",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Скорость продвижения фронта увеличивается со временем",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Форма кривой имеет выпуклость вверх, что означает замедление роста",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "За фронтом находится область с измененным давлением",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  }
+ ]
+}

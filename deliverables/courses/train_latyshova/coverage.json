@@ -1,0 +1,1418 @@
+[
+ {
+  "unit": "u090-01",
+  "page": 90,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-02",
+  "page": 90,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-03",
+  "page": 90,
+  "kind": "para",
+  "node": "latyshova.gis-interpretation-tasks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-04",
+  "page": 90,
+  "kind": "para",
+  "node": "latyshova.gis-interpretation-tasks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-05",
+  "page": 90,
+  "kind": "para",
+  "node": "latyshova.gis-interpretation-tasks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-06",
+  "page": 90,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-07",
+  "page": 90,
+  "kind": "para",
+  "node": "latyshova.mud-drilling-invasion-zone",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-08",
+  "page": 90,
+  "kind": "para",
+  "node": "latyshova.mud-drilling-invasion-zone",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-09",
+  "page": 90,
+  "kind": "para",
+  "node": "latyshova.mud-drilling-invasion-zone",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-10",
+  "page": 90,
+  "kind": "para",
+  "node": "latyshova.mud-drilling-invasion-zone",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-11",
+  "page": 90,
+  "kind": "para",
+  "node": "latyshova.mud-filtration-density-impact",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u090-12",
+  "page": 90,
+  "kind": "para",
+  "node": "latyshova.mud-filtration-density-impact",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-01",
+  "page": 91,
+  "kind": "para",
+  "node": "latyshova.mud-filtration-density-impact",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-02",
+  "page": 91,
+  "kind": "para",
+  "node": "latyshova.mud-salinity-impact",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-03",
+  "page": 91,
+  "kind": "para",
+  "node": "latyshova.mud-salinity-impact",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-04",
+  "page": 91,
+  "kind": "para",
+  "node": "latyshova.alternative-drilling-fluids",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-05",
+  "page": 91,
+  "kind": "para",
+  "node": "latyshova.alternative-drilling-fluids",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-06",
+  "page": 91,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-07",
+  "page": 91,
+  "kind": "para",
+  "node": "latyshova.reservoir-lithology-pore-types",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-08",
+  "page": 91,
+  "kind": "para",
+  "node": "latyshova.reservoir-lithology-pore-types",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-09",
+  "page": 91,
+  "kind": "para",
+  "node": "latyshova.reservoir-lithology-pore-types",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u091-10",
+  "page": 91,
+  "kind": "para",
+  "node": "latyshova.gis-methods-classification-by-task",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-01",
+  "page": 92,
+  "kind": "para",
+  "node": "latyshova.gis-methods-classification-by-task",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-02",
+  "page": 92,
+  "kind": "para",
+  "node": "latyshova.gis-methods-classification-by-task",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-03",
+  "page": 92,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-resistivity-parameter",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-04",
+  "page": 92,
+  "kind": "para",
+  "node": "latyshova.gis-complex-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-05",
+  "page": 92,
+  "kind": "para",
+  "node": "latyshova.gis-complex-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-06",
+  "page": 92,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-07",
+  "page": 92,
+  "kind": "task",
+  "node": "latyshova.gis-complex-reservoir-characterization",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-08",
+  "page": 92,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-09",
+  "page": 92,
+  "kind": "para",
+  "node": "latyshova.lithological-column-construction-procedure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-10",
+  "page": 92,
+  "kind": "para",
+  "node": "latyshova.lithological-column-construction-procedure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-11",
+  "page": 92,
+  "kind": "para",
+  "node": "latyshova.lithological-column-construction-procedure",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u092-12",
+  "page": 92,
+  "kind": "para",
+  "node": "latyshova.qualitative-gis-response-matrix",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u093-01",
+  "page": 93,
+  "kind": "para",
+  "node": "latyshova.qualitative-gis-response-matrix",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u093-02",
+  "page": 93,
+  "kind": "para",
+  "node": "latyshova.qualitative-gis-response-matrix",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u093-03",
+  "page": 93,
+  "kind": "table",
+  "node": "latyshova.qualitative-gis-response-matrix",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u094-01",
+  "page": 94,
+  "kind": "table",
+  "node": "latyshova.complex-lithology-interpretation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u095-01",
+  "page": 95,
+  "kind": "para",
+  "node": "latyshova.complex-lithology-interpretation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u095-02",
+  "page": 95,
+  "kind": "para",
+  "node": "latyshova.complex-lithology-interpretation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u095-03",
+  "page": 95,
+  "kind": "figure_desc",
+  "node": null,
+  "reason": "описание рисунка повторяет подпись",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u095-04",
+  "page": 95,
+  "kind": "figure",
+  "node": "latyshova.complex-lithology-interpretation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u095-05",
+  "page": 95,
+  "kind": "para",
+  "node": "latyshova.complex-lithology-interpretation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u095-06",
+  "page": 95,
+  "kind": "para",
+  "node": "latyshova.complex-lithology-interpretation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u095-07",
+  "page": 95,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u095-08",
+  "page": 95,
+  "kind": "task",
+  "node": "latyshova.complex-lithology-interpretation",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-01",
+  "page": 96,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-02",
+  "page": 96,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-03",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.direct-reservoir-indicators",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-04",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.direct-reservoir-indicators",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-05",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.direct-reservoir-indicators",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-06",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.direct-reservoir-indicators",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-07",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.direct-reservoir-indicators",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-08",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.direct-reservoir-indicators",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-09",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.direct-reservoir-indicators",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-10",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.direct-reservoir-indicators",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-11",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-12",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-13",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-14",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-15",
+  "page": 96,
+  "kind": "list",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-16",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u096-17",
+  "page": 96,
+  "kind": "para",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-01",
+  "page": 97,
+  "kind": "list",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-02",
+  "page": 97,
+  "kind": "formula",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-03",
+  "page": 97,
+  "kind": "para",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-04",
+  "page": 97,
+  "kind": "para",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-05",
+  "page": 97,
+  "kind": "list",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-06",
+  "page": 97,
+  "kind": "list",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-07",
+  "page": 97,
+  "kind": "list",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-08",
+  "page": 97,
+  "kind": "para",
+  "node": "latyshova.reservoir-cutoff-determination",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-09",
+  "page": 97,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-10",
+  "page": 97,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-11",
+  "page": 97,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-12",
+  "page": 97,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-13",
+  "page": 97,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u097-14",
+  "page": 97,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-01",
+  "page": 98,
+  "kind": "figure_desc",
+  "node": null,
+  "reason": "описание рисунка повторяет подпись",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-02",
+  "page": 98,
+  "kind": "figure",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-03",
+  "page": 98,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-04",
+  "page": 98,
+  "kind": "formula",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-05",
+  "page": 98,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-06",
+  "page": 98,
+  "kind": "example",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-07",
+  "page": 98,
+  "kind": "example",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-08",
+  "page": 98,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-09",
+  "page": 98,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u098-10",
+  "page": 98,
+  "kind": "para",
+  "node": "latyshova.fluid-saturation-crossplots",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-01",
+  "page": 99,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clean-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-02",
+  "page": 99,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clean-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-03",
+  "page": 99,
+  "kind": "example",
+  "node": "latyshova.critical-saturation-parameters-clean-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-04",
+  "page": 99,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clean-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-05",
+  "page": 99,
+  "kind": "figure",
+  "node": "latyshova.critical-saturation-parameters-clean-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-06",
+  "page": 99,
+  "kind": "figure_desc",
+  "node": null,
+  "reason": "автоописание рисунка",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-07",
+  "page": 99,
+  "kind": "para",
+  "node": null,
+  "reason": "нечитаемый фрагмент легенды",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-08",
+  "page": 99,
+  "kind": "para",
+  "node": null,
+  "reason": "технический комментарий OCR",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-09",
+  "page": 99,
+  "kind": "para",
+  "node": null,
+  "reason": "служебный блок ключевых слов",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-10",
+  "page": 99,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clean-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-11",
+  "page": 99,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clean-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u099-12",
+  "page": 99,
+  "kind": "example",
+  "node": "latyshova.critical-saturation-parameters-clean-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-01",
+  "page": 100,
+  "kind": "example",
+  "node": "latyshova.critical-saturation-parameters-clean-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-02",
+  "page": 100,
+  "kind": "example",
+  "node": "latyshova.critical-saturation-parameters-clayey-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-03",
+  "page": 100,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clayey-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-04",
+  "page": 100,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clayey-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-05",
+  "page": 100,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clayey-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-06",
+  "page": 100,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clayey-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-07",
+  "page": 100,
+  "kind": "table",
+  "node": "latyshova.critical-saturation-parameters-clayey-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-08",
+  "page": 100,
+  "kind": "example",
+  "node": "latyshova.critical-saturation-parameters-clayey-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-09",
+  "page": 100,
+  "kind": "para",
+  "node": "latyshova.critical-saturation-parameters-clayey-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-10",
+  "page": 100,
+  "kind": "example",
+  "node": "latyshova.critical-saturation-parameters-clayey-reservoir",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-11",
+  "page": 100,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-12",
+  "page": 100,
+  "kind": "task",
+  "node": "latyshova.saturation-interpretation-tasks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-13",
+  "page": 100,
+  "kind": "task",
+  "node": "latyshova.saturation-interpretation-tasks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-14",
+  "page": 100,
+  "kind": "task",
+  "node": "latyshova.saturation-interpretation-tasks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-15",
+  "page": 100,
+  "kind": "para",
+  "node": "latyshova.saturation-interpretation-tasks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-16",
+  "page": 100,
+  "kind": "list",
+  "node": "latyshova.saturation-interpretation-tasks",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-17",
+  "page": 100,
+  "kind": "para",
+  "node": "latyshova.effective-thickness-and-fluid-contacts",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-18",
+  "page": 100,
+  "kind": "list",
+  "node": "latyshova.effective-thickness-and-fluid-contacts",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u100-19",
+  "page": 100,
+  "kind": "list",
+  "node": "latyshova.effective-thickness-and-fluid-contacts",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u101-01",
+  "page": 101,
+  "kind": "para",
+  "node": "latyshova.effective-thickness-and-fluid-contacts",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u101-02",
+  "page": 101,
+  "kind": "para",
+  "node": "latyshova.effective-thickness-and-fluid-contacts",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u101-03",
+  "page": 101,
+  "kind": "para",
+  "node": "latyshova.effective-thickness-and-fluid-contacts",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u101-04",
+  "page": 101,
+  "kind": "figure_desc",
+  "node": null,
+  "reason": "автоописание рисунка",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u101-05",
+  "page": 101,
+  "kind": "figure",
+  "node": "latyshova.effective-thickness-and-fluid-contacts",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u101-06",
+  "page": 101,
+  "kind": "para",
+  "node": "latyshova.effective-thickness-and-fluid-contacts",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u101-07",
+  "page": 101,
+  "kind": "para",
+  "node": "latyshova.effective-thickness-and-fluid-contacts",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u101-08",
+  "page": 101,
+  "kind": "list",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u102-01",
+  "page": 102,
+  "kind": "para",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u102-02",
+  "page": 102,
+  "kind": "formula",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u102-03",
+  "page": 102,
+  "kind": "para",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u102-04",
+  "page": 102,
+  "kind": "formula",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u102-05",
+  "page": 102,
+  "kind": "para",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u102-06",
+  "page": 102,
+  "kind": "para",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u102-07",
+  "page": 102,
+  "kind": "figure",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u102-08",
+  "page": 102,
+  "kind": "figure_desc",
+  "node": null,
+  "reason": "автоописание рисунка",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u103-01",
+  "page": 103,
+  "kind": "para",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u104-01",
+  "page": 104,
+  "kind": "figure",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u104-02",
+  "page": 104,
+  "kind": "figure_desc",
+  "node": null,
+  "reason": "автоописание рисунка",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u104-03",
+  "page": 104,
+  "kind": "list",
+  "node": "latyshova.laminated-reservoir-effective-thickness",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u104-04",
+  "page": 104,
+  "kind": "figure_desc",
+  "node": "latyshova.terrigenous-reservoir-identification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u104-05",
+  "page": 104,
+  "kind": "figure",
+  "node": "latyshova.terrigenous-reservoir-identification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u104-06",
+  "page": 104,
+  "kind": "para",
+  "node": "latyshova.terrigenous-reservoir-identification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u104-07",
+  "page": 104,
+  "kind": "list",
+  "node": "latyshova.terrigenous-reservoir-identification",
+  "reason": "",
+  "ocr_bad": true
+ },
+ {
+  "unit": "u105-01",
+  "page": 105,
+  "kind": "list",
+  "node": "latyshova.terrigenous-reservoir-identification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u105-02",
+  "page": 105,
+  "kind": "figure_desc",
+  "node": "latyshova.terrigenous-reservoir-identification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u105-03",
+  "page": 105,
+  "kind": "figure",
+  "node": "latyshova.terrigenous-reservoir-identification",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u105-04",
+  "page": 105,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок подраздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u105-05",
+  "page": 105,
+  "kind": "para",
+  "node": "latyshova.carbonate-logging-features",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u105-06",
+  "page": 105,
+  "kind": "para",
+  "node": "latyshova.carbonate-logging-features",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u105-07",
+  "page": 105,
+  "kind": "figure_desc",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u105-08",
+  "page": 105,
+  "kind": "figure_desc",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u105-09",
+  "page": 105,
+  "kind": "figure",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u106-01",
+  "page": 106,
+  "kind": "formula",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-01",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.carbonate-logging-features",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-02",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-03",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-04",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-05",
+  "page": 107,
+  "kind": "example",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-06",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-07",
+  "page": 107,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок рисунка",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-08",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-09",
+  "page": 107,
+  "kind": "figure_desc",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-10",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-11",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-12",
+  "page": 107,
+  "kind": "example",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-13",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u107-14",
+  "page": 107,
+  "kind": "para",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-01",
+  "page": 108,
+  "kind": "para",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-02",
+  "page": 108,
+  "kind": "para",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-03",
+  "page": 108,
+  "kind": "para",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-04",
+  "page": 108,
+  "kind": "para",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-05",
+  "page": 108,
+  "kind": "table",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-06",
+  "page": 108,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок раздела",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-07",
+  "page": 108,
+  "kind": "task",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-08",
+  "page": 108,
+  "kind": "task",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-09",
+  "page": 108,
+  "kind": "task",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-10",
+  "page": 108,
+  "kind": "task",
+  "node": "latyshova.logging-normalization-method",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u108-11",
+  "page": 108,
+  "kind": "task",
+  "node": "latyshova.carbonate-cutoff-porosity",
+  "reason": "",
+  "ocr_bad": false
+ }
+]

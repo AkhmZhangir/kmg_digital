@@ -1,0 +1,365 @@
+{
+ "chapter": "train_latyshova",
+ "routes": [
+  {
+   "node_id": "latyshova.gis-interpretation-tasks",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Текст представляет собой классификационную схему задач и методов ГИС. Формат структурированного текста с наглядным делением на качественный/количественный анализ идеален для понимания логики данных в IT-системах."
+  },
+  {
+   "node_id": "latyshova.mud-drilling-invasion-zone",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Изменение диаметра ствола скважины при взаимодействии бурового раствора с разными породами наиболее наглядно объясняется короткой видеоанимацией или интерактивной схемой пласта."
+  },
+  {
+   "node_id": "latyshova.mud-filtration-density-impact",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: цепочка «причина → следствие». Тема отлично подходит для интерактивного симулятора: пользователь меняет плотность и водоотдачу раствора и видит в реальном времени разрастание зоны проникновения и искажение кривых ГИС."
+  },
+  {
+   "node_id": "latyshova.mud-salinity-impact",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Концептуальный объяснительный текст с логическими связями подходит для текстуально-структурированного формата с графиками контрастности."
+  },
+  {
+   "node_id": "latyshova.alternative-drilling-fluids",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: контринтуитивность. Раздел содержит четкое правило принятия решений (матрицу применимости методов ГИС в зависимости от типа бурового раствора), идеальное для интерактивной блок-схемы или короткого структурированного текста."
+  },
+  {
+   "node_id": "latyshova.reservoir-lithology-pore-types",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: скачок масштаба. Концептуальная классификация типов пород и видов пустотного пространства лучше всего подходит для четкого текстового структурирования с таблицами или схемами морфологии пор."
+  },
+  {
+   "node_id": "latyshova.gis-methods-classification-by-task",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Концептуальная классификация методов ГИС по задачам лучше всего воспринимается в виде структурированного текста с наглядными выжимками для IT-специалистов."
+  },
+  {
+   "node_id": "latyshova.fluid-saturation-resistivity-parameter",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Формат подходит для текстово-графического разбора с интерактивным комплексированием методов сопротивления и пористости."
+  },
+  {
+   "node_id": "latyshova.gis-complex-reservoir-characterization",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: изменение во времени. Тема объясняет комплексирование взаимосвязанных физических методов, что оптимально представлять в виде интерактивной концептуальной схемы."
+  },
+  {
+   "node_id": "latyshova.lithological-column-construction-procedure",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Процедурный характер составления разреза и этапность решений делают подходящим текстовое пошаговое руководство с интерактивной блок-схемой."
+  },
+  {
+   "node_id": "latyshova.qualitative-gis-response-matrix",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: невидимое становится видимым. Тема содержит структурированные табличные правила классификации и условия сбоя признаков, идеальные для текстового обучающего модуля с ИТ-мостом на задачи ML."
+  },
+  {
+   "node_id": "latyshova.complex-lithology-interpretation",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие». Формат интерактивного тренажёра с разбором неоднозначных интервалов на каротажных диаграммах идеально подходит для тренировки распознавания литотипов и принятия решений в условиях неопределённости."
+  },
+  {
+   "node_id": "latyshova.direct-reservoir-indicators",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, изменение во времени. Тема содержит логические алгоритмы сопоставления кривых ГИС и граничные физические условия, что оптимально усваивается через структурированный текст с правилами логического инференса."
+  },
+  {
+   "node_id": "latyshova.reservoir-cutoff-determination",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие». Для усвоения процедуры поиска граничных значений подходит интерактивная блок-схема и пошаговый калькулятор, позволяющий пройти путь от заданного экономического дебита до отсечек на каротажных диаграммах."
+  },
+  {
+   "node_id": "latyshova.fluid-saturation-crossplots",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критерии видеоёмкости: цепочка «причина → следствие», контринтуитивность. текст с графическими примерами и формулами оптимален для объяснения методов интерпретации диаграмм каротажа"
+  },
+  {
+   "node_id": "latyshova.critical-saturation-parameters-clean-reservoir",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие», контринтуитивность. Текст с примерами оптимален для объяснения логики пороговых значений, так как требует последовательного разбора графиков и условий."
+  },
+  {
+   "node_id": "latyshova.critical-saturation-parameters-clayey-reservoir",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие». Текст с табличными данными и графической интерпретацией лучше всего подходит для объяснения формализма классификации, так как требует последовательного разбора логики принятия решений."
+  },
+  {
+   "node_id": "latyshova.saturation-interpretation-tasks",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Текст, так как требуется описание логики решения задач и методологии анализа, а не демонстрация динамики."
+  },
+  {
+   "node_id": "latyshova.effective-thickness-and-fluid-contacts",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: невидимое становится видимым, изменение во времени. Текст, так как процедура требует пошагового описания логики интерпретации данных ГИС."
+  },
+  {
+   "node_id": "latyshova.laminated-reservoir-effective-thickness",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: скачок масштаба, цепочка «причина → следствие». Текст с формулами лучше всего подходит для объяснения математического формализма, так как позволяет детально разобрать логику вывода параметров и условия их применимости."
+  },
+  {
+   "node_id": "latyshova.terrigenous-reservoir-identification",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Текст с элементами визуального анализа диаграмм лучше всего подходит для объяснения процедуры интерпретации, так как требует сопоставления графиков и расчетных констант."
+  },
+  {
+   "node_id": "latyshova.carbonate-logging-features",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст подходит для объяснения концептуальных ограничений методов, так как требует акцента на логических связях между физикой процесса и интерпретацией."
+  },
+  {
+   "node_id": "latyshova.logging-normalization-method",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст подходит для описания процедуры, так как она требует понимания логики совмещения кривых, а не простого перечисления фактов."
+  },
+  {
+   "node_id": "latyshova.carbonate-cutoff-porosity",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие», скачок масштаба. Текст с элементами анализа графиков лучше всего подходит для объяснения петрофизических зависимостей, требующих понимания логики выбора пороговых значений."
+  }
+ ]
+}

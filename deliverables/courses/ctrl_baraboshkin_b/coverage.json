@@ -1,0 +1,658 @@
+[
+ {
+  "unit": "u030-01",
+  "page": 30,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-02",
+  "page": 30,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-03",
+  "page": 30,
+  "kind": "list",
+  "node": "baraboshkin_b.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-04",
+  "page": 30,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u030-05",
+  "page": 30,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u031-01",
+  "page": 31,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u031-02",
+  "page": 31,
+  "kind": "list",
+  "node": "baraboshkin_b.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u031-03",
+  "page": 31,
+  "kind": "figure",
+  "node": "baraboshkin_b.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u031-04",
+  "page": 31,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u031-05",
+  "page": 31,
+  "kind": "list",
+  "node": "baraboshkin_b.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u031-06",
+  "page": 31,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u031-07",
+  "page": 31,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u032-01",
+  "page": 32,
+  "kind": "list",
+  "node": "baraboshkin_b.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u032-02",
+  "page": 32,
+  "kind": "figure",
+  "node": "baraboshkin_b.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u032-03",
+  "page": 32,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u032-04",
+  "page": 32,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u032-05",
+  "page": 32,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u032-06",
+  "page": 32,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u032-07",
+  "page": 32,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u032-08",
+  "page": 32,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u032-09",
+  "page": 32,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u033-01",
+  "page": 33,
+  "kind": "figure",
+  "node": "baraboshkin_b.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u033-02",
+  "page": 33,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u033-03",
+  "page": 33,
+  "kind": "list",
+  "node": "baraboshkin_b.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u033-04",
+  "page": 33,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u033-05",
+  "page": 33,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-4",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u034-01",
+  "page": 34,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u034-02",
+  "page": 34,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u034-03",
+  "page": 34,
+  "kind": "figure",
+  "node": "baraboshkin_b.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u034-04",
+  "page": 34,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u034-05",
+  "page": 34,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u035-01",
+  "page": 35,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u035-02",
+  "page": 35,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u035-03",
+  "page": 35,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u035-04",
+  "page": 35,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-5",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u035-05",
+  "page": 35,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u035-06",
+  "page": 35,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u036-01",
+  "page": 36,
+  "kind": "table",
+  "node": "baraboshkin_b.part0-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u036-02",
+  "page": 36,
+  "kind": "figure",
+  "node": "baraboshkin_b.part0-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u036-03",
+  "page": 36,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u036-04",
+  "page": 36,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u036-05",
+  "page": 36,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u037-01",
+  "page": 37,
+  "kind": "figure",
+  "node": "baraboshkin_b.part0-6",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u037-02",
+  "page": 37,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-7",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u037-03",
+  "page": 37,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-7",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u038-01",
+  "page": 38,
+  "kind": "figure",
+  "node": "baraboshkin_b.part0-7",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u038-02",
+  "page": 38,
+  "kind": "figure",
+  "node": "baraboshkin_b.part0-7",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u038-03",
+  "page": 38,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-7",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u038-04",
+  "page": 38,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-7",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u038-05",
+  "page": 38,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-7",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-01",
+  "page": 39,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-7",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-02",
+  "page": 39,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-8",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-03",
+  "page": 39,
+  "kind": "figure",
+  "node": "baraboshkin_b.part0-8",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-04",
+  "page": 39,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-8",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-05",
+  "page": 39,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-8",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u039-06",
+  "page": 39,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-8",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-01",
+  "page": 40,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-02",
+  "page": 40,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-9",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-03",
+  "page": 40,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-9",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-04",
+  "page": 40,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-9",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-05",
+  "page": 40,
+  "kind": "para",
+  "node": "baraboshkin_b.part0-9",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u040-06",
+  "page": 40,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-01",
+  "page": 41,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-02",
+  "page": 41,
+  "kind": "figure",
+  "node": "baraboshkin_b.part1-1",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-03",
+  "page": 41,
+  "kind": "heading",
+  "node": null,
+  "reason": "заголовок",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-04",
+  "page": 41,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-05",
+  "page": 41,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-06",
+  "page": 41,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u041-07",
+  "page": 41,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-01",
+  "page": 42,
+  "kind": "table",
+  "node": "baraboshkin_b.part1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-02",
+  "page": 42,
+  "kind": "figure",
+  "node": "baraboshkin_b.part1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-03",
+  "page": 42,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-04",
+  "page": 42,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-2",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u042-05",
+  "page": 42,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-01",
+  "page": 43,
+  "kind": "figure",
+  "node": "baraboshkin_b.part1-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-02",
+  "page": 43,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-03",
+  "page": 43,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-04",
+  "page": 43,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u043-05",
+  "page": 43,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-01",
+  "page": 44,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-02",
+  "page": 44,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-3",
+  "reason": "",
+  "ocr_bad": false
+ },
+ {
+  "unit": "u044-03",
+  "page": 44,
+  "kind": "para",
+  "node": "baraboshkin_b.part1-4",
+  "reason": "",
+  "ocr_bad": false
+ }
+]

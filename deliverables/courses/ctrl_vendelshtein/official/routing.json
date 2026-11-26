@@ -1,0 +1,440 @@
+{
+ "chapter": "ctrl_vendelshtein",
+ "routes": [
+  {
+   "node_id": "vendelshtein.part0-1",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "vendelshtein.part0-2",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Текст с элементами процедурного описания методов корреляции отлично подходит для текстового формата с поддержкой структурированных списков."
+  },
+  {
+   "node_id": "vendelshtein.part0-3",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критериев видеоёмкости нет. Текст оптимален для объяснения базовых принципов петрофизической интерпретации и классификации пластов сотрудникам ИТ."
+  },
+  {
+   "node_id": "vendelshtein.part0-4",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "vendelshtein.part0-5",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет"
+  },
+  {
+   "node_id": "vendelshtein.sp-critical-value-determination",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Текст с графическими иллюстрациями подходит для объяснения логики графического нахождения пороговых значений по выборке."
+  },
+  {
+   "node_id": "vendelshtein.gamma-ray-method-limitations",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст содержит формулу расчета, перечисления ограничений и методологические шаги, требующие структурированного изложения для ИТ-специалистов."
+  },
+  {
+   "node_id": "vendelshtein.nmr-reservoir-detection",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, скачок масштаба. текст с формулами и ограничениями оптимален для объяснения физического метода и его границ применимости специалистам по данным"
+  },
+  {
+   "node_id": "vendelshtein.drilling-and-mud-logging-methods",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: изменение во времени. Текстовый формат оптимален для детального описания технологических методов, условий их применимости и ограничений по глубине и типу растворов."
+  },
+  {
+   "node_id": "vendelshtein.mud-activation-and-time-studies",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: изменение во времени, цепочка «причина → следствие». Текст подходит для текстового урока с элементами интерактивных таблиц порогов концентраций."
+  },
+  {
+   "node_id": "vendelshtein.saturation-evaluation-resistivity",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст оптимален для объяснения логики методики электрометрии, условий применимости и ограничений без сложных интерактивных симуляций."
+  },
+  {
+   "node_id": "vendelshtein.part2-1",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Текст содержит детальные методики графического анализа кросс-плотов и формулы, требующие текстового разбора и визуальных схем."
+  },
+  {
+   "node_id": "vendelshtein.part2-2",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Текст содержит четкие процедурные шаги и условия применимости методов, поэтому лучше всего подходит для структурированного текстового урока с элементами интерактивного чек-листа."
+  },
+  {
+   "node_id": "vendelshtein.part2-3",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критериев видеоёмкости нет. Текст подходит для описания алгоритмической последовательности обработки данных и математических условий применимости метода."
+  },
+  {
+   "node_id": "vendelshtein.part2-4",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Текст подходит для объяснения алгоритмической логики (регрессия, доверительный интервал), так как требует последовательного изложения математических шагов."
+  },
+  {
+   "node_id": "vendelshtein.part2-5",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Текстово-графический формат оптимален, так как разбираются специфические геофизические методы каротажа с опорой на схемы и диаграммы."
+  },
+  {
+   "node_id": "vendelshtein.part2-6",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критериев видеоёмкости нет. текст подходит для короткой справки по методу оценки насыщения в обсаженной скважине"
+  },
+  {
+   "node_id": "vendelshtein.part3-1",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Текст содержит логику выбора резервных методов, факторы сбоя и условия комплексного анализа, что отлично подходит для текстового учебного шага с элементами структурированных списков."
+  },
+  {
+   "node_id": "vendelshtein.part3-2",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Текст содержит строгие определения процедур и геофизических зависимостей, которые удобно представить в виде структурированного описания алгоритма."
+  },
+  {
+   "node_id": "vendelshtein.part3-3",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критериев видеоёмкости нет. текст с элементами схем и таблиц оптимален для объяснения инженерных методик интерпретации каротажа и работы с палетками."
+  },
+  {
+   "node_id": "vendelshtein.part3-4",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Текст с описанием алгоритма и физических ограничений метода лучше всего подходит для объяснения логики интерпретации данных."
+  },
+  {
+   "node_id": "vendelshtein.part3-5",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критериев видеоёмкости нет. Текст подходит для объяснения логики статистического разделения пластов, так как требует последовательного описания условий применимости и вероятностного подхода."
+  },
+  {
+   "node_id": "vendelshtein.part3-6",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критериев видеоёмкости нет. Текст подходит для объяснения логики коррекции данных, так как требует последовательного разбора формул и условий их применения."
+  },
+  {
+   "node_id": "vendelshtein.wnl-detection-pulsed-neutron",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие», контринтуитивность. Текст подходит для объяснения физического принципа метода и условий его применимости, так как требует акцента на логических связях между давлением, насыщением и показаниями прибора."
+  },
+  {
+   "node_id": "vendelshtein.dual-measurement-gas-correction",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: изменение во времени, невидимое становится видимым. Текст подходит для описания алгоритмической процедуры, где важна последовательность действий и условия (время ожидания)."
+  },
+  {
+   "node_id": "vendelshtein.gnl-detection-conditions",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: скачок масштаба, цепочка «причина → следствие». Текст подходит для объяснения логики принятия решений при интерпретации каротажа, так как требует понимания условий применимости методов, а не простого заучивания формул."
+  },
+  {
+   "node_id": "vendelshtein.neutron-decay-gas-formula",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: невидимое становится видимым. Текст подходит для объяснения формальной модели, так как требует точного сопоставления математических символов с физическими величинами."
+  },
+  {
+   "node_id": "vendelshtein.apparent-porosity-correction",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: цепочка «причина → следствие». Текст, так как требуется строгое следование математическому аппарату коррекции."
+  },
+  {
+   "node_id": "vendelshtein.porosity-clay-correlation",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критерии видеоёмкости: контринтуитивность. Текст подходит для объяснения логики интерпретации, так как описывает методологический подход к анализу данных, а не конкретный алгоритм."
+  }
+ ]
+}

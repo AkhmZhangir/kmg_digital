@@ -1,0 +1,90 @@
+{
+ "nodes": 18,
+ "tasks": 51,
+ "task_types": {
+  "single": 14,
+  "cloze": 13,
+  "order": 10,
+  "multi": 10,
+  "calc": 4
+ },
+ "cards": 18,
+ "coverage": {
+  "units": 146,
+  "linked": 143,
+  "skipped_with_reason": 3,
+  "uncovered": 0
+ },
+ "claims": 186,
+ "claims_ok": 177,
+ "paras": 335,
+ "paras_number_issues": 0,
+ "claims_verified_share": 0.952,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [
+  {
+   "node_id": "kuznetsov.reef-lithology-and-zonation",
+   "claim": "reef-lithology-and-zonation.c1",
+   "message": "цитата не найдена в u202-05 (совпадение 64%)"
+  },
+  {
+   "node_id": "kuznetsov.reef-lithology-and-zonation",
+   "claim": "reef-lithology-and-zonation.c3",
+   "message": "цитата не найдена в u203-02 (совпадение 52%)"
+  },
+  {
+   "node_id": "kuznetsov.reef-lithology-and-zonation",
+   "claim": "reef-lithology-and-zonation.c7",
+   "message": "цитата не найдена в u203-05 (совпадение 51%)"
+  },
+  {
+   "node_id": "kuznetsov.reef-lithology-and-zonation",
+   "claim": "reef-lithology-and-zonation.c11",
+   "message": "цитата не найдена в u204-02 (совпадение 80%)"
+  },
+  {
+   "node_id": "kuznetsov.reef-pore-space-and-collectors",
+   "claim": "reef-pore-space-and-collectors.c9",
+   "message": "цитата не найдена в u205-01 (совпадение 5%)"
+  },
+  {
+   "node_id": "kuznetsov.reef-pore-space-and-collectors",
+   "claim": "reef-pore-space-and-collectors.c10",
+   "message": "цитата не найдена в u205-01 (совпадение 14%)"
+  },
+  {
+   "node_id": "kuznetsov.rainbow-reef-reservoir-structure",
+   "claim": "rainbow-reef-reservoir-structure.c6",
+   "message": "цитата не найдена в u205-06 (совпадение 38%)"
+  },
+  {
+   "node_id": "kuznetsov.rainbow-reef-reservoir-structure",
+   "claim": "rainbow-reef-reservoir-structure.c15",
+   "message": "цитата не найдена в u207-01 (совпадение 53%)"
+  },
+  {
+   "node_id": "kuznetsov.volume-based-well-spacing-reef",
+   "claim": "volume-based-well-spacing-reef.c1",
+   "message": "цитата не найдена в u221-04 (совпадение 38%)"
+  }
+ ],
+ "illustrations": 19,
+ "status": "ok",
+ "chapter": "train_kuznetsov",
+ "model": "gemini-3.5-flash-lite+qwen/qwen3.8-27b",
+ "llm_calls": 29,
+ "cache_hits": 0,
+ "seconds": 6360.8,
+ "official": {
+  "layer.json": true,
+  "coverage.json": true,
+  "routing.json": true,
+  "tasks.json": true,
+  "illustrations.json": true
+ }
+}

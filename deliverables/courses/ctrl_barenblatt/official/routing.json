@@ -1,0 +1,125 @@
+{
+ "chapter": "ctrl_barenblatt",
+ "routes": [
+  {
+   "node_id": "barenblatt.piezoconductivity-equation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие». Текст содержит строгий математический формализм, формулы и краевые задачи, поэтому наилучшим образом подходит текстовый формат с формульными блоками."
+  },
+  {
+   "node_id": "barenblatt.linear-1d-flow",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: изменение во времени, цепочка «причина → следствие». заглушка mock"
+  },
+  {
+   "node_id": "barenblatt.radial-flow-and-parameters",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: изменение во времени, невидимое становится видимым, скачок масштаба"
+  },
+  {
+   "node_id": "barenblatt.laplace-pressure-transient-analysis",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие», скачок масштаба. заглушка mock"
+  },
+  {
+   "node_id": "barenblatt.equivalent-well-radius-in-methods",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». заглушка mock"
+  },
+  {
+   "node_id": "barenblatt.integral-relations-method",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». заглушка mock"
+  },
+  {
+   "node_id": "barenblatt.approximate-solutions-linear-flow",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: скачок масштаба. заглушка mock"
+  },
+  {
+   "node_id": "barenblatt.axisymmetric-inflow-bounded-reservoir",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие», изменение во времени. заглушка mock"
+  }
+ ]
+}

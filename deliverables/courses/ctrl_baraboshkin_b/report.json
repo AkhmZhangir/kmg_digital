@@ -1,0 +1,65 @@
+{
+ "nodes": 13,
+ "tasks": 34,
+ "task_types": {
+  "single": 10,
+  "cloze": 8,
+  "multi": 6,
+  "order": 7,
+  "calc": 3
+ },
+ "cards": 13,
+ "coverage": {
+  "units": 82,
+  "linked": 78,
+  "skipped_with_reason": 4,
+  "uncovered": 0
+ },
+ "claims": 113,
+ "claims_ok": 109,
+ "paras": 211,
+ "paras_number_issues": 0,
+ "claims_verified_share": 0.965,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [
+  {
+   "node_id": "baraboshkin_b.part0-6",
+   "claim": "part0-6.c2",
+   "message": "цитата не найдена в u036-03 (совпадение 84%)"
+  },
+  {
+   "node_id": "baraboshkin_b.part0-6",
+   "claim": "part0-6.c8",
+   "message": "цитата не найдена в u036-01 (совпадение 0%)"
+  },
+  {
+   "node_id": "baraboshkin_b.part0-8",
+   "claim": "part0-8.c12",
+   "message": "цитата не найдена в u039-06 (совпадение 80%)"
+  },
+  {
+   "node_id": "baraboshkin_b.part1-3",
+   "claim": "part1-3.c20",
+   "message": "цитата не найдена в u043-01 (совпадение 74%)"
+  }
+ ],
+ "illustrations": 13,
+ "status": "ok",
+ "chapter": "ctrl_baraboshkin_b",
+ "model": "gemini-3.5-flash-lite+qwen/qwen3.8-27b+gemini-3.5-flash",
+ "llm_calls": 29,
+ "cache_hits": 0,
+ "seconds": 2213.3,
+ "official": {
+  "layer.json": true,
+  "coverage.json": true,
+  "routing.json": true,
+  "tasks.json": true,
+  "illustrations.json": true
+ }
+}

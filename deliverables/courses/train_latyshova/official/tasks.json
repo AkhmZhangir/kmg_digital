@@ -1,0 +1,1820 @@
+{
+ "chapter": "train_latyshova",
+ "tasks": [
+  {
+   "id": "latyshova.gis-interpretation-tasks.q1",
+   "type": "single",
+   "step_id": "latyshova.gis-interpretation-tasks",
+   "claim_ids": [
+    "latyshova.gis-interpretation-tasks#c6"
+   ],
+   "prompt": "Почему для сложных коллекторов недостаточно качественной интерпретации?",
+   "explanation": "Качественная интерпретация эффективна для простых коллекторов, но для сложных случаев требуется количественный анализ параметров, таких как пористость и глинистость.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Качественная интерпретация не позволяет определить точные количественные параметры, необходимые для оценки сложных структур пор.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Качественная интерпретация применима только для поисковых скважин, а не для эксплуатационных.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Качественная интерпретация не учитывает наличие глинистости в породе.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Качественная интерпретация требует использования параметра насыщения Pп, который не определен для сложных коллекторов.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "latyshova.gis-interpretation-tasks.q2",
+   "type": "gap",
+   "step_id": "latyshova.gis-interpretation-tasks",
+   "claim_ids": [
+    "latyshova.gis-interpretation-tasks#c8"
+   ],
+   "prompt": "В процессе разработки месторождения данные ГИС в эксплуатационных скважинах позволяют контролировать динамику {{1}}.",
+   "explanation": "Основная задача ГИС в эксплуатационных скважинах — мониторинг продвижения контактов флюидов.",
+   "kind": "understanding",
+   "answer": [
+    "водонефтяного и газожидкостного контактов"
+   ]
+  },
+  {
+   "id": "latyshova.gis-interpretation-tasks.q3",
+   "type": "order",
+   "step_id": "latyshova.gis-interpretation-tasks",
+   "claim_ids": [
+    "latyshova.gis-interpretation-tasks#c7"
+   ],
+   "prompt": "Расставьте этапы оценки коллекторов по возрастанию сложности анализа:",
+   "explanation": "Анализ начинается с базовой литологии, переходит к оценке простых коллекторов, затем к сложным количественным расчетам и завершается подсчетом запасов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Качественная интерпретация литологического состава",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Качественная оценка насыщения простых коллекторов",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Количественная интерпретация параметров сложных коллекторов",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Промышленная оценка запасов на основе количественных данных",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "latyshova.mud-drilling-invasion-zone.q1",
+   "type": "order",
+   "step_id": "latyshova.mud-drilling-invasion-zone",
+   "claim_ids": [
+    "latyshova.mud-drilling-invasion-zone#c7"
+   ],
+   "prompt": "Расставьте по порядку этапы взаимодействия глинистого раствора с межзерновым коллектором:",
+   "explanation": "Фильтрат проникает в поры, оставляя глинистые частицы на стенках, что создает корку и сужает ствол скважины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Заполнение скважины глинистым раствором",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Проникновение фильтрата раствора в пласт",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Формирование глинистой корки на стенках скважины",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Уменьшение диаметра скважины относительно номинального",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "latyshova.mud-drilling-invasion-zone.q2",
+   "type": "multiple",
+   "step_id": "latyshova.mud-drilling-invasion-zone",
+   "claim_ids": [
+    "latyshova.mud-drilling-invasion-zone#c9"
+   ],
+   "prompt": "В каких случаях диаметр скважины ($d_c$) становится больше номинального ($d_a$)?",
+   "explanation": "Разбухание глин и растворение солей или карстовых пород приводит к увеличению диаметра скважины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В плотных сцементированных породах",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В глинах и аргиллитах из-за разбухания",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В зонах развития карста",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "В межзерновых коллекторах при использовании глинистого раствора",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "latyshova.mud-filtration-density-impact.q2",
+   "type": "single",
+   "step_id": "latyshova.mud-filtration-density-impact",
+   "claim_ids": [
+    "latyshova.mud-filtration-density-impact#c7"
+   ],
+   "prompt": "Почему увеличение плотности бурового раствора считается нежелательным для качества геофизических исследований?",
+   "explanation": "Рост плотности увеличивает скважинное давление (репрессию), что способствует более глубокому проникновению фильтрата, аналогично высокой водоотдаче.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Оно делает раствор слишком прозрачным для радиоактивных методов.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Оно увеличивает репрессию, что ведет к более глубокому проникновению фильтрата в пласт.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Оно приводит к быстрому износу бурового долота.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Оно снижает электропроводность пласта, искажая данные электрометрии.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.mud-filtration-density-impact.q3",
+   "type": "gap",
+   "step_id": "latyshova.mud-filtration-density-impact",
+   "claim_ids": [
+    "latyshova.mud-filtration-density-impact#c8"
+   ],
+   "prompt": "Для получения наиболее достоверных данных о пласте рекомендуется проводить бурение на {{1}}, при котором репрессия давления стремится к нулю.",
+   "explanation": "Бурение на равновесии (репрессия около 0) минимизирует проникновение фильтрата в пласт, что является идеальным условием для геофизических исследований.",
+   "kind": "understanding",
+   "answer": [
+    "равновесии"
+   ]
+  },
+  {
+   "id": "latyshova.mud-salinity-impact.q2",
+   "type": "order",
+   "step_id": "latyshova.mud-salinity-impact",
+   "claim_ids": [
+    "latyshova.mud-salinity-impact#c4"
+   ],
+   "prompt": "Расставьте по порядку этапы изменения эффективности методов при росте минерализации раствора:",
+   "explanation": "Рост минерализации напрямую ведет к сближению сопротивлений, что в свою очередь делает методы СП и микрозондов менее эффективными.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Рост минерализации раствора",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Приближение ρф к ρп",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Снижение эффективности СП и микрозондов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "latyshova.mud-salinity-impact.q3",
+   "type": "multiple",
+   "step_id": "latyshova.mud-salinity-impact",
+   "claim_ids": [
+    "latyshova.mud-salinity-impact#c5"
+   ],
+   "prompt": "Какие последствия наступают при приближении сопротивления фильтрата (ρф) к сопротивлению пластовой воды (ρп)?",
+   "explanation": "Приближение ρф к ρп ухудшает работу СП и микрозондов, но делает условия для оценки продуктивности более благоприятными.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Улучшается выделение коллекторов методами СП",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Облегчается оценка продуктивности коллектора разноглубинной электрометрией",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Снижается эффективность индукционного метода",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Исчезают признаки коллектора на кривых микрозондов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "latyshova.alternative-drilling-fluids.q1",
+   "type": "multiple",
+   "step_id": "latyshova.alternative-drilling-fluids",
+   "claim_ids": [
+    "latyshova.alternative-drilling-fluids#c2"
+   ],
+   "prompt": "Почему бурение на технической воде затрудняет оценку коллекторских свойств пласта?",
+   "explanation": "Глубокое проникновение фильтрата экранирует пласт, а микрозонды теряют свою эффективность как средства выделения коллектора.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за образования слишком тонкой глинистой корки, которую не видит каверномер.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за формирования глубоких зон проникновения фильтрата в пласт.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за низкой эффективности микрозондов при выделении коллекторов.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Из-за того, что вода обладает бесконечно высоким электрическим сопротивлением.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "latyshova.alternative-drilling-fluids.q2",
+   "type": "calc",
+   "step_id": "latyshova.alternative-drilling-fluids",
+   "claim_ids": [
+    "latyshova.alternative-drilling-fluids#c4"
+   ],
+   "prompt": "При использовании нефильтрующихся растворов на непроводящей основе, какова теоретическая глубина проникновения фильтрата в пласт (в метрах)?",
+   "explanation": "Согласно тексту, для нефильтрующихся растворов характерно отсутствие или очень малое проникновение в коллекторы, что математически выражается как 0.",
+   "kind": "data",
+   "answer": 0,
+   "tolerance": 0.01,
+   "unit": "м"
+  },
+  {
+   "id": "latyshova.alternative-drilling-fluids.q3",
+   "type": "single",
+   "step_id": "latyshova.alternative-drilling-fluids",
+   "claim_ids": [
+    "latyshova.alternative-drilling-fluids#c5"
+   ],
+   "prompt": "Какой метод электрометрии остается применимым при использовании нефильтрующихся растворов на непроводящей основе?",
+   "explanation": "Индукционный метод не требует прямого электрического контакта с породой, в отличие от гальванических методов, которые не работают в диэлектрических растворах.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Боковой каротаж",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Микрозондирование",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Индукционный каротаж",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Метод потенциалов самопроизвольной поляризации",
+     "misconception": null
+    }
+   ],
+   "answer": "c"
+  },
+  {
+   "id": "latyshova.reservoir-lithology-pore-types.q1",
+   "type": "single",
+   "step_id": "latyshova.reservoir-lithology-pore-types",
+   "claim_ids": [
+    "latyshova.reservoir-lithology-pore-types#c2"
+   ],
+   "prompt": "Почему при анализе вулканогенных разрезов нельзя использовать алгоритмы, настроенные исключительно на терригенные породы?",
+   "explanation": "Вулканогенные породы по структуре порового пространства близки к карбонатным, поэтому требуют учета трещин и каверн, которые отсутствуют в простых терригенных коллекторах.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за различий в химическом составе пород",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за наличия в вулканогенных породах сложных кавернозно-трещинных структур, нехарактерных для терригенных",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за отсутствия в вулканогенных породах межзерновой пористости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Из-за того, что вулканогенные породы всегда являются глинистыми",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.reservoir-lithology-pore-types.q3",
+   "type": "order",
+   "step_id": "latyshova.reservoir-lithology-pore-types",
+   "claim_ids": [
+    "latyshova.reservoir-lithology-pore-types#c3"
+   ],
+   "prompt": "Расставьте типы коллекторов по морфологии порового пространства в соответствии с текстом:",
+   "explanation": "Данный порядок соответствует перечислению типов коллекторов по морфологии порового пространства в тексте шага.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Межзерновые",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Трещинные",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Кавернозно-трещинные",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Смешанные",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "latyshova.gis-methods-classification-by-task.q1",
+   "type": "order",
+   "step_id": "latyshova.gis-methods-classification-by-task",
+   "claim_ids": [
+    "latyshova.gis-methods-classification-by-task#c2"
+   ],
+   "prompt": "Расставьте группы методов ГИС в порядке их перечисления в тексте:",
+   "explanation": "Текст последовательно классифицирует методы по четырем задачам: от выделения коллекторов до оценки продуктивности.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Выделение коллекторов",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Определение пористости",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Определение глинистости",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Оценка продуктивности",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "latyshova.gis-methods-classification-by-task.q2",
+   "type": "multiple",
+   "step_id": "latyshova.gis-methods-classification-by-task",
+   "claim_ids": [
+    "latyshova.gis-methods-classification-by-task#c8"
+   ],
+   "prompt": "Выберите верные утверждения о гамма-методе (ГМ):",
+   "explanation": "ГМ универсален в плане типа раствора и обсадки, а также используется для оценки глинистости (в терригенных) или нерастворимого остатка (в карбонатных породах).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "ГМ можно использовать только в необсаженных скважинах.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "ГМ позволяет оценивать содержание нерастворимого остатка в карбонатных породах.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "ГМ применим независимо от типа бурового раствора.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "ГМ измеряет пористость пород напрямую.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "latyshova.fluid-saturation-resistivity-parameter.q2",
+   "type": "single",
+   "step_id": "latyshova.fluid-saturation-resistivity-parameter",
+   "claim_ids": [
+    "latyshova.fluid-saturation-resistivity-parameter#c5"
+   ],
+   "prompt": "Почему для оценки нефтегазонасыщения недостаточно использовать только методы сопротивления?",
+   "explanation": "Методы сопротивления дают только числитель формулы, а для определения знаменателя необходимо комплексирование с методами пористости.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Методы сопротивления не позволяют измерить удельное сопротивление пласта.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Для расчета параметра насыщения Pн необходимо знать пористость пласта, которую определяют другими методами.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Методы сопротивления работают только в лабораторных условиях на керне.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Параметр Pн всегда равен 1, поэтому измерения сопротивления избыточны.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.fluid-saturation-resistivity-parameter.q3",
+   "type": "gap",
+   "step_id": "latyshova.fluid-saturation-resistivity-parameter",
+   "claim_ids": [
+    "latyshova.fluid-saturation-resistivity-parameter#c2"
+   ],
+   "prompt": "Порода классифицируется как нефте- или газосодержащая, если значение параметра насыщения Pн {{1}} 1.",
+   "explanation": "Согласно тексту, условием нефтегазонасыщения является Pн > 1.",
+   "kind": "understanding",
+   "answer": [
+    "превышает"
+   ]
+  },
+  {
+   "id": "latyshova.gis-complex-reservoir-characterization.q1",
+   "type": "gap",
+   "step_id": "latyshova.gis-complex-reservoir-characterization",
+   "claim_ids": [
+    "latyshova.gis-complex-reservoir-characterization#c6"
+   ],
+   "prompt": "Если фильтрат бурового раствора проник в пласт на большую глубину, для уточнения данных необходимо провести {{1}} нейтронных исследований после обсадки скважины.",
+   "explanation": "При глубоком проникновении фильтрата повторные измерения позволяют получить более достоверные данные после того, как скважина обсажена.",
+   "kind": "understanding",
+   "answer": [
+    "повторные"
+   ]
+  },
+  {
+   "id": "latyshova.gis-complex-reservoir-characterization.q2",
+   "type": "order",
+   "step_id": "latyshova.gis-complex-reservoir-characterization",
+   "claim_ids": [
+    "latyshova.gis-complex-reservoir-characterization#c7"
+   ],
+   "prompt": "Расставьте по порядку этапы выявления газонасыщенных интервалов при глубоком проникновении:",
+   "explanation": "Повторные исследования проводятся после обсадки, чтобы зафиксировать изменения в зоне проникновения, которые происходят со временем.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Бурение скважины и возникновение зоны проникновения фильтрата",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Обсадка скважины",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Проведение повторных нейтронных исследований",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Расформирование зоны проникновения и фиксация газонасыщенности",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "latyshova.gis-complex-reservoir-characterization.q3",
+   "type": "multiple",
+   "step_id": "latyshova.gis-complex-reservoir-characterization",
+   "claim_ids": [
+    "latyshova.gis-complex-reservoir-characterization#c3"
+   ],
+   "prompt": "Почему для определения глинистости пласта рекомендуется использовать комплекс методов (ГГМ, НМ, АК) вместо одного?",
+   "explanation": "Методы пористости содержат косвенные сведения о глинистости, и их совместное использование позволяет более точно интерпретировать эти данные.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Каждый из этих методов по отдельности не обладает чувствительностью к глинистости",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Методы обладают перекрестной чувствительностью, и их совместный анализ повышает точность",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Один метод может быть неисправен, поэтому нужно дублирование",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Комплексирование позволяет исключить влияние параметров бурового раствора на результат",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b"
+   ]
+  },
+  {
+   "id": "latyshova.lithological-column-construction-procedure.q1",
+   "type": "multiple",
+   "step_id": "latyshova.lithological-column-construction-procedure",
+   "claim_ids": [
+    "latyshova.lithological-column-construction-procedure#c2"
+   ],
+   "prompt": "Почему для определения литологии породы рекомендуется использовать совокупность признаков с нескольких диаграмм, а не одну?",
+   "explanation": "Использование нескольких признаков повышает точность и помогает различать породы, имеющие схожие показатели на отдельных диаграммах.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Одна диаграмма не позволяет определить границы пластов.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Физические признаки разных пород часто совпадают на одной диаграмме.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Точность определения литологии растет при увеличении числа используемых физических признаков.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Геофизические методы не работают по отдельности.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "latyshova.lithological-column-construction-procedure.q2",
+   "type": "single",
+   "step_id": "latyshova.lithological-column-construction-procedure",
+   "claim_ids": [
+    "latyshova.lithological-column-construction-procedure#c4"
+   ],
+   "prompt": "Что необходимо сделать, если при построении разреза полностью отсутствуют данные о минералогическом составе пород?",
+   "explanation": "При нехватке данных сначала создается условная колонка, которая затем верифицируется петрофизическими исследованиями образцов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Прекратить построение разреза до получения данных лабораторного анализа.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Построить условную колонку по физическим признакам и уточнить её по образцам из скважины.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Использовать только одну наиболее точную геофизическую диаграмму.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Присвоить всем пластам усредненные характеристики известных пород региона.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.qualitative-gis-response-matrix.q1",
+   "type": "single",
+   "step_id": "latyshova.qualitative-gis-response-matrix",
+   "claim_ids": [
+    "latyshova.qualitative-gis-response-matrix#c3"
+   ],
+   "prompt": "Почему пластичные глины могут быть ошибочно приняты за проницаемые коллекторы при анализе кавернограммы?",
+   "explanation": "Пластичные глины вызывают сужение ствола скважины (dc < dn), что визуально совпадает с признаком наличия глинистой корки у коллекторов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за высокого естественного гамма-излучения, характерного для обоих типов пород.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за сужения ствола скважины, которое имитирует образование глинистой корки.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за резкого снижения удельного сопротивления, характерного для нефтенасыщенных пластов.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Из-за отсутствия реакции на нейтронные методы каротажа.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.qualitative-gis-response-matrix.q2",
+   "type": "gap",
+   "step_id": "latyshova.qualitative-gis-response-matrix",
+   "claim_ids": [
+    "latyshova.qualitative-gis-response-matrix#c1"
+   ],
+   "prompt": "Чистые глины на диаграммах ГИС выделяются максимальными показаниями гамма-метода и СП, а также наличием {{1}}.",
+   "explanation": "Согласно тексту, глины характеризуются наличием каверн, где диаметр скважины больше номинального (dc > dn).",
+   "kind": "understanding",
+   "answer": [
+    "каверн"
+   ]
+  },
+  {
+   "id": "latyshova.qualitative-gis-response-matrix.q3",
+   "type": "order",
+   "step_id": "latyshova.qualitative-gis-response-matrix",
+   "claim_ids": [
+    "latyshova.qualitative-gis-response-matrix#c8"
+   ],
+   "prompt": "Расставьте типы пород по возрастанию диаметра скважины (dc) относительно номинального (dn):",
+   "explanation": "Пластичные глины дают сужение (dc < dn), плотные карбонаты — равенство (dc = dn), а чистые глины — каверны (dc > dn).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Пластичные глины (сужение)",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Плотные карбонаты (равенство)",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Чистые глины (каверна)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "latyshova.complex-lithology-interpretation.q1",
+   "type": "order",
+   "step_id": "latyshova.complex-lithology-interpretation",
+   "claim_ids": [
+    "latyshova.complex-lithology-interpretation#c3"
+   ],
+   "prompt": "Расставьте по порядку этапы влияния осложняющих факторов на интерпретацию ГИС:",
+   "explanation": "Глинистость и загипсованность искажают физические параметры, что приводит к ошибкам в определении коллекторских свойств.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Наличие глинистости или гипса в породе",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Изменение показаний стандартных методов ГИС",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Возникновение неоднозначности при выделении коллектора",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "latyshova.complex-lithology-interpretation.q2",
+   "type": "multiple",
+   "step_id": "latyshova.complex-lithology-interpretation",
+   "claim_ids": [
+    "latyshova.complex-lithology-interpretation#c2"
+   ],
+   "prompt": "Почему для сложных терригенно-карбонатных разрезов недостаточно только электрических методов?",
+   "explanation": "Сложные разрезы характеризуются неоднородностью состава и насыщения, что требует комплексного количественного подхода, а не только электрических измерений.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Электрические методы не работают при наличии флюидов разной минерализации",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Сложные разрезы требуют количественной интерпретации и учета геологических данных",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Электрические методы не позволяют определить пористость в карбонатных породах",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Необходим учет только данных кавернометрии",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "latyshova.complex-lithology-interpretation.q3",
+   "type": "calc",
+   "step_id": "latyshova.complex-lithology-interpretation",
+   "claim_ids": [
+    "latyshova.complex-lithology-interpretation#c7"
+   ],
+   "prompt": "Чему равно произведение диаметра скважины (м) на сопротивление (Ом·м) согласно данным рис. 68?",
+   "explanation": "Произведение 0,25 м на 1,2 Ом·м равно 0,3.",
+   "kind": "data",
+   "answer": 0.3,
+   "tolerance": 0.01,
+   "unit": "м*Ом*м"
+  },
+  {
+   "id": "latyshova.direct-reservoir-indicators.q1",
+   "type": "calc",
+   "step_id": "latyshova.direct-reservoir-indicators",
+   "claim_ids": [
+    "latyshova.direct-reservoir-indicators#c6"
+   ],
+   "prompt": "Во сколько раз максимально может увеличиться толщина глинистой корки при ухудшении качества бурового раствора по сравнению с хорошими условиями?",
+   "explanation": "В хороших условиях толщина корки составляет 1 см, а при ухудшении достигает 4 см, что в 4 раза больше.",
+   "kind": "data",
+   "answer": 4.0,
+   "tolerance": 0.1,
+   "unit": "раз"
+  },
+  {
+   "id": "latyshova.direct-reservoir-indicators.q2",
+   "type": "single",
+   "step_id": "latyshova.direct-reservoir-indicators",
+   "claim_ids": [
+    "latyshova.direct-reservoir-indicators#c8"
+   ],
+   "prompt": "Почему при бурении на технической воде становится сложно выделить коллектор по прямым признакам?",
+   "explanation": "Согласно тексту, при бурении на технической воде прямые признаки коллектора на диаграммах микрозондов и кавернограммах обычно отсутствуют.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Техническая вода слишком сильно нагревает пласт, искажая показания зондов.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При использовании технической воды на стенках скважины практически не образуются признаки, фиксируемые микрозондами и каверномером.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Техническая вода полностью вымывает коллектор, делая его невидимым для приборов.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Микрозонды не работают в скважинах, заполненных водой, из-за высокого давления.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.direct-reservoir-indicators.q3",
+   "type": "gap",
+   "step_id": "latyshova.direct-reservoir-indicators",
+   "claim_ids": [
+    "latyshova.direct-reservoir-indicators#c12"
+   ],
+   "prompt": "Если разовые замеры не дают четких признаков, применяют {{1}} методы, наблюдая за формированием или расформированием зоны проникновения во времени.",
+   "explanation": "Динамические методы позволяют отследить изменения в зоне проникновения во времени, что помогает выявить коллектор, когда статические замеры неэффективны.",
+   "kind": "understanding",
+   "answer": [
+    "динамические"
+   ]
+  },
+  {
+   "id": "latyshova.reservoir-cutoff-determination.q1",
+   "type": "gap",
+   "step_id": "latyshova.reservoir-cutoff-determination",
+   "claim_ids": [
+    "latyshova.reservoir-cutoff-determination#c2"
+   ],
+   "prompt": "Основным критерием, позволяющим разделить породу на коллектор и неколлектор, является граничное значение {{1}}.",
+   "explanation": "Согласно тексту, именно граничное значение проницаемости (kₚₚ*) является главным критерием для классификации пород.",
+   "kind": "understanding",
+   "answer": [
+    "коэффициента проницаемости"
+   ]
+  },
+  {
+   "id": "latyshova.reservoir-cutoff-determination.q2",
+   "type": "order",
+   "step_id": "latyshova.reservoir-cutoff-determination",
+   "claim_ids": [
+    "latyshova.reservoir-cutoff-determination#c6"
+   ],
+   "prompt": "Расставьте по порядку этапы определения эффективной толщины пласта",
+   "explanation": "Процесс идет от экономических требований к гидродинамике, затем через петрофизические связи к геофизическим параметрам.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Определение минимального рентабельного дебита для региона",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Расчет граничной проницаемости по гидродинамической формуле",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Пересчет критической проницаемости в пороговые значения пористости или глинистости",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Определение геофизических отсечек на основе петрофизических связей",
+     "misconception": null
+    },
+    {
+     "id": "s5",
+     "text": "Нанесение пороговых значений на каротажные диаграммы для выделения коллекторов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5"
+   ]
+  },
+  {
+   "id": "latyshova.reservoir-cutoff-determination.q3",
+   "type": "multiple",
+   "step_id": "latyshova.reservoir-cutoff-determination",
+   "claim_ids": [
+    "latyshova.reservoir-cutoff-determination#c15"
+   ],
+   "prompt": "В каких случаях методы пористости предпочтительнее методов глинистости при выделении эффективной толщины?",
+   "explanation": "Текст прямо указывает, что при наличии неактивного силикатного или карбонатного цемента прямые связи с глинистостью перестают работать, и нужно использовать методы пористости.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При наличии неактивного силикатного цемента",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При работе с терригенным разрезом без цемента",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "При наличии неактивного карбонатного цемента",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Когда необходимо использовать метод ЯМР с ИСФ менее 1%",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "latyshova.fluid-saturation-crossplots.q1",
+   "type": "multiple",
+   "step_id": "latyshova.fluid-saturation-crossplots",
+   "claim_ids": [
+    "latyshova.fluid-saturation-crossplots#c2"
+   ],
+   "prompt": "Почему для оценки характера насыщения недостаточно измерить только удельное сопротивление пласта?",
+   "explanation": "Высокое сопротивление — неоднозначный показатель, так как на него влияют как пористость, так и состав воды, поэтому требуется комплексный анализ.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Высокое сопротивление может быть вызвано не только нефтью, но и изменением пористости породы.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Удельное сопротивление не зависит от наличия углеводородов в порах.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Изменение минерализации пластовых вод сильно искажает показания сопротивления.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Метод сопротивления работает только в лабораторных условиях, а не в скважине.",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "latyshova.fluid-saturation-crossplots.q2",
+   "type": "calc",
+   "step_id": "latyshova.fluid-saturation-crossplots",
+   "claim_ids": [
+    "latyshova.fluid-saturation-crossplots#c12"
+   ],
+   "prompt": "Если граница между коллектором и неколлектором проходит по значению коэффициента водонасыщенности kn,ср = 17 %, то какой тип породы будет при kn = 15 %?",
+   "explanation": "Так как 15 % меньше критического значения 17 %, порода классифицируется как неколлектор.",
+   "kind": "data",
+   "answer": 0,
+   "tolerance": 0,
+   "unit": "тип породы"
+  },
+  {
+   "id": "latyshova.fluid-saturation-crossplots.q3",
+   "type": "single",
+   "step_id": "latyshova.fluid-saturation-crossplots",
+   "claim_ids": [
+    "latyshova.fluid-saturation-crossplots#c4"
+   ],
+   "prompt": "В каком случае использование параметра насыщения Pн становится обязательным при анализе?",
+   "explanation": "При больших изменениях пористости диапазоны сопротивлений перекрываются, поэтому для корректной оценки необходимо использовать параметр насыщения.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Когда пористость пласта остается постоянной на всем интервале.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Когда наблюдаются значительные изменения пористости в пределах пласта.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Когда пласт полностью заполнен пресной водой.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Когда необходимо определить только глубину залегания пласта.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.critical-saturation-parameters-clean-reservoir.q1",
+   "type": "single",
+   "step_id": "latyshova.critical-saturation-parameters-clean-reservoir",
+   "claim_ids": [
+    "latyshova.critical-saturation-parameters-clean-reservoir#c4"
+   ],
+   "prompt": "Почему в диапазоне значений Pn от Pn* до Pn** оценка характера насыщения пласта считается неоднозначной?",
+   "explanation": "В области двухфазного течения пласт одновременно отдает и нефть, и воду, поэтому однозначный вывод о характере насыщения невозможен.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В этой области прибор ГИС не может точно измерить параметры из-за высокой минерализации воды.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пласт в этом диапазоне дает смесь нефти и воды, что не позволяет однозначно классифицировать его как чисто нефтяной или чисто водный.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Лабораторные данные для этого диапазона всегда отсутствуют из-за сложности проведения экспериментов.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "В этой области фазовая проницаемость нефти становится равной нулю.",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.critical-saturation-parameters-clean-reservoir.q2",
+   "type": "gap",
+   "step_id": "latyshova.critical-saturation-parameters-clean-reservoir",
+   "claim_ids": [
+    "latyshova.critical-saturation-parameters-clean-reservoir#c2"
+   ],
+   "prompt": "Статистический метод определения порогов требует наличия данных опробования и применим преимущественно на {{1}} стадиях разведки, в то время как петрофизический метод позволяет прогнозировать продуктивность с самого начала.",
+   "explanation": "Статистический метод требует накопления большого объема данных испытаний, поэтому он эффективен только на поздних этапах.",
+   "kind": "understanding",
+   "answer": [
+    "поздних"
+   ]
+  },
+  {
+   "id": "latyshova.critical-saturation-parameters-clean-reservoir.q3",
+   "type": "order",
+   "step_id": "latyshova.critical-saturation-parameters-clean-reservoir",
+   "claim_ids": [
+    "latyshova.critical-saturation-parameters-clean-reservoir#c7"
+   ],
+   "prompt": "Расставьте интервалы водонасыщения (kn) в порядке возрастания их значений согласно петрофизическому анализу:",
+   "explanation": "По мере роста водонасыщения (kn) подвижность нефти падает, а воды растет, переходя от чисто нефтяного притока к смеси, а затем к чистой воде.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Интервал однофазного течения нефти",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Интервал двухфазного течения нефти и воды",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Интервал однофазного течения воды",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "latyshova.critical-saturation-parameters-clayey-reservoir.q1",
+   "type": "order",
+   "step_id": "latyshova.critical-saturation-parameters-clayey-reservoir",
+   "claim_ids": [
+    "latyshova.critical-saturation-parameters-clayey-reservoir#c6"
+   ],
+   "prompt": "Расставьте по порядку этапы определения характера насыщения глинистого коллектора:",
+   "explanation": "Оценка насыщения требует сначала выбрать модель для текущей глинистости, затем нанести данные и интерпретировать положение точки.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Выбор семейства графиков Pn=f(kn) для конкретного значения αСП",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Нанесение точки с измеренными значениями Pn и αСП на график",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Определение принадлежности точки к области нефтеносности, водоносности или переходной зоны",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "latyshova.critical-saturation-parameters-clayey-reservoir.q2",
+   "type": "multiple",
+   "step_id": "latyshova.critical-saturation-parameters-clayey-reservoir",
+   "claim_ids": [
+    "latyshova.critical-saturation-parameters-clayey-reservoir#c2"
+   ],
+   "prompt": "Почему при оценке глинистых коллекторов недостаточно использовать только параметр насыщения Pn?",
+   "explanation": "Глинистость искажает связь между сопротивлением и насыщением, поэтому она выступает как необходимый корректирующий параметр.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Глинистость напрямую влияет на фазовые проницаемости и электропроводность",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Параметр насыщения Pn всегда равен единице в глинистых породах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Одно и то же значение Pn может соответствовать разным типам насыщения при разной глинистости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Геофизический параметр αСП является единственным показателем пористости",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "latyshova.critical-saturation-parameters-clayey-reservoir.q3",
+   "type": "calc",
+   "step_id": "latyshova.critical-saturation-parameters-clayey-reservoir",
+   "claim_ids": [
+    "latyshova.critical-saturation-parameters-clayey-reservoir#c7"
+   ],
+   "prompt": "Используя данные для αСП=1,0, вычислите разность между критическим коэффициентом водонасыщенности для водоносного коллектора (kn**) и критическим коэффициентом для начала промышленной нефтеносности (kn,sp).",
+   "explanation": "Разность составляет 80% - 58% = 22%.",
+   "kind": "data",
+   "answer": 22.0,
+   "tolerance": 0.1,
+   "unit": "%"
+  },
+  {
+   "id": "latyshova.saturation-interpretation-tasks.q1",
+   "type": "calc",
+   "step_id": "latyshova.saturation-interpretation-tasks",
+   "claim_ids": [
+    "latyshova.saturation-interpretation-tasks#c1"
+   ],
+   "prompt": "Сколько всего рисунков с диаграммами каротажа упоминается в тексте для выполнения практических заданий?",
+   "explanation": "В тексте перечислены номера 14, 46, 58, 67, 68, 73 и 76, что в сумме дает 7 источников данных.",
+   "kind": "data",
+   "answer": 7,
+   "tolerance": 0,
+   "unit": "рисунков"
+  },
+  {
+   "id": "latyshova.saturation-interpretation-tasks.q2",
+   "type": "single",
+   "step_id": "latyshova.saturation-interpretation-tasks",
+   "claim_ids": [
+    "latyshova.saturation-interpretation-tasks#c4"
+   ],
+   "prompt": "Почему в тонкослоистых коллекторах определение характера насыщения затруднено?",
+   "explanation": "Прибор не может разрешить тонкие прослои отдельно, поэтому выдает усредненное значение, маскирующее реальные свойства продуктивных зон.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за слишком высокой скорости бурения в таких породах",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за эффекта усреднения показаний прибором, который не может разрешить отдельные прослои",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за отсутствия в таких породах пластовых вод",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Из-за того, что автоматизированные алгоритмы не работают с тонкослоистыми структурами",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.effective-thickness-and-fluid-contacts.q1",
+   "type": "gap",
+   "step_id": "latyshova.effective-thickness-and-fluid-contacts",
+   "claim_ids": [
+    "latyshova.effective-thickness-and-fluid-contacts#c8"
+   ],
+   "prompt": "При наличии переходной зоны ВНК определяется путем построения графика зависимости удельного сопротивления от глубины, при этом предполагается, что изменение сопротивления происходит по {{1}} закону.",
+   "explanation": "Текст прямо указывает на использование линейной интерполяции удельного сопротивления в переходной зоне.",
+   "kind": "understanding",
+   "answer": [
+    "линейному"
+   ]
+  },
+  {
+   "id": "latyshova.effective-thickness-and-fluid-contacts.q2",
+   "type": "order",
+   "step_id": "latyshova.effective-thickness-and-fluid-contacts",
+   "claim_ids": [
+    "latyshova.effective-thickness-and-fluid-contacts#c8"
+   ],
+   "prompt": "Расставьте по порядку этапы определения ВНК в переходной зоне:",
+   "explanation": "Данная последовательность действий описана в тексте как алгоритм для работы с переходной зоной.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Определение границ зоны (кровли и подошвы)",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Определение удельных сопротивлений ρншах и ρвп",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Построение графика ρп = f(H) как линейной функции",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Нахождение точки, соответствующей критерию ρп,пр, и проведение контакта",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "latyshova.effective-thickness-and-fluid-contacts.q3",
+   "type": "multiple",
+   "step_id": "latyshova.effective-thickness-and-fluid-contacts",
+   "claim_ids": [
+    "latyshova.effective-thickness-and-fluid-contacts#c10"
+   ],
+   "prompt": "Почему в обсаженных скважинах при определении ГНК требуются повторные замеры нейтронными методами?",
+   "explanation": "Повторные замеры проводятся до стабилизации показаний, что свидетельствует о завершении расформирования зоны проникновения.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Для подтверждения завершения расформирования зоны проникновения",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Чтобы исключить влияние высокой проницаемости коллектора",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Для стабилизации показаний прибора во времени",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Для автоматического расчета эффективной толщины",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "latyshova.laminated-reservoir-effective-thickness.q1",
+   "type": "multiple",
+   "step_id": "latyshova.laminated-reservoir-effective-thickness",
+   "claim_ids": [
+    "latyshova.laminated-reservoir-effective-thickness#c2"
+   ],
+   "prompt": "Какие признаки указывают на то, что слой является неколлектором?",
+   "explanation": "Согласно тексту, неколлекторы определяются именно по повышенным показаниям микрозондов и низким значениям пористости.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Повышенные показания микрозондов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Низкие значения пористости (kп < kп*)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Высокие значения пористости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Отсутствие глинистого цемента",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "latyshova.laminated-reservoir-effective-thickness.q2",
+   "type": "calc",
+   "step_id": "latyshova.laminated-reservoir-effective-thickness",
+   "claim_ids": [
+    "latyshova.laminated-reservoir-effective-thickness#c7"
+   ],
+   "prompt": "Какова общая толщина пачки, упомянутой в примере с сопротивлениями 38, 2.2 и 25 Ом·м?",
+   "explanation": "В тексте прямо указано, что общая толщина пачки с данными сопротивлениями составляет 18 метров.",
+   "kind": "data",
+   "answer": 18,
+   "tolerance": 0,
+   "unit": "м"
+  },
+  {
+   "id": "latyshova.laminated-reservoir-effective-thickness.q3",
+   "type": "single",
+   "step_id": "latyshova.laminated-reservoir-effective-thickness",
+   "claim_ids": [
+    "latyshova.laminated-reservoir-effective-thickness#c3"
+   ],
+   "prompt": "Почему в некоторых случаях для расчета эффективной толщины применяют интегральные характеристики вместо прямого вычитания толщин прослоев?",
+   "explanation": "Интегральные характеристики используются, когда прослои неразличимы приборами из-за их крайне малой толщины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что приборы имеют слишком низкую точность измерения сопротивления",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что прослои настолько тонкие, что не выделяются даже методами с высокой разрешающей способностью",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что это быстрее, чем ручной подсчет каждого прослоя",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что методы с высокой разрешающей способностью не работают в глинистых породах",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.terrigenous-reservoir-identification.q1",
+   "type": "single",
+   "step_id": "latyshova.terrigenous-reservoir-identification",
+   "claim_ids": [
+    "latyshova.terrigenous-reservoir-identification#c12"
+   ],
+   "prompt": "Почему для оценки пористости и проницаемости в терригенных породах недостаточно просто измерить сопротивление или плотность?",
+   "explanation": "Данные ГИС — это косвенные измерения физических полей, которые необходимо пересчитывать в свойства породы с помощью физических моделей.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что данные ГИС являются лишь косвенными признаками, требующими интерпретации через физические модели.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что приборы ГИС не способны измерять физические свойства напрямую.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что сопротивление и плотность не связаны с пористостью породы.",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что современные методы требуют только прямого анализа керна.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "latyshova.terrigenous-reservoir-identification.q2",
+   "type": "gap",
+   "step_id": "latyshova.terrigenous-reservoir-identification",
+   "claim_ids": [
+    "latyshova.terrigenous-reservoir-identification#c1"
+   ],
+   "prompt": "Для отделения коллекторов от плотных пород в акустическом методе используется граничное значение {{1}}, которое рассчитывается с учетом констант скелета и флюида.",
+   "explanation": "Граничное значение времени прохождения волны ΔТгр позволяет классифицировать интервалы как коллекторы.",
+   "kind": "understanding",
+   "answer": [
+    "ΔТгр"
+   ]
+  },
+  {
+   "id": "latyshova.terrigenous-reservoir-identification.q3",
+   "type": "order",
+   "step_id": "latyshova.terrigenous-reservoir-identification",
+   "claim_ids": [
+    "latyshova.terrigenous-reservoir-identification#c6"
+   ],
+   "prompt": "Расставьте этапы выделения коллекторов по комплексу ГИС в правильном порядке",
+   "explanation": "Сначала проводится первичный анализ данных, затем классификация по порогам, и в конце — корректировка с учетом геологических особенностей (плотных прослоев).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Анализ кривых ГИС для выявления характера изменения свойств пласта",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Применение граничных значений параметров для классификации интервалов",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Учет влияния плотных прослоев для уточнения эффективной толщины",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "latyshova.carbonate-logging-features.q1",
+   "type": "order",
+   "step_id": "latyshova.carbonate-logging-features",
+   "claim_ids": [
+    "latyshova.carbonate-logging-features#c2"
+   ],
+   "prompt": "Расставьте по порядку процессы, приводящие к затруднению интерпретации карбонатных коллекторов:",
+   "explanation": "Низкая пористость провоцирует глубокое проникновение фильтрата, что искажает замеры сопротивления и делает их похожими для разных типов пород.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Низкая пористость карбонатных пород",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Глубокое проникновение фильтрата промывочной жидкости",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Маскировка истинного сопротивления пласта",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Соизмеримость сопротивлений продуктивного коллектора и неколлектора",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "latyshova.carbonate-logging-features.q2",
+   "type": "multiple",
+   "step_id": "latyshova.carbonate-logging-features",
+   "claim_ids": [
+    "latyshova.carbonate-logging-features#c3"
+   ],
+   "prompt": "Почему методы СП (самопроизвольной поляризации) и ГМ (гамма-методы) часто оказываются неэффективными в карбонатных разрезах?",
+   "explanation": "Эффективность этих методов в терригенных породах основана на связи глинистости с коллекторскими свойствами, которая в карбонатах отсутствует.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за слишком высокой глинистости карбонатных пород",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за отсутствия связи между коллекторскими свойствами и содержанием глинистого материала",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за того, что методы СП и ГМ работают только в терригенных породах",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Из-за слабой корреляции между глинистостью и эффективностью методов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "d"
+   ]
+  },
+  {
+   "id": "latyshova.logging-normalization-method.q2",
+   "type": "single",
+   "step_id": "latyshova.logging-normalization-method",
+   "claim_ids": [
+    "latyshova.logging-normalization-method#c5"
+   ],
+   "prompt": "Почему при неоднородном минеральном составе пород метод нормализации диаграмм может давать неверные результаты?",
+   "explanation": "Метод основан на принудительном совмещении кривых в неколлекторах; если состав пород меняется, это условие перестает выполняться корректно.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что приборы ГИС не могут работать в неоднородных породах",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что нарушается условие совмещения кривых в неколлекторах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что логарифмический масштаб применим только к однородным породам",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что электрическое сопротивление всегда равно нулю в неоднородных породах",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "latyshova.logging-normalization-method.q3",
+   "type": "gap",
+   "step_id": "latyshova.logging-normalization-method",
+   "claim_ids": [
+    "latyshova.logging-normalization-method#c2"
+   ],
+   "prompt": "В методе нормализации диаграмм кривые сопротивления и пористости принудительно совмещаются в интервалах неколлекторов, а их последующее {{1}} указывает на наличие углеводородов.",
+   "explanation": "Именно расхождение кривых, которые ранее были совмещены в неколлекторах, сигнализирует о наличии продуктивного пласта.",
+   "kind": "understanding",
+   "answer": [
+    "расхождение"
+   ]
+  },
+  {
+   "id": "latyshova.carbonate-cutoff-porosity.q1",
+   "type": "gap",
+   "step_id": "latyshova.carbonate-cutoff-porosity",
+   "claim_ids": [
+    "latyshova.carbonate-cutoff-porosity#c3"
+   ],
+   "prompt": "Критическое значение пористости (kn*) не является фиксированным числом, так как оно напрямую зависит от {{1}} порового пространства конкретного типа породы.",
+   "explanation": "Текст подчеркивает, что kn* меняется в широких пределах именно из-за различий в структуре пор.",
+   "kind": "understanding",
+   "answer": [
+    "структуры"
+   ]
+  },
+  {
+   "id": "latyshova.carbonate-cutoff-porosity.q2",
+   "type": "order",
+   "step_id": "latyshova.carbonate-cutoff-porosity",
+   "claim_ids": [
+    "latyshova.carbonate-cutoff-porosity#c7"
+   ],
+   "prompt": "Расставьте по порядку этапы определения критической пористости (kn*):",
+   "explanation": "Алгоритм основан на поиске пористости, соответствующей заданному уровню водонасыщенности на специфической для породы кривой.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Выбор графика зависимости kn,cn = f(kn) для конкретного типа отложений",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Определение на графике точки, где остаточная водонасыщенность равна 70%",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Принятие соответствующего значения пористости за критический порог kn*",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Использование полученного значения для выделения эффективных коллекторов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "latyshova.carbonate-cutoff-porosity.q3",
+   "type": "multiple",
+   "step_id": "latyshova.carbonate-cutoff-porosity",
+   "claim_ids": [
+    "latyshova.carbonate-cutoff-porosity#c6"
+   ],
+   "prompt": "Что из перечисленного верно относительно граничного значения пористости (kn*)?",
+   "explanation": "Граничное значение растет при переходе к тонкозернистым породам, а выбор порога напрямую влияет на точность оценки эффективной толщины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Чем меньше размер пор в породе, тем выше должно быть значение kn*",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Значение kn* всегда одинаково для всех типов карбонатных коллекторов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Использование неверного kn* приводит к ошибкам в расчете эффективной толщины пласта",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Метод определения kn* через водонасыщенность применим только для карбонатов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "layer.json": {
+  "ok": true,
+  "errors": [],
+  "n_errors": 0
+ },
+ "coverage.json": {
+  "ok": true,
+  "errors": [],
+  "n_errors": 0
+ },
+ "routing.json": {
+  "ok": true,
+  "errors": [],
+  "n_errors": 0
+ },
+ "tasks.json": {
+  "ok": true,
+  "errors": [],
+  "n_errors": 0
+ },
+ "illustrations.json": {
+  "ok": true,
+  "errors": [],
+  "n_errors": 0
+ }
+}
