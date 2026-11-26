@@ -19,7 +19,7 @@ test_asquith,routing,21,,0,0,0,0,0,0
 test_asquith,course,21,,9743,0,0,0,0,0
 test_asquith,video,21,,0,0,0,0,0.0,0
 test_asquith,review,21,,0,0,0,0,0,0
-test_basarygin,layer,15,,38691,0,19.0,0,0,0.067
+test_basarygin,layer,15,,38691,0,21.0,0,0,0.067
 test_basarygin,routing,15,,0,0,0,0,0,0
 test_basarygin,course,15,,6177,0,0,0,0,0
 test_basarygin,video,15,,0,0,0,0,0.0,0
@@ -29,7 +29,7 @@ test_dake,routing,14,,0,0,0,0,0,0
 test_dake,course,14,,4883,0,0,0,0,0
 test_dake,video,14,,0,0,0,0,0.0,0
 test_dake,review,14,,0,0,0,0,0,0
-test_slatt,layer,8,,16150,0,16.0,0,0,0.125
+test_slatt,layer,8,,16150,0,19.0,0,0,0.125
 test_slatt,routing,8,,0,0,0,0,0,0
 test_slatt,course,8,,3452,0,0,0,0,0
 test_slatt,video,8,,0,0,0,0,0.0,0

@@ -10,7 +10,7 @@
 | Курсы (открыть `index.html`) | `courses/<глава>/index.html` |
 | Слой, задания, маршрутизация в форматах организаторов | `courses/<глава>/official/{layer,tasks,routing,coverage,illustrations,validation}.json` |
 | Отчёт проверки слоя (цитаты, схемы) | `courses/<глава>/report.json` |
-| Ролики | `video/razbor-slatt-delta/` (16:9), `video/shorts-basarygin-kick/` (9:16): mp4, srt, паспорт |
+| Ролики | `video/razbor-slatt-delta/` (16:9), `video/shorts-basarygin-kick/` (9:16): mp4, srt, паспорт (`passport.official.json` — по `passport.schema.json`, `passport.json` — внутренний формат конвейера) |
 | Журнал ручных правок с минутами | `journal/manual_edits.csv` (формат организаторов), `journal/edits.jsonl` |
 | Доменный пакет «бурение» и время сборки | [`../pipeline/domain/drilling/`](../pipeline/domain/drilling/) — `pack.json`, `BUILD_TIME.md`, `TEMPLATE_COVERAGE.md` |
 
@@ -23,7 +23,7 @@
 | test_dake — Dake (двойник 2) | 14 | 30 | 93% | 5/5 | — |
 | test_basarygin — Басарыгин, бурение (другой домен) | 15 | 37 | 100% | 5/5 | шортс 9:16, 56,6 с |
 
-Ручной труд по журналу: test_basarygin 19 мин, test_asquith 16 (из них 12 — ответ модуля проверки), test_slatt 16, test_dake 5.
+Ручной труд по журналу: test_basarygin 21 мин, test_slatt 19, test_asquith 16 (из них 12 — ответ модуля проверки), test_dake 5. Порог ТЗ — 30 мин на главу.
 
 Ролики встроены в курсы на узлы, которые выбрала маршрутизация конвейера: `slatt.river-dominated-delta-facies` и `basarygin.mud-volume-increase-control`.
 

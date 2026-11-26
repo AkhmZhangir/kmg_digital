@@ -6,6 +6,7 @@
 
 | Что | Где |
 |---|---|
+| **Результаты теста 26.11**: 4 тестовые главы, 2 ролика, журнал, ответ модуля проверки | [`test_results/README.md`](test_results/README.md), ответ модуля — [`review/test_asquith_answer.json`](review/test_asquith_answer.json) |
 | Демо-курсы по 6 главам: 3 обучающие и 3 контрольные | `deliverables/courses/index.html`. Открывается двойным щелчком, сервер не нужен |
 | Ролик-шортс 9:16, субтитры, паспорт | `deliverables/video/` |
 | Официальные файлы по схемам организаторов | `deliverables/courses/<глава>/official/`: `layer`, `coverage`, `routing`, `tasks`, `illustrations`, `validation` |
