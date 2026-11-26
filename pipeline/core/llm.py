@@ -94,6 +94,8 @@ def read_profile(name: str) -> dict:
     """Профиль модели: pipeline/.env.<name> (KEY=VALUE). 'mock' — офлайн-заглушка без файла."""
     if name == "mock":
         return {"LLM_BASE_URL": "mock", "LLM_MODEL": "mock"}
+    if name == "cache":  # воспроизведение из закоммиченного кеша: без ключей и сети (для жюри)
+        return {"LLM_BASE_URL": "cache", "LLM_MODEL": "cache"}
     path = HERE / f".env.{name}"
     if not path.is_file():
         raise LLMError(f"Нет профиля модели {path.name} (скопируйте .env.example)")
@@ -198,11 +200,37 @@ class LLM:
     def _hash(obj) -> str:
         return hashlib.sha256(json.dumps(obj, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()[:32]
 
+    _SEEN = None
+
+    @classmethod
+    def _seen(cls):
+        """Все провайдеры и модели, чьи ответы лежат в кеше (для режима --llm cache)."""
+        if cls._SEEN is None:
+            bases, models = set(), set()
+            for f in CACHE.rglob("*.json"):
+                try:
+                    e = json.loads(f.read_text(encoding="utf-8"))
+                except (OSError, ValueError):
+                    continue
+                bases.add(str(e.get("base") or (GEMINI_BASE if str(e.get("model", "")).startswith("gemini") else "")).rstrip("/"))
+                models.add(str(e.get("model", "")))
+            cls._SEEN = (bases - {""}, models - {""})
+        return cls._SEEN
+
+    @property
+    def replay(self) -> bool:
+        return any(p.base_url == "cache" for p in self.providers)
+
     def _cached(self, messages, temperature):
         bases = {p.base_url for p in self.providers}
-        keys = [self._hash([p.base_url, messages, temperature]) for p in self.providers]
+        models = [m for p in self.providers for m in p.models]
+        if self.replay:
+            seen_b, seen_m = self._seen()
+            bases |= seen_b
+            models += sorted(seen_m)
+        keys = [self._hash([b, messages, temperature]) for b in sorted(bases)]
         keys += [self._hash([messages, temperature])]
-        keys += [self._hash([m, messages, temperature]) for p in self.providers for m in p.models]
+        keys += [self._hash([m, messages, temperature]) for m in models]
         for k in keys:
             # Сначала папка главы, потом общая куча, потом папки других глав.
             cands = ([CACHE / self.namespace / f"{k}.json"] if self.namespace else []) + [CACHE / f"{k}.json"]
@@ -233,7 +261,11 @@ class LLM:
         hit = self._cached(messages, temperature)
         if hit:
             self.cache_hits += 1
+            with self._lock:
+                self.used[hit.get("model") or "cache"] = self.used.get(hit.get("model") or "cache", 0) + 1
             return hit["parsed"]
+        if self.replay:
+            raise LLMError("режим --llm cache: этого запроса нет в кеше (нужен профиль модели с ключом)")
         t0 = time.monotonic()
         res = self._post(messages, temperature)
         if res is None:  # цепочка дошла до заглушки mock
