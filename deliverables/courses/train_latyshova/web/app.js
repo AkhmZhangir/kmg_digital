@@ -234,13 +234,27 @@ function renderLesson(){
 function drawIllustration(parent, illustration) {
   if (!localPath(illustration.src)) return;
   const figure = add(parent, 'figure');
-  const image = add(figure, 'img');
+  const alt = illustration.alt || illustration.caption || '';
+  const realData = illustration.class === 'A';
+  const opener = realData && button(figure, '', () => openIllustration(illustration.src, alt), 'illustrationOpener');
+  if (opener) opener.setAttribute('aria-label', 'Увеличить: ' + (alt || 'иллюстрация'));
+  const image = add(opener || figure, 'img');
   image.src = illustration.src;
-  image.alt = illustration.alt || illustration.caption || '';
+  image.alt = alt;
   add(figure, 'figcaption', [
     illustration.caption, illustration.provenance,
     illustration.redrawn_from && 'Перерисовано по ' + illustration.redrawn_from
   ].filter(Boolean).join(' · '));
+}
+function openIllustration(src, alt) {
+  const dialog = add(document.body, 'dialog', '', 'illustrationDialog');
+  dialog.setAttribute('aria-label', alt || 'Иллюстрация');
+  const close = button(dialog, 'Закрыть ×', () => dialog.close(), 'illustrationClose');
+  specimenViewer(dialog, {media_url: src, alt}, undefined, undefined, {inlineImage: true});
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => dialog.remove(), {once: true});
+  dialog.showModal();
+  close.focus();
 }
 function dataMeaning(parent,n){
   const d=n.data_meaning;if(!d)return;

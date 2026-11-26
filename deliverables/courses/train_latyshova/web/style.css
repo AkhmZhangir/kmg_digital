@@ -194,6 +194,24 @@ table { border-collapse: collapse; }
 td, th { border: 1px solid var(--line); padding: 6px 10px; }
 figure { margin: 16px 0; }
 figure img { display: block; max-width: 100%; max-height: 240px; margin: auto; }
+.illustrationOpener {
+  display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in;
+}
+.illustrationOpener img { width: 100%; max-height: none; }
+.illustrationDialog {
+  position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none;
+  margin: 0; padding: 8px; border: 0; background: var(--bg); color: var(--ink);
+}
+.illustrationDialog[open], .illustrationDialog .specimen {
+  display: flex; flex-direction: column; gap: 8px; overflow: hidden;
+}
+.illustrationClose { align-self: end; }
+.illustrationDialog .specimen { flex: 1; min-height: 0; margin: 0; }
+.illustrationDialog .specimenFrame { flex: 1; min-height: 0; overscroll-behavior: contain; }
+@media print {
+  .illustrationDialog { display: none !important; }
+  #content .illustrationOpener { display: block !important; }
+}
 .simulation img { max-height: min(60vh, 560px); }
 figcaption { color: var(--muted); font-size: .875rem; }
 .box { border: 1px solid var(--line); border-radius: 10px; padding: 13px; margin: 12px 0; }
