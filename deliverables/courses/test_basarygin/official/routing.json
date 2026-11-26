@@ -1,0 +1,230 @@
+{
+ "chapter": "test_basarygin",
+ "routes": [
+  {
+   "node_id": "basarygin.gnvp-safety-measures",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критерии видеоёмкости: цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "basarygin.gnvp-classification-of-signs",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие». Текст оптимален для структурированного перечисления признаков и их свойств без сложных математических выкладок."
+  },
+  {
+   "node_id": "basarygin.penetration-rate-jump",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие», скачок масштаба. Текст с элементами интерактивного разбора кейса подходит лучше всего, так как материал требует понимания физических причин изменения скорости и анализа графиков."
+  },
+  {
+   "node_id": "basarygin.mud-volume-increase-control",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст содержит формулу минимального объема, графические зависимости и строгую последовательность регламентных процедур, поэтому лучше всего подходит для текстово-интерактивного представления с возможностью проверки расчетов."
+  },
+  {
+   "node_id": "basarygin.mud-flow-rate-monitoring",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Текст с формулами и параметрическими условиями оптимален для интерактивного урока с возможностью проверить расчеты порога срабатывания алерта."
+  },
+  {
+   "node_id": "basarygin.mud-aeration-analysis",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие». Текст оптимален, так как содержит формулы расчета дебита газа и детальную классификацию условий появления газа."
+  },
+  {
+   "node_id": "basarygin.pump-pressure-changes",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: цепочка «причина → следствие», невидимое становится видимым"
+  },
+  {
+   "node_id": "basarygin.tripping-volume-control",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: цепочка «причина → следствие», изменение во времени. Текст оптимален для изучения процедуры контроля объемов, так как содержит четкие регламентные условия, пороговые значения (1 м³) и требования к схемам обвязки емкостей."
+  },
+  {
+   "node_id": "basarygin.mud-properties-variation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: изменение во времени. текст подходит лучше всего, так как узел описывает качественные теоретические закономерности и физические признаки без сложных формул и пошаговых расчетных алгоритмов."
+  },
+  {
+   "node_id": "basarygin.wellhead-bop-configuration",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "section-3view",
+   "why": "Тип «пространство»; критерии видеоёмкости: скачок масштаба, невидимое становится видимым. текст с элементами схемы подходит лучше всего, так как описывает физический состав оборудования на устье скважины и перечень элементов схемы."
+  },
+  {
+   "node_id": "basarygin.well-shut-in-physics",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: цепочка «причина → следствие», изменение во времени. Текст подходит для объяснения физических процессов стабилизации давления и последовательности ликвидации осложнений для ИТ-специалистов."
+  },
+  {
+   "node_id": "basarygin.hard-vs-soft-shut-in",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: контринтуитивность, цепочка «причина → следствие». Текст содержит строгую технологическую последовательность процедур и сравнение двух алгоритмов (жесткого и мягкого перекрытия), поэтому текстовый формат с пошаговыми инструкциями оптимален для обучения специалистов по цифровизации."
+  },
+  {
+   "node_id": "basarygin.drillers-method-killing",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: изменение во времени, цепочка «причина → следствие». Текст представляет собой пошаговую процедуру с жестким порядком действий и правилами регулирования, поэтому наилучшим образом подходит пошаговый интерактив или текст с чек-листами."
+  },
+  {
+   "node_id": "basarygin.wait-and-weight-method",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: изменение во времени, цепочка «причина → следствие»"
+  },
+  {
+   "node_id": "basarygin.special-killing-scenarios",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: контринтуитивность. текст с элементами процедурного списка, так как описывает специфический технологический метод и порядок действий"
+  }
+ ]
+}

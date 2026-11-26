@@ -1,0 +1,215 @@
+{
+ "chapter": "test_dake",
+ "routes": [
+  {
+   "node_id": "dake.radial-flow-intro-and-assumptions",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: скачок масштаба, цепочка «причина → следствие». Текст с формулами оптимален для объяснения математического вывода и базовых допущений модели."
+  },
+  {
+   "node_id": "dake.mass-conservation-radial-derivation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие», невидимое становится видимым"
+  },
+  {
+   "node_id": "dake.compressibility-and-basic-nonlinear-equation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие». Текст с математическим формализмом и выводом уравнений лучше всего подходит для текстового формата с формулами и пояснениями шагов."
+  },
+  {
+   "node_id": "dake.solution-conditions-overview",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критериев видеоёмкости нет. Текст оптимален для изложения теоретических основ классификации режимов фильтрации без громоздких интерактивных элементов."
+  },
+  {
+   "node_id": "dake.transient-flow-condition",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: изменение во времени, цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "dake.semi-steady-state-condition",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: цепочка «причина → следствие», скачок масштаба. Текст содержит строгий математический вывод формул материального баланса и граничных условий, поэтому текстовый разбор с формулами подходит лучше всего."
+  },
+  {
+   "node_id": "dake.steady-state-condition",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: изменение во времени. Текст содержит теоретические условия режима, формулы и качественные описания процесса, что удобно для текстового урока с формульными блоками."
+  },
+  {
+   "node_id": "dake.linearization-for-small-compressibility",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие». Текст содержит формулы и математический вывод шагов линеаризации, поэтому лучше всего подходит текстовый формат с формульными блоками."
+  },
+  {
+   "node_id": "dake.total-compressibility-and-limitations",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». текст и формулы подходят для объяснения математических критериев применимости моделей и расчетов суммарной сжимаемости."
+  },
+  {
+   "node_id": "dake.diffusivity-equation-analogy",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "dake.wellbore-flow-regimes",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "process-1d",
+   "why": "Тип «механизм, процесс»; критерии видеоёмкости: изменение во времени, скачок масштаба. Текст оптимален, так как объясняет последовательную смену физических режимов фильтрации и базовые математические принципы гидродинамики скважин."
+  },
+  {
+   "node_id": "dake.line-source-approximation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие», невидимое становится видимым. Текст оптимален для объяснения математических допущений, формул и граничных условий модели."
+  },
+  {
+   "node_id": "dake.boltzmann-transformation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие»"
+  },
+  {
+   "node_id": "dake.exponential-integral-solution",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: скачок масштаба, контринтуитивность. Текст содержит формулы, математические соотношения и анализ графиков, поэтому оптимален текстовый формат с элементами формульного отображения."
+  }
+ ]
+}

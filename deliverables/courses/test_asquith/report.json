@@ -1,0 +1,270 @@
+{
+ "nodes": 21,
+ "tasks": 59,
+ "task_types": {
+  "single": 13,
+  "cloze": 13,
+  "order": 12,
+  "multi": 12,
+  "calc": 9
+ },
+ "cards": 21,
+ "coverage": {
+  "units": 376,
+  "linked": 345,
+  "skipped_with_reason": 31,
+  "uncovered": 0
+ },
+ "claims": 254,
+ "claims_ok": 231,
+ "paras": 447,
+ "paras_number_issues": 22,
+ "claims_verified_share": 0.909,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [
+  {
+   "node_id": "asquith.archie-water-saturation",
+   "claim": "archie-water-saturation.c4",
+   "message": "цитата не найдена в u126-19 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.archie-water-saturation",
+   "claim": "archie-water-saturation.c14",
+   "message": "цитата не найдена в u126-21 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.archie-water-saturation",
+   "message": "числа без опоры в цитате: 126",
+   "text": "В тексте источника на странице 126 упоминаются условные номера страниц 115 и 116."
+  },
+  {
+   "node_id": "asquith.flushed-zone-saturation",
+   "claim": "flushed-zone-saturation.c5",
+   "message": "цитата не найдена в u127-07 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.ratio-method",
+   "message": "числа без опоры в цитате: 0.625",
+   "text": "Для расчета водонасыщенности методом отношений ($S_{wr}$) используется связь $S_{xo} = (S_w)^{1/2}$, что дает показатель"
+  },
+  {
+   "node_id": "asquith.ratio-method",
+   "message": "числа без опоры в цитате: 0.625",
+   "text": "Рассчитать водонасыщенность методом отношений $S_{wr}$ с использованием степенного коэффициента 0.625."
+  },
+  {
+   "node_id": "asquith.ratio-method",
+   "message": "числа без опоры в цитате: 0.625",
+   "text": "Показатель степени в итоговой формуле водонасыщенности равен 5/8 или 0.625."
+  },
+  {
+   "node_id": "asquith.quick-look-rxo-rt",
+   "claim": "quick-look-rxo-rt.c8",
+   "message": "цитата не найдена в u129-04 (совпадение 85%)"
+  },
+  {
+   "node_id": "asquith.apparent-water-resistivity",
+   "claim": "apparent-water-resistivity.c4",
+   "message": "цитата не найдена в u129-30 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.conductivity-derived-porosity",
+   "claim": "conductivity-derived-porosity.c2",
+   "message": "цитата не найдена в u130-17 (совпадение 2%)"
+  },
+  {
+   "node_id": "asquith.conductivity-derived-porosity-basis",
+   "message": "числа без опоры в цитате: 100",
+   "text": "Формула Арчи пересчитывается для определения пористости в предположении 100% водонасыщенности."
+  },
+  {
+   "node_id": "asquith.wet-resistivity-ro-curve",
+   "claim": "wet-resistivity-ro-curve.c13",
+   "message": "цитата не найдена в u131-13 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.wet-resistivity-ro-curve",
+   "message": "числа без опоры в цитате: 100",
+   "text": "Метод завязан на расчет сопротивления воображаемого 100% водонасыщенного коллектора с последующим сравнением с фактом."
+  },
+  {
+   "node_id": "asquith.bulk-volume-water-bvw",
+   "claim": "bulk-volume-water-bvw.c2",
+   "message": "цитата не найдена в u131-22 (совпадение 50%)"
+  },
+  {
+   "node_id": "asquith.hinge-crossplot-method",
+   "message": "числа без опоры в цитате: 10",
+   "text": "Выберите значение пористости, например 0.10, и найдите значение сопротивления на линии Ro."
+  },
+  {
+   "node_id": "asquith.hinge-crossplot-method",
+   "message": "числа без опоры в цитате: 7.2",
+   "text": "Умножьте это сопротивление на коэффициенты из таблицы 7.2 и отложите полученные значения на кроссплоте при той же порист"
+  },
+  {
+   "node_id": "asquith.log-interpretation-workflow",
+   "claim": "log-interpretation-workflow.c7",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "asquith.log-interpretation-workflow",
+   "claim": "log-interpretation-workflow.c8",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "asquith.log-interpretation-workflow",
+   "claim": "log-interpretation-workflow.c9",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "claim": "pickett-hingle-comparison.c6",
+   "message": "цитата из автоописания рисунка, а не из текста автора"
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "claim": "pickett-hingle-comparison.c8",
+   "message": "цитата не найдена в u142-08 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "claim": "pickett-hingle-comparison.c13",
+   "message": "цитата не найдена в u142-19 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "claim": "pickett-hingle-comparison.c14",
+   "message": "цитата не найдена в u142-21 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "claim": "pickett-hingle-comparison.c15",
+   "message": "цитата не найдена в u142-22 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "message": "числа без опоры в цитате: 2.65",
+   "text": "В примере используются значения пористости 0.163, 0.127, 0.181, 0.139, 0.194, 0.212, глубины от 4400 до 4546 ft, плотнос"
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "message": "числа без опоры в цитате: 0.1, 4.6",
+   "text": "Исходные данные взяты из пласта Морроу, округ Симарон, Оклахома, при значении пористости DPHI = 0.10, R_a = 4.6 ом-м, a "
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "message": "числа без опоры в цитате: 0.1, 4.6",
+   "text": "Подстановка значений: R_w = (4.6 * 0.10^3.0) / 1.0 = 0.046 ом-м."
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "message": "числа без опоры в цитате: 0.8, 40",
+   "text": "Расчет водонасыщенности аномальной точки с сопротивлением R_r = 40 ом-м и R_a = 0.8 ом-м по формуле S_w = (R_a / R_r)^(1"
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "message": "числа без опоры в цитате: 0.14, 0.8, 40",
+   "text": "Подстановка значений: S_w = (0.8 / 40)^(1/2.0) = 0.14."
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "message": "числа без опоры в цитате: 0.046, 0.14",
+   "text": "Сопротивление воды R_w составляет 0.046 ом-м при пластовой температуре, а водонасыщенность аномальной точки равна 0.14."
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "message": "числа без опоры в цитате: 100",
+   "text": "Графическое представление логарифмических зависимостей параметров пористости и сопротивления для выделения линий 100% во"
+  },
+  {
+   "node_id": "asquith.buckles-plot-bvw",
+   "message": "числа без опоры в цитате: 100",
+   "text": "Построение графика Баклза для интервала, дающего 100% воды (без нефти)."
+  },
+  {
+   "node_id": "asquith.permeability-wyllie-rose-timur",
+   "claim": "permeability-wyllie-rose-timur.c4",
+   "message": "цитата не найдена в u135-16 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.permeability-wyllie-rose-timur",
+   "message": "числа без опоры в цитате: 30",
+   "text": "Формула 7.30 применяется для нефти средней плотности."
+  },
+  {
+   "node_id": "asquith.permeability-wyllie-rose-timur",
+   "message": "числа без опоры в цитате: 31",
+   "text": "Формула 7.31 применяется для сухого газа."
+  },
+  {
+   "node_id": "asquith.permeability-coates-dumanoir",
+   "claim": "permeability-coates-dumanoir.c5",
+   "message": "цитата не найдена в u136-04 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.permeability-coates-dumanoir",
+   "claim": "permeability-coates-dumanoir.c7",
+   "message": "цитата не найдена в u136-06 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.hingle-plot-sandstones-carbonates",
+   "message": "числа без опоры в цитате: 0.62, 2.15",
+   "text": "Для карбонатов стандартные параметры: a = 0.62 и m = 2.15."
+  },
+  {
+   "node_id": "asquith.hingle-plot-sandstones-carbonates",
+   "message": "числа без опоры в цитате: 0.62, 2.15",
+   "text": "Для карбонатов: a = 0.62, m = 2.15."
+  },
+  {
+   "node_id": "asquith.hingle-plot-rw-sw-calculation",
+   "claim": "hingle-plot-rw-sw-calculation.c6",
+   "message": "цитата не найдена в u145-07 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.hingle-plot-rw-sw-calculation",
+   "claim": "hingle-plot-rw-sw-calculation.c13",
+   "message": "цитата не найдена в u145-11 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.hingle-plot-rw-sw-calculation",
+   "claim": "hingle-plot-rw-sw-calculation.c17",
+   "message": "цитата не найдена в u145-19 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.hingle-plot-rw-sw-calculation",
+   "claim": "hingle-plot-rw-sw-calculation.c18",
+   "message": "цитата не найдена в u145-20 (совпадение 0%)"
+  },
+  {
+   "node_id": "asquith.hingle-plot-rw-sw-calculation",
+   "message": "числа без опоры в цитате: 28",
+   "text": "Удельное сопротивление воды R_w определяется по формуле 7.28 через сопротивление породы, пористость и параметры a и m."
+  },
+  {
+   "node_id": "asquith.hingle-plot-rw-sw-calculation",
+   "message": "числа без опоры в цитате: 7.2",
+   "text": "Линии водонасыщенности строятся с использованием значения R_a и множителей из таблицы 7.2 для показателя насыщения n = 2"
+  }
+ ],
+ "illustrations": 30,
+ "status": "ok",
+ "chapter": "test_asquith",
+ "model": "gemini-3.5-flash-lite+qwen/qwen3.8-27b",
+ "llm_calls": 62,
+ "cache_hits": 0,
+ "seconds": 216.6,
+ "official": {
+  "layer.json": true,
+  "coverage.json": true,
+  "routing.json": true,
+  "tasks.json": true,
+  "illustrations.json": true
+ }
+}

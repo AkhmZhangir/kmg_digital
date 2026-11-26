@@ -1,1 +1,3 @@
 time,chapter,file,what_changed,person_minutes,people,run_no,reason
+2026-11-26T10:53,test_basarygin,pipeline/domain/drilling/pack.json,"доменный пакет domain/drilling (pack.json, BUILD_TIME.md) для главы другого домена",5.0,1,1,новый домен: бурение
+2026-11-26T11:02,test_dake,pipeline/.cache/llm/test_dake,"повторный прогон: ответ модели с claims-объектами вместо id (gemini-3.5-flash-lite) убран из кеша, конвейер запущен заново без изменений кода",2.0,1,2,прогон 1 упал на неверном формате ответа модели

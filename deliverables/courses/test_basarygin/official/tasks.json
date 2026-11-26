@@ -1,0 +1,1016 @@
+{
+ "chapter": "test_basarygin",
+ "tasks": [
+  {
+   "id": "basarygin.gnvp-safety-measures.q1",
+   "type": "single",
+   "step_id": "basarygin.gnvp-safety-measures",
+   "claim_ids": [
+    "basarygin.gnvp-safety-measures#c1"
+   ],
+   "prompt": "В каких условиях при бурении необходимо принимать специальный комплекс мер безопасности?",
+   "explanation": "Меры безопасности принимаются при уменьшении противодействия на пласты.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При уменьшении противодействия на пласты",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Только во время длительных остановок бурения",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Исключительно на этапе завершения строительства скважины",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basarygin.gnvp-safety-measures.q2",
+   "type": "gap",
+   "step_id": "basarygin.gnvp-safety-measures",
+   "claim_ids": [
+    "basarygin.gnvp-safety-measures#c4"
+   ],
+   "prompt": "К надежному устьевому оборудованию относятся превенторы, дроссели, сепараторы, дегазаторы и запорная {{1}}.",
+   "explanation": "В тексте указана запорная арматура как элемент устьевого оборудования.",
+   "kind": "understanding",
+   "answer": [
+    "арматура"
+   ]
+  },
+  {
+   "id": "basarygin.gnvp-safety-measures.q3",
+   "type": "order",
+   "step_id": "basarygin.gnvp-safety-measures",
+   "claim_ids": [
+    "basarygin.gnvp-safety-measures#c6"
+   ],
+   "prompt": "Расставьте по порядку процессы, для которых необходимо рассчитывать изменение забойного давления согласно мерам безопасности:",
+   "explanation": "Методы расчета забойного давления разрабатываются для бурения, спускоподъемных операций и длительных остановок.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Бурение",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Спускоподъемные операции",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Длительные остановки",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "basarygin.gnvp-classification-of-signs.q1",
+   "type": "single",
+   "step_id": "basarygin.gnvp-classification-of-signs",
+   "claim_ids": [
+    "basarygin.gnvp-classification-of-signs#c1"
+   ],
+   "prompt": "Как поступление пластовых флюидов в ствол скважины влияет на циркуляционный поток?",
+   "explanation": "Поступление флюидов изменяет гидравлику циркуляционного потока и свойства выходящего бурового раствора.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Отражается на гидравлических характеристиках потока и свойствах раствора",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Полностью останавливает циркуляцию бурового раствора",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Приводит к мгновенному замерзанию раствора в скважине",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basarygin.gnvp-classification-of-signs.q2",
+   "type": "multiple",
+   "step_id": "basarygin.gnvp-classification-of-signs",
+   "claim_ids": [
+    "basarygin.gnvp-classification-of-signs#c2"
+   ],
+   "prompt": "От каких факторов зависит различная значимость поверхностных сигналов при газонефтеводопроявлениях?",
+   "explanation": "Значимость сигналов на поверхности определяется их информативностью, временем поступления и интенсивностью притока.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Информативность сигналов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Время поступления флюида",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Цвет бурового раствора",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Интенсивность притока флюида",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "d"
+   ]
+  },
+  {
+   "id": "basarygin.gnvp-classification-of-signs.q3",
+   "type": "order",
+   "step_id": "basarygin.gnvp-classification-of-signs",
+   "claim_ids": [
+    "basarygin.gnvp-classification-of-signs#c3"
+   ],
+   "prompt": "Расположите этапы или параметры в логической последовательности анализа признаков ГНВП по степени их специфичности (от явных изменений баланса к признакам, требующим проверки):",
+   "explanation": "Практика бурения выделяет прямые изменения баланса объема и потока первыми, а параметры вроде газосодержания и давления могут иметь косвенные причины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Увеличение объема или уровня бурового раствора в емкостях",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Повышение расхода выходящего потока при неизменной подаче насосов",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Повышение газосодержания в буровом растворе",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Изменение давления на буровых насосах",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basarygin.penetration-rate-jump.q1",
+   "type": "calc",
+   "step_id": "basarygin.penetration-rate-jump",
+   "claim_ids": [
+    "basarygin.penetration-rate-jump#c8"
+   ],
+   "prompt": "Какова была глубина забоя скважины на Юбилейной площади в момент фиксации увеличения механической скорости бурения перед выбросом?",
+   "explanation": "В тексте указано значение глубины забоя 4274 м при увеличении скорости.",
+   "kind": "data",
+   "answer": 4274.0,
+   "tolerance": 1.0,
+   "unit": "м"
+  },
+  {
+   "id": "basarygin.penetration-rate-jump.q2",
+   "type": "single",
+   "step_id": "basarygin.penetration-rate-jump",
+   "claim_ids": [
+    "basarygin.penetration-rate-jump#c5"
+   ],
+   "prompt": "Какой порог увеличения механической скорости бурения в зарубежной практике принят за признак возможного вскрытия пласта высокого давления?",
+   "explanation": "В зарубежной практике критическим признаком считается ускорение проходки более чем в 2 раза.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Более чем в 1.5 раза",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Более чем в 2 раза",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Ровно на 50%",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Более чем в 3 раза",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "basarygin.penetration-rate-jump.q3",
+   "type": "gap",
+   "step_id": "basarygin.penetration-rate-jump",
+   "claim_ids": [
+    "basarygin.penetration-rate-jump#c10"
+   ],
+   "prompt": "\"Скачок проходки\" при бурении следует рассматривать как признак возможного проявления. Такой подход оправдал себя во многих случаях как самая ранняя реакция на неуравновешенность {{1}} на забое скважины.",
+   "explanation": "Увеличение скорости бурения является самой ранней реакцией именно на неуравновешенность давления на забое.",
+   "kind": "understanding",
+   "answer": [
+    "давления"
+   ]
+  },
+  {
+   "id": "basarygin.mud-volume-increase-control.q1",
+   "type": "gap",
+   "step_id": "basarygin.mud-volume-increase-control",
+   "claim_ids": [
+    "basarygin.mud-volume-increase-control#c1"
+   ],
+   "prompt": "Увеличение объема бурового раствора в приемных емкостях является прямым признаком притока в скважину пластового {{1}}.",
+   "explanation": "Повышение уровня раствора прямо указывает на поступление пластового флюида в скважину.",
+   "kind": "understanding",
+   "answer": [
+    "флюида"
+   ]
+  },
+  {
+   "id": "basarygin.mud-volume-increase-control.q2",
+   "type": "order",
+   "step_id": "basarygin.mud-volume-increase-control",
+   "claim_ids": [
+    "basarygin.mud-volume-increase-control#c14"
+   ],
+   "prompt": "Расставьте по порядку действия для своевременного обнаружения притока и работы с емкостями согласно тексту.",
+   "explanation": "Действия выполняются последовательно: изоляция емкости, уменьшение поверхности, восстановление циркуляции с установкой уровня и его последующая коррекция.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Изолировать приемную емкость, через которую ведется циркуляция, от других",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Уменьшить поверхность приемной емкости установкой перегородки",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Возобновить круговую циркуляцию и установить исходный уровень бурового раствора",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Скорректировать положение исходного уровня с учетом добавок, осадков и потерь",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basarygin.mud-volume-increase-control.q3",
+   "type": "multiple",
+   "step_id": "basarygin.mud-volume-increase-control",
+   "claim_ids": [
+    "basarygin.mud-volume-increase-control#c17"
+   ],
+   "prompt": "Какие факторы необходимо учитывать при корректировке положения исходного уровня бурового раствора? Выберите все верные варианты.",
+   "explanation": "Исходный уровень корректируют с учетом добавок, осадков, потерь при очистке и испарения, но не свойств пород.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Объем введенных добавок при обработке и утяжелении раствора",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Интенсивное выпадение осадков",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потери раствора при его очистке и испарении",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Цвет и плотность вмещающих пород",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "basarygin.mud-flow-rate-monitoring.q1",
+   "type": "single",
+   "step_id": "basarygin.mud-flow-rate-monitoring",
+   "claim_ids": [
+    "basarygin.mud-flow-rate-monitoring#c1"
+   ],
+   "prompt": "Почему при поступлении пластового флюида увеличивается скорость и расход движущейся впереди жидкости?",
+   "explanation": "Поступление флюида увеличивает скорость потока именно из-за ограничения пространства жесткими стенками скважины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за ограничения потока жесткими стенками скважины",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за расширения бурового раствора при нагревании",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за увеличения мощности буровых насосов",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basarygin.mud-flow-rate-monitoring.q2",
+   "type": "multiple",
+   "step_id": "basarygin.mud-flow-rate-monitoring",
+   "claim_ids": [
+    "basarygin.mud-flow-rate-monitoring#c3"
+   ],
+   "prompt": "Какие действия выполняются для контроля выходящего потока бурового раствора?",
+   "explanation": "Контроль включает измерение расхода на выходе и сопоставление этих данных с уровнем в приемных емкостях.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Измерение расхода потока на выходе",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Сопоставление результатов измерения с уровнем приемных емкостей",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Полная остановка буровых насосов при любом росте давления",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Замена бурового раствора каждые два часа",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basarygin.mud-aeration-analysis.q1",
+   "type": "single",
+   "step_id": "basarygin.mud-aeration-analysis",
+   "claim_ids": [
+    "basarygin.mud-aeration-analysis#c13"
+   ],
+   "prompt": "Почему само по себе появление газированного раствора у устья скважины обычно не является причиной немедленного выброса?",
+   "explanation": "Газирование снижает плотность у устья, но обычно не вызывает падения забойного давления, являясь лишь признаком условий поступления.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что газирование раствора не приводит к существенному падению давления на забое.",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что газ успевает полностью раствориться в атмосфере до выхода на поверхность.",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что плотность раствора на забое всегда возрастает при попадании газа.",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basarygin.mud-aeration-analysis.q2",
+   "type": "gap",
+   "step_id": "basarygin.mud-aeration-analysis",
+   "claim_ids": [
+    "basarygin.mud-aeration-analysis#c15"
+   ],
+   "prompt": "При устойчивом росте газосодержания в переходной зоне прибегают к {{1}} бурового раствора из-за риска встретить высокопродуктивное скопление газа.",
+   "explanation": "Для предотвращения выброса при росте газосодержания применяют ступенчатое утяжеление бурового раствора.",
+   "kind": "understanding",
+   "answer": [
+    "ступенчатому утяжелению"
+   ]
+  },
+  {
+   "id": "basarygin.mud-aeration-analysis.q3",
+   "type": "order",
+   "step_id": "basarygin.mud-aeration-analysis",
+   "claim_ids": [
+    "basarygin.mud-aeration-analysis#c3"
+   ],
+   "prompt": "Расставьте этапы реагирования при обнаружении роста газосодержания в буровом растворе:",
+   "explanation": "Сначала ведут контроль, при превышении фоновых значений фиксируют аномалию и принимают меры по дегазации с поиском причин.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Непрерывный контроль содержания газа с помощью газокаротажных станций",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Фиксация превышения газосодержания выше фоновых значений",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Проведение дегазации бурового раствора и выявление причин поступления газа",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "basarygin.tripping-volume-control.q1",
+   "type": "single",
+   "step_id": "basarygin.tripping-volume-control",
+   "claim_ids": [
+    "basarygin.tripping-volume-control#c6"
+   ],
+   "prompt": "Почему во время подъема бурильной колонны забойное давление уменьшается?",
+   "explanation": "Снижение давления на забой при подъеме обусловлено уменьшением уровня раствора и колебаниями гидродинамического давления.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за снижения уровня бурового раствора в скважине и гидродинамических колебаний от движения труб",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за закачки дополнительного объема холодной воды в пласт",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за полного прекращения работы всех насосов на буровой",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basarygin.tripping-volume-control.q2",
+   "type": "gap",
+   "step_id": "basarygin.tripping-volume-control",
+   "claim_ids": [
+    "basarygin.tripping-volume-control#c9"
+   ],
+   "prompt": "Объем мерной емкости должен составлять в {{1}} раза больше объема бурильной колонны в скважине.",
+   "explanation": "Для точного контроля объем мерной емкости должен быть в 1,2–1,5 раза больше объема колонны.",
+   "kind": "understanding",
+   "answer": [
+    "1,2-1,5"
+   ]
+  },
+  {
+   "id": "basarygin.tripping-volume-control.q3",
+   "type": "calc",
+   "step_id": "basarygin.tripping-volume-control",
+   "claim_ids": [
+    "basarygin.tripping-volume-control#c5"
+   ],
+   "prompt": "Каково максимально допустимое отклонение (уменьшение) объема доливаемой жидкости по сравнению с контрольным значением в кубических метрах?",
+   "explanation": "Допустимое отклонение от контрольного значения не превышает 1 м³.",
+   "kind": "data",
+   "answer": 1.0,
+   "tolerance": 0.1,
+   "unit": "м³"
+  },
+  {
+   "id": "basarygin.mud-properties-variation.q1",
+   "type": "gap",
+   "step_id": "basarygin.mud-properties-variation",
+   "claim_ids": [
+    "basarygin.mud-properties-variation#c1"
+   ],
+   "prompt": "Свойства бурового раствора меняются при поступлении в ствол скважины пластового {{1}}.",
+   "explanation": "Именно поступление пластового флюида изменяет характеристики бурового раствора.",
+   "kind": "understanding",
+   "answer": [
+    "флюида"
+   ]
+  },
+  {
+   "id": "basarygin.mud-properties-variation.q2",
+   "type": "order",
+   "step_id": "basarygin.mud-properties-variation",
+   "claim_ids": [
+    "basarygin.mud-properties-variation#c7"
+   ],
+   "prompt": "Расставьте по порядку этапы появления информации об изменении свойств раствора на поверхности",
+   "explanation": "Измененный объем раствора должен пройти путь от забоя до устья скважины, что создает временную задержку.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Поступление пластового флюида на забой",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Смешивание флюида с раствором и образование забойной пачки",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Продвижение забойной пачки по стволу скважины к устью",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Поступление информации об изменениях на поверхность",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basarygin.mud-properties-variation.q3",
+   "type": "multiple",
+   "step_id": "basarygin.mud-properties-variation",
+   "claim_ids": [
+    "basarygin.mud-properties-variation#c5"
+   ],
+   "prompt": "Какие параметры бурового раствора могут изменяться при поступлении пластового флюида? Выберите все подходящие варианты.",
+   "explanation": "В тексте прямо указаны плотность, вязкость и концентрация хлоридов в качестве изменяемых показателей свойств раствора.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Плотность",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Цвет краски буровой вышки",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Вязкость",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Концентрация хлоридов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "basarygin.wellhead-bop-configuration.q1",
+   "type": "single",
+   "step_id": "basarygin.wellhead-bop-configuration",
+   "claim_ids": [
+    "basarygin.wellhead-bop-configuration#c3"
+   ],
+   "prompt": "Какова главная задача сложной компоновки устьевого оборудования при бурении?",
+   "explanation": "Компоновка применяется для контроля скважины при высоких давлениях и ликвидации нефтегазопроявлений.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Контроль скважины при высоких пластовых давлениях и ликвидация проявлений",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Увеличение скорости бурения долота в твердых породах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Снижение расхода бурового раствора в процессе углубления",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Очистка ствола скважины от выбуренной породы",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basarygin.wellhead-bop-configuration.q2",
+   "type": "multiple",
+   "step_id": "basarygin.wellhead-bop-configuration",
+   "claim_ids": [
+    "basarygin.wellhead-bop-configuration#c4"
+   ],
+   "prompt": "Какие элементы обязательно входят в рассматриваемую компоновку устьевого оборудования?",
+   "explanation": "В состав компоновки входят кольцевой и плашечные превенторы, а также нагнетательный и штуцерный манифольды.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Кольцевой превентор",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Штуцерный манифольд",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Превентор с глухими плашками",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Погружной центробежный насос",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "basarygin.wellhead-bop-configuration.q3",
+   "type": "calc",
+   "step_id": "basarygin.wellhead-bop-configuration",
+   "claim_ids": [
+    "basarygin.wellhead-bop-configuration#c4"
+   ],
+   "prompt": "Каковы порядковые номера трубных превенторов в схеме обвязки устьевого оборудования?",
+   "explanation": "В тексте указаны трубные превенторы под номерами 6 и 14, их сумма равна 20.",
+   "kind": "data",
+   "answer": 20.0,
+   "tolerance": 1.0,
+   "unit": "сумма номеров"
+  },
+  {
+   "id": "basarygin.well-shut-in-physics.q1",
+   "type": "single",
+   "step_id": "basarygin.well-shut-in-physics",
+   "claim_ids": [
+    "basarygin.well-shut-in-physics#c1"
+   ],
+   "prompt": "Почему после перекрытия скважины приток пластовой жидкости прекращается не мгновенно?",
+   "explanation": "Интенсивность притока снижается постепенно за счет сжимаемости жидкости, заполняющей скважину.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за сжимаемости заполняющей скважину среды",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за немедленного отказа задвижек на устье",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за мгновенного падения пластового давления до нуля",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basarygin.well-shut-in-physics.q2",
+   "type": "gap",
+   "step_id": "basarygin.well-shut-in-physics",
+   "claim_ids": [
+    "basarygin.well-shut-in-physics#c2"
+   ],
+   "prompt": "Ликвидация проявлений состоит из двух этапов: перекрытие скважины и её {{1}} с удалением притока.",
+   "explanation": "Процесс ликвидации проявлений делится на перекрытие скважины и ее глушение с удалением притока.",
+   "kind": "understanding",
+   "answer": [
+    "глушение"
+   ]
+  },
+  {
+   "id": "basarygin.well-shut-in-physics.q3",
+   "type": "order",
+   "step_id": "basarygin.well-shut-in-physics",
+   "claim_ids": [
+    "basarygin.well-shut-in-physics#c3"
+   ],
+   "prompt": "Расставьте по порядку события, происходящие в скважине после ее перекрытия до полной остановки притока:",
+   "explanation": "Приток замедляется по мере роста давления и прекращается при достижении баланса с пластовым давлением.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Перекрытие скважины и начало замедления притока",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Постепенное возрастание давления в стволе скважины",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Сумма давления нагнетания и гидростатики становится равной пластовому давлению",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Полное прекращение притока пластовой жидкости",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basarygin.hard-vs-soft-shut-in.q1",
+   "type": "order",
+   "step_id": "basarygin.hard-vs-soft-shut-in",
+   "claim_ids": [
+    "basarygin.hard-vs-soft-shut-in#c4"
+   ],
+   "prompt": "Расставьте по порядку действия при обнаружении сигнала о газонефтеводопроявлении",
+   "explanation": "Сначала прекращают бурение, поднимают трубу, отключают насосы и проверяют наличие самопритока.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Прекратить процесс бурения",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Поднять рабочую трубу над столом ротора",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Отключить буровые насосы",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Проверить скважину на самоприток",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "basarygin.hard-vs-soft-shut-in.q2",
+   "type": "multiple",
+   "step_id": "basarygin.hard-vs-soft-shut-in",
+   "claim_ids": [
+    "basarygin.hard-vs-soft-shut-in#c11"
+   ],
+   "prompt": "Какие недостатки характерны для мягкого способа перекрытия скважины? (Выберите все верные варианты)",
+   "explanation": "Мягкое перекрытие длится дольше, из-за чего в скважину успевает поступить значительный объем жидкости из пласта.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Большая продолжительность процесса перекрытия",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Мгновенное прекращение притока пластовых флюидов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Поступление больших объемов жидкости из пласта в скважину",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Полное отсутствие колебаний давления в системе",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "c"
+   ]
+  },
+  {
+   "id": "basarygin.hard-vs-soft-shut-in.q3",
+   "type": "calc",
+   "step_id": "basarygin.hard-vs-soft-shut-in",
+   "claim_ids": [
+    "basarygin.hard-vs-soft-shut-in#c6"
+   ],
+   "prompt": "В тексте упоминаются номера элементов устьевого оборудования. Чему равна сумма номеров задвижки, превентора и штуцера (10, 6, 5)?",
+   "explanation": "Сумма номеров оборудования из текста: задвижка 10 + превентор 6 + штуцер 5 = 21.",
+   "kind": "data",
+   "answer": 21.0,
+   "tolerance": 0.1,
+   "unit": null
+  },
+  {
+   "id": "basarygin.drillers-method-killing.q1",
+   "type": "single",
+   "step_id": "basarygin.drillers-method-killing",
+   "claim_ids": [
+    "basarygin.drillers-method-killing#c1"
+   ],
+   "prompt": "Сколько основных этапов включает в себя метод бурильщика при контроле за устьевым давлением?",
+   "explanation": "Метод бурильщика состоит из двух этапов глушения скважины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Один этап",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Два этапа",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Три этапа",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Четыре этапа",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "basarygin.drillers-method-killing.q2",
+   "type": "gap",
+   "step_id": "basarygin.drillers-method-killing",
+   "claim_ids": [
+    "basarygin.drillers-method-killing#c9"
+   ],
+   "prompt": "Если давление в бурильных трубах и в кольцевом пространстве при закрытой скважине равно, то проявление {{1}}.",
+   "explanation": "Равенство давления в трубах и кольцевом пространстве при закрытой скважине прямо указывает на ликвидацию проявления.",
+   "kind": "understanding",
+   "answer": [
+    "ликвидировано"
+   ]
+  },
+  {
+   "id": "basarygin.special-killing-scenarios.q1",
+   "type": "single",
+   "step_id": "basarygin.special-killing-scenarios",
+   "claim_ids": [
+    "basarygin.special-killing-scenarios#c1"
+   ],
+   "prompt": "Через какой элемент проводят циркуляцию раствора, если выброс произошел перед подъемом испытателя пластов?",
+   "explanation": "При выбросе перед подъемом испытателя пластов циркуляцию раствора ведут через циркуляционный клапан испытателя.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Через отверстия циркуляционного клапана испытателя пластов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Через затрубное пространство напрямую без оборудования",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Через предохранительный клапан насоса",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basarygin.special-killing-scenarios.q2",
+   "type": "multiple",
+   "step_id": "basarygin.special-killing-scenarios",
+   "claim_ids": [
+    "basarygin.special-killing-scenarios#c4"
+   ],
+   "prompt": "Что делают в рамках сопутствующего метода контроля до того, как скважина будет перекрыта?",
+   "explanation": "Пока скважина не перекрыта и раствор циркулирует, осуществляют утяжеление бурового раствора.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Производят утяжеление бурового раствора",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Обеспечивают циркуляцию раствора",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Полностью останавливают бурение и цементируют скважину",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Сбрасывают давление в обсадной колонне до нуля",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basarygin.special-killing-scenarios.q3",
+   "type": "gap",
+   "step_id": "basarygin.special-killing-scenarios",
+   "claim_ids": [
+    "basarygin.special-killing-scenarios#c5"
+   ],
+   "prompt": "После перекрытия скважины регистрируют давление в бурильных трубах, давление в обсадной колонне и приток раствора в {{1}}.",
+   "explanation": "После перекрытия скважины фиксируют давления в трубах и колонне, а также приток раствора в амбар.",
+   "kind": "understanding",
+   "answer": [
+    "амбар"
+   ]
+  }
+ ]
+}

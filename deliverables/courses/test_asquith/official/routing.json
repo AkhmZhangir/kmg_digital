@@ -1,0 +1,320 @@
+{
+ "chapter": "test_asquith",
+ "routes": [
+  {
+   "node_id": "asquith.log-interpretation-overview",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "asquith.reconnaissance-scanning",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: невидимое становится видимым, контринтуитивность. текст"
+  },
+  {
+   "node_id": "asquith.archie-water-saturation",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Текст с формулой и списком условий оптимально разбирать в формате структурированного текста с формульным блоком для инженеров цифровой трансформации."
+  },
+  {
+   "node_id": "asquith.flushed-zone-saturation",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст содержит формулу и логические условия для оценки подвижности флюидов, что удобно для изучения через структурированные блоки и формульный аппарат."
+  },
+  {
+   "node_id": "asquith.ratio-method",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: цепочка «причина → следствие», скачок масштаба. Текст и формулы оптимальны для объяснения математического вывода метода отношений и логики проверки качества данных."
+  },
+  {
+   "node_id": "asquith.quick-look-rxo-rt",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст оптимален для объяснения последовательности шагов экспресс-анализа каротажа и математических выкладок формул."
+  },
+  {
+   "node_id": "asquith.apparent-water-resistivity",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие». Текст содержит формулы, алгоритм шагов и правила интерпретации, что оптимально для текстового учебного модуля с элементами справочника."
+  },
+  {
+   "node_id": "asquith.conductivity-derived-porosity",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие», контринтуитивность. текст подходит для объяснения алгоритма расчета по формуле и визуальных паттернов на планшете скважины"
+  },
+  {
+   "node_id": "asquith.conductivity-derived-porosity-basis",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие», невидимое становится видимым. Текст содержит математические формулы и логику вывода уравнения, что удобно для текстового урока с формулами."
+  },
+  {
+   "node_id": "asquith.wet-resistivity-ro-curve",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: невидимое становится видимым. Текст содержит четкую пошаговую процедуру экспресс-анализа и визуальные паттерны поведения кривых, что идеально подходит для текстового формата с интерактивными иллюстрациями."
+  },
+  {
+   "node_id": "asquith.bulk-volume-water-bvw",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: цепочка «причина → следствие», скачок масштаба. Текст содержит формулы, таблицы и графические концепции, которые отлично подходят для комбинации текста, формульного редактора и интерактивных графиков."
+  },
+  {
+   "node_id": "asquith.pickett-crossplot-method",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст с формулами и описанием графического метода отлично подходит для текстового объяснения с элементами интерактивных шагов построения."
+  },
+  {
+   "node_id": "asquith.hinge-crossplot-method",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». текст с элементами формул и пошагового описания графического метода лучше всего воспринимается в текстово-иллюстративном формате"
+  },
+  {
+   "node_id": "asquith.log-interpretation-workflow",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "feature-gallery",
+   "why": "Тип «распознавание»; критерии видеоёмкости: скачок масштаба, невидимое становится видимым. Текст оптимален для объяснения логики блок-схем и различий подходов для разных типов пород."
+  },
+  {
+   "node_id": "asquith.pickett-hingle-comparison",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "asquith.buckles-plot-bvw",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: цепочка «причина → следствие», контринтуитивность. Текст с формулой и кроссплотами отлично подходит для текстового урока с иллюстрациями и разбором графиков."
+  },
+  {
+   "node_id": "asquith.permeability-wyllie-rose-timur",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "asquith.permeability-coates-dumanoir",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "parametric-plot",
+   "why": "Тип «формализм, модель»; критерии видеоёмкости: цепочка «причина → следствие». текст"
+  },
+  {
+   "node_id": "asquith.shaly-sand-effects-models",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "decision-scale",
+   "why": "Тип «неопределённость, решение»; критерии видеоёмкости: контринтуитивность, цепочка «причина → следствие». текст подходит лучше всего, так как материал содержит концептуальное описание физических моделей и историческое развитие подходов к интерпретации каротажа без сложных пошаговых расчетных алгоритмов."
+  },
+  {
+   "node_id": "asquith.hingle-plot-sandstones-carbonates",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "tool-in-well",
+   "why": "Тип «косвенное измерение»; критерии видеоёмкости: невидимое становится видимым, цепочка «причина → следствие». Текст с примерами и числами, так как важно показать разницу параметров для разных пород."
+  },
+  {
+   "node_id": "asquith.hingle-plot-rw-sw-calculation",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 2,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "step-flow",
+   "why": "Тип «процедура»; критерии видеоёмкости: цепочка «причина → следствие», скачок масштаба. Текст с формулами и кроссплотами оптимально разбирать в текстовом формате с интерактивными элементами для шагов расчета."
+  }
+ ]
+}

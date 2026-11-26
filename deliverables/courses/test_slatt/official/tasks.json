@@ -1,0 +1,608 @@
+{
+ "chapter": "test_slatt",
+ "tasks": [
+  {
+   "id": "slatt.chronostratigraphic-vs-lithostratigraphic-correl.q1",
+   "type": "single",
+   "step_id": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+   "claim_ids": [
+    "slatt.chronostratigraphic-vs-lithostratigraphic-correl#c1"
+   ],
+   "prompt": "Как соотносятся клиноформы и литостратиграфические границы в разрезе дельт?",
+   "explanation": "Клиноформы представляют собой линии геологического времени и пересекают литостратиграфические границы.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Клиноформы пересекают литостратиграфические границы, так как отражают линии геологического времени",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Клиноформы всегда строго совпадают с литостратиграфическими границами",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Клиноформы располагаются исключительно перпендикулярно и не пересекают слои",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Литостратиграфические границы полностью повторяют форму клиноформ без исключений",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "slatt.chronostratigraphic-vs-lithostratigraphic-correl.q2",
+   "type": "gap",
+   "step_id": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+   "claim_ids": [
+    "slatt.chronostratigraphic-vs-lithostratigraphic-correl#c5"
+   ],
+   "prompt": "Песчаные интервалы могут быть разделены сланцевыми и гетеролитными интервалами, из-за чего пески между скважинами не имеют прямой {{1}}.",
+   "explanation": "Сланцевые и гетеролитные интервалы отделяют песчаные тела, лишая их связи между скважинами.",
+   "kind": "understanding",
+   "answer": [
+    "связи"
+   ]
+  },
+  {
+   "id": "slatt.chronostratigraphic-vs-lithostratigraphic-correl.q3",
+   "type": "order",
+   "step_id": "slatt.chronostratigraphic-vs-lithostratigraphic-correl",
+   "claim_ids": [
+    "slatt.chronostratigraphic-vs-lithostratigraphic-correl#c11"
+   ],
+   "prompt": "Расставьте этапы анализа и сопоставления разрезов в правильном порядке:",
+   "explanation": "Сначала выполняют базовую корреляцию, затем сопоставляют ее с линиями времени и анализируют несоответствия.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Выполнить корреляцию скважин по литофациям или геологическому времени",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Сопоставить полученные литостратиграфические границы с хроностратиграфическими линиями времени",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Выявить латеральные несоответствия и особенности изоляции песчаных тел",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "slatt.delta-controls-sea-level-and-switching.q1",
+   "type": "single",
+   "step_id": "slatt.delta-controls-sea-level-and-switching",
+   "claim_ids": [
+    "slatt.delta-controls-sea-level-and-switching#c3"
+   ],
+   "prompt": "Какой фактор эволюции дельтовых систем может оказаться даже более важным, чем изменение уровня моря?",
+   "explanation": "В тексте указано, что смещение русел может быть более важным фактором контроля эволюции дельт, чем изменения уровня моря.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Смещение (переключение) русел",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Суточная смена приливов и отливов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Интенсивность вулканической деятельности",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Изменение солености воды в океане",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "slatt.delta-controls-sea-level-and-switching.q2",
+   "type": "multiple",
+   "step_id": "slatt.delta-controls-sea-level-and-switching",
+   "claim_ids": [
+    "slatt.delta-controls-sea-level-and-switching#c5"
+   ],
+   "prompt": "Какие процессы происходят в ответ на раннее падение уровня моря? Выберите все верные варианты.",
+   "explanation": "Раннее падение уровня моря вызывает врезание долин, а также отступание и понижение береговой линии в сторону моря.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Врезание долин",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Смещение береговой линии в сторону моря",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Понижение береговой линии",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Масштабное поднятие дна океана по всей планете",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "slatt.delta-controls-sea-level-and-switching.q3",
+   "type": "order",
+   "step_id": "slatt.delta-controls-sea-level-and-switching",
+   "claim_ids": [
+    "slatt.delta-controls-sea-level-and-switching#c4"
+   ],
+   "prompt": "Расставьте по порядку этапы формирования лоустенд-дельт при падении уровня моря:",
+   "explanation": "Процесс начинается с падения уровня моря, приводит к врезанию долин и завершается образованием лоустенд-дельт.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Относительное падение уровня моря",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Врезание долин и смещение береговой линии в сторону моря",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Формирование лоустенд-дельт или систем отложений края шельфа",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "slatt.river-dominated-delta-facies.q1",
+   "type": "calc",
+   "step_id": "slatt.river-dominated-delta-facies",
+   "claim_ids": [
+    "slatt.river-dominated-delta-facies#c12"
+   ],
+   "prompt": "Какова длина горизонтальной скважины, пробуренной в песчаник устьевого бара в месторождении Прудо-Бей, в метрах?",
+   "explanation": "В тексте указана длина скважины 1000 футов или 300 метров.",
+   "kind": "data",
+   "answer": 300.0,
+   "tolerance": 1.0,
+   "unit": "м"
+  },
+  {
+   "id": "slatt.river-dominated-delta-facies.q2",
+   "type": "single",
+   "step_id": "slatt.river-dominated-delta-facies",
+   "claim_ids": [
+    "slatt.river-dominated-delta-facies#c6"
+   ],
+   "prompt": "Что происходит с главными речными руслами из-за проградации и меления водоема?",
+   "explanation": "Меление водоема приводит к смещению главных речных русел в сторону более глубокой воды.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Они углубляются и остаются на месте",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Они смещаются в сторону более глубокой воды",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Они полностью исчезают из-за пересыхания",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Они разворачиваются вспять",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "slatt.river-dominated-delta-facies.q3",
+   "type": "gap",
+   "step_id": "slatt.river-dominated-delta-facies",
+   "claim_ids": [
+    "slatt.river-dominated-delta-facies#c1"
+   ],
+   "prompt": "Дельта Миссисипи является типовой {{1}} дельтой.",
+   "explanation": "Дельта Миссисипи долгое время считалась классическим примером речно-доминированной дельты.",
+   "kind": "understanding",
+   "answer": [
+    "речно-доминированной"
+   ]
+  },
+  {
+   "id": "slatt.prudhoe-bay-deltaic-reservoir-characterization.q1",
+   "type": "gap",
+   "step_id": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+   "claim_ids": [
+    "slatt.prudhoe-bay-deltaic-reservoir-characterization#c3"
+   ],
+   "prompt": "Нижний интервал месторождения Прудо-Бей называется зоной {{1}}.",
+   "explanation": "В тексте указано, что нижний интервал месторождения называется зоной Ромео.",
+   "kind": "understanding",
+   "answer": [
+    "Ромео"
+   ]
+  },
+  {
+   "id": "slatt.prudhoe-bay-deltaic-reservoir-characterization.q2",
+   "type": "order",
+   "step_id": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+   "claim_ids": [
+    "slatt.prudhoe-bay-deltaic-reservoir-characterization#c4"
+   ],
+   "prompt": "Расположите особенности геологического строения и разработки Прудо-Бей в логической последовательности от осадконакопления до бурения:",
+   "explanation": "Сначала происходит осадконакопление и формирование структур, затем их картирование и учет при планировании эффективного горизонтального бурения.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Юго-восточная проградация малоуклонных тонкозернистых систем на 60 миль",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Формирование дельтовых отложений и устьевых баров с крупнозернистым осадкателем",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Картирование непрерывных сланцев как вертикальных барьеров потока",
+     "misconception": null
+    },
+    {
+     "id": "s4",
+     "text": "Бурение синусоидального горизонтального ствола для охвата высокопроницаемых зон",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ]
+  },
+  {
+   "id": "slatt.prudhoe-bay-deltaic-reservoir-characterization.q3",
+   "type": "multiple",
+   "step_id": "slatt.prudhoe-bay-deltaic-reservoir-characterization",
+   "claim_ids": [
+    "slatt.prudhoe-bay-deltaic-reservoir-characterization#c7"
+   ],
+   "prompt": "Какие функции выполняют непрерывные сланцы (глинистые пласты) при разработке месторождения?",
+   "explanation": "Непрерывные сланцы создают вертикальные барьеры потока и помогают фокусировать (управлять) заводнение.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Создают вертикальные барьеры потока",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Помогают управлять закачкой воды",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Ускоряют естественное истощение пласта без воды",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Служат коллектором для добычи нефти",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "slatt.shale-continuity-reservoir-management-1.q1",
+   "type": "multiple",
+   "step_id": "slatt.shale-continuity-reservoir-management-1",
+   "claim_ids": [
+    "slatt.shale-continuity-reservoir-management-1#c1"
+   ],
+   "prompt": "Какие процессы могут привести к полному отсутствию сланцев в восточной части месторождения Прудо-Бей?",
+   "explanation": "Сланцы могут полностью отсутствовать именно из-за недепонирования или эрозии.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Эрозия",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Недепонирование",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Тектоническое сжатие",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Интенсивное заводнение",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "slatt.shale-continuity-reservoir-management-1.q2",
+   "type": "calc",
+   "step_id": "slatt.shale-continuity-reservoir-management-1",
+   "claim_ids": [
+    "slatt.shale-continuity-reservoir-management-1#c2"
+   ],
+   "prompt": "Какова длина горизонтального участка скважины 11-30 в метрах согласно тексту?",
+   "explanation": "В тексте указана длина горизонтального участка 894 ft (272 м).",
+   "kind": "data",
+   "answer": 272.0,
+   "tolerance": 0.1,
+   "unit": "м"
+  },
+  {
+   "id": "slatt.shale-continuity-reservoir-management-2.q1",
+   "type": "single",
+   "step_id": "slatt.shale-continuity-reservoir-management-2",
+   "claim_ids": [
+    "slatt.shale-continuity-reservoir-management-2#c2"
+   ],
+   "prompt": "Как расположена горизонтальная траектория скважины 11-30 по отношению к разрезу на схеме a?",
+   "explanation": "Горизонтальная траектория скважины 11-30 направлена перпендикулярно к разрезу на схеме a.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Перпендикулярно разрезу",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Параллельно разрезу",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Под углом 45 градусов",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Совпадает с линией разреза",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "slatt.shale-continuity-reservoir-management-2.q2",
+   "type": "gap",
+   "step_id": "slatt.shale-continuity-reservoir-management-2",
+   "claim_ids": [
+    "slatt.shale-continuity-reservoir-management-2#c3"
+   ],
+   "prompt": "Путь ствола скважины проходит через песчаники устьевого бара под непрерывным заливочным сланцем (bay {{1}}).",
+   "explanation": "Ствол скважины проходит через песчаники под непрерывным заливочным сланцем (bay shale).",
+   "kind": "understanding",
+   "answer": [
+    "shale"
+   ]
+  },
+  {
+   "id": "slatt.shale-continuity-reservoir-management-2.q3",
+   "type": "order",
+   "step_id": "slatt.shale-continuity-reservoir-management-2",
+   "claim_ids": [
+    "slatt.shale-continuity-reservoir-management-2#c1"
+   ],
+   "prompt": "Расположите элементы геологической и проектной информации в логическом порядке для стратегии бурения:",
+   "explanation": "Сначала интерпретируются фации между скважинами, затем создается стратегия размещения, и после этого проводится бурение.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Интерпретация фациальных ассоциаций между скважинами 11-28 и 11-23",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Разработка предбуровой стратегии для размещения скважины 11-30",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Бурение скважины с учетом непрерывности сланцев и песчаников",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "slatt.kuparuk-progradational-architecture.q1",
+   "type": "order",
+   "step_id": "slatt.kuparuk-progradational-architecture",
+   "claim_ids": [
+    "slatt.kuparuk-progradational-architecture#c4"
+   ],
+   "prompt": "Расположите этапы понимания геологического строения и разработки пласта A в хронологическом порядке",
+   "explanation": "Сначала разработка опиралась на простое представление о сплошном пласте, а последующий секвенс-стратиграфический анализ показал его сложное строение.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "s1",
+     "text": "Каждая пачка считалась единым латерально непрерывным песчаным телом",
+     "misconception": null
+    },
+    {
+     "id": "s2",
+     "text": "Проведение корреляции методом секвенс-стратиграфии",
+     "misconception": null
+    },
+    {
+     "id": "s3",
+     "text": "Выявление разделения пачки A на шесть отдельных песчаных тел, разделенных сланцами",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "slatt.kuparuk-progradational-architecture.q2",
+   "type": "multiple",
+   "step_id": "slatt.kuparuk-progradational-architecture",
+   "claim_ids": [
+    "slatt.kuparuk-progradational-architecture#c2"
+   ],
+   "prompt": "Какие характеристики пачки A были установлены с помощью секвенс-стратиграфических корреляций?",
+   "explanation": "Корреляции показали проградацию шести песчаных тел на северо-восток с разделяющими их сланцами, опровергнув идею монолитности.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Состоит из шести отдельных песчаных тел",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Песчаные тела прородировали в северо-восточном направлении",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Каждое песчаное тело разделено морскими сланцами",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Пласт является абсолютно монолитным и непрерывным",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "slatt.kuparuk-progradational-architecture.q3",
+   "type": "calc",
+   "step_id": "slatt.kuparuk-progradational-architecture",
+   "claim_ids": [
+    "slatt.kuparuk-progradational-architecture#c3"
+   ],
+   "prompt": "Сколько миллиардов баррелей нефти (BBO) было добыто из интервалов A и C по состоянию на 2006 год?",
+   "explanation": "В тексте указано, что к 2006 году из этих интервалов было добыто 2BBO.",
+   "kind": "data",
+   "answer": 2.0,
+   "tolerance": 0.1,
+   "unit": "BBO"
+  },
+  {
+   "id": "slatt.wave-dominated-delta-deposits.q2",
+   "type": "single",
+   "step_id": "slatt.wave-dominated-delta-deposits",
+   "claim_ids": [
+    "slatt.wave-dominated-delta-deposits#c4"
+   ],
+   "prompt": "Как меняется вертикальная стратиграфическая последовательность при проградации песчаных пляжных валов снизу вверх?",
+   "explanation": "Проградация песчаных пляжных валов создает последовательность, которая укрупняется и становится песчанее от подошвы к кровле.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Становится более песчаной и крупнозернистой",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Становится более глинистой и мелкозернистой",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Характеризуется полным отсутствием осадочных структур",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Не претерпевает изменений по разрезу",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "slatt.wave-dominated-delta-deposits.q3",
+   "type": "gap",
+   "step_id": "slatt.wave-dominated-delta-deposits",
+   "claim_ids": [
+    "slatt.wave-dominated-delta-deposits#c1"
+   ],
+   "prompt": "У незащищенных от волн и течений берегов осадки рассеиваются {{1}} при достаточном притоке песка.",
+   "explanation": "Осадки, достигающие береговой линии, рассеиваются латерально под воздействием волн и течений.",
+   "kind": "understanding",
+   "answer": [
+    "латерально"
+   ]
+  }
+ ]
+}

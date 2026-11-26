@@ -1,0 +1,140 @@
+{
+ "nodes": 14,
+ "tasks": 30,
+ "task_types": {
+  "single": 7,
+  "order": 8,
+  "cloze": 6,
+  "multi": 7,
+  "calc": 2
+ },
+ "cards": 14,
+ "coverage": {
+  "units": 214,
+  "linked": 177,
+  "skipped_with_reason": 37,
+  "uncovered": 0
+ },
+ "claims": 114,
+ "claims_ok": 106,
+ "paras": 237,
+ "paras_number_issues": 11,
+ "claims_verified_share": 0.93,
+ "requirements": {
+  "tasks>=15": true,
+  "task_types>=4": true,
+  "cards_all_nodes": true,
+  "coverage_100": true
+ },
+ "issues": [
+  {
+   "node_id": "dake.compressibility-and-basic-nonlinear-equation",
+   "claim": "compressibility-and-basic-nonlinear-equation.c2",
+   "message": "цитата не найдена в u076-20 (совпадение 0%)"
+  },
+  {
+   "node_id": "dake.compressibility-and-basic-nonlinear-equation",
+   "claim": "compressibility-and-basic-nonlinear-equation.c3",
+   "message": "цитата не найдена в u076-22 (совпадение 0%)"
+  },
+  {
+   "node_id": "dake.compressibility-and-basic-nonlinear-equation",
+   "claim": "compressibility-and-basic-nonlinear-equation.c4",
+   "message": "цитата не найдена в u076-24 (совпадение 0%)"
+  },
+  {
+   "node_id": "dake.compressibility-and-basic-nonlinear-equation",
+   "claim": "compressibility-and-basic-nonlinear-equation.c6",
+   "message": "цитата не найдена в u076-26 (совпадение 0%)"
+  },
+  {
+   "node_id": "dake.linearization-for-small-compressibility",
+   "message": "числа без опоры в цитате: 5.16",
+   "text": "Применяя цепное правило дифференцирования к левой части уравнения (5.1), раскрывается выражение (5.16)."
+  },
+  {
+   "node_id": "dake.linearization-for-small-compressibility",
+   "message": "числа без опоры в цитате: 5.17",
+   "text": "Дифференцируя базовое уравнение (5.4) по радиусу r, получаем соотношение (5.17), подстановка которого в (5.16) дает урав"
+  },
+  {
+   "node_id": "dake.linearization-for-small-compressibility",
+   "message": "числа без опоры в цитате: 5.2",
+   "text": "Эти два допущения устраняют первые два члена в левой части (5.18), сводя его к виду (5.19) или более удобной форме (5.20"
+  },
+  {
+   "node_id": "dake.linearization-for-small-compressibility",
+   "message": "числа без опоры в цитате: 5.16",
+   "text": "Раскрыть левую часть исходного уравнения через цепное правило (уравнение 5.16)."
+  },
+  {
+   "node_id": "dake.linearization-for-small-compressibility",
+   "message": "числа без опоры в цитате: 5.17",
+   "text": "Подставить производную из соотношения (5.17) в уравнение (5.16) для получения промежуточного уравнения (5.18)."
+  },
+  {
+   "node_id": "dake.linearization-for-small-compressibility",
+   "message": "числа без опоры в цитате: 5.2",
+   "text": "Записать итоговое линейное уравнение пьезопроводности (5.20), предполагая постоянство сжимаемости жидкости."
+  },
+  {
+   "node_id": "dake.diffusivity-equation-analogy",
+   "claim": "diffusivity-equation-analogy.c3",
+   "message": "цитата не найдена в u079-26 (совпадение 0%)"
+  },
+  {
+   "node_id": "dake.exponential-integral-solution",
+   "claim": "exponential-integral-solution.c5",
+   "message": "цитата не найдена в u088-38 (совпадение 0%)"
+  },
+  {
+   "node_id": "dake.exponential-integral-solution",
+   "claim": "exponential-integral-solution.c6",
+   "message": "цитата не найдена в u089-08 (совпадение 0%)"
+  },
+  {
+   "node_id": "dake.exponential-integral-solution",
+   "claim": "exponential-integral-solution.c7",
+   "message": "цитата не найдена в u089-10 (совпадение 0%)"
+  },
+  {
+   "node_id": "dake.exponential-integral-solution",
+   "message": "числа без опоры в цитате: 0.01",
+   "text": "Если x < 0.01, ei(x) можно аппроксимировать формулой ei(x) \\approx - \\ln x - 0.5772."
+  },
+  {
+   "node_id": "dake.exponential-integral-solution",
+   "message": "числа без опоры в цитате: 0.01",
+   "text": "С учетом константы аппроксимация для x < 0.01 принимает вид ei(x) \\approx - \\ln (\\gamma x)."
+  },
+  {
+   "node_id": "dake.exponential-integral-solution",
+   "message": "числа без опоры в цитате: 0.01",
+   "text": "Проверить условие применимости аппроксимации: если x < 0.01, использовать логарифмическое приближение."
+  },
+  {
+   "node_id": "dake.exponential-integral-solution",
+   "message": "числа без опоры в цитате: 0.01",
+   "text": "Порог применимости приближения составляет x < 0.01, константа Эйлера равна 0.5772, а ее экспонента равна 1.781."
+  },
+  {
+   "node_id": "dake.exponential-integral-solution",
+   "message": "числа без опоры в цитате: 0.01",
+   "text": "Приближение ei(x) через логарифм ломается, если аргумент x превышает порог 0.01 (например, при большой дистанции r в пул"
+  }
+ ],
+ "illustrations": 20,
+ "status": "ok",
+ "chapter": "test_dake",
+ "model": "gemini-3.5-flash-lite+qwen/qwen3.8-27b",
+ "llm_calls": 12,
+ "cache_hits": 19,
+ "seconds": 40.5,
+ "official": {
+  "layer.json": true,
+  "coverage.json": true,
+  "routing.json": true,
+  "tasks.json": true,
+  "illustrations.json": true
+ }
+}
