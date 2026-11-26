@@ -1,37 +1,87 @@
-# Чек-лист до 10:00 (заморозка) и на тест
+# День 2 (26.11): заморозка, тест, защита
 
-Все команды — из `pipeline`: `cd pipeline; $env:PYTHONUTF8=1`
+Все команды выполняются из `pipeline`. Сначала: `cd pipeline; $env:PYTHONUTF8=1`.
+Модели Qwen нужен SSH-туннель: `ssh -N -L 127.0.0.1:8081:127.0.0.1:8081 shizuko@100.75.219.124` (пароль вводит человек).
 
-## Сейчас идёт (не прерывать)
-- Сборка 5 глав на Qwen: лог `pipeline/out_build_rest.log` (в конце строка ALLDONE).
-- Латышова на Qwen: `pipeline/out_lat_qwen2.log` (EXIT 0 = готово, курс в `out_qwen/`).
-- Модуль проверки на контрольном пакете: `pipeline/out_review.log` → `out/review/ctrl_vendelshtein/answer.json`.
-- Нужен SSH-туннель к Qwen: `ssh -N -L 127.0.0.1:8081:127.0.0.1:8081 shizuko@100.75.219.124` (пароль вводит человек).
+## 09:20 — заморозка (ссылку на коммит отправить до 09:45)
 
-## Проверить баллы модуля проверки (только после прогона)
+1. Положить кеш ответов модели в репозиторий:
+   ```
+   git add -f .cache/llm; git commit -m "Freeze: LLM cache"
+   ```
+2. Поставить тег и запушить:
+   ```
+   git tag freeze-2026-11-26; git push origin main --tags
+   ```
+3. Отправить организаторам ссылку `https://github.com/AkhmZhangir/kmg_digital/commit/<sha>`, где `<sha>` берётся из `git rev-parse HEAD`.
+
+**После заморозки код, промпты и доменный пакет geology не меняются.** Можно добавлять:
+- записи глав в `chapters.json`;
+- спецификации роликов (`video/specs/*.json` — это данные);
+- новый доменный пакет для чужого домена;
+- журнал правок и результаты в `out/` и `deliverables/`.
+
+## 10:00–14:00 — тест
+
+**Три двойника.** Для каждой главы:
+1. Положить md в `books md`.
+2. Добавить запись в `chapters.json`: `set: "test"`, страницы, `start`/`end`, `types`, `domain: "geology"`.
+3. Запустить `py -3 run.py all --chapter <id>`.
+
+Результат: курс в `out/<id>/index.html` и официальные файлы в `out/<id>/official/`.
+
+**Глава другого домена:**
+1. Засечь время.
+2. Скопировать `domain/geology` в `domain/<домен>`.
+3. Поправить в `pack.json` типы трудности, заблуждения, глоссарий, ИТ-мосты и ударения.
+4. В `chapters.json` указать `domain: "<домен>"`, запустить `run.py all`.
+5. Записать время сборки пакета:
+   ```
+   py -3 run.py edit --chapter <id> --minutes N --what "доменный пакет <домен>" --reason "новый домен"
+   ```
+
+**Два ролика на темы, объявленные в 10:00:**
+1. Скопировать `video/specs/example_generic_16x9.json` (разбор 16:9) или `shorts_caliper.json` (шортс 9:16). Поле `"template": "generic"` означает, что сцена целиком описана в JSON: слои, заливки, стрелки, метки, кривые и плашка масштаба. Новый код для этого не нужен.
+2. Фразы и цитаты брать из `claims` узла в `out/<id>/layer.json`: у каждой фразы `unit`, `page`, дословная `quote`.
+3. Запустить `py -3 run.py video --spec video/specs/<ролик>.json`. Ролик, субтитры и паспорт попадут в `out/video/<id>/`, ролик сам встанет в курс на шаг `node_id`.
+4. Копию положить в `deliverables/video/`.
+
+Рендер занимает 1–3 минуты, озвучка — Dmitry Neural, запасной голос SAPI Irina.
+
+**13:15 — пакет модуля проверки.** Ответ сдать к 14:00:
 ```
-py -3 ../contract/official/review/score_review.py out/review/ctrl_vendelshtein/answer.json "../../inputs/пакет_вводных/02_модуль_проверки/контрольный_пакет/key.json"
+py -3 run.py review --package <папка>/package.json
+```
+Результат: `out/review/<id>/answer.json`.
+
+**Каждая ручная правка** записывается сразу и коммитится вместе с самой правкой:
+```
+py -3 run.py edit --chapter <id> --node <узел> --minutes N --what "…" --reason "…"
+```
+Журнал ведётся в `journal/manual_edits.csv`.
+
+**Сдача к 14:00:**
+1. Скопировать готовые курсы в `deliverables/courses/<id>/`: `index.html`, `web`, `media`, `official`, `layer.json`, `coverage.json`, `report.json`, `source.pdf`.
+2. Запустить `py -3 metrics.py`.
+3. Закоммитить и запушить результаты, журнал и `answer.json`.
+
+## 15:00 — защита: пересборка за 1–2 минуты (отрепетировано, занимает меньше 1 с)
+
+1. Открыть `out/train_latyshova/layer.json`, шаг `latyshova.mud-filtration-density-impact`, блок `numbers`. Заменить «от 4 до 8 см³/ч» на «от 4 до 9 см³/ч».
+2. Запустить:
+   ```
+   py -3 run.py verify --chapter train_latyshova
+   ```
+   Команда перепроверяет цитаты и числа по страницам книги и пересобирает курс.
+3. Обновить страницу курса. В блоке «Цифры и условия» этого шага стоит 9.
+4. Вернуть 8 той же командой.
+
+Если курс открыт через сайт, после пересборки нужен `POST /api/reload` (или обновить `out/` и перезапустить сайт). При открытии файлом `index.html` достаточно обновить страницу.
+
+## Проверка модуля проверки на контрольном пакете
+
+```
+py -3 "../../inputs/пакет_вводных/02_модуль_проверки/score_review.py" out/review/ctrl_vendelshtein/answer.json "../../inputs/пакет_вводных/02_модуль_проверки/контрольный_пакет/key.json"
 ```
 
-## Заморозка (до 10:00)
-1. Дождаться ALLDONE (или остановить — недоделанное останется черновиком).
-2. Положить кеш ответов модели в репо (жюри пересоберёт без ключей):
-```
-git add -f .cache/llm
-git commit -m "Freeze: LLM cache"
-```
-3. Тег и пуш:
-```
-git tag freeze-2026-11-26
-git push origin main --tags
-```
-
-## Тест (10:00): новая глава
-1. Положить md главы в `books md`, добавить запись в `chapters.json` (страницы, start/end-заголовки, types).
-2. `py -3 run.py all --chapter <id>` (анализ: Qwen, затем Gemini) → курс `out/<id>/index.html`, официальные файлы `out/<id>/official/`.
-3. Пакет с закладками: `py -3 run.py review --package <папка>/package.json` → `out/review/<id>/answer.json`.
-4. Ручные правки — только с записью: `py -3 run.py edit --chapter <id> --minutes N --what "..."`.
-5. Сайт с чатом: `py -3 server.py` → http://127.0.0.1:8770/
-
-## Видео
-Код готов (`pipeline/video`), шортс по Латышовой: `py -3 run.py video --spec video/specs/shorts_caliper.json` (2–3 мин) → `out/video/shorts-caliper/`. В курс пока не встроен.
+Последний результат: 60% по весу, 3 ложные тревоги.

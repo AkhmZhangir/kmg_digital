@@ -123,7 +123,7 @@ def asr_check(wav16: Path, script: str) -> dict:
 
 def build(spec_path: Path, out_root: Path, log=print) -> dict:
     spec = json.loads(spec_path.read_text(encoding="utf-8"))
-    pack = json.loads((HERE / "domain" / "geology" / "pack.json").read_text(encoding="utf-8"))
+    pack = json.loads((HERE / "domain" / spec.get("domain", "geology") / "pack.json").read_text(encoding="utf-8"))
     pron = pack.get("pronunciation", {})
     out = out_root / spec["id"]
     out.mkdir(parents=True, exist_ok=True)
@@ -150,7 +150,8 @@ def build(spec_path: Path, out_root: Path, log=print) -> dict:
 
     # 2. Кадры из модели состояния → ffmpeg
     font, small = _font(64, True), _font(34)
-    title_f, cap_f, tag_f = _font(40, True), _font(58, True), _font(28)
+    title_f, cap_f, tag_f = _font(40, True), _font(58, True) if H > W else _font(46, True), _font(28)
+    step = 80 if H > W else 62
     mp4 = out / f"{spec['id']}.mp4"
     cmd = [ffmpeg(), "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
            "-i", str(raw_wav), "-af", "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000",
@@ -176,18 +177,19 @@ def build(spec_path: Path, out_root: Path, log=print) -> dict:
         tag = f"{sc['provenance']} · класс {sc['class']}"
         d.rounded_rectangle([W - 60 - d.textlength(tag, font=tag_f) - 28, 140, W - 60, 190], radius=12, fill=(31, 42, 40))
         d.text((W - 60 - d.textlength(tag, font=tag_f) - 14, 148), tag, font=tag_f, fill=(154, 168, 163))
-        if any(x in state.get("show", []) for x in ("cake", "invasion")):
-            plate = "не в масштабе: корка увеличена ~20×"
+        plate = state.get("plate") if isinstance(state.get("plate"), str) else None
+        if plate or any(x in state.get("show", []) for x in ("cake", "invasion")):
+            plate = plate or "не в масштабе: корка увеличена ~20×"
             d.rounded_rectangle([60, 140, 60 + d.textlength(plate, font=tag_f) + 28, 190], radius=12, fill=(58, 46, 22))
             d.text((74, 148), plate, font=tag_f, fill=(221, 170, 76))
         # подпись-ключевые слова в безопасной зоне (не дублирует голос дословно)
         lines = _wrap(d, sc["caption"], cap_f, W - 160)
-        y = 1500
-        d.rounded_rectangle([50, y - 30, W - 50, y + 80 * len(lines) + 10], radius=24, fill=(0, 0, 0))
+        y = int(H * 0.78)
+        d.rounded_rectangle([50, y - 30, W - 50, y + step * len(lines) + 10], radius=24, fill=(0, 0, 0))
         for i, ln in enumerate(lines):
-            d.text(((W - d.textlength(ln, font=cap_f)) / 2, y + i * 80), ln, font=cap_f, fill=(255, 255, 255))
+            d.text(((W - d.textlength(ln, font=cap_f)) / 2, y + i * step), ln, font=cap_f, fill=(255, 255, 255))
         if sc["id"] == "predict":
-            d.text((W / 2 - 30, 1380), "?", font=_font(120, True), fill=(82, 195, 191))
+            d.text((W / 2 - 30, int(H * 0.72)), "?", font=_font(120, True), fill=(82, 195, 191))
         proc.stdin.write(img.tobytes())
     proc.stdin.close()
     proc.wait()
