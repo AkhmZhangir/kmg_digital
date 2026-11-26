@@ -163,7 +163,8 @@ async function refreshCatalog() {
       heading.href = '/' + encodeURIComponent(course.folder) + '/index.html';
       const meta = [data.author, course.pages?.length ? 'стр. ' + course.pages.join('–') : '', 'Шагов: ' + course.nodes];
       element(card, 'p', meta.filter(Boolean).join(' · '), 'muted');
-      if (data.built_with?.model === 'mock') element(card, 'small', 'Черновик', 'qualityBadge');
+      if (course.needs_review) element(card, 'small', 'Требует проверки', 'qualityBadge');
+      else if (data.built_with?.model === 'mock') element(card, 'small', 'Черновик', 'qualityBadge');
     }
   } catch (error) {
     if (request === catalogRequest) status.textContent = error.message;

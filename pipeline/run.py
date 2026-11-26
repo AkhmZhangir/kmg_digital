@@ -123,7 +123,9 @@ def reverify(cid: str, args, log) -> dict:
     layer = json.loads((out / "layer.json").read_text(encoding="utf-8"))
     units = json.loads((out / "units.json").read_text(encoding="utf-8"))
     coverage = json.loads((out / "coverage.json").read_text(encoding="utf-8"))
-    report = verify_layer(layer, units, coverage)
+    old = out / "report.json"
+    report = json.loads(old.read_text(encoding="utf-8")) if old.is_file() else {}  # модель, запросы, схемы — из сборки
+    report.update(verify_layer(layer, units, coverage))
     report.update(status="ok", chapter=cid, stage="verify")
     save_json(out / "layer.json", layer)
     save_json(out / "report.json", report)

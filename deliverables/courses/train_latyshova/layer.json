@@ -444,7 +444,8 @@
     "u090-05"
    ],
    "video_criteria": [],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.mud-drilling-invasion-zone",
@@ -1158,7 +1159,8 @@
    "video_criteria": [
     "cause_effect"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.mud-salinity-impact",
@@ -1460,7 +1462,8 @@
    "video_criteria": [
     "cause_effect"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.alternative-drilling-fluids",
@@ -1781,7 +1784,8 @@
    "video_criteria": [
     "counterintuitive"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.reservoir-lithology-pore-types",
@@ -2096,7 +2100,8 @@
    "video_criteria": [
     "scale_jump"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.gis-methods-classification-by-task",
@@ -2518,7 +2523,8 @@
     "u092-02"
    ],
    "video_criteria": [],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.fluid-saturation-resistivity-parameter",
@@ -2906,7 +2912,8 @@
    "video_criteria": [
     "cause_effect"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.gis-complex-reservoir-characterization",
@@ -3298,7 +3305,8 @@
    "video_criteria": [
     "time_change"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.lithological-column-construction-procedure",
@@ -3625,7 +3633,8 @@
     "u092-11"
    ],
    "video_criteria": [],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.qualitative-gis-response-matrix",
@@ -4034,7 +4043,8 @@
    "video_criteria": [
     "invisible_visible"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.complex-lithology-interpretation",
@@ -4412,7 +4422,8 @@
    "video_criteria": [
     "cause_effect"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.direct-reservoir-indicators",
@@ -4911,7 +4922,8 @@
     "invisible_visible",
     "time_change"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.reservoir-cutoff-determination",
@@ -6640,7 +6652,8 @@
    "video_criteria": [
     "cause_effect"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.fluid-saturation-crossplots",
@@ -7142,7 +7155,8 @@
     "cause_effect",
     "counterintuitive"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.critical-saturation-parameters-clean-reservoir",
@@ -7526,7 +7540,8 @@
     "cause_effect",
     "counterintuitive"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.critical-saturation-parameters-clayey-reservoir",
@@ -7825,7 +7840,8 @@
    "video_criteria": [
     "cause_effect"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.saturation-interpretation-tasks",
@@ -8091,7 +8107,8 @@
     "u100-16"
    ],
    "video_criteria": [],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.effective-thickness-and-fluid-contacts",
@@ -8440,7 +8457,8 @@
     "invisible_visible",
     "time_change"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.laminated-reservoir-effective-thickness",
@@ -8830,7 +8848,8 @@
     "scale_jump",
     "cause_effect"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.terrigenous-reservoir-identification",
@@ -9224,7 +9243,8 @@
     "u105-03"
    ],
    "video_criteria": [],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.carbonate-logging-features",
@@ -9444,7 +9464,8 @@
     "invisible_visible",
     "cause_effect"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.logging-normalization-method",
@@ -9827,7 +9848,8 @@
     "invisible_visible",
     "cause_effect"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   },
   {
    "id": "latyshova.carbonate-cutoff-porosity",
@@ -10189,7 +10211,8 @@
     "cause_effect",
     "scale_jump"
    ],
-   "fallback": false
+   "fallback": false,
+   "videos": []
   }
  ],
  "tasks": [

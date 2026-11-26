@@ -10,7 +10,7 @@ function labFullscreen(parent, target) {
   });
 }
 
-function specimenViewer(parent, task, missing, onZoom) {
+function specimenViewer(parent, task, missing, onZoom, {inlineImage = false} = {}) {
   const figure = add(parent, 'figure', '', 'specimen');
   const frame = add(figure, 'div', '', 'specimenFrame');
   frame.tabIndex = 0;
@@ -63,7 +63,7 @@ function specimenViewer(parent, task, missing, onZoom) {
   plus.setAttribute('aria-label', 'Увеличить');
   const output = add(bar, 'output');
   button(bar, 'Сбросить вид', () => zoom(1));
-  labFullscreen(bar, figure);
+  if (!inlineImage) labFullscreen(bar, figure);
   const point = e => {
     const rect = frame.getBoundingClientRect();
     return {x: e.clientX - rect.left - rect.width / 2, y: e.clientY - rect.top - rect.height / 2};
@@ -102,12 +102,14 @@ function specimenViewer(parent, task, missing, onZoom) {
     paint();
   };
   img.onerror = () => { frame.hidden = bar.hidden = true; missing?.(); };
-  const caption = add(figure, 'figcaption');
-  add(caption, 'span', task.locality);
-  add(caption, 'span', task.attribution + ' · ' + task.license);
-  if (task.license_url) labLink(caption, 'Лицензия', task.license_url);
-  labLink(caption, 'Оригинал ↗', task.source_url);
-  img.src = apiBase + task.media_url;
+  if (!inlineImage) {
+    const caption = add(figure, 'figcaption');
+    add(caption, 'span', task.locality);
+    add(caption, 'span', task.attribution + ' · ' + task.license);
+    if (task.license_url) labLink(caption, 'Лицензия', task.license_url);
+    labLink(caption, 'Оригинал ↗', task.source_url);
+  }
+  img.src = inlineImage ? task.media_url : apiBase + task.media_url;
   zoom(1, undefined, false);
   return {
     setZoom: v => zoom(v, undefined, false),

@@ -235,13 +235,27 @@ function renderLesson(){
 function drawIllustration(parent, illustration) {
   if (!localPath(illustration.src)) return;
   const figure = add(parent, 'figure');
-  const image = add(figure, 'img');
+  const alt = illustration.alt || illustration.caption || '';
+  const realData = illustration.class === 'A';
+  const opener = realData && button(figure, '', () => openIllustration(illustration.src, alt), 'illustrationOpener');
+  if (opener) opener.setAttribute('aria-label', 'Увеличить: ' + (alt || 'иллюстрация'));
+  const image = add(opener || figure, 'img');
   image.src = illustration.src;
-  image.alt = illustration.alt || illustration.caption || '';
+  image.alt = alt;
   add(figure, 'figcaption', [
     illustration.caption, illustration.provenance,
     illustration.redrawn_from && 'Перерисовано по ' + illustration.redrawn_from
   ].filter(Boolean).join(' · '));
+}
+function openIllustration(src, alt) {
+  const dialog = add(document.body, 'dialog', '', 'illustrationDialog');
+  dialog.setAttribute('aria-label', alt || 'Иллюстрация');
+  const close = button(dialog, 'Закрыть ×', () => dialog.close(), 'illustrationClose');
+  specimenViewer(dialog, {media_url: src, alt}, undefined, undefined, {inlineImage: true});
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => dialog.remove(), {once: true});
+  dialog.showModal();
+  close.focus();
 }
 function dataMeaning(parent,n){
   const d=n.data_meaning;if(!d)return;
@@ -352,9 +366,11 @@ function renderStudy(){
       if(state.cards[c.id]===choice)b.className='primary';
     }
   }
-  if(view==='terms' && !glossary.length) add(content,'p','В этой сборке главы словарь пока пуст.');
+  if(view==='terms' && !glossary.length) add(content,'p','Сборка не содержит определений, и в тексте шагов не нашлось терминов из геологического справочника.');
   if(view==='terms')for(const t of glossary){
-    add(content,'h3',t.term);add(content,'small',t.en);bookText(content,'p',t.definition);source(content,t.page);
+    add(content,'h3',t.term);add(content,'small',t.en);bookText(content,'p',t.definition);
+    if (t.reference) add(content, 'small', 'Определение из геологического справочника QABAT. ');
+    source(content,t.page,t.reference ? 'Упоминание в книге · стр. '+t.page : undefined);
     button(content,'К шагу',()=>openNode(t.node_id));
   }
   if(view==='summary'){
@@ -545,3 +561,4 @@ if (chapter.built_with?.model) {
   $('builtWith').textContent = 'Собрано моделью ' + chapter.built_with.model;
   $('builtWith').hidden = false;
 }
+$('courseReviewBadge').hidden = !layer.course_audit?.needs_review;

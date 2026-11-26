@@ -274,18 +274,95 @@ function knownCourseBuild(entryId) {
 function rememberCourseBuild(entryId, build) {
   courseBuilds.set(entryId, build);
   try {
-    const {job, state, stage, progress, course, error} = build;
-    localStorage.setItem('geocourse.build.' + entryId, JSON.stringify({job, state, stage, progress, course, error}));
+    const {job, state, stage, progress, course, error, pages, needs_review} = build;
+    localStorage.setItem('geocourse.build.' + entryId, JSON.stringify({job, state, stage, progress, course, error, pages, needs_review}));
   } catch {}
+}
+
+function chooseCourseRange(entry) {
+  const dialog = $('buildDialog');
+  const from = $('buildFrom');
+  const to = $('buildTo');
+  const confirm = $('buildConfirm');
+  const preview = $('buildPreview');
+  const pdf = $('buildPdf');
+  const status = $('buildRangeStatus');
+  const filePath = '/' + spaceId + '/files/' + entry.id;
+  let request = 0;
+  let delay;
+  let closed = false;
+
+  $('buildFile').textContent = entry.name;
+  $('buildLimits').textContent = '';
+  status.textContent = 'Загружаем список страниц…';
+  from.value = to.value = '';
+  from.disabled = to.disabled = confirm.disabled = preview.hidden = pdf.hidden = true;
+  dialog.returnValue = 'cancel';
+  $('buildCancel').onclick = () => dialog.close('cancel');
+  dialog.showModal();
+
+  async function showPreview() {
+    const current = ++request;
+    const first = from.valueAsNumber, last = to.valueAsNumber;
+    if (!from.validity.valid || !to.validity.valid || first > last) {
+      status.textContent = 'Проверь начальную и конечную страницу.';
+      return;
+    }
+    status.textContent = 'Готовим предпросмотр…';
+    try {
+      const query = new URLSearchParams({page_from: first, page_to: last});
+      const result = await spaceRequest(filePath + '/build-preview?' + query);
+      if (closed || current !== request) return;
+      status.textContent = 'Страниц с текстом: ' + result.pages + ' · начало выбранного фрагмента';
+      preview.textContent = result.text;
+      preview.hidden = false;
+      if (entry.ext === '.pdf') {
+        pdf.href = '/api/spaces' + filePath + '#page=' + first;
+        pdf.hidden = false;
+      }
+      confirm.disabled = false;
+    } catch (error) {
+      if (!closed && current === request) status.textContent = error.message;
+    }
+  }
+
+  from.oninput = to.oninput = () => {
+    request++;
+    preview.hidden = pdf.hidden = confirm.disabled = true;
+    status.textContent = '';
+    clearTimeout(delay);
+    delay = setTimeout(showPreview, 250);
+  };
+
+  spaceRequest(filePath + '/build-preview').then(bounds => {
+    if (closed || !dialog.open) return;
+    from.min = to.min = bounds.first;
+    from.max = to.max = bounds.last;
+    from.value = bounds.first;
+    to.value = bounds.end;
+    from.disabled = to.disabled = false;
+    $('buildLimits').textContent = 'Доступно стр. ' + bounds.first + '–' + bounds.last + ' · до ' + bounds.limit + ' страниц с текстом';
+    from.focus();
+    showPreview();
+  }).catch(error => { if (!closed) status.textContent = error.message; });
+
+  return new Promise(resolve => dialog.addEventListener('close', () => {
+    closed = true;
+    clearTimeout(delay);
+    resolve(dialog.returnValue === 'build' && !confirm.disabled
+      ? {page_from: from.valueAsNumber, page_to: to.valueAsNumber} : null);
+  }, {once: true}));
 }
 
 function showCourseBuild(entryId, panel, build = knownCourseBuild(entryId)) {
   if (!panel) return;
   panel.replaceChildren();
-  if (build?.state === 'ready' && /^up_[a-f0-9]+\/index\.html$/.test(build.course)) {
+  const ready = build?.state === 'ready' && /^up_[a-f0-9]+(?:_p\d+-\d+)?\/index\.html$/.test(build.course);
+  if (ready) {
     add(panel, 'a', 'Открыть курс').href = '/' + build.course;
-    return;
+    if (build.needs_review) add(panel, 'small', 'Требует проверки', 'qualityBadge');
   }
+  if (build?.pages?.length) add(panel, 'small', 'Стр. ' + build.pages.join('–'), 'muted');
   if (build && ['starting', 'queued', 'running'].includes(build.state)) {
     const percent = build.progress?.percent ?? 0;
     const meter = add(panel, 'progress');
@@ -302,12 +379,15 @@ function showCourseBuild(entryId, panel, build = knownCourseBuild(entryId)) {
     return;
   }
   if (build?.error) add(panel, 'small', build.error);
-  button(panel, build?.error ? 'Повторить сборку' : 'Собрать курс', async () => {
-    if (['starting', 'queued', 'running'].includes(knownCourseBuild(entryId)?.state)) return;
+  button(panel, ready ? 'Собрать ещё главу' : build?.error ? 'Повторить сборку' : 'Собрать курс', async () => {
+    const entry = sourceEntries.find(source => source.id === entryId);
+    if (!entry) return;
+    const range = await chooseCourseRange(entry);
+    if (!range || ['starting', 'queued', 'running'].includes(knownCourseBuild(entryId)?.state)) return;
     courseBuilds.set(entryId, {state: 'starting', stage: 'Отправляем запрос'});
     showCourseBuild(entryId, $('build-' + entryId));
     try {
-      const result = await spaceRequest('/' + spaceId + '/build', {entry: entryId});
+      const result = await spaceRequest('/' + spaceId + '/build', {entry: entryId, ...range});
       updateCourseBuild(entryId, result);
       pollCourseBuild(entryId, result.job);
     } catch (error) {

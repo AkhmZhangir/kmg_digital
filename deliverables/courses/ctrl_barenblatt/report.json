@@ -71,5 +71,6 @@
   "routing.json": true,
   "tasks.json": true,
   "illustrations.json": true
- }
+ },
+ "stage": "verify"
 }
