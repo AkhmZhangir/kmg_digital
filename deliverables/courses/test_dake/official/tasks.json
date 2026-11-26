@@ -637,17 +637,17 @@
    ]
   },
   {
-   "id": "dake.diffusivity-equation-analogy.q3",
+   "id": "dake.exponential-integral-solution.q4",
    "type": "calc",
-   "step_id": "dake.diffusivity-equation-analogy",
+   "step_id": "dake.exponential-integral-solution",
    "claim_ids": [
-    "dake.diffusivity-equation-analogy#c4"
+    "dake.exponential-integral-solution#c2"
    ],
-   "prompt": "Если в формуле теплопроводности абсолютная температура обозначается буквой T, а константа температурной проводности обозначается буквой K, запишите значение константы K, если в расчетной задаче по условию она равна 5.2.",
-   "explanation": "Значение константы напрямую задано в условии для проверки расчета.",
+   "prompt": "Аргумент функции x = 0,01 — на границе применимости приближения ei(x) ≈ −ln x − 0,5772. Чему примерно равно ei(x)?",
+   "explanation": "−ln 0,01 − 0,5772 = 4,605 − 0,577 ≈ 4.03. Чем меньше x (то есть больше время t), тем больше ei(x) (стр. 88).",
    "kind": "data",
-   "answer": 5.2,
-   "tolerance": 0.0,
+   "answer": 4.03,
+   "tolerance": 0.03,
    "unit": null
   },
   {
@@ -799,36 +799,37 @@
   },
   {
    "id": "dake.exponential-integral-solution.q2",
-   "type": "order",
+   "type": "single",
    "step_id": "dake.exponential-integral-solution",
    "claim_ids": [
     "dake.exponential-integral-solution#c3"
    ],
-   "prompt": "Расставьте по порядку элементы формулы расчета аргумента x = \\phi \\mu c r^2 / (4kt)",
-   "explanation": "Аргумент x рассчитывается с учетом параметров пористости, вязкости, сжимаемости, радиуса, проницаемости и времени.",
+   "prompt": "Аргумент x = φμcr²/(4kt). Что происходит с x при росте времени t после пуска скважины?",
+   "explanation": "t стоит в знаменателе, поэтому x убывает со временем; при малых x работает логарифмическое приближение ei(x) (стр. 88).",
    "kind": "understanding",
    "options": [
     {
-     "id": "s1",
-     "text": "пористость пласта и вязкость флюида",
+     "id": "a",
+     "text": "Уменьшается: время стоит в знаменателе",
      "misconception": null
     },
     {
-     "id": "s2",
-     "text": "общая сжимаемость и радиус",
+     "id": "b",
+     "text": "Растёт пропорционально времени",
      "misconception": null
     },
     {
-     "id": "s3",
-     "text": "удвоенное произведение четырех, проницаемости и времени",
+     "id": "c",
+     "text": "Не зависит от времени",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Растёт пропорционально квадрату радиуса скважины со временем",
      "misconception": null
     }
    ],
-   "answer": [
-    "s1",
-    "s2",
-    "s3"
-   ]
+   "answer": "a"
   },
   {
    "id": "dake.exponential-integral-solution.q3",

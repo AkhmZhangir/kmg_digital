@@ -2,8 +2,8 @@
  "nodes": 8,
  "tasks": 22,
  "task_types": {
-  "single": 5,
-  "cloze": 5,
+  "single": 6,
+  "cloze": 4,
   "order": 5,
   "multi": 4,
   "calc": 3
@@ -40,5 +40,6 @@
   "routing.json": true,
   "tasks.json": true,
   "illustrations.json": true
- }
+ },
+ "stage": "verify"
 }

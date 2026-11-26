@@ -6370,15 +6370,15 @@
    "explanation": "В состав компоновки входят кольцевой и плашечные превенторы, а также нагнетательный и штуцерный манифольды."
   },
   {
-   "id": "basarygin.wellhead-bop-configuration.q3",
-   "node_id": "basarygin.wellhead-bop-configuration",
+   "id": "basarygin.mud-volume-increase-control.q4",
+   "node_id": "basarygin.mud-volume-increase-control",
    "type": "calc",
-   "claim_id": "wellhead-bop-configuration.c4",
-   "question": "Каковы порядковые номера трубных превенторов в схеме обвязки устьевого оборудования?",
-   "answer": 20.0,
-   "tolerance": 1.0,
-   "unit": "сумма номеров",
-   "explanation": "В тексте указаны трубные превенторы под номерами 6 и 14, их сумма равна 20."
+   "claim_id": "mud-volume-increase-control.c12",
+   "question": "Из циркуляции выключили одну из двух ёмкостей: площадь поверхности раствора уменьшилась с 40 м² до 20 м². Во сколько раз уменьшится минимальный регистрируемый объём проявления ΔVmin = εS при той же погрешности датчика?",
+   "answer": 2.0,
+   "tolerance": 0.05,
+   "unit": "раз",
+   "explanation": "ΔVmin пропорционален площади S: 40 / 20 = 2 — реакция устройства увеличивается в 2 раза (стр. 233)."
   },
   {
    "id": "basarygin.well-shut-in-physics.q1",
@@ -6456,15 +6456,15 @@
    "explanation": "Мягкое перекрытие длится дольше, из-за чего в скважину успевает поступить значительный объем жидкости из пласта."
   },
   {
-   "id": "basarygin.hard-vs-soft-shut-in.q3",
-   "node_id": "basarygin.hard-vs-soft-shut-in",
+   "id": "basarygin.mud-flow-rate-monitoring.q4",
+   "node_id": "basarygin.mud-flow-rate-monitoring",
    "type": "calc",
-   "claim_id": "hard-vs-soft-shut-in.c6",
-   "question": "В тексте упоминаются номера элементов устьевого оборудования. Чему равна сумма номеров задвижки, превентора и штуцера (10, 6, 5)?",
-   "answer": 21.0,
-   "tolerance": 0.1,
-   "unit": "",
-   "explanation": "Сумма номеров оборудования из текста: задвижка 10 + превентор 6 + штуцер 5 = 21."
+   "claim_id": "mud-flow-rate-monitoring.c8",
+   "question": "Подачу бурового насоса увеличили в n = 2 раза. Во сколько раз вырастет приращение расхода на выходе при том же притоке газа (ΔQ₂ = n·ΔQ₁)?",
+   "answer": 2.0,
+   "tolerance": 0.05,
+   "unit": "раз",
+   "explanation": "ΔQ₂ = n·ΔQ₁ = 2·ΔQ₁: приращение вдвое больше, и проявление обнаружится раньше (стр. 235)."
   },
   {
    "id": "basarygin.drillers-method-killing.q1",

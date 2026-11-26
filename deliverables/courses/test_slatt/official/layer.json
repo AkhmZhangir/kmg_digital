@@ -999,7 +999,7 @@
   {
    "id": "slatt.shale-continuity-reservoir-management-1",
    "order": 5,
-   "title": "Shale continuity and reservoir compartmentalization (1/2)",
+   "title": "Непрерывность глин и разобщение пласта (1/2)",
    "why_here": {
     "text": "Открывает часть: вводит понятия, на которые опираются следующие шаги.",
     "by_model": false
@@ -1113,9 +1113,9 @@
   {
    "id": "slatt.shale-continuity-reservoir-management-2",
    "order": 6,
-   "title": "Shale continuity and reservoir compartmentalization (2/2)",
+   "title": "Непрерывность глин и разобщение пласта (2/2)",
    "why_here": {
-    "text": "Опирается на шаги: Shale continuity and reservoir compartmentalization (1/2).",
+    "text": "Опирается на шаги: Непрерывность глин и разобщение пласта (1/2).",
     "by_model": false
    },
    "difficulty": {
@@ -1246,7 +1246,7 @@
   {
    "id": "slatt.kuparuk-progradational-architecture",
    "order": 7,
-   "title": "Progradational architecture in Kuparuk field",
+   "title": "Проградационное строение месторождения Купарук",
    "why_here": {
     "text": "Открывает часть: вводит понятия, на которые опираются следующие шаги.",
     "by_model": false
@@ -1392,7 +1392,7 @@
   {
    "id": "slatt.wave-dominated-delta-deposits",
    "order": 8,
-   "title": "Wave-dominated delta formation and deposits",
+   "title": "Волновые дельты: образование и отложения",
    "why_here": {
     "text": "Открывает часть: вводит понятия, на которые опираются следующие шаги.",
     "by_model": false
